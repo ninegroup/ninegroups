@@ -8,16 +8,24 @@
 <link href='http://fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
 	 	<!---strat-slider---->
 	    <link rel="stylesheet" type="text/css" href="css/slider.css" />
-		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
+				
+				});
+			</script>
 		<!---//strat-slider---->
 <!-- start top_js_button -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/wowslider.js"></script>
    <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -33,14 +41,14 @@
 <div class="wrap">
 	<div class="header">
 		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""/> </a>
+			<a href="index.html"><img src="images/jiujiu.jpg" alt="" style='width:180px;height:80px;'/></a>
 		</div>
 		<div class="social-icons">
 		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"><font color='black'></font></a></li>
+			  <li><a href="#" target="_blank">te</a></li>
+		      <li><a href="#" target="_blank">ddddddddddd</a></li>
+			  <li><a href="#" target="_blank">dsdsd</a></li>
 			</ul>
 		</div>
 		<div class="clear"></div>
@@ -53,28 +61,28 @@
 	<div class="header_sub">
 		<div class="h_menu">
 			<ul>
-				<li class="active"><a href="index.html">首页</a></li>
+				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="about.html">关于我们</a></li>
-				<li><a href="service.html">服务</a></li>
-				<li><a href="index.html">网页</a></li>
-				<li><a href="blog.html">个人意见</a></li>
-				<li><a href="contact.html">联系我们</a></li>
+				<li><a href="service.html">Service</a></li>
+				<li><a href="index.html">Pages</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact us</a></li>
 			</ul>
 		</div>
 		<div class="h_search">
     		<form>
-    			<input type="text" value="" placeholder="搜索...">
+    			<input type="text" value="" placeholder="search something...">
     			<input type="submit" value="">
     		</form>
 		</div>
         <div class="menu">
         	<ul>
-				<li class="active"><a href="index.html">首页</a></li>
-				<li><a href="about.html">关于我们</a></li>
-				<li><a href="service.html">服务</a></li>
-				<li><a href="index.html">网页</a></li>
-				<li><a href="blog.html">个人意见</a></li>
-				<li><a href="contact.html">联系我们</a></li>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li><a href="service.html">Service</a></li>
+				<li><a href="index.html">Pages</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
         <div class="search">
@@ -84,8 +92,8 @@
         </div>
         <div class="sub-head">
         	<ul>
-            	<li><a href="#" id="menu">菜单  <span></span></a></li>
-            	<li><a href="#" id="search">搜索 <span></span></a></li>
+            	<li><a href="#" id="menu">Menu  <span></span></a></li>
+            	<li><a href="#" id="search">Search <span></span></a></li>
             </ul>
             <div class="clear"></div>
         </div>
@@ -105,6 +113,7 @@
 			$(".text").focus();
 		});
 	</script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<div class="clear"></div>
 
 		<div class="clear"></div>
@@ -116,19 +125,33 @@
 <div class="wrap">
 	<div class="slider">
 				<!---start-da-slider----->
-				<div id="wowslider-container1">
-	<div class="ws_images"><ul>
-		<li><img src="images/1/1.jpg" alt="1" title="1" id="wows1_0" style="height:600px;width:1190px;"></li>
-		<li><img src="images/1/2.jpg" alt="2" title="2" id="wows1_1" style="height:600px;width:1190px;"></li>
-		<li><img src="images/1/3.jpg" alt="bootstrap carousel" title="3" id="wows1_2" style="height:600px;width:1190px;"></li>
-		<li><img src="images/1/4.jpg" alt="4" title="4" id="wows1_3" style="height:600px;width:1190px;"></li>
-	</ul></div>
-<div class="ws_shadow"></div>
-</div>	
+				<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>Welcome to our website</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="da-slide">
+					<h2>Clean & Flat Design</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="da-slide">
+					<h2>Clean & Flat Design</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="da-slide">
+					<h2>Welcome to our website</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>			
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
  			<!---//End-da-slider----->
  	</div>
 </div>
 </div>
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
 <!-- start main -->
 <div class="wrap">
 	<div class="main">
@@ -216,6 +239,64 @@
 	</div>
 </div>
 </div>
+<div class="wrap">
+		<ul id="flexiselDemo3">
+			<li><img src="images/client1.jpg" /></li>
+			<li><img src="images/client6.jpg" /></li>
+			<li><img src="images/client2.jpg" /></li>
+			<li><img src="images/client5.jpg" /></li>
+			<li><img src="images/client4.jpg" /></li>
+			<li><img src="images/client3.jpg" /></li>
+			<li><img src="images/client4.jpg" /></li>
+		</ul>
+	<script type="text/javascript">
+$(window).load(function() {
+	$("#flexiselDemo1").flexisel();
+	$("#flexiselDemo2").flexisel({
+		enableResponsiveBreakpoints: true,
+    	responsiveBreakpoints: { 
+    		portrait: { 
+    			changePoint:480,
+    			visibleItems: 1
+    		}, 
+    		landscape: { 
+    			changePoint:640,
+    			visibleItems: 2
+    		},
+    		tablet: { 
+    			changePoint:768,
+    			visibleItems: 3
+    		}
+    	}
+    });
+
+	$("#flexiselDemo3").flexisel({
+		visibleItems: 5,
+		animationSpeed: 1000,
+		autoPlay: true,
+		autoPlaySpeed: 3000,    		
+		pauseOnHover: true,
+		enableResponsiveBreakpoints: true,
+    	responsiveBreakpoints: { 
+    		portrait: { 
+    			changePoint:480,
+    			visibleItems: 1
+    		}, 
+    		landscape: { 
+    			changePoint:640,
+    			visibleItems: 2
+    		},
+    		tablet: { 
+    			changePoint:768,
+    			visibleItems: 3
+    		}
+    	}
+    });
+    
+});
+</script>
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+</div>
 <!-- start footer -->
 <div class="footer_bg">
 <div class="wrap">
@@ -256,5 +337,42 @@
 </div>
 </div>
 <!-- start footer -->
+<div class="footer_bg1">
+<div class="wrap">
+	<div class="footer1">
+		<!-- scroll_top_btn -->
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="social-icons">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+        <div style="color:#FFFFFF;font-size:12px">
+More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
+ | 
+Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
 </body>
 </html>
