@@ -4,10 +4,10 @@
  */
 
 #wowslider-container1 { 
-	display: table;
+	/*display: table;*/
 	zoom: 1; 
 	position: relative;
-	margin:5px auto 12.5px;
+	/*margin:5px auto 12.5px;*/
 	z-index:90;
 	text-align:left; /* reset align=center */
 	font-size: 10px;
@@ -18,7 +18,7 @@
 	-moz-box-sizing: content-box;
 	box-sizing: content-box; 
 }
-* html #wowslider-container1{ width:640px }
+* html #wowslider-container1{ width:100% }
 #wowslider-container1 .ws_images ul{
 	position:relative;
 	width: 10000%; 
@@ -125,7 +125,7 @@
 }
 
 
-#wowslider-container1.ws_gestures {
+/*#wowslider-container1.ws_gestures {
 	cursor: -webkit-grab;
 	cursor: -moz-grab;
 	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABwSURBVEjH7ZJBEsAgCAMT/v/n9NCOSqe2oD2yNx1JggB4BCEFWyFASP2KMQE7ywWhe/tTRGCGogLk02tFctiW/SUgaMyQG4PdPzDn31rQbMb8FiAXgvsEJNax1yVlVGAjA93apP3HFhZTGIqiKH7iADB6HxPlHdNVAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTA3LTA3VDEzOjQ5OjEwKzAyOjAwm7WiFAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wNy0wN1QxMzo0OToxMCswMjowMOroGqgAAAAASUVORK5CYII="), move;
@@ -134,7 +134,7 @@
 	cursor: -webkit-grabbing;
 	cursor: -moz-grabbing;
 	cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABaSURBVEjH7ZMxCkAhDEOT8u9/5TpJ+xWkFse8IYutJgEB8RCHL1qCc90BEFnT6QH7mwgFHBUf8wJyS1TDLuc3vmighx37LZdIth3E5hKj9n6O0HRh+oJCiFcMxRUUDxR1CTMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDctMDdUMTM6NDk6MzgrMDI6MDDqf+sOAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTA3LTA3VDEzOjQ5OjM4KzAyOjAwmyJTsgAAAABJRU5ErkJggg=="), move;
-}
+}*/
 
 /* hide controls when video start play */
 #wowslider-container1.ws_video_playing .ws_bullets,
@@ -160,17 +160,7 @@
 #wowslider-container1 .ws_video_btn.ws_vimeo {
 	display: block;
 }
-#wowslider-container1 .ws_video_btn div {
-	position: absolute;
-	background-image: url(./playvideo.png);
-	background-size: 200%;
-	top: 50%;
-	left: 50%;
-	width: 7em;
-	height: 5em;
-	margin-left: -3.5em;
-	margin-top: -2.5em;
-}
+
 #wowslider-container1 .ws_video_btn.ws_youtube div {
 	background-position: 0 0;
 }

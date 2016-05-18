@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,124 +6,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 	 	<!---strat-slider---->
 	    <link rel="stylesheet" type="text/css" href="css/slider.css" />
 		<link rel="stylesheet" type="text/css" href="css/style1.css" />
 		<!---//strat-slider---->
 <!-- start top_js_button -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/wowslider.js"></script>
-   <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
 </head>
 <body>
 <!-- start header -->
-<div class="header_bg">
+<div class="logo" id='logo'>
+	<a href="index.html"><img src="images/jiujiu.jpg" alt="" style='width:180px;height:80px;'/></a>
+</div>
+<div class="header_bg" id='pt'>
 <div class="wrap">
 	<div class="header">
-		<div class="logo">
-			<a href="index.html"><img src="images/jiujiu.jpg" alt="" style='height:80px;width:180px;'/> </a>
-		</div>
 		<div class="social-icons">
 		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"><b>注册送红包</b></a></li>
+			  <li><a href="#" target="_blank"><b>登录</b></a></li>
+		      <li><a href="#" target="_blank"><b>房东指南</b></a></li>
+			  <li><a href="#" target="_blank"><b>免费发布房源</b></a></li>
 			</ul>
 		</div>
 		<div class="clear"></div>
 	</div>
 </div>
 </div>
-<!-- start header -->
-<div class="header_btm">
-<div class="wrap">
-	<div class="header_sub">
-		<div class="h_menu">
-			<ul>
-				<li class="active"><a href="index.html">首页</a></li>
-				<li><a href="about.html">关于我们</a></li>
-				<li><a href="service.html">服务</a></li>
-				<li><a href="index.html">网页</a></li>
-				<li><a href="blog.html">个人意见</a></li>
-				<li><a href="contact.html">联系我们</a></li>
-			</ul>
-		</div>
-		<div class="h_search">
-    		<form>
-    			<input type="text" value="" placeholder="搜索...">
-    			<input type="submit" value="">
-    		</form>
-		</div>
-        <div class="menu">
-        	<ul>
-				<li class="active"><a href="index.html">首页</a></li>
-				<li><a href="about.html">关于我们</a></li>
-				<li><a href="service.html">服务</a></li>
-				<li><a href="index.html">网页</a></li>
-				<li><a href="blog.html">个人意见</a></li>
-				<li><a href="contact.html">联系我们</a></li>
-            </ul>
-        </div>
-        <div class="search">
-            <form action="/iphone/search.html">
-                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
-            </form>
-        </div>
-        <div class="sub-head">
-        	<ul>
-            	<li><a href="#" id="menu">菜单  <span></span></a></li>
-            	<li><a href="#" id="search">搜索 <span></span></a></li>
-            </ul>
-            <div class="clear"></div>
-        </div>
-	   <script type="text/javascript">
-		$(".menu,.search").hide();
-		$("#menu").click(function(){
-			$(".menu").toggle();
-			$(".search").hide();
-			$("#search").removeClass("active");
-			$("#menu").toggleClass("active");
-		});
-		$("#search").click(function(){
-			$(".search").toggle();
-			$(".menu").hide();
-			$("#menu").removeClass("active");
-			$("#search").toggleClass("active");
-			$(".text").focus();
-		});
-	</script>
-	<div class="clear"></div>
-
-		<div class="clear"></div>
-</div>
-</div>
-</div>
 <!-- start slider -->
-<div class="slider_bg">
+<div class="">
 <div class="wrap">
 	<div class="slider">
-				<!---start-da-slider----->
-				<div id="wowslider-container1">
-	<div class="ws_images"><ul>
-		<li><img src="images/1/1.jpg" alt="1" title="1" id="wows1_0" style="height:600px;width:1190px;"></li>
-		<li><img src="images/1/2.jpg" alt="2" title="2" id="wows1_1" style="height:600px;width:1190px;"></li>
-		<li><img src="images/1/3.jpg" alt="bootstrap carousel" title="3" id="wows1_2" style="height:600px;width:1190px;"></li>
-		<li><img src="images/1/4.jpg" alt="4" title="4" id="wows1_3" style="height:600px;width:1190px;"></li>
+				<!---start-da-slider----->	
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="images/1/1.jpg" alt="1" title="" id="wows1_0" style="height:600px;width:100%;"></li>
+		<li><img src="images/1/2.jpg" alt="2" title="" id="wows1_1" style="height:600px;width:100%;"></li>
+		<li><img src="images/1/3.jpg" alt="3" title="" id="wows1_2" style="height:600px;width:100%;"></li>
+		<li><img src="images/1/4.jpg" alt="4" title="" id="wows1_3" style="height:600px;width:100%;"></li>
+		<li><img src="images/1/5.jpg" alt="5" title="" id="wows1_4" style="height:600px;width:100%;"></li>
 	</ul></div>
 <div class="ws_shadow"></div>
 </div>	
+<script type="text/javascript" src="js/wowslider.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</div>
  			<!---//End-da-slider----->
  	</div>
 </div>

@@ -30,10 +30,22 @@ body {
 }
 .wrap{
 	margin:0 auto;
-	width:80%;
+	width:100%;
+}
+#pt{
+	position: fixed;
+	z-index:100;
+	margin-left:30px;
+}
+#logo{
+	position: relative;
+	z-index:110;
+	margin-left:50px;
+	margin-top:40px;
 }
 .header_bg{
-	background: #252323;
+	width:100%;
+	height:200px;
 }
 .header{
 	padding:2% 4%;
@@ -52,35 +64,31 @@ body {
 	float:left;
 	margin-left:15px;
 }
-.social-icons li a {
-	height: 26px;
-	width: 26px;
-	display: block;
-	background:url(../images/soc_icons.png);
+.socsial-icons li a:link{	
+	 color:black; 
 }
-.social-icons li:nth-child(1) a{
-	background: url(../images/soc_icons.png) 0% 0%;
-}
-.social-icons li:nth-child(1) a:hover{
-	background: url(../images/soc_icons.png) 0% 98%;
+
+.social-icons li a:visited{ color:black;}
+
+.social-icons li:nth-child(1) a:hover{	
+	text-decoration:underline; color:blue;
 }
 .social-icons li:nth-child(2) a{
-	background: url(../images/soc_icons.png) 32% 0%;
 }
 .social-icons li:nth-child(2) a:hover{
-	background: url(../images/soc_icons.png) 32% 98%;
+	text-decoration:underline; color:blue;
 }
 .social-icons li:nth-child(3) a{
-	background: url(../images/soc_icons.png) 66% 0%;
 }
 .social-icons li:nth-child(3) a:hover{
-	background: url(../images/soc_icons.png) 66% 98%;
+	text-decoration:underline; color:blue;
 }
 .social-icons li:nth-child(4) a{
-	background: url(../images/soc_icons.png) 100% 0%;
+	
 }
 .social-icons li:nth-child(4) a:hover{
-	background: url(../images/soc_icons.png) 100% 98%;
+	text-decoration:underline; color:blue;
+	
 }
 /* start header_btm */
 .header_btm{
@@ -254,9 +262,6 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-.slider{
-	padding: 0 4%;
 }
 /* start main */
 .main{
@@ -769,7 +774,7 @@ big {
 /***** Media Quries *****/
 @media only screen and (max-width: 1366px) {
 	.wrap{
-		width:95%;
+		width:100%;
 	}
 	.h_menu ul li a {
 		padding: 30px 12px;
