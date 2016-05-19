@@ -38,10 +38,16 @@ body {
 	margin-left:30px;
 }
 #logo{
-	position: relative;
+	position: absolute;
 	z-index:110;
 	margin-left:50px;
 	margin-top:40px;
+}
+#search{
+	position: absolute;
+	margin-left:380px;
+	margin-top:500px;
+	z-index:120;
 }
 .header_bg{
 	width:100%;
@@ -67,7 +73,26 @@ body {
 .socsial-icons li a:link{	
 	 color:black; 
 }
-
+#search input{
+	margin-left:20px;
+}
+#ssearch{
+	height:48px;
+	width:100px;
+	float:left;
+}
+#search .date_title{
+	height:40px;
+	width:200px;
+	font-size:14px;
+	float:left;
+}
+#search .sss{
+	height:40px;
+	width:200px;
+	font-size:14px;
+	float:left;
+}
 .social-icons li a:visited{ color:black;}
 
 .social-icons li:nth-child(1) a:hover{	
