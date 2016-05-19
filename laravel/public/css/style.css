@@ -54,13 +54,20 @@ body {
 	height:200px;
 }
 .header{
-	padding:2% 4%;
+	width:360px;
+	height:60px;
+	float:right;
+	line-height:60px;
+	background-color: gray;
+	margin-top:2%;
+	margin-right:4%;
 }
 .logo{
 	float:left;
 }
 /*--- social-icons ----*/
 .social-icons {
+	padding-right:5%;
 	float:right;
 }
 .social-icons li:first-child{
@@ -290,15 +297,15 @@ body {
 }
 /* start main */
 .main{
-	padding: 6% 4%;
+	padding: 2% 4%;
 }
 .main_text{
 	text-align:center;
 }
 .main_text h2{
-	font-size: 2em;
+	font-size: 3em;
 	text-transform: uppercase;
-	color: #777777;
+	color: #330000;
 	text-shadow: 0 1px 0 #ffffff;
 	margin-bottom: 2%;
 }
@@ -308,9 +315,9 @@ body {
 }
 /** para style **/
 p.para{
-	font-size: 0.8725em;
+	font-size: 2em;
 	color: #555555;
-	line-height: 1.8em;
+	line-height: 2em;
 }
 /* start grids_of_3 */
 .grids_of_3{

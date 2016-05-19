@@ -126,15 +126,15 @@ h1 {
 <div class="wrap">
 	<div class="main">
 		<div class="main_text">
-			<h2>Lorem Ipsum is <span>simply dummy </span> text of the printing.</h2>
-			<p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			<h2 style="background-color:#ffffff;width:1250px;height:70px;line-height:70px;">热门短租</h2>
+			<p class="para">海内存知己,天涯若比邻</p>
 		</div>
 		<!-- start grids_of_3 -->
-		<div class="grids_of_3">
+		<!--<div class="grids_of_3">
 			<div class="grid1_of_3">
 				<img src="images/icon1.png" alt=""/>
 				<h3><a href="#">Lorem Ipsum is <span> simply </span> </a></h3>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				<p>热门短租</p>
 			</div>
 			<div class="grid1_of_3">
 				<img src="images/icon2.png" alt=""/>
@@ -147,7 +147,7 @@ h1 {
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
 			</div>
 			<div class="clear"></div>
-		</div>
+		</div>-->
 		<!-- end grids_of_3 -->
 	</div>
 </div>
@@ -179,32 +179,7 @@ h1 {
 				</div>
 			</div>
 			<div class="clear"></div>
-		</div>
-		<!--  -->
-		<div class="span_of_3">
-			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic4.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-				</div>
-			</div>
-			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic5.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-				</div>
-			</div>
-			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic6.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-				</div>
-			</div>
-			<div class="clear"></div>
-		</div>
+		</div>			
 		<!-- end grids_of_3 -->
 	</div>
 </div>
