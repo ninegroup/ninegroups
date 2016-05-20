@@ -32,3 +32,15 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+
+
+//注册
+Route::any('register','LoginController@register');
+Route::any('index','IndexController@index');
+//登陆
+Route::any('login','LoginController@login');
+//退出
+Route::any('unset1','LoginController@unset1');
+Route::any('housing','LoginController@housing');

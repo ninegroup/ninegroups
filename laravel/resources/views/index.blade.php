@@ -16,6 +16,7 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/dateRange.js"></script>
 <link rel="stylesheet" type="text/css" href="css/dateRange.css"/>
+<link rel="stylesheet" href="css/lanrenzhijia.css" media="all">
 <style type="text/css">
 ::selection {
 	background-color: #E13300;
@@ -78,6 +79,37 @@ h1 {
 				}
 			});
 
+
+			jQuery(document).ready(function($) {
+		$('.theme-login').click(function(){
+			$('.theme-popover-mask').fadeIn(100);
+			$('.theme-popover').slideDown(200);
+		})
+		$('.theme-poptit .close').click(function(){
+			$('.theme-popover-mask').fadeOut(100);
+			$('.theme-popover').slideUp(200);
+		})
+	})
+		
+		
+		
+		jQuery(document).ready(function($) {
+		$('.theme-register').click(function(){
+			$('.theme-register-mask').fadeIn(100);
+			$('.register').slideDown(200);
+		})
+		$('.theme-poptit .close').click(function(){
+			$('.theme-register-mask').fadeOut(100);
+			$('.register').slideUp(200);
+		})
+	})
+
+	function housing()
+	{
+		//var name=document.cookie('name');
+		location.href='/database/ninegroups/laravel/public/housing';
+	}
+
 		</script>
 	<input type="submit" value='搜索' id='ssearch' />
 </div>
@@ -90,10 +122,15 @@ h1 {
 	<div class="header">
 		<div class="social-icons">
 		    <ul>
-		      <li><a href="#" target="_blank"><b>注册送红包</b></a></li>
-			  <li><a href="#" target="_blank"><b>登录</b></a></li>
-		      <li><a href="#" target="_blank"><b>房东指南</b></a></li>
-			  <li><a href="#" target="_blank"><b>免费发布房源</b></a></li>
+		      <?php if(empty($_COOKIE['name'])){?>
+		      <li><a href="javascript:;" class="btn btn-primary btn-large theme-register">注册送红包</a></li>
+			  <li><a href="javascript:;" class="btn btn-primary btn-large theme-login">登陆</a></li>
+			  <?php }else{?>
+				<li><h3>欢迎<?php echo $_COOKIE['name']?>登陆</h3></li>
+				<li><a href="{{URL('unset1')}}">退出</a></li>
+			  <?php }?>	
+			  <li><input type="button" value="免费发布房源" class="btn btn-primary btn-large" onclick="housing()"/></li>
+
 			</ul>
 		</div>
 		<div class="clear"></div>
@@ -224,5 +261,93 @@ h1 {
 </div>
 </div>
 <!-- start footer -->
+
+
+
+
+<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>登录 是一种态度</h3>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="theme-signin" name="loginform" action="{{URL('login')}}" method="post">
+		   <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+                <ol>
+                     <li><strong>用户名：</strong><input class="ipt" type="text" name="u_name" size="20" /></li>
+                     <li><strong>密码：</strong><input class="ipt" type="password" name="u_pwd"  size="20" /></li>
+                     <li><input class="btn btn-primary" type="submit" name="submit" value=" 登 录 " /></li>
+                </ol>
+           </form>
+     </div>
+</div>
+<div class="theme-popover-mask"></div>
+
+
+
+<div class="register">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h2><font style="font-size:30px;">重磅消息</font>：<font style="font-size:25px;">所有新用户，注册就送<span style="color:red;font-size:50px;">200元</span>代金券</font></h2>
+     </div>
+     <div class="theme-popbod dform">
+           <form class="theme-signin" action="{{URL('register')}}" method="post" onsubmit="return fun()">
+		   <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+                <ol>
+                     <li><strong>用户名：</strong><input class="ipt" type="text" name="u_name" placeholder="请输入您的昵称" size="20" id="u_name" onblur="s_name()"/><span id="s_name"></span></li>
+                     <li><strong>密码：</strong><input class="ipt" type="password" name="u_pwd" placeholder="密码长度6~16位" size="20" id="u_pwd" onblur="s_pwd()"/><span id="s_pwd"></span></li>
+                     <li><strong>手机号：</strong><input class="ipt" type="text" placeholder="请输入您的手机号" name="u_tel" size="20" /></li>
+                     <li><input class="btn btn-primary" type="submit" value=" 注 册 " />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn btn-primary" type="reset" value=" 重 置 " /></li>
+                </ol>
+           </form>
+     </div>
+</div>
+<div class="theme-register-mask"></div>
+
 </body>
 </html>
+
+<script>
+	function s_name()
+	{
+		var u_name=document.getElementById('u_name').value;
+		//alert(u_name)
+		if(u_name=='')
+		{
+			document.getElementById('s_name').innerHTML="<font style='color:red;'>用户名不能为空！</font>";
+			return false;
+		}else{
+			document.getElementById('s_name').innerHTML="<font style='color:green;'>OK!</font>";
+			return true;
+		}
+	}
+function s_pwd()
+	{
+		var u_pwd=document.getElementById('u_pwd').value;
+	    var reg=/^\w{6,16}$/;
+		//alert(u_name)
+		if(u_pwd=='')
+		{
+			document.getElementById('s_pwd').innerHTML="<font style='color:red;'>密码不能为空！</font>";
+			return false;
+		}else if(!reg.test(u_pwd)){
+			document.getElementById('s_pwd').innerHTML="<font style='color:red;'>密码格式不正确！请输入由6~16位的密码！</font>";
+			return false;
+		}else{
+			document.getElementById('s_pwd').innerHTML="<font style='color:green;'>OK!</font>";
+			return true;
+		}
+	}
+
+	function fun()
+	{
+		if(s_name()&&s_pwd())
+		{
+			return true;
+		}else{
+			alert("请完成信息再提交")
+				return false;
+		}
+	}
+
+</script>
