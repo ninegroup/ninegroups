@@ -53,6 +53,14 @@ class LoginController extends \yii\web\Controller
 			return $this->render('index');
 		}
 	}
+
+	public function actionExit(){
+		$session=Yii::$app->session;
+		unset ($session['name']);
+		unset ($session['pwd']);
+		Yii::$app->getSession()->setFlash('success','退出成功');
+		return $this->redirect(['login/index']);
+	}
 	public function actionList()
     {
 		$session=Yii::$app->session;
