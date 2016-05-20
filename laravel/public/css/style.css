@@ -81,9 +81,10 @@ body {
 }
 #search input{
 	margin-left:20px;
+	padding-left:10px;
 }
 #ssearch{
-	height:48px;
+	height:40px;
 	width:100px;
 	float:left;
 }
@@ -93,7 +94,7 @@ body {
 	font-size:14px;
 	float:left;
 }
-#search .sss{
+#search .cityinput{
 	height:40px;
 	width:200px;
 	font-size:14px;

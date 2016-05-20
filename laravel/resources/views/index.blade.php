@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/cityselect.css">
 <script type="text/javascript" src="js/jquery.js"></script>
 	 	<!---strat-slider---->
 	    <link rel="stylesheet" type="text/css" href="css/slider.css" />
@@ -15,6 +16,7 @@
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/dateRange.js"></script>
+<script type="text/javascript" src="js/area/cityselect.js"></script>
 <link rel="stylesheet" type="text/css" href="css/dateRange.css"/>
 <link rel="stylesheet" href="css/lanrenzhijia.css" media="all">
 <style type="text/css">
@@ -63,7 +65,7 @@ h1 {
 </head>
 <body>
 <div id='search'>
-	<input type="text" placeholder="请输入地区..." class="sss" />
+	<input type="text" class="cityinput" id="citySelect" placeholder="请输入地区...">
 		 <input type="text"  class="date_title" id="date_demo3"  placeholder="请输入日期..." />
 				<a class="opt_sel" id="input_trigger_demo3" href="#">
 					<i class="i_orderd"></i>
@@ -111,7 +113,10 @@ h1 {
 	}
 
 		</script>
-	<input type="submit" value='搜索' id='ssearch' />
+		<script type="text/javascript">
+			var test=new Vcity.CitySelector({input:'citySelect'});
+		</script>
+	<input type="button" value='搜索' id='ssearch' />
 </div>
 <!-- start header -->
 <div class="logo" id='logo'>
