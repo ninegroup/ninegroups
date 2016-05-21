@@ -44,3 +44,6 @@ Route::any('login','LoginController@login');
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('housing','LoginController@housing');
+//查询城市信息
+//Route::any('search','SearchController@HomepageSearch');
+Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' => "SearchController@HomepageSearch"]);
