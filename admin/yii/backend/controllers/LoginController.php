@@ -53,17 +53,6 @@ class LoginController extends \yii\web\Controller
 			return $this->render('index');
 		}
 	}
-	
-	//退出当前登录
-	public function actionExit(){
-		$session=Yii::$app->session;
-		unset ($session['name']);
-		unset ($session['pwd']);
-		Yii::$app->getSession()->setFlash('success','退出成功');
-		return $this->redirect(['login/index']);
-	}
-
-	//列表页面
 	public function actionList()
     {
 		$session=Yii::$app->session;
@@ -75,8 +64,6 @@ class LoginController extends \yii\web\Controller
 	/**/
 	public function actionTable()
     {
-		$session=Yii::$app->session;
-		$name=$session->get('name');
 		$query = User::find();
 
         $pagination = new Pagination([
@@ -98,7 +85,7 @@ class LoginController extends \yii\web\Controller
 		//$data=$command->queryAll();
 		//var_dump($data);die;	
         return $this->renderPartial('tables.html',['countries' => $countries,
-            'pagination' => $pagination,'name'=>$name,]);
+            'pagination' => $pagination,]);
     }
 
 	public function actionAdds(){

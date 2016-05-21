@@ -6,7 +6,7 @@ use yii\widgets\LinkPager;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>久久租后台管理</title>
+		<title>Bootstrap表格插件 - Bootstrap后台管理系统模版Ace下载</title>
 		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
 		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,14 +40,14 @@ use yii\widgets\LinkPager;
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
-		<script src="../views/assets/js/jquery-1.10.2.min.js"></script>
-		<script src="../views/assets/js/ace-extra.min.js"></script>
+		<script src="../views/../views/assets/js/jquery-1.10.2.min.js"></script>
+		<script src="../views/../views/assets/js/ace-extra.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 		<!--[if lt IE 9]>
-		<script src="assets/js/html5shiv.js"></script>
-		<script src="assets/js/respond.min.js"></script>
+		<script src="../views/assets/js/html5shiv.js"></script>
+		<script src="../views/assets/js/respond.min.js"></script>
 		<![endif]-->
 	</head>
 
@@ -62,7 +62,7 @@ use yii\widgets\LinkPager;
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="icon-leaf"></i>
-							久久租后台管理系统
+							Ace Admin
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
@@ -280,8 +280,10 @@ use yii\widgets\LinkPager;
 
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<span>
-									<small><font size='4px;'>欢迎<font color='red'><?php echo $name;?></font></font></small>
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason
 								</span>
 
 								<i class="icon-caret-down"></i>
@@ -388,15 +390,79 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="elements.html">
 										<i class="icon-double-angle-right"></i>
-										房源列表
+										组件
 									</a>
 								</li>
 
 								<li>
 									<a href="buttons.html">
 										<i class="icon-double-angle-right"></i>
-										房源审核
+										按钮 &amp; 图表
 									</a>
+								</li>
+
+								<li>
+									<a href="treeview.html">
+										<i class="icon-double-angle-right"></i>
+										树菜单
+									</a>
+								</li>
+
+								<li>
+									<a href="jquery-ui.html">
+										<i class="icon-double-angle-right"></i>
+										jQuery UI
+									</a>
+								</li>
+
+								<li>
+									<a href="nestable-list.html">
+										<i class="icon-double-angle-right"></i>
+										可拖拽列表
+									</a>
+								</li>
+
+								<li>
+									<a href="#" class="dropdown-toggle">
+										<i class="icon-double-angle-right"></i>
+
+										三级菜单
+										<b class="arrow icon-angle-down"></b>
+									</a>
+
+									<ul class="submenu">
+										<li>
+											<a href="#">
+												<i class="icon-leaf"></i>
+												第一级
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="dropdown-toggle">
+												<i class="icon-pencil"></i>
+
+												第四级
+												<b class="arrow icon-angle-down"></b>
+											</a>
+
+											<ul class="submenu">
+												<li>
+													<a href="#">
+														<i class="icon-plus"></i>
+														添加产品
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<i class="icon-eye-open"></i>
+														查看商品
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 						</li>
@@ -413,7 +479,7 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="tables.html">
 										<i class="icon-double-angle-right"></i>
-										消息列表
+										简单 &amp; 动态
 									</a>
 								</li>
 
@@ -443,7 +509,8 @@ use yii\widgets\LinkPager;
 								</li>
 
 								<li>
-									<a href="form-wizard.html">
+									<a href="index.php?r=login/
+									formowner">
 										<i class="icon-double-angle-right"></i>
 										房主列表
 									</a>
@@ -456,6 +523,7 @@ use yii\widgets\LinkPager;
 						</li>
 					</ul>
 <!-- /.nav-list -->
+
 					<div class="sidebar-collapse" id="sidebar-collapse">
 						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
 					</div>
@@ -465,31 +533,7 @@ use yii\widgets\LinkPager;
 				</div>
 
 				<div class="main-content">
-					<div class="breadcrumbs" id="breadcrumbs">
-						<script type="text/javascript">
-							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-						</script>
-
-						<ul class="breadcrumb">
-							<li>
-								<i class="icon-home home-icon"></i>
-								<a href="#">首页</a>
-							</li>
-
-							<li>
-								<a href="#">房东列表</a>
-							</li>
-						</ul><!-- .breadcrumb -->
-
-						<div class="nav-search" id="nav-search">
-							<form class="form-search">
-								<span class="input-icon">
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
-									<i class="icon-search nav-search-icon"></i>
-								</span>
-							</form>
-						</div><!-- #nav-search -->
-					</div>
+					
 
 					<div class="page-content">
 						<div class="page-header">
@@ -501,7 +545,7 @@ use yii\widgets\LinkPager;
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
-						
+						<input type="text" name="">搜索
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
@@ -717,7 +761,7 @@ use yii\widgets\LinkPager;
 
 		<!--[if !IE]> -->
 
-		<script src="<?php Yii::$app->request->baseUrl?>/assets/js/jquery-2.0.3.min.js>"></script>
+		<script src="<?php Yii::$app->request->baseUrl?>/../views/assets/js/jquery-2.0.3.min.js>"></script>
 
 
 		<!-- <![endif]-->
@@ -729,32 +773,32 @@ use yii\widgets\LinkPager;
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+			window.jQuery || document.write("<script src='../views/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
 		</script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
 <script type="text/javascript">
- window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+ window.jQuery || document.write("<script src='../views/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
 </script>
 <![endif]-->
 
 		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+			if("ontouchend" in document) document.write("<script src='../views/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/typeahead-bs2.min.js"></script>
+		<script src="../views/assets/js/bootstrap.min.js"></script>
+		<script src="../views/assets/js/typeahead-bs2.min.js"></script>
 
 		<!-- page specific plugin scripts -->
 
-		<script src="assets/js/jquery.dataTables.min.js"></script>
-		<script src="assets/js/jquery.dataTables.bootstrap.js"></script>
+		<script src="../views/assets/js/jquery.dataTables.min.js"></script>
+		<script src="../views/assets/js/jquery.dataTables.bootstrap.js"></script>
 
 		<!-- ace scripts -->
 
-		<script src="assets/js/ace-elements.min.js"></script>
-		<script src="assets/js/ace.min.js"></script>
+		<script src="../views/assets/js/ace-elements.min.js"></script>
+		<script src="../views/assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
 

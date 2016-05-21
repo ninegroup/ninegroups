@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>久久租后台管理</title>
+		<title>控制台 - Bootstrap后台管理系统模版Ace下载</title>
 		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
 		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +34,7 @@
 
 		<!-- ace settings handler -->
 
-		<script src="../views/assets//js/ace-extra.min.js"></script>
+		<script src="../views/assets/js/ace-extra.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -273,8 +273,9 @@
 
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<span>
-									<small><font size='4px;'>欢迎<font color='red'><?php echo $name?></font></font></small>
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>欢迎光临,</small>
 					
 								</span>
 
@@ -299,7 +300,7 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="index.php?r=login/exit">
+									<a href="#">
 										<i class="icon-off"></i>
 										退出
 									</a>
@@ -383,17 +384,80 @@
 								<li>
 									<a href="elements.html">
 										<i class="icon-double-angle-right"></i>
-										房源列表
+										组件
+									</a>
+								</li>
+
+								<li>
+									<a href="buttons.html">
+										<i class="icon-double-angle-right"></i>
+										按钮 &amp; 图表
+									</a>
+								</li>
+
+								<li>
+									<a href="treeview.html">
+										<i class="icon-double-angle-right"></i>
+										树菜单
+									</a>
+								</li>
+
+								<li>
+									<a href="jquery-ui.html">
+										<i class="icon-double-angle-right"></i>
+										jQuery UI
 									</a>
 								</li>
 
 								<li>
 									<a href="nestable-list.html">
 										<i class="icon-double-angle-right"></i>
-										房源审核
+										可拖拽列表
 									</a>
 								</li>
 
+								<li>
+									<a href="#" class="dropdown-toggle">
+										<i class="icon-double-angle-right"></i>
+
+										三级菜单
+										<b class="arrow icon-angle-down"></b>
+									</a>
+
+									<ul class="submenu">
+										<li>
+											<a href="#">
+												<i class="icon-leaf"></i>
+												第一级
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="dropdown-toggle">
+												<i class="icon-pencil"></i>
+
+												第四级
+												<b class="arrow icon-angle-down"></b>
+											</a>
+
+											<ul class="submenu">
+												<li>
+													<a href="#">
+														<i class="icon-plus"></i>
+														添加产品
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<i class="icon-eye-open"></i>
+														查看商品
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 
