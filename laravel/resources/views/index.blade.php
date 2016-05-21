@@ -116,7 +116,7 @@ h1 {
 		<script type="text/javascript">
 			var test=new Vcity.CitySelector({input:'citySelect'});
 		</script>
-	<input type="button" value='搜索' id='ssearch' />
+	<input type="button" value='搜索' id='ssearch' onclick="search()" />
 </div>
 <!-- start header -->
 <div class="logo" id='logo'>
@@ -354,5 +354,13 @@ function s_pwd()
 				return false;
 		}
 	}
-
+	function search(){
+		var city=document.getElementById("citySelect").value;
+		var time=document.getElementById("date_demo3").value;
+		if(city==""){
+			alert("城市不能为空!");
+		}else{
+			location.href="{{ URL::route('Search/HomepageSearch') }}?city="+city+"&time="+time;
+		}
+	}
 </script>
