@@ -2,17 +2,17 @@
 use yii\helpers\Html;
 use yii\widgets\LinkPager;
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Bootstrap表格插件 - Bootstrap后台管理系统模版Ace下载</title>
+		<title>控制台 - Bootstrap后台管理系统模版Ace下载</title>
 		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
 		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 		<!-- basic styles -->
-
 		<link href="../views/assets/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../views/assets/css/font-awesome.min.css" />
 
@@ -30,7 +30,6 @@ use yii\widgets\LinkPager;
 
 		<link rel="stylesheet" href="../views/assets/css/ace.min.css" />
 		<link rel="stylesheet" href="../views/assets/css/ace-rtl.min.css" />
-		<link rel="stylesheet" href="../views/assets/css/ace-rtl.min.css" />
 		<link rel="stylesheet" href="../views/assets/css/ace-skins.min.css" />
 
 		<!--[if lte IE 8]>
@@ -40,8 +39,8 @@ use yii\widgets\LinkPager;
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
-		<script src="../views/../views/assets/js/jquery-1.10.2.min.js"></script>
-		<script src="../views/../views/assets/js/ace-extra.min.js"></script>
+
+		<script src="../views/assets/js/ace-extra.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -62,7 +61,7 @@ use yii\widgets\LinkPager;
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="icon-leaf"></i>
-							Ace Admin
+							久久租后台管理系统
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
@@ -78,13 +77,13 @@ use yii\widgets\LinkPager;
 							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
 								<li class="dropdown-header">
 									<i class="icon-ok"></i>
-									4 Tasks to complete
+									还有4个任务完成
 								</li>
 
 								<li>
 									<a href="#">
 										<div class="clearfix">
-											<span class="pull-left">Software Update</span>
+											<span class="pull-left">软件更新</span>
 											<span class="pull-right">65%</span>
 										</div>
 
@@ -97,7 +96,7 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="#">
 										<div class="clearfix">
-											<span class="pull-left">Hardware Upgrade</span>
+											<span class="pull-left">硬件更新</span>
 											<span class="pull-right">35%</span>
 										</div>
 
@@ -110,7 +109,7 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="#">
 										<div class="clearfix">
-											<span class="pull-left">Unit Testing</span>
+											<span class="pull-left">单元测试</span>
 											<span class="pull-right">15%</span>
 										</div>
 
@@ -123,7 +122,7 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="#">
 										<div class="clearfix">
-											<span class="pull-left">Bug Fixes</span>
+											<span class="pull-left">错误修复</span>
 											<span class="pull-right">90%</span>
 										</div>
 
@@ -135,7 +134,7 @@ use yii\widgets\LinkPager;
 
 								<li>
 									<a href="#">
-										See tasks with details
+										查看任务详情
 										<i class="icon-arrow-right"></i>
 									</a>
 								</li>
@@ -151,7 +150,7 @@ use yii\widgets\LinkPager;
 							<ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
 								<li class="dropdown-header">
 									<i class="icon-warning-sign"></i>
-									8 Notifications
+									8条通知
 								</li>
 
 								<li>
@@ -159,7 +158,7 @@ use yii\widgets\LinkPager;
 										<div class="clearfix">
 											<span class="pull-left">
 												<i class="btn btn-xs no-hover btn-pink icon-comment"></i>
-												New Comments
+												新闻评论
 											</span>
 											<span class="pull-right badge badge-info">+12</span>
 										</div>
@@ -169,7 +168,7 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="#">
 										<i class="btn btn-xs btn-primary icon-user"></i>
-										Bob just signed up as an editor ...
+										切换为编辑登录..
 									</a>
 								</li>
 
@@ -178,7 +177,7 @@ use yii\widgets\LinkPager;
 										<div class="clearfix">
 											<span class="pull-left">
 												<i class="btn btn-xs no-hover btn-success icon-shopping-cart"></i>
-												New Orders
+												新订单
 											</span>
 											<span class="pull-right badge badge-success">+8</span>
 										</div>
@@ -190,7 +189,7 @@ use yii\widgets\LinkPager;
 										<div class="clearfix">
 											<span class="pull-left">
 												<i class="btn btn-xs no-hover btn-info icon-twitter"></i>
-												Followers
+												粉丝
 											</span>
 											<span class="pull-right badge badge-info">+11</span>
 										</div>
@@ -199,7 +198,7 @@ use yii\widgets\LinkPager;
 
 								<li>
 									<a href="#">
-										See all notifications
+										查看所有通知
 										<i class="icon-arrow-right"></i>
 									</a>
 								</li>
@@ -215,7 +214,7 @@ use yii\widgets\LinkPager;
 							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
 								<li class="dropdown-header">
 									<i class="icon-envelope-alt"></i>
-									5 Messages
+									5条消息
 								</li>
 
 								<li>
@@ -224,12 +223,12 @@ use yii\widgets\LinkPager;
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Alex:</span>
-												Ciao sociis natoque penatibus et auctor ...
+												不知道写啥 ...
 											</span>
 
 											<span class="msg-time">
 												<i class="icon-time"></i>
-												<span>a moment ago</span>
+												<span>1分钟以前</span>
 											</span>
 										</span>
 									</a>
@@ -241,12 +240,12 @@ use yii\widgets\LinkPager;
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Susan:</span>
-												Vestibulum id ligula porta felis euismod ...
+												不知道翻译...
 											</span>
 
 											<span class="msg-time">
 												<i class="icon-time"></i>
-												<span>20 minutes ago</span>
+												<span>20分钟以前</span>
 											</span>
 										</span>
 									</a>
@@ -258,12 +257,12 @@ use yii\widgets\LinkPager;
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Bob:</span>
-												Nullam quis risus eget urna mollis ornare ...
+												到底是不是英文 ...
 											</span>
 
 											<span class="msg-time">
 												<i class="icon-time"></i>
-												<span>3:15 pm</span>
+												<span>下午3:15</span>
 											</span>
 										</span>
 									</a>
@@ -271,7 +270,7 @@ use yii\widgets\LinkPager;
 
 								<li>
 									<a href="inbox.html">
-										See all messages
+										查看所有消息
 										<i class="icon-arrow-right"></i>
 									</a>
 								</li>
@@ -282,8 +281,8 @@ use yii\widgets\LinkPager;
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
-									<small>Welcome,</small>
-									Jason
+									<small>欢迎光临,</small>
+					
 								</span>
 
 								<i class="icon-caret-down"></i>
@@ -293,14 +292,14 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="#">
 										<i class="icon-cog"></i>
-										Settings
+										设置
 									</a>
 								</li>
 
 								<li>
 									<a href="#">
 										<i class="icon-user"></i>
-										Profile
+										个人资料
 									</a>
 								</li>
 
@@ -309,7 +308,7 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="#">
 										<i class="icon-off"></i>
-										Logout
+										退出
 									</a>
 								</li>
 							</ul>
@@ -363,19 +362,61 @@ use yii\widgets\LinkPager;
 							<span class="btn btn-danger"></span>
 						</div>
 					</div><!-- #sidebar-shortcuts -->
-				<ul class="nav nav-list">
-						<li class="active">
-							<a href="index.html">
+
+					<ul class="nav nav-list">
+						<li>
+							<a href="#" class="dropdown-toggle">
 								<i class="icon-dashboard"></i>
 								<span class="menu-text"> 管理员管理 </span>
+								<b class="arrow icon-angle-down"></b>
 							</a>
+							<ul class="submenu">
+								
+
+								<li>
+									<a href="jquery-ui.html">
+										<i class="icon-double-angle-right"></i>
+										管理员添加
+									</a>
+								</li>
+
+								<li>
+									<a href="nestable-list.html">
+										<i class="icon-double-angle-right"></i>
+										管理员列表
+									</a>
+								</li>
+
+								
+							</ul>
 						</li>
 
 						<li>
-							<a href="typography.html">
+							<a href="#" class="dropdown-toggle">
 								<i class="icon-text-width"></i>
-								<span class="menu-text"> 搜索管理 </span>
+								<span class="menu-text"> 类型管理 </span>
+								<b class="arrow icon-angle-down"></b>
 							</a>
+						
+							<ul class="submenu">
+								
+
+								<li>
+									<a href="jquery-ui.html">
+										<i class="icon-double-angle-right"></i>
+										类型添加
+									</a>
+								</li>
+
+								<li>
+									<a href="nestable-list.html">
+										<i class="icon-double-angle-right"></i>
+										类型列表
+									</a>
+								</li>
+
+								
+							</ul>
 						</li>
 
 						<li>
@@ -387,83 +428,23 @@ use yii\widgets\LinkPager;
 							</a>
 
 							<ul class="submenu">
-								<li>
-									<a href="elements.html">
-										<i class="icon-double-angle-right"></i>
-										组件
-									</a>
-								</li>
+								
 
 								<li>
-									<a href="buttons.html">
+									<a href="index.php?r=housing/list">
 										<i class="icon-double-angle-right"></i>
-										按钮 &amp; 图表
-									</a>
-								</li>
-
-								<li>
-									<a href="treeview.html">
-										<i class="icon-double-angle-right"></i>
-										树菜单
-									</a>
-								</li>
-
-								<li>
-									<a href="jquery-ui.html">
-										<i class="icon-double-angle-right"></i>
-										jQuery UI
+										房源列表
 									</a>
 								</li>
 
 								<li>
 									<a href="nestable-list.html">
 										<i class="icon-double-angle-right"></i>
-										可拖拽列表
+										新房源审核
 									</a>
 								</li>
 
-								<li>
-									<a href="#" class="dropdown-toggle">
-										<i class="icon-double-angle-right"></i>
-
-										三级菜单
-										<b class="arrow icon-angle-down"></b>
-									</a>
-
-									<ul class="submenu">
-										<li>
-											<a href="#">
-												<i class="icon-leaf"></i>
-												第一级
-											</a>
-										</li>
-
-										<li>
-											<a href="#" class="dropdown-toggle">
-												<i class="icon-pencil"></i>
-
-												第四级
-												<b class="arrow icon-angle-down"></b>
-											</a>
-
-											<ul class="submenu">
-												<li>
-													<a href="#">
-														<i class="icon-plus"></i>
-														添加产品
-													</a>
-												</li>
-
-												<li>
-													<a href="#">
-														<i class="icon-eye-open"></i>
-														查看商品
-													</a>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
+								
 							</ul>
 						</li>
 
@@ -477,23 +458,23 @@ use yii\widgets\LinkPager;
 
 							<ul class="submenu">
 								<li>
-									<a href="tables.html">
+									<a href="index.php?r=message/info">
 										<i class="icon-double-angle-right"></i>
-										简单 &amp; 动态
+										消息通知
 									</a>
 								</li>
 
 								<li>
-									<a href="jqgrid.html">
+									<a href="index.php?r=message/shen">
 										<i class="icon-double-angle-right"></i>
-										jqGrid plugin
+										举报审核
 									</a>
 								</li>
 							</ul>
 						</li>
 
 						<li>
-							<a href="" class="dropdown-toggle">
+							<a href="#" class="dropdown-toggle">
 								<i class="icon-edit"></i>
 								<span class="menu-text"> 账户管理 </span>
 
@@ -509,8 +490,7 @@ use yii\widgets\LinkPager;
 								</li>
 
 								<li>
-									<a href="index.php?r=login/
-									formowner">
+									<a href="index.php?r=login/formowner">
 										<i class="icon-double-angle-right"></i>
 										房主列表
 									</a>
@@ -521,125 +501,74 @@ use yii\widgets\LinkPager;
 								
 							</ul>
 						</li>
-					</ul>
-<!-- /.nav-list -->
+					</ul><!-- /.nav-list -->
 
 					<div class="sidebar-collapse" id="sidebar-collapse">
 						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
 					</div>
+
 					<script type="text/javascript">
 						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
 					</script>
 				</div>
-
-				<div class="main-content">
+						<div class="main-content">
 					
 
 					<div class="page-content">
 						<div class="page-header">
 							<h1>
-								账户管理
+								房源管理
 								<small>
 									<i class="icon-double-angle-right"></i>
-									用户列表
+									房源列表
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
-						
+						<input type="text" name="">搜索
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 
 								<div class="row">
 									<div class="col-xs-12">
-										<div class="table-responsive">
-											<table id="sample-table-1" class="table table-striped table-bordered table-hover">
-												<thead>
-					                               								<tr>
-														<th class="center">
-															<label>
-																<input type="checkbox" class="ace" />
-																<span class="lbl"></span>
-															</label>
-														</th>
-														<th>用户名</th>
-														<th>性别</th>
-														<th class="hidden-480">电话</th>
-														
-														<th class="hidden-480">注册时间</th>
-														<th>状态</th>
-														
-													</tr>
-
-												</thead>
-
-												<?php foreach ($countries as $v): ?>
-													<tr>
-														<td class="center">
-															<label>
-																<input type="checkbox" class="ace" />
-																<span class="lbl"></span>
-															</label>
-														</td>
-														<td>
-															<a href="#"><?php echo $v['u_name']?></a>
-														</td>
-														<td><?php echo $v['u_sex']?></td>
-														<td><?php echo $v['u_tel']?></td>
-														<td><?php echo $v['u_time']?></td>	
-
-														<td id="lock.<?php echo $v['u_id']?>"><a href="javascript:void(0)" onclick="lock(this)" id="<?php echo $v['u_id']?>" title="<?php echo $v['u_state']?>">
-														<?php if($v['u_state']==1){
-															echo "锁定";
-															}
-															else
-															{
-															echo "解锁";
-															}
-														?>
-														</a></td>
-															
-															<div class="visible-xs visible-sm hidden-md hidden-lg">
-																<div class="inline position-relative">
-																	<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown">
-																		<i class="icon-cog icon-only bigger-110"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="icon-zoom-in bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="icon-edit bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="icon-trash bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
-													</tr>
-									<?php endforeach; ?>
-									<tr>
-										<td colspan='6'><font style='float:right'><?= LinkPager::widget(['pagination' => $pagination]) ?></font>
-										</td>
-									</tr>
-												
+						<div class="table-responsive">
+								<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+										<thead>
+					                               								                          <tr>
+								<th class="center">
+									<label><label>
+										<input type="checkbox" class="ace" />
+											<span class="lbl"></span>
+												</label></label>
+								</th>
+								<th class="center">房源标题</th>
+								<th class="center">房源价格</th>
+								<th class="center">房源介绍</th>
+								<th class="center">房源基本信息</th>
+								<th class="center">房源配套设施</th>
+								<th class="center">房源位置</th>
+								<th class="center">操作</th>
+							</tr>
+							</thead>
+							<?php foreach ($countries as $v): ?>
+							<tr>
+								<td class="center"><label><label>
+										<input type="checkbox" class="ace" />
+											<span class="lbl"></span>
+												</label></label></td>
+								<td class="center"><?php echo $v['h_title']?></td>
+								<td class="center"><?php echo $v['h_price']?></td>
+								<td class="center"><?php echo $v['h_content']?></td>
+								<td class="center"><?php echo $v['h_message']?></td>
+								<td class="center"><?php echo $v['h_mating']?></td>
+								<td class="center"><?php echo $v['h_city']?></td>
+								<td class="center"><a href="index.php?">删除</a></td>
+							</tr>
+							<?php endforeach; ?>
+							</table>
+							<center>
+								<?= LinkPager::widget(['pagination' => $pagination]) ?>
+							</center>					
 														
 								<div class="hr hr-18 dotted hr-double"></div>
 
@@ -842,21 +771,5 @@ use yii\widgets\LinkPager;
 </body>
 </html>
 <script>
-function lock(obj){
-	var id=obj.id;
-	var state=document.getElementById(id).title;
-	$.ajax({
-	type: "POST",
-	url: "index.php?r=login/lock",
-	data: "id="+id+"&state="+state,
-	success: function(msg){
-			if(state==1){
-				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+2+"'>解锁</a>";
-			}else if(state==2){
-				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+1+"'>锁定</a>";
-			}
-			document.getElementById('lock.'+id).innerHTML=str;
-		}
-	});
-}
+
 </script>
