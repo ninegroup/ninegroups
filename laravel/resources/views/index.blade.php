@@ -109,7 +109,7 @@ h1 {
 	function housing()
 	{
 		//var name=document.cookie('name');
-		location.href='/database/ninegroups/laravel/public/housing';
+		location.href="{{ URL::route('Login/housing') }}";
 	}
 
 		</script>
