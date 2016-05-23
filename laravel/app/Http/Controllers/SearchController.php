@@ -9,6 +9,6 @@ class SearchController extends Controller {
 		$city=Request::get('city');
 		$time=Request::get('time');
 		$db=DB::table('house')->where('h_city','like','%'.$city.'%')->get();
-		return view('zhu');
+		return view('zhu')->with('city', $city);;
 	}
 }?>

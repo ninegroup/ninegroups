@@ -6,14 +6,12 @@
 <meta name="renderer" content="webkit">
 <meta name="keywords" content="北京短租房, 北京日租房, 北京酒店式公寓,北京短租公寓"/>
 <meta name="description" content="久久租提供短租房、长租房住宿信息，安全快捷的北京酒店式公寓、家庭旅馆、民宿等不同类型短租日租房源预订。选择久久租网，找您旅途中的家，体验高性价比、多样化、人情味的住宿。" />
-<link rel="shortcut icon" href="http://www.xiaozhu.com/favicon.ico" type="image/vnd.microsoft.icon">
-<link rel="icon" href="http://www.xiaozhu.com/favicon.ico" type="image/vnd.microsoft.icon">
 <title>北京短租房|北京日租房|北京酒店式公寓-久久租</title><meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 <meta content="webkit" name="renderer" />
 <meta content="no-transform " http-equiv="Cache-Control" />
 <meta content="format=html5; url=http://m.xiaozhu.com/" http-equiv="mobile-agent" />
-<link href="http://jci.xiaozhustatic1.com/e1605163/xzcss?css=jquery-ui,global,page,city,suggest,calendar" rel="stylesheet" />
+
 <!-- [if ite IE 8]>
     <script src="../js/respond.js"></script>
     <![endif]-->
@@ -1572,7 +1570,7 @@
 
 <input type="hidden" id="pagetype" value="Front_Search">
 <script type="text/javascript" src="/js/jquery/jquery.js"></script>
-<link rel="stylesheet" type="text/css" href="http://jci.xiaozhustatic1.com/e1605163/xzcss?css=jquery.mCustomScrollbar,nyroModal,uploadify" />
+
 <script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/xzjs?k=Footer&httphost=bj.xiaozhu.com"></script>
 <script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/js/jquery/lazyload.js"></script>
 <script type="text/javascript" src="http://www.xiaozhu.com/e1605163/js/webimv4/application/xzim4.js?source=xiaozhu&dm=xiaozhu.com" id="webimSource"></script>            <!--/link-->
