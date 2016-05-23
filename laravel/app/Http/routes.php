@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('aa', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-Route::get('index', 'IndexController@index');
+Route::get('/', 'IndexController@index');
 
 Route::get('about', 'AboutController@index');
 
