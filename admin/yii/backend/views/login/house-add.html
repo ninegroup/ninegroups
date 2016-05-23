@@ -2,9 +2,11 @@
 use yii\helpers\Html;
 use yii\widgets\LinkPager;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<body>
 		<meta charset="utf-8" />
 		<title>Bootstrap表格插件 - Bootstrap后台管理系统模版Ace下载</title>
 		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
@@ -40,14 +42,14 @@ use yii\widgets\LinkPager;
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
-		<script src="../views/../views/assets/js/jquery-1.10.2.min.js"></script>
-		<script src="../views/../views/assets/js/ace-extra.min.js"></script>
+				<script src="../views/assets/js//jquery-1.10.2.min.js"></script>
+		<script src="../views/assets/js//ace-extra.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 		<!--[if lt IE 9]>
-		<script src="../views/assets/js/html5shiv.js"></script>
-		<script src="../views/assets/js/respond.min.js"></script>
+		<script src="../views/assets/js//html5shiv.js"></script>
+		<script src="../views/assets/js//respond.min.js"></script>
 		<![endif]-->
 	</head>
 
@@ -216,7 +218,7 @@ use yii\widgets\LinkPager;
 								<li class="dropdown-header">
 									<i class="icon-envelope-alt"></i>
 									5 Messages
-								</li>
+								</li
 
 								<li>
 									<a href="#">
@@ -495,7 +497,7 @@ use yii\widgets\LinkPager;
 						<li>
 							<a href="" class="dropdown-toggle">
 								<i class="icon-edit"></i>
-								<span class="menu-text"> 账户管理 </span>
+								<span class="menu-text"> 房源管理 </span>
 
 								<b class="arrow icon-angle-down"></b>
 							</a>
@@ -504,13 +506,12 @@ use yii\widgets\LinkPager;
 								<li>
 									<a href="index.php?r=login/table">
 										<i class="icon-double-angle-right"></i>
-										用户列表
+										新房源审核
 									</a>
 								</li>
 
 								<li>
-									<a href="index.php?r=login/
-									formowner">
+									<a href="index.php?r=login/formowner">
 										<i class="icon-double-angle-right"></i>
 										房主列表
 									</a>
@@ -523,7 +524,6 @@ use yii\widgets\LinkPager;
 						</li>
 					</ul>
 <!-- /.nav-list -->
-
 					<div class="sidebar-collapse" id="sidebar-collapse">
 						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
 					</div>
@@ -533,7 +533,32 @@ use yii\widgets\LinkPager;
 				</div>
 
 				<div class="main-content">
-					
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="#">Home</a>
+							</li>
+
+							<li>
+								<a href="#">Tables</a>
+							</li>
+							<li class="active">Simple &amp; Dynamic</li>
+						</ul><!-- .breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+					</div>
 
 					<div class="page-content">
 						<div class="page-header">
@@ -541,7 +566,7 @@ use yii\widgets\LinkPager;
 								账户管理
 								<small>
 									<i class="icon-double-angle-right"></i>
-									用户列表
+									房主列表
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -562,18 +587,19 @@ use yii\widgets\LinkPager;
 																<span class="lbl"></span>
 															</label>
 														</th>
-														<th>用户名</th>
-														<th>性别</th>
-														<th class="hidden-480">电话</th>
+														<th>房源标题</th>
+														<th>房源介绍</th>
+														<th>房源基本信息</th>
+														<th class="hidden-480">价格</th>
 														
-														<th class="hidden-480">注册时间</th>
-														<th>状态</th>
-														
-													</tr>
+														<th class="hidden-480">位置</th>
 
+														<th>操作</th>
+													</tr>
 												</thead>
 
 												<?php foreach ($countries as $v): ?>
+
 													<tr>
 														<td class="center">
 															<label>
@@ -582,63 +608,22 @@ use yii\widgets\LinkPager;
 															</label>
 														</td>
 														<td>
-															<a href="#"><?php echo $v['u_name']?></a>
+															<a href="#"><?php echo $v['h_title']?></a>
 														</td>
-														<td><?php echo $v['u_sex']?></td>
-														<td><?php echo $v['u_tel']?></td>
-														<td><?php echo $v['u_time']?></td>	
+														<td><?php echo $v['h_content']?></td>
+														<td><?php echo $v['h_message']?></td>
+														<td><?php echo $v['h_charge']?></td>
+														<td><?php echo $v['h_site']?></td>	
 
-														<td id="lock.<?php echo $v['u_id']?>"><a href="javascript:void(0)" onclick="lock(this)" id="<?php echo $v['u_id']?>" title="<?php echo $v['u_state']?>">
-														<?php if($v['u_state']==1){
-															echo "锁定";
-															}
-															else
-															{
-															echo "解锁";
-															}
-														?>
-														</a></td>
-															
-															<div class="visible-xs visible-sm hidden-md hidden-lg">
-																<div class="inline position-relative">
-																	<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown">
-																		<i class="icon-cog icon-only bigger-110"></i>
-																	</button>
-
-																	<ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
-																		<li>
-																			<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-																				<span class="blue">
-																					<i class="icon-zoom-in bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-																				<span class="green">
-																					<i class="icon-edit bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-
-																		<li>
-																			<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-																				<span class="red">
-																					<i class="icon-trash bigger-120"></i>
-																				</span>
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-														</td>
+														<td><a href="javascript:void(0)" id="<?php echo $v['h_id']?>" onclick="fun_yes(this)">通过</a>|<a href="javascript:void(0)" id="<?php echo $v['h_id']?>" onclick="fun_no(this)">不通过</a></td>
 													</tr>
+
 									<?php endforeach; ?>
 									<tr>
-										<td colspan='6'><font style='float:right'><?= LinkPager::widget(['pagination' => $pagination]) ?></font>
+										<td colspan='7'><font style='float:right'><?= LinkPager::widget(['pagination' => $pagination]) ?></font>
 										</td>
 									</tr>
+
 												
 														
 								<div class="hr hr-18 dotted hr-double"></div>
@@ -761,7 +746,7 @@ use yii\widgets\LinkPager;
 
 		<!--[if !IE]> -->
 
-		<script src="<?php Yii::$app->request->baseUrl?>/../views/assets/js/jquery-2.0.3.min.js>"></script>
+		<script src="<?php Yii::$app->request->baseUrl?>/../views/assets/js//jquery-2.0.3.min.js>"></script>
 
 
 		<!-- <![endif]-->
@@ -773,32 +758,32 @@ use yii\widgets\LinkPager;
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='../views/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+			window.jQuery || document.write("<script src='../views/assets/js//jquery-2.0.3.min.js'>"+"<"+"/script>");
 		</script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
 <script type="text/javascript">
- window.jQuery || document.write("<script src='../views/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+ window.jQuery || document.write("<script src='../views/assets/js//jquery-1.10.2.min.js'>"+"<"+"/script>");
 </script>
 <![endif]-->
 
 		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='../views/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+			if("ontouchend" in document) document.write("<script src='../views/assets/js//jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
-		<script src="../views/assets/js/bootstrap.min.js"></script>
-		<script src="../views/assets/js/typeahead-bs2.min.js"></script>
+		<script src="../views/assets/js//bootstrap.min.js"></script>
+		<script src="../views/assets/js//typeahead-bs2.min.js"></script>
 
 		<!-- page specific plugin scripts -->
 
-		<script src="../views/assets/js/jquery.dataTables.min.js"></script>
-		<script src="../views/assets/js/jquery.dataTables.bootstrap.js"></script>
+		<script src="../views/assets/js//jquery.dataTables.min.js"></script>
+		<script src="../views/assets/js//jquery.dataTables.bootstrap.js"></script>
 
 		<!-- ace scripts -->
 
-		<script src="../views/assets/js/ace-elements.min.js"></script>
-		<script src="../views/assets/js/ace.min.js"></script>
+		<script src="../views/assets/js//ace-elements.min.js"></script>
+		<script src="../views/assets/js//ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
 
@@ -842,21 +827,33 @@ use yii\widgets\LinkPager;
 </body>
 </html>
 <script>
-function lock(obj){
-	var id=obj.id;
-	var state=document.getElementById(id).title;
-	$.ajax({
-	type: "POST",
-	url: "index.php?r=login/lock",
-	data: "id="+id+"&state="+state,
-	success: function(msg){
-			if(state==1){
-				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+2+"'>解锁</a>";
-			}else if(state==2){
-				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+1+"'>锁定</a>";
-			}
-			document.getElementById('lock.'+id).innerHTML=str;
-		}
-	});
-}
+//通过
+    function fun_yes(obj){
+        var id=obj.id;
+        var ajax=new XMLHttpRequest();
+        ajax.onreadystatechange=function(){
+            if(ajax.readyState==4){
+                if(ajax.responseText==1){
+                    obj.parentNode.innerHTML="已通过";
+                }
+            }
+        }
+        ajax.open('get','index.php?r=login/pass'+'&id='+id,true);
+        ajax.send(null);
+    }
+    //不通过
+    function fun_no(obj){
+        var id=obj.id;
+        var ajax=new XMLHttpRequest();
+        ajax.onreadystatechange=function(){
+            if(ajax.readyState==4){
+                if(ajax.responseText==1){
+                    obj.parentNode.innerHTML="不通过";
+                    
+                }
+            }
+        }
+        ajax.open('get','index.php?r=login/nopass'+'&id='+id,true);
+        ajax.send(null);
+    }
 </script>

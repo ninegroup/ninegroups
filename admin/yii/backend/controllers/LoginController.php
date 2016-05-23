@@ -3,6 +3,7 @@ namespace backend\controllers;
 use Yii;
 use yii\data\Pagination;
 use backend\models\User;
+use backend\models\House;
 
 use yii\web\Controller;
 class LoginController extends \yii\web\Controller
@@ -53,6 +54,7 @@ class LoginController extends \yii\web\Controller
 			return $this->render('index');
 		}
 	}
+	/*显示主页面*/
 	public function actionList()
     {
 		$session=Yii::$app->session;
@@ -61,7 +63,7 @@ class LoginController extends \yii\web\Controller
     }
 
     
-	/**/
+	/*用户列表*/
 	public function actionTable()
     {
 		$query = User::find();
@@ -91,6 +93,7 @@ class LoginController extends \yii\web\Controller
 	public function actionAdds(){
 		return $this->renderPartial('form-elements.html');
 	}
+	/*锁定*/
 	public function actionLock(){
 		$request = Yii::$app->request;
 		$id = $request->post('id');
@@ -104,6 +107,7 @@ class LoginController extends \yii\web\Controller
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->query();
 	}
+	/*房主列表*/
 	public function actionFormowner(){
 		$query = User::find();
 
@@ -125,8 +129,48 @@ class LoginController extends \yii\web\Controller
             'pagination' => $pagination,
 			]);
 
-		
+	
+	}
+	/**/
+	public function actionAdd_house(){
+		$query = House::find();
 
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->where("h_state='0'")->count(),
+        ]);
 
+        $countries = $query->where("h_state='0'")
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+
+        return $this->renderPartial('house-add.html', [
+            'countries' => $countries,
+            'pagination' => $pagination,
+        ]);
+
+	}
+	//审核通过
+	public function actionPass(){
+		$request = Yii::$app->request;
+		$id = $request->get('id');
+		// var_dump($id);die;
+		$update=Yii::$app->db->createCommand("update house set h_state=1 where h_id='$id'")->execute();
+		// var_dump($update);die;
+		if($update){
+			echo 1;
+		}
+	}
+	//审核不通过
+	public function actionNopass(){
+		$request = Yii::$app->request;
+		$id = $request->get('id');
+		// var_dump($id);die;
+		$update=Yii::$app->db->createCommand("update house set h_state=2 where h_id='$id'")->execute();
+		// var_dump($update);die;
+		if($update){
+			echo 1;
+		}
 	}
 }
