@@ -1733,3 +1733,729 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1463790774.3373
     'REQUEST_TIME' => 1463790774
 ]
+2016-05-21 14:11:49 [127.0.0.1][-][3imm5rvm5fhojrpbua2pud6p71][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "foot".' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('foot', Array)
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-21 14:11:49 [127.0.0.1][-][3imm5rvm5fhojrpbua2pud6p71][info][application] $_GET = [
+    'r' => 'foot'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1531312854.1463643536'
+    'CNZZDATA155540' => 'cnzz_eid=1105344001-1463707516-&ntime=1463794157'
+    'XSRF-TOKEN' => 'eyJpdiI6IkIyMEppSjFpbkZJbkhrWFwvU0xJOEd3PT0iLCJ2YWx1ZSI6InY3Y292bXpHc3c2b2VPeE5JXC9XUjV6ejRKaWhZa3dCck9Fd3YxQk5SNG5sZk9DRkFqc3hSUldHMVdiaTRSaVRIdlRpODJmdVlMQmNzeVljVmJCVWpnUT09IiwibWFjIjoiNGZhYzBmNjk0Y2UyNjk1YjMxNzgyM2JmNjc0NDYyNWE5YjA1OTQwZmNkYmM3ZTcxZjM4NGZiNzRiYjA3MTAyMiJ9'
+    'laravel_session' => 'eyJpdiI6IllCbzhXOXVIYXd1Q0lQMng1dDNPZkE9PSIsInZhbHVlIjoiblB3ZFdjbFN4OW5Ra2U1M3pGSmNcL3MzZnN3blMyYmhDbFRwRmJzWWZxd1FhXC9pQ01UQlZlbGJiWmVDcjJRN3BvOE5rTlpaeE50ZFhBTWNkMnhSQXNYUT09IiwibWFjIjoiYzFkNGI0MGZkY2ViZTBkNDM3OTQ0OGYwZmRhZmE4ZTlmNmUxZjk0NzI5OGY2ZTBhNDdmMDgwYjA0MTgzOGUwMyJ9'
+    'PHPSESSID' => '3imm5rvm5fhojrpbua2pud6p71'
+    '_csrf' => '777ed1cdcea15d40ffe59b5b4b7da2062bc379fe7cf4f3667d72d6d32ca62923a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wL_BPd4PlS532zTvvXgV4NwprGDJ_0tk\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ninegroups/admin/yii/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2372'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=foot'
+    'QUERY_STRING' => 'r=foot'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55291'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.1531312854.1463643536; CNZZDATA155540=cnzz_eid%3D1105344001-1463707516-%26ntime%3D1463794157; XSRF-TOKEN=eyJpdiI6IkIyMEppSjFpbkZJbkhrWFwvU0xJOEd3PT0iLCJ2YWx1ZSI6InY3Y292bXpHc3c2b2VPeE5JXC9XUjV6ejRKaWhZa3dCck9Fd3YxQk5SNG5sZk9DRkFqc3hSUldHMVdiaTRSaVRIdlRpODJmdVlMQmNzeVljVmJCVWpnUT09IiwibWFjIjoiNGZhYzBmNjk0Y2UyNjk1YjMxNzgyM2JmNjc0NDYyNWE5YjA1OTQwZmNkYmM3ZTcxZjM4NGZiNzRiYjA3MTAyMiJ9; laravel_session=eyJpdiI6IllCbzhXOXVIYXd1Q0lQMng1dDNPZkE9PSIsInZhbHVlIjoiblB3ZFdjbFN4OW5Ra2U1M3pGSmNcL3MzZnN3blMyYmhDbFRwRmJzWWZxd1FhXC9pQ01UQlZlbGJiWmVDcjJRN3BvOE5rTlpaeE50ZFhBTWNkMnhSQXNYUT09IiwibWFjIjoiYzFkNGI0MGZkY2ViZTBkNDM3OTQ0OGYwZmRhZmE4ZTlmNmUxZjk0NzI5OGY2ZTBhNDdmMDgwYjA0MTgzOGUwMyJ9; PHPSESSID=3imm5rvm5fhojrpbua2pud6p71; _csrf=777ed1cdcea15d40ffe59b5b4b7da2062bc379fe7cf4f3667d72d6d32ca62923a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wL_BPd4PlS532zTvvXgV4NwprGDJ_0tk%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463811109.0529
+    'REQUEST_TIME' => 1463811109
+]
+2016-05-21 14:12:34 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=192....', 'root', 'root', NULL)
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 E:\WWW\ninegroups\admin\yii\backend\controllers\LoginController.php(31): yii\db\Command->queryOne()
+#8 [internal function]: backend\controllers\LoginController->actionInfo()
+#9 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 E:\WWW\ninegroups\admin\yii\backend\controllers\LoginController.php(31): yii\db\Command->queryOne()
+#6 [internal function]: backend\controllers\LoginController->actionInfo()
+#7 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2016-05-21 14:12:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/info'
+]
+
+$_POST = [
+    'name' => 'admin'
+    'pwd' => '123'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1531312854.1463643536'
+    'CNZZDATA155540' => 'cnzz_eid=1105344001-1463707516-&ntime=1463810358'
+    'XSRF-TOKEN' => 'eyJpdiI6IkIyMEppSjFpbkZJbkhrWFwvU0xJOEd3PT0iLCJ2YWx1ZSI6InY3Y292bXpHc3c2b2VPeE5JXC9XUjV6ejRKaWhZa3dCck9Fd3YxQk5SNG5sZk9DRkFqc3hSUldHMVdiaTRSaVRIdlRpODJmdVlMQmNzeVljVmJCVWpnUT09IiwibWFjIjoiNGZhYzBmNjk0Y2UyNjk1YjMxNzgyM2JmNjc0NDYyNWE5YjA1OTQwZmNkYmM3ZTcxZjM4NGZiNzRiYjA3MTAyMiJ9'
+    'laravel_session' => 'eyJpdiI6IllCbzhXOXVIYXd1Q0lQMng1dDNPZkE9PSIsInZhbHVlIjoiblB3ZFdjbFN4OW5Ra2U1M3pGSmNcL3MzZnN3blMyYmhDbFRwRmJzWWZxd1FhXC9pQ01UQlZlbGJiWmVDcjJRN3BvOE5rTlpaeE50ZFhBTWNkMnhSQXNYUT09IiwibWFjIjoiYzFkNGI0MGZkY2ViZTBkNDM3OTQ0OGYwZmRhZmE4ZTlmNmUxZjk0NzI5OGY2ZTBhNDdmMDgwYjA0MTgzOGUwMyJ9'
+    'PHPSESSID' => '3imm5rvm5fhojrpbua2pud6p71'
+    '_csrf' => '777ed1cdcea15d40ffe59b5b4b7da2062bc379fe7cf4f3667d72d6d32ca62923a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wL_BPd4PlS532zTvvXgV4NwprGDJ_0tk\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2372'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/info'
+    'QUERY_STRING' => 'r=login/info'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55360'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'CONTENT_LENGTH' => '18'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.1531312854.1463643536; CNZZDATA155540=cnzz_eid%3D1105344001-1463707516-%26ntime%3D1463810358; XSRF-TOKEN=eyJpdiI6IkIyMEppSjFpbkZJbkhrWFwvU0xJOEd3PT0iLCJ2YWx1ZSI6InY3Y292bXpHc3c2b2VPeE5JXC9XUjV6ejRKaWhZa3dCck9Fd3YxQk5SNG5sZk9DRkFqc3hSUldHMVdiaTRSaVRIdlRpODJmdVlMQmNzeVljVmJCVWpnUT09IiwibWFjIjoiNGZhYzBmNjk0Y2UyNjk1YjMxNzgyM2JmNjc0NDYyNWE5YjA1OTQwZmNkYmM3ZTcxZjM4NGZiNzRiYjA3MTAyMiJ9; laravel_session=eyJpdiI6IllCbzhXOXVIYXd1Q0lQMng1dDNPZkE9PSIsInZhbHVlIjoiblB3ZFdjbFN4OW5Ra2U1M3pGSmNcL3MzZnN3blMyYmhDbFRwRmJzWWZxd1FhXC9pQ01UQlZlbGJiWmVDcjJRN3BvOE5rTlpaeE50ZFhBTWNkMnhSQXNYUT09IiwibWFjIjoiYzFkNGI0MGZkY2ViZTBkNDM3OTQ0OGYwZmRhZmE4ZTlmNmUxZjk0NzI5OGY2ZTBhNDdmMDgwYjA0MTgzOGUwMyJ9; PHPSESSID=3imm5rvm5fhojrpbua2pud6p71; _csrf=777ed1cdcea15d40ffe59b5b4b7da2062bc379fe7cf4f3667d72d6d32ca62923a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wL_BPd4PlS532zTvvXgV4NwprGDJ_0tk%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/ninegroups/admin/yii/backend/web/index.php?r=login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463811133.0243
+    'REQUEST_TIME' => 1463811133
+]
+2016-05-21 14:14:19 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=192....', 'root', 'root', NULL)
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 E:\WWW\ninegroups\admin\yii\backend\controllers\LoginController.php(31): yii\db\Command->queryOne()
+#8 [internal function]: backend\controllers\LoginController->actionInfo()
+#9 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 E:\WWW\ninegroups\admin\yii\backend\controllers\LoginController.php(31): yii\db\Command->queryOne()
+#6 [internal function]: backend\controllers\LoginController->actionInfo()
+#7 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2016-05-21 14:13:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/info'
+]
+
+$_POST = [
+    'name' => 'admin'
+    'pwd' => '123'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1531312854.1463643536'
+    'CNZZDATA155540' => 'cnzz_eid=1105344001-1463707516-&ntime=1463810358'
+    'XSRF-TOKEN' => 'eyJpdiI6IjVqYkVjQVh0MlZmOGlnQTV6akpYRXc9PSIsInZhbHVlIjoiYVwvdEFsUkdtYXVhOGRLT0pQSG5kczFlc01PSmhJSURXZ0hlZHI0QmVLR1E5eTNVZm5RWG9oXC9Dam5CVEZ2NTNkWk1JdUtXVzljRnNmWHYxbzFkeTAwQT09IiwibWFjIjoiNzE3N2ZjOTU5NDZhMmViYzgyYjYzODUxOWQ1MGQyNWRlYzg0OWE1N2NkMjFjNzhhY2NmYWUwMDc0YTY5MTYzMCJ9'
+    'laravel_session' => 'eyJpdiI6InEwclBuaHhHY3U4RlJ6dDRlbnpQSFE9PSIsInZhbHVlIjoiVW5maFwvMStOQ0RxY1p2YVNodXBIT21ZN2N3M0diTHRnTlJ0VTRpWU54WndZVEdoSThsczdTcmlRWTZzU3Z2MVZLd0o5VERsSUFkd1lKVld4djFBSTd3PT0iLCJtYWMiOiJlNTYzZGQzOTBlN2U4ZTQzYmRmN2U0OWY5NmIwZjdmOTg3ZWU2ODliY2E5ZDNjYjI0NjhkNDFhNjI1ZjA4NjFkIn0='
+    'PHPSESSID' => '3imm5rvm5fhojrpbua2pud6p71'
+    '_csrf' => '777ed1cdcea15d40ffe59b5b4b7da2062bc379fe7cf4f3667d72d6d32ca62923a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wL_BPd4PlS532zTvvXgV4NwprGDJ_0tk\";}'
+    '_gat_UA-33763849-7' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2232'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/info'
+    'QUERY_STRING' => 'r=login/info'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55630'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'CONTENT_LENGTH' => '18'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.1531312854.1463643536; CNZZDATA155540=cnzz_eid%3D1105344001-1463707516-%26ntime%3D1463810358; XSRF-TOKEN=eyJpdiI6IjVqYkVjQVh0MlZmOGlnQTV6akpYRXc9PSIsInZhbHVlIjoiYVwvdEFsUkdtYXVhOGRLT0pQSG5kczFlc01PSmhJSURXZ0hlZHI0QmVLR1E5eTNVZm5RWG9oXC9Dam5CVEZ2NTNkWk1JdUtXVzljRnNmWHYxbzFkeTAwQT09IiwibWFjIjoiNzE3N2ZjOTU5NDZhMmViYzgyYjYzODUxOWQ1MGQyNWRlYzg0OWE1N2NkMjFjNzhhY2NmYWUwMDc0YTY5MTYzMCJ9; laravel_session=eyJpdiI6InEwclBuaHhHY3U4RlJ6dDRlbnpQSFE9PSIsInZhbHVlIjoiVW5maFwvMStOQ0RxY1p2YVNodXBIT21ZN2N3M0diTHRnTlJ0VTRpWU54WndZVEdoSThsczdTcmlRWTZzU3Z2MVZLd0o5VERsSUFkd1lKVld4djFBSTd3PT0iLCJtYWMiOiJlNTYzZGQzOTBlN2U4ZTQzYmRmN2U0OWY5NmIwZjdmOTg3ZWU2ODliY2E5ZDNjYjI0NjhkNDFhNjI1ZjA4NjFkIn0%3D; PHPSESSID=3imm5rvm5fhojrpbua2pud6p71; _csrf=777ed1cdcea15d40ffe59b5b4b7da2062bc379fe7cf4f3667d72d6d32ca62923a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wL_BPd4PlS532zTvvXgV4NwprGDJ_0tk%22%3B%7D; _gat_UA-33763849-7=1'
+    'HTTP_REFERER' => 'http://localhost/ninegroups/admin/yii/backend/web/index.php?r=login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463811238.1833
+    'REQUEST_TIME' => 1463811238
+]
+2016-05-23 10:46:18 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=192....', 'root', 'root', NULL)
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 E:\WWW\ninegroups\admin\yii\backend\controllers\LoginController.php(31): yii\db\Command->queryOne()
+#8 [internal function]: backend\controllers\LoginController->actionInfo()
+#9 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 E:\WWW\ninegroups\admin\yii\backend\controllers\LoginController.php(31): yii\db\Command->queryOne()
+#6 [internal function]: backend\controllers\LoginController->actionInfo()
+#7 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2016-05-23 10:45:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/info'
+]
+
+$_POST = [
+    'name' => 'admin'
+    'pwd' => '123'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1531312854.1463643536'
+    'CNZZDATA155540' => 'cnzz_eid=1105344001-1463707516-&ntime=1463967430'
+    'PHPSESSID' => '4jbj49u8g2pn8unt1qjmk2l107'
+    '_csrf' => 'f4675be2615251e3d0485769e484eeb0193e85637856f5e292d71a21f1d61bb3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jTEvLckEBHLsT5Yf_CSZ5KVnRhYIk8-5\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '396'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/info'
+    'QUERY_STRING' => 'r=login/info'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54355'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'CONTENT_LENGTH' => '18'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.1531312854.1463643536; CNZZDATA155540=cnzz_eid%3D1105344001-1463707516-%26ntime%3D1463967430; PHPSESSID=4jbj49u8g2pn8unt1qjmk2l107; _csrf=f4675be2615251e3d0485769e484eeb0193e85637856f5e292d71a21f1d61bb3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jTEvLckEBHLsT5Yf_CSZ5KVnRhYIk8-5%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/ninegroups/admin/yii/backend/web/index.php?r=login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463971557.6809
+    'REQUEST_TIME' => 1463971557
+]
+2016-05-23 14:35:29 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "logint".' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('logint', Array)
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-23 14:35:29 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][info][application] $_GET = [
+    'r' => 'logint'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '9rqigptt475vdseddudf4gtsh0'
+    'CNZZDATA155540' => 'cnzz_eid=1421307584-1463978176-&ntime=1463978176'
+    '_csrf' => 'd4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ninegroups/admin/yii/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1792'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=logint'
+    'QUERY_STRING' => 'r=logint'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58496'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=9rqigptt475vdseddudf4gtsh0; CNZZDATA155540=cnzz_eid%3D1421307584-1463978176-%26ntime%3D1463978176; _csrf=d4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463985329.2416
+    'REQUEST_TIME' => 1463985329
+]
+2016-05-23 15:06:40 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: E:\WWW\ninegroups\admin\yii\backend\views\login\profile.php' in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\WWW\\ninegrou...', Array, Object(backend\controllers\LoginController))
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('profile', Array, Object(backend\controllers\LoginController))
+#2 E:\WWW\ninegroups\admin\yii\backend\controllers\LoginController.php(144): yii\base\Controller->render('profile', Array)
+#3 [internal function]: backend\controllers\LoginController->actionProfile()
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('profile', Array)
+#7 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/profile', Array)
+#8 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-05-23 15:06:40 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][info][application] $_GET = [
+    'r' => 'login/profile'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '9rqigptt475vdseddudf4gtsh0'
+    'CNZZDATA155540' => 'cnzz_eid=1421307584-1463978176-&ntime=1463983579'
+    '_csrf' => 'd4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ninegroups/admin/yii/backend/web/'
+    'name' => 'admin'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '396'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/profile'
+    'QUERY_STRING' => 'r=login/profile'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59295'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=9rqigptt475vdseddudf4gtsh0; CNZZDATA155540=cnzz_eid%3D1421307584-1463978176-%26ntime%3D1463983579; _csrf=d4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463987200.0486
+    'REQUEST_TIME' => 1463987200
+]
+2016-05-23 15:06:40 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#7 {main}
+2016-05-23 15:06:40 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][info][application] $_GET = [
+    'r' => 'login/profile'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '9rqigptt475vdseddudf4gtsh0'
+    'CNZZDATA155540' => 'cnzz_eid=1421307584-1463978176-&ntime=1463983579'
+    '_csrf' => 'd4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ninegroups/admin/yii/backend/web/'
+    'name' => 'admin'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '396'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/profile'
+    'QUERY_STRING' => 'r=login/profile'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59295'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=9rqigptt475vdseddudf4gtsh0; CNZZDATA155540=cnzz_eid%3D1421307584-1463978176-%26ntime%3D1463983579; _csrf=d4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463987200.0486
+    'REQUEST_TIME' => 1463987200
+]
+2016-05-23 15:08:40 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: name' in E:\WWW\ninegroups\admin\yii\backend\views\login\profile.html:278
+Stack trace:
+#0 E:\WWW\ninegroups\admin\yii\backend\views\login\profile.html(278): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\\WWW\\ninegrou...', 278, Array)
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('E:\\WWW\\ninegrou...')
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\\WWW\\ninegrou...', Array)
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\\WWW\\ninegrou...', Array, Object(backend\controllers\LoginController))
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('profile.html', Array, Object(backend\controllers\LoginController))
+#5 E:\WWW\ninegroups\admin\yii\backend\controllers\LoginController.php(144): yii\base\Controller->render('profile.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionProfile()
+#7 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('profile', Array)
+#10 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/profile', Array)
+#11 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\WWW\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-23 15:08:39 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][info][application] $_GET = [
+    'r' => 'login/profile'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '9rqigptt475vdseddudf4gtsh0'
+    'CNZZDATA155540' => 'cnzz_eid=1421307584-1463978176-&ntime=1463983579'
+    '_csrf' => 'd4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ninegroups/admin/yii/backend/web/'
+    'name' => 'admin'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1884'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/profile'
+    'QUERY_STRING' => 'r=login/profile'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59325'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=9rqigptt475vdseddudf4gtsh0; CNZZDATA155540=cnzz_eid%3D1421307584-1463978176-%26ntime%3D1463983579; _csrf=d4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/ninegroups/admin/yii/backend/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463987319.9264
+    'REQUEST_TIME' => 1463987319
+]
+2016-05-23 15:08:40 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 E:\WWW\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-23 15:08:39 [127.0.0.1][-][9rqigptt475vdseddudf4gtsh0][info][application] $_GET = [
+    'r' => 'login/profile'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '9rqigptt475vdseddudf4gtsh0'
+    'CNZZDATA155540' => 'cnzz_eid=1421307584-1463978176-&ntime=1463983579'
+    '_csrf' => 'd4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ninegroups/admin/yii/backend/web/'
+    'name' => 'admin'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\ComposerSetup\\bin;E:\\phpStudy\\php55n;D:\\Program Files\\TortoiseGit\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1884'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/profile'
+    'QUERY_STRING' => 'r=login/profile'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59325'
+    'SCRIPT_FILENAME' => 'E:/WWW/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=9rqigptt475vdseddudf4gtsh0; CNZZDATA155540=cnzz_eid%3D1421307584-1463978176-%26ntime%3D1463983579; _csrf=d4997e69f18468ed37f460bbbb4355896b3856d2886bee45c6859f0c9c63c7b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FkW5dB9ycm8Qa2f8DwlnmnjWgiCaODEl%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/ninegroups/admin/yii/backend/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1463987319.9264
+    'REQUEST_TIME' => 1463987319
+]

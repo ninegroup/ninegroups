@@ -53,6 +53,15 @@ class LoginController extends \yii\web\Controller
 			return $this->render('index');
 		}
 	}
+
+	//退出
+	public function actionExit(){
+		$session=Yii::$app->session;
+		unset ($session['name']);
+		unset ($session['pwd']);
+		Yii::$app->getSession()->setFlash('success','退出成功');
+		return $this->redirect(['login/index']);
+	}
 	public function actionList()
     {
 		$session=Yii::$app->session;
@@ -124,9 +133,14 @@ class LoginController extends \yii\web\Controller
 			'countries' => $countries,
             'pagination' => $pagination,
 			]);
-
-		
-
-
+	}
+	
+	//展示个人信息
+	public function actionProfile(){
+		$session=Yii::$app->session;
+		$name=$session->get('name');
+		$a=Yii::$app->db->createCommand("select * from user_admin where u_name='$name'");
+		$re=$a->queryOne();
+		return $this->renderPartial('profile.html',array('content'=>$re,'name'=>$name));
 	}
 }
