@@ -4,16 +4,18 @@
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="renderer" content="webkit">
+<meta name="keywords" content="北京短租房, 北京日租房, 北京酒店式公寓,北京短租公寓"/>
+<meta name="description" content="久久租提供短租房、长租房住宿信息，安全快捷的北京酒店式公寓、家庭旅馆、民宿等不同类型短租日租房源预订。选择久久租网，找您旅途中的家，体验高性价比、多样化、人情味的住宿。" />
+<title>北京短租房|北京日租房|北京酒店式公寓-久久租</title><meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta name="keywords" content=""/>
 <meta name="description" content="" />
-<link rel="shortcut icon" href="http://www.xiaozhu.com/favicon.ico" type="image/vnd.microsoft.icon">
-<link rel="icon" href="http://www.xiaozhu.com/favicon.ico" type="image/vnd.microsoft.icon">
 <title>久久租</title><meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="../css/xzcss.css?css=jquery-ui,global,page,city,suggest,calendar" rel="stylesheet" />
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 <meta content="webkit" name="renderer" />
 <meta content="no-transform " http-equiv="Cache-Control" />
 <meta content="format=html5; url=http://m.xiaozhu.com/" http-equiv="mobile-agent" />
-<link href="http://jci.xiaozhustatic1.com/e1605163/xzcss?css=jquery-ui,global,page,city,suggest,calendar" rel="stylesheet" />
+
 <!-- [if ite IE 8]>
     <script src="../js/respond.js"></script>
     <![endif]-->
@@ -37,7 +39,12 @@
     <ul class="nav_R nav_commen">
                 <li><a rel="nofollow" title="首次预订即可抵用房租" class="show-register-box" href="http://www.xiaozhu.com/register?next=http%3A%2F%2Fbj.xiaozhu.com%2F">注册就送200元</a></li>
         <li>&middot;</li>
-        <li><a rel="nofollow" href="http://www.xiaozhu.com/login?next=http%3A%2F%2Fbj.xiaozhu.com%2F" class="logindialog">登录</a></li>
+        <li>
+		<?php if($_COOKIE['name']){?>
+		欢迎{!! $name !!}登录
+		<?php }else{ ?>
+		<a rel="nofollow" href="#" class="logindialog">登录</a>
+		<?php } ?></li>
         <li>&middot;</li>
                 <li class="current">
             <a href="#ongo" class="openTri_R">短租指南</a>
@@ -1460,17 +1467,21 @@
 
             </div>
             <!--pic list-->
+			
             <div id="page_list">
-                
+               
     <ul class="pic_list clearfix">
+	@foreach($db as $v)           
+             
+          
                 <li lodgeunitid="lodgeunit_1779571235" latlng="40.052654,116.423421">
     <a target="_blank" href="http://bj.xiaozhu.com/fangzi/1779571235.html" class="resule_img_a">
-          <img class="lodgeunitpic" title="5号线立水桥南 明亮大床房 您在北京的家" src="../images/lazy_loadimage.png" lazy_src="http://image.xiaozhustatic1.com/12/3,0,30,5656,1800,1200,1ccb13ed.jpg" alt="5号线立水桥南 明亮大床房 您在北京的家" />
+          <img class="lodgeunitpic" title="{{ $v->h_title }}" src="{{ $v->pi_path }}" lazy_src="" alt="{{ $v->h_title }}" />
     </a>
     
                 <div class="favorite  lodge_1779571235 wsc_ico"  al="1779571235"  title="收藏"></div>
         <div class="result_btm_con lodgeunitname" detailurl="http://bj.xiaozhu.com/fangzi/1779571235.html" style="cursor:pointer">
-                <span class="result_price">&yen;<i>138</i>/晚</span>
+                <span class="result_price">&yen;<i>{{ $v->h_price }}</i>/晚</span>
                                 <span class="room_status">
             <em class="icon_youhui"></em>
             <p class="show">优惠</p>
@@ -1480,15 +1491,17 @@
                                     <a class=="search_result_gridsum" href="http://www.xiaozhu.com/fangdong/1694126035/" target="_blank"><img class="landlordimage" width="42" height="42" lazy_src="http://image.xiaozhustatic2.com/23/5,0,96,1679,414,414,dde31210.jpg" /></a>
                                 </span>
         <div class="result_intro">
-            <a><span class="result_title hiddenTxt">5号线立水桥南 明亮大床房 您在北京的家</span></a>
+            <a><span class="result_title hiddenTxt">{{ $v->h_title }}</span></a>
             <em class="hiddenTxt">
                                 单间出租
                  -                                 <span class="commenthref">11条点评</span>
                  -                                                 
-                                朝阳北苑家园                            </em>
+                                {{ $v->h_site }}                            </em>
         </div>
     </div>
-</li>                <div class="mapresult_no" id="noLodgeUnitsAtNYN" style="display:none">
+</li>
+@endforeach
+ <div class="mapresult_no" id="noLodgeUnitsAtNYN" style="display:none">
         <em></em>
         <p>
         <span>没有符合条件的房间</span>
@@ -1572,7 +1585,7 @@
 
 <input type="hidden" id="pagetype" value="Front_Search">
 <script type="text/javascript" src="/js/jquery/jquery.js"></script>
-<link rel="stylesheet" type="text/css" href="http://jci.xiaozhustatic1.com/e1605163/xzcss?css=jquery.mCustomScrollbar,nyroModal,uploadify" />
+<link rel="stylesheet" type="text/css" href="../css/xzcss.css?css=jquery.mCustomScrollbar,nyroModal,uploadify" />
 <script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/xzjs?k=Footer&httphost=bj.xiaozhu.com"></script>
 <script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/js/jquery/lazyload.js"></script>
 <script type="text/javascript" src="http://www.xiaozhu.com/e1605163/js/webimv4/application/xzim4.js?source=xiaozhu&dm=xiaozhu.com" id="webimSource"></script>            <!--/link-->

@@ -562,7 +562,7 @@ use yii\widgets\LinkPager;
 								<td class="center"><?php echo $v['h_message']?></td>
 								<td class="center"><?php echo $v['h_mating']?></td>
 								<td class="center"><?php echo $v['h_city']?></td>
-								<td class="center"><a href="index.php?">删除</a></td>
+								<td class="center"><a href="index.php?r=housing/del&&id=<?php echo $v['h_id']?>">删除</a></td>
 							</tr>
 							<?php endforeach; ?>
 							</table>

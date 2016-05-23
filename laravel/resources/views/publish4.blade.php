@@ -832,7 +832,7 @@ $(function() {
 				</ul>
 			</div>
 			<div class="submit-wrap">
-				<a class="save" href="javascript:void(0);" onclick="javascript:priceFormSubmit();return false;">保存，下一步</a>
+				<a class="save" href="javascript:void(0);" onclick="aaaa()">保存，下一步</a>
 			</div>
 		</div>
 		</form>
@@ -1402,3 +1402,10 @@ var _hmt = _hmt || [];
 
 <!--[statistics end]--><!-- load End--></body>
 </html>
+
+<script type="text/javascript">
+	function aaaa()
+	{
+		location.href="{{ URL::route('Login/publish5') }}";
+	}
+</script>
