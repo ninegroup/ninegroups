@@ -483,7 +483,7 @@ $(function() {
 		</dd>
 	</dl>
 	<div class="submit-wrap">
-		<a class="save" href="javascript:void(0);">保存，下一步</a>
+		<a class="save" href="javascript:void(0);" onclick="aaaa()">保存，下一步</a>
 	</div>					
 </div>
 <!-- 修改头像 -->
@@ -1109,3 +1109,10 @@ var _hmt = _hmt || [];
 <script type="text/javascript" src="http://staticnew.mayi.com/resourcesWeb/js/room_location.js"></script>
 </body>
 </html>
+
+<script type="text/javascript">
+	function aaaa()
+	{
+		alert(111)
+	}
+</script>

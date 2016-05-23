@@ -64,4 +64,21 @@ class LoginController extends Controller {
 			return view("publish");
 		}
 	}
+
+	public function publish2()
+	{
+		return view("publish2");
+	}
+	public function publish3()
+	{
+		return view("publish3");
+	}
+	public function publish4()
+	{
+		return view("publish4");
+	}
+	public function publish5()
+	{
+		return view("publish5");
+	}
 }

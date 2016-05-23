@@ -440,7 +440,7 @@ $(function() {
 			</dl>
 		</div>
 		<div class="submit-wrap">
-			<a class="save" id="detailSave" href="javascript:void(0);"  onclick="javascript:detailSubmit();return false;">保存，下一步</a>
+			<a class="save" id="detailSave" href="javascript:void(0);"  onclick="aaaa()">保存，下一步</a>
 		</div>
 		</form>
 	</div>
@@ -777,3 +777,10 @@ var _hmt = _hmt || [];
 
 <!--[statistics end]--><!-- load End--></body>
 </html>
+
+<script type="text/javascript">
+	function aaaa()
+	{
+		location.href="{{ URL::route('Login/publish3') }}";
+	}
+</script>
