@@ -4,9 +4,17 @@
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="renderer" content="webkit">
+<<<<<<< HEAD
 <meta name="keywords" content="北京短租房, 北京日租房, 北京酒店式公寓,北京短租公寓"/>
 <meta name="description" content="久久租提供短租房、长租房住宿信息，安全快捷的北京酒店式公寓、家庭旅馆、民宿等不同类型短租日租房源预订。选择久久租网，找您旅途中的家，体验高性价比、多样化、人情味的住宿。" />
 <title>北京短租房|北京日租房|北京酒店式公寓-久久租</title><meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+=======
+<meta name="keywords" content=""/>
+<meta name="description" content="" />
+<link rel="shortcut icon" href="http://www.xiaozhu.com/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="http://www.xiaozhu.com/favicon.ico" type="image/vnd.microsoft.icon">
+<title>久久租</title><meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+>>>>>>> 4af80cbd25c71115d255de18cc5d33552dd1b1eb
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 <meta content="webkit" name="renderer" />
 <meta content="no-transform " http-equiv="Cache-Control" />
