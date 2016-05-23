@@ -4684,3 +4684,1076 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1464011100.277
     'REQUEST_TIME' => 1464011100
 ]
+2016-05-23 21:52:08 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:52:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/adds'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'QUERY_STRING' => 'r=manage/adds'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60264'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011528.7819
+    'REQUEST_TIME' => 1464011528
+]
+2016-05-23 21:53:18 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:53:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/adds'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'QUERY_STRING' => 'r=manage/adds'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60315'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011598.5706
+    'REQUEST_TIME' => 1464011598
+]
+2016-05-23 21:54:01 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:54:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60362'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011641.7781
+    'REQUEST_TIME' => 1464011641
+]
+2016-05-23 21:54:04 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:54:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/adds'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'QUERY_STRING' => 'r=manage/adds'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60362'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011644.4405
+    'REQUEST_TIME' => 1464011644
+]
+2016-05-23 21:55:21 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:55:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/adds'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'QUERY_STRING' => 'r=manage/adds'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60429'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011720.9453
+    'REQUEST_TIME' => 1464011720
+]
+2016-05-23 21:55:36 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:55:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/adds'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'QUERY_STRING' => 'r=manage/adds'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60449'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011736.4418
+    'REQUEST_TIME' => 1464011736
+]
+2016-05-23 21:55:49 [127.0.0.1][-][r43s0rngth7gm1tr9cipil2p35][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:55:49 [127.0.0.1][-][r43s0rngth7gm1tr9cipil2p35][info][application] $_GET = [
+    'r' => 'login/'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login/'
+    'QUERY_STRING' => 'r=login/'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60469'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011749.3317
+    'REQUEST_TIME' => 1464011749
+]
+2016-05-23 21:55:53 [127.0.0.1][-][r43s0rngth7gm1tr9cipil2p35][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:55:52 [127.0.0.1][-][r43s0rngth7gm1tr9cipil2p35][info][application] $_GET = [
+    'r' => 'login/info'
+]
+
+$_POST = [
+    'name' => 'admin'
+    'pwd' => '123'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login/info'
+    'QUERY_STRING' => 'r=login/info'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60469'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'CONTENT_LENGTH' => '18'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011752.9723
+    'REQUEST_TIME' => 1464011752
+]
+2016-05-23 21:55:53 [127.0.0.1][-][r43s0rngth7gm1tr9cipil2p35][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:55:53 [127.0.0.1][-][r43s0rngth7gm1tr9cipil2p35][info][application] $_GET = [
+    'r' => 'login/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login%2Flist'
+    'QUERY_STRING' => 'r=login%2Flist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60469'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011753.0579
+    'REQUEST_TIME' => 1464011753
+]
+2016-05-23 21:55:56 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:55:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/adds'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'QUERY_STRING' => 'r=manage/adds'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60469'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011755.9597
+    'REQUEST_TIME' => 1464011755
+]
+2016-05-23 21:56:38 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:56:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/adds'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'QUERY_STRING' => 'r=manage/adds'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60511'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011798.4889
+    'REQUEST_TIME' => 1464011798
+]
+2016-05-23 21:56:41 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:56:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60511'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011801.7196
+    'REQUEST_TIME' => 1464011801
+]
+2016-05-23 21:56:53 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:56:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60531'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011813.5199
+    'REQUEST_TIME' => 1464011813
+]
+2016-05-23 21:56:55 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:56:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/formowner'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login/formowner'
+    'QUERY_STRING' => 'r=login/formowner'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60531'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login/table'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011815.5982
+    'REQUEST_TIME' => 1464011815
+]
+2016-05-23 21:56:57 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:56:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/adds'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'QUERY_STRING' => 'r=manage/adds'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60531'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login/formowner'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011817.3276
+    'REQUEST_TIME' => 1464011817
+]
+2016-05-23 21:56:59 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20276 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-23 21:56:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464010598'
+    'PHPSESSID' => 'r43s0rngth7gm1tr9cipil2p35'
+    '_csrf' => 'f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"q0FRpEUcb56MImByQELeQMGzjxteXoTV\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2700'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60531'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464010598; PHPSESSID=r43s0rngth7gm1tr9cipil2p35; _csrf=f8abec0d61351141eb80810a14db98f790751b53a62b0876a376a0a556d6db59a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22q0FRpEUcb56MImByQELeQMGzjxteXoTV%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/adds'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464011819.2659
+    'REQUEST_TIME' => 1464011819
+]
