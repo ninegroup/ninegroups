@@ -8,9 +8,7 @@ use yii\widgets\LinkPager;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>控制台 - Bootstrap后台管理系统模版Ace下载</title>
-		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
-		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
+		<title>久久租后台管理</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- basic styles -->
 		<link href="../views/assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -52,6 +50,11 @@ use yii\widgets\LinkPager;
 
 	<body>
 		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+					<div class="navbar navbar-default" id="navbar">
 			<script type="text/javascript">
 				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
 			</script>
@@ -281,8 +284,7 @@ use yii\widgets\LinkPager;
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
-									<small>欢迎光临,</small>
-					
+									<font size='4px;'>admin</font>
 								</span>
 
 								<i class="icon-caret-down"></i>
@@ -297,7 +299,7 @@ use yii\widgets\LinkPager;
 								</li>
 
 								<li>
-									<a href="#">
+									<a href="index.php?r=login/profile">
 										<i class="icon-user"></i>
 										个人资料
 									</a>
@@ -306,7 +308,7 @@ use yii\widgets\LinkPager;
 								<li class="divider"></li>
 
 								<li>
-									<a href="#">
+									<a href="index.php?r=login/exit">
 										<i class="icon-off"></i>
 										退出
 									</a>
@@ -316,6 +318,7 @@ use yii\widgets\LinkPager;
 					</ul><!-- /.ace-nav -->
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
+		</div>
 		</div>
 
 		<div class="main-container" id="main-container">
@@ -511,11 +514,7 @@ use yii\widgets\LinkPager;
 										<i class="icon-double-angle-right"></i>
 										房主列表
 									</a>
-								</li>
-
-								
-
-								
+								</li>								
 							</ul>
 						</li>
 					</ul><!-- /.nav-list -->
@@ -527,6 +526,7 @@ use yii\widgets\LinkPager;
 					<script type="text/javascript">
 						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
 					</script>
+
 				</div>
 						<div class="main-content">
 					

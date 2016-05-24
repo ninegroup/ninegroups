@@ -529,11 +529,11 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="icon-home home-icon"></i>
-								<a href="#">消息中心</a>
+								<a href="#">首页</a>
 							</li>
 
 							<li>
-								<a href="#">消息列表</a>
+								<a href="#">消息管理</a>
 							</li>
 							<li class="active"></li>
 						</ul><!-- .breadcrumb -->
@@ -551,10 +551,12 @@
 					<div class="page-content">
 						<div class="page-header">
 							<h1>
-								消息中心
+								消息管理
 								<small>
 									<i class="icon-double-angle-right"></i>
-									消息列表
+									审核列表
+										<i class="icon-angle-right"></i>
+										正在审核
 								</small>
 							</h1>
 						</div><!-- /.page-header -->

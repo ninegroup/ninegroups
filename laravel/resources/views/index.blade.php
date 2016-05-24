@@ -131,7 +131,7 @@ h1 {
 		      <li><a href="javascript:;" class="btn btn-primary btn-large theme-register">注册送红包</a></li>
 			  <li><a href="javascript:;" class="btn btn-primary btn-large theme-login">登陆</a></li>
 			  <?php }else{?>
-				<li><h3>欢迎<?php echo $_COOKIE['name']?>登陆</h3></li>
+				<li><h3>欢迎<a href="{{URL::route('Index/user')}}"><?php echo $_COOKIE['name']?></a>	登陆</h3></li>
 				<li><a href="{{URL('unset1')}}">退出</a></li>
 			  <?php }?>	
 			  <li><input type="button" value="免费发布房源" class="btn btn-primary btn-large" onclick="housing()"/></li>
@@ -149,11 +149,9 @@ h1 {
 				<!---start-da-slider----->	
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
-		<li><img src="images/1/1.jpg" alt="1" title="" id="wows1_0" style="height:600px;width:100%;"></li>
-		<li><img src="images/1/2.jpg" alt="2" title="" id="wows1_1" style="height:600px;width:100%;"></li>
-		<li><img src="images/1/3.jpg" alt="3" title="" id="wows1_2" style="height:600px;width:100%;"></li>
-		<li><img src="images/1/4.jpg" alt="4" title="" id="wows1_3" style="height:600px;width:100%;"></li>
-		<li><img src="images/1/5.jpg" alt="5" title="" id="wows1_4" style="height:600px;width:100%;"></li>
+		@foreach($db as $v)
+		<li><img src="images/uploads/{{ $v->pi_path }}" alt="1" title="" id="wows1_0" style="height:600px;width:100%;"></li>
+		@endforeach
 	</ul></div>
 <div class="ws_shadow"></div>
 </div>	
@@ -199,27 +197,15 @@ h1 {
 	<div class="main content_top">
 		<!-- start span_of_3 -->
 		<div class="span_of_3">
+			@foreach($hot as $v)
 			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic1.jpg" alt=""/></a>
+				<a href="#"><img src="images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}"/></a>
 				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+					<h3><a href="#">{{ $v->h_title }}</a></h3>
+					<p>{{ $v->h_content }}</p>
 				</div>
 			</div>
-			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic2.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-				</div>
-			</div>
-			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic3.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-				</div>
-			</div>
+			@endforeach
 			<div class="clear"></div>
 		</div>			
 		<!-- end grids_of_3 -->

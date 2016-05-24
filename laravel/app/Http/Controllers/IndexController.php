@@ -1,4 +1,8 @@
-<?php namespace App\Http\Controllers;
+<?php
+namespace App\Http\Controllers;
+
+use DB;
+use Request;
 
 class IndexController extends Controller {
 
@@ -26,7 +30,18 @@ class IndexController extends Controller {
 	 */
 	public function index()
 	{
-		return view('index');
+		$db=DB::table('picture')->join('house', 'picture.pi_h_id', '=', 'house.h_id')->where('pi_state','1')->get();
+		$hot=DB::table('picture')->join('house', 'picture.pi_h_id', '=', 'house.h_id')->where('pi_state','3')->get();
+		return view('index')->with('db',$db)->with('hot',$hot);
 	}
-
+	/*用户中心*/
+	public function user(){
+		@$u_name=$_COOKIE['name'];
+		$db=DB::table('user')->where('u_name',$u_name)->first();
+		return view('user')->with('u_name', $u_name)->with('db',$db);
+	}
+	/*修改信息*/
+	public function userGai(){
+		
+	}
 }

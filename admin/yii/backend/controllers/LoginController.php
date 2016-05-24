@@ -8,6 +8,7 @@ use backend\models\House;
 use yii\web\Controller;
 class LoginController extends \yii\web\Controller
 {
+	/*登陆*/
 	public function actionIndex()
     {
 		$session = Yii ::$app->session;
@@ -20,7 +21,7 @@ class LoginController extends \yii\web\Controller
     }
 	public $enableCsrfValidation = false;
 
-	/*登陆*/
+	/*登陆判断*/
 	public function actionInfo(){
 		$request = Yii::$app->request;
 		$name = $request->post('name');
@@ -30,8 +31,13 @@ class LoginController extends \yii\web\Controller
 		$sql="select * from user_admin where u_name='$name' ";
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->queryOne();
+<<<<<<< HEAD
 		
 			if($data){
+=======
+	/*是否记住密码*/
+		if($data){
+>>>>>>> 44d6c63d139dbbf3ec93f3f1d04c0ccef53f6d39
 				if($data['u_pwd']==$pwd){
 					//把当前登录人存入session
 					$session = Yii ::$app->session;
@@ -156,8 +162,10 @@ class LoginController extends \yii\web\Controller
 
 	
 	}
-	/**/
+	/*房源审核添加*/
 	public function actionAdd_house(){
+		$session=Yii::$app->session;
+		$name=$session->get('name');
 		$query = House::find();
 
         $pagination = new Pagination([
@@ -173,6 +181,7 @@ class LoginController extends \yii\web\Controller
         return $this->renderPartial('house-add.html', [
             'countries' => $countries,
             'pagination' => $pagination,
+			'name'=>$name,
         ]);
 
 	}

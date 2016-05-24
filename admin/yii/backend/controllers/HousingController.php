@@ -13,6 +13,7 @@ use yii\data\Pagination;
  */
 class HousingController extends Controller
 {
+	/*房源列表*/
 	public function actionList()
 	{
 		$query = House::find();
@@ -29,7 +30,7 @@ class HousingController extends Controller
         return $this->renderPartial('houselist',['countries' => $countries,
             'pagination' => $pagination,]);
 	}
-
+	/*房源删除*/
 	public function actionDel()
 	{
 		$id=$_GET['id'];

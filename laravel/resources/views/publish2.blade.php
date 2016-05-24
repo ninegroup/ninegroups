@@ -157,7 +157,7 @@ function pressEve(e){
 </style>
 <input  type="hidden" name="ctx" id="ctx" value="" />
 <div class='header relave'>
-		    <a href="/"><div class='asote head_left'></div></a>
+		   <!--  <a href="/"><div class='asote head_left'></div></a> -->
 		<div class='head_cnt relave'> 
 			<span class='search'></span>		
 			<ul class="nav_R asote nav_right">
@@ -224,7 +224,7 @@ function pressEve(e){
 <input  type="hidden" name="ctx1" id="ctx1" value="http://staticnew.mayi.com" />
 <input  type="hidden" name="uid" id="uid" value="851686525" />
 <input  type="hidden" name="loginurl" id="loginurl" value="none" />
-<input type="hidden" name="head_userName" id="head_userName" value="Agoni #">
+<input type="hidden" name="head_userName" id="head_userName" value="<?php echo $_COOKIE['name']?>">
 <script type="text/javascript">
 $(function() {	
   	var userName=$("#head_userName").val();
@@ -386,55 +386,6 @@ $(function() {
 				<dd>
 					<label>
 						<textarea class="textArea hasPlaceholder" maxlength="1000" id="landmark" name="landmark" placeholder="如具体地点、周围的标志性建筑等"></textarea>
-					</label>
-				</dd>
-			</dl>
-			<dl class="homesDescribe clearfix">
-				<dt>
-					<span class="fr">交通状况：</span>
-					<span class="wordNumber"></span>
-				</dt>
-				<dd>
-					<label>
-						<textarea class="textArea hasPlaceholder" maxlength="1000" id="traffic" name="traffic" placeholder="如公交站、地铁线路、如何去往机场或火车站等"></textarea>
-					</label>
-				</dd>
-			</dl>
-			<dl class="homesDescribe clearfix">
-				<dt>
-					<span class="fr">周边生活设施：</span>
-					<span class="wordNumber"></span>
-				</dt>
-				<dd>
-					<label>
-						<textarea class="textArea hasPlaceholder" maxlength="1000" id="surroundings" name="surroundings" placeholder="如附近的超市、商场、饭馆、银行等"></textarea>
-					</label>
-				</dd>
-			</dl>
-			<dl class="homesDescribe clearfix">
-				<dt>
-					<span class="fr">您有什么话想对房客说：</span>
-					<span class="wordNumber"></span>
-				</dt>
-				<dd>
-					<label>
-						<textarea class="textArea" maxlength="1000" id="userule" name="userule">例如：
-请准备好您的身份证件，我需要登记 不允许吸烟
-为了不对邻居造成影响，请保持安静，不要大声喧哗
-不要酗酒、赌博、涉黄、吸毒等，不要做违法的事情
-爱护房屋和物品，卫生整洁，做饭后厨房要保持清洁
-空调只在卧室有，客厅没有</textarea>
-					</label>
-				</dd>
-			</dl>
-			<dl class="homesDescribe clearfix">
-				<dt>
-					<span class="fr">其他：</span>
-					<span class="wordNumber"></span>
-				</dt>
-				<dd>
-					<label>
-						<textarea class="textArea hasPlaceholder" maxlength="1000" id="otherintro" name="otherintro" placeholder="其他您想特别说明的信息"></textarea>
 					</label>
 				</dd>
 			</dl>
