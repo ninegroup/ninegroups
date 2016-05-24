@@ -158,7 +158,7 @@ function pressEve(e){
 </style>
 <input  type="hidden" name="ctx" id="ctx" value="" />
 <div class='header relave'>
-		    <a href="/"><div class='asote head_left'></div></a>
+<!-- 		    <a href="/"><div class='asote head_left'></div></a> -->
 		<div class='head_cnt relave'> 
 			<span class='search'></span>		
 			<ul class="nav_R asote nav_right">
@@ -225,7 +225,7 @@ function pressEve(e){
 <input  type="hidden" name="ctx1" id="ctx1" value="http://staticnew.mayi.com" />
 <input  type="hidden" name="uid" id="uid" value="851686525" />
 <input  type="hidden" name="loginurl" id="loginurl" value="none" />
-<input type="hidden" name="head_userName" id="head_userName" value="Agoni #">
+<input type="hidden" name="head_userName" id="head_userName" value="<?php echo $_COOKIE['name']?>">
 <script type="text/javascript">
 $(function() {	
   	var userName=$("#head_userName").val();

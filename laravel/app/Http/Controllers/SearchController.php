@@ -5,6 +5,7 @@ use Request;
 
 header('content-type:text/html;charset=utf-8');
 class SearchController extends Controller {
+	/*房源搜索*/
 	public function HomepageSearch(){
 		@$name=$_COOKIE['name'];
 		$city=Request::get('city');
