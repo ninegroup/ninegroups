@@ -365,14 +365,14 @@
 								
 
 								<li>
-									<a href="jquery-ui.html">
+ 										<a href="index.php?r=manage/adds">
 										<i class="icon-double-angle-right"></i>
 										管理员添加
 									</a>
 								</li>
 
 								<li>
-									<a href="nestable-list.html">
+									<a href="index.php?r=manage/list">
 										<i class="icon-double-angle-right"></i>
 										管理员列表
 									</a>
@@ -393,14 +393,14 @@
 								
 
 								<li>
-									<a href="jquery-ui.html">
+									<a href="index.php?r=base/jqueryui">
 										<i class="icon-double-angle-right"></i>
 										类型添加
 									</a>
 								</li>
 
 								<li>
-									<a href="nestable-list.html">
+									<a href="index.php?r=base/nestablelist">
 										<i class="icon-double-angle-right"></i>
 										类型列表
 									</a>

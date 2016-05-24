@@ -403,14 +403,14 @@ use yii\widgets\LinkPager;
 								
 
 								<li>
-									<a href="jquery-ui.html">
+									<a href="index.php?r=base/jqueryui">
 										<i class="icon-double-angle-right"></i>
 										类型添加
 									</a>
 								</li>
 
 								<li>
-									<a href="nestable-list.html">
+									<a href="index.php?r=base/nestablelist">
 										<i class="icon-double-angle-right"></i>
 										类型列表
 									</a>
@@ -432,14 +432,14 @@ use yii\widgets\LinkPager;
 								
 
 								<li>
-									<a href="jquery-ui.html">
+									<a href="index.php?r=housing/list">
 										<i class="icon-double-angle-right"></i>
 										房源列表
 									</a>
 								</li>
 
 								<li>
-									<a href="nestable-list.html">
+									<a href="index.php?r=login/add_house">
 										<i class="icon-double-angle-right"></i>
 										新房源审核
 									</a>
@@ -459,17 +459,34 @@ use yii\widgets\LinkPager;
 
 							<ul class="submenu">
 								<li>
-									<a href="index.php?r=message/info">
+									<a href="index.php?r=message/list">
 										<i class="icon-double-angle-right"></i>
-										消息通知
+										消息列表
 									</a>
 								</li>
 
 								<li>
-									<a href="index.php?r=message/shen">
+									<a href="#" class="dropdown-toggle">
 										<i class="icon-double-angle-right"></i>
-										举报审核
+										审核列表
+										<b class="arrow icon-angle-down"></b>
 									</a>
+
+									<ul class="submenu">
+										<li>
+											<a href="index.php?r=message/checkill">
+												<i class="icon-leaf"></i>
+												待审核
+											</a>
+										</li>
+
+										<li>
+											<a href="index.php?r=message/checking" class="dropdown-toggle">
+												<i class="icon-pencil"></i>
+												审核中
+											</a>
+										</li>
+									</ul>
 								</li>
 							</ul>
 						</li>

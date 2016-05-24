@@ -40,8 +40,8 @@
                 <li><a rel="nofollow" title="首次预订即可抵用房租" class="show-register-box" href="http://www.xiaozhu.com/register?next=http%3A%2F%2Fbj.xiaozhu.com%2F">注册就送200元</a></li>
         <li>&middot;</li>
         <li>
-		<?php if($_COOKIE['name']){?>
-		欢迎{!! $name !!}登录
+		<?php if(@$_COOKIE['name']){?>
+		欢迎@{!! $name !!}登录
 		<?php }else{ ?>
 		<a rel="nofollow" href="#" class="logindialog">登录</a>
 		<?php } ?></li>
