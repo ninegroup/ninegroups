@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
-
+use DB;
+use Request;
 class IndexController extends Controller {
 
 	/*
@@ -28,5 +29,14 @@ class IndexController extends Controller {
 	{
 		return view('index');
 	}
-
+	/*用户中心*/
+	public function user(){
+		@$u_name=$_COOKIE['name'];
+		$db=DB::table('user')->where('u_name',$u_name)->first();
+		return view('user')->with('u_name', $u_name)->with('db',$db);
+	}
+	/*修改信息*/
+	public function userGai(){
+		
+	}
 }

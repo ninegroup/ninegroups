@@ -41,6 +41,9 @@ Route::any('index','IndexController@index');
 //Route::any('/Index/index', [ 'as' => 'Index/index', 'uses' => "IndexController@index"]);
 //登陆
 Route::any('login','LoginController@login');
+//用户中心
+Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@user"]);
+
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
