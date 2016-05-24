@@ -1,6 +1,13 @@
 <?php namespace App\Http\Controllers;
+<<<<<<< HEAD
 use DB;
 use Request;
+=======
+
+use DB;
+use Request;
+
+>>>>>>> e40261341ec074ea21524dba9dc4fad754a67aca
 class IndexController extends Controller {
 
 	/*
@@ -27,7 +34,8 @@ class IndexController extends Controller {
 	 */
 	public function index()
 	{
-		return view('index');
+		$db=DB::table('picture')->join('house', 'picture.pi_h_id', '=', 'house.h_id')->where('pi_state','1')->get();
+		return view('index')->with('db',$db);
 	}
 	/*用户中心*/
 	public function user(){

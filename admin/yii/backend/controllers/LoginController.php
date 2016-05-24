@@ -152,6 +152,8 @@ class LoginController extends \yii\web\Controller
 	}
 	/*房源审核添加*/
 	public function actionAdd_house(){
+		$session=Yii::$app->session;
+		$name=$session->get('name');
 		$query = House::find();
 
         $pagination = new Pagination([
@@ -167,6 +169,7 @@ class LoginController extends \yii\web\Controller
         return $this->renderPartial('house-add.html', [
             'countries' => $countries,
             'pagination' => $pagination,
+			'name'=>$name,
         ]);
 
 	}

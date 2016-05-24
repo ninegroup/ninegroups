@@ -14,6 +14,8 @@ class MessageController extends \yii\web\Controller
 		return $this->renderPartial('message_list',array('name'=>$name,'content'=>$re));
 	}
 
+	//待审核列表
+
 	public function actionCheckill(){
 		$session=Yii::$app->session;
 		$name=$session->get('name');
@@ -21,7 +23,9 @@ class MessageController extends \yii\web\Controller
 		$re=$sql->queryAll();
 		return $this->renderPartial('checkill',array('name'=>$name,'content'=>$re));
 	}
+	
 
+	//点击开始审核,跳该方法,将state字段改为审核中
 	public function actionCheckbegin(){
 		$request=Yii::$app->request;
 		$id=$request->get('id');
@@ -30,7 +34,8 @@ class MessageController extends \yii\web\Controller
 		Yii::$app->getSession()->setFlash('success', '开始审核...');
 		return $this->redirect(['message/checking']);	
 	}
-
+	
+	//审核中列表
 	public function actionChecking(){
 		$session=Yii::$app->session;
 		$name=$session->get('name');
@@ -38,7 +43,8 @@ class MessageController extends \yii\web\Controller
 		$re=$sql->queryAll();
 		return $this->renderPartial('checking',array('name'=>$name,'content'=>$re));
 	}
-
+	
+	//将状态值改为相对应的审核结果
 	public function actionCheck_ing(){
 		$request=Yii::$app->request;
 		$id=$request->get('id');
