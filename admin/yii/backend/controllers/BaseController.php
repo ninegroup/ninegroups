@@ -7,19 +7,23 @@ class BaseController extends \yii\web\Controller
 {
 	public $enableCsrfValidation = false;
 	public function actionJqueryui()
-    {
+    {	
+		$session=Yii::$app->session;
+		$name=$session->get('name');
 		$sql="select * from base";
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->queryAll();
 		$arr=$this->digui($data,0,0);
-		return $this->renderPartial('jquery-ui.html',array('arr'=>$arr));
+		return $this->renderPartial('jquery-ui.html',array('arr'=>$arr,'name'=>$name));
     }
 	public function actionNestablelist(){
+		$session=Yii::$app->session;
+		$name=$session->get('name');
 		$sql="select * from base";
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->queryAll();
 		$arr=$this->digui($data,0,0);
-		return $this->renderPartial('nestable-list.html',array('arr'=>$arr));
+		return $this->renderPartial('nestable-list.html',array('arr'=>$arr,'name'=>$name));
 	}
 	public function actionBaseadd(){
 		$request = Yii::$app->request;
