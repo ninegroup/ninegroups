@@ -1,5 +1,6 @@
-<?php 
+<?php
 namespace App\Http\Controllers;
+
 use DB;
 use Request;
 
@@ -30,7 +31,8 @@ class IndexController extends Controller {
 	public function index()
 	{
 		$db=DB::table('picture')->join('house', 'picture.pi_h_id', '=', 'house.h_id')->where('pi_state','1')->get();
-		return view('index')->with('db',$db);
+		$hot=DB::table('picture')->join('house', 'picture.pi_h_id', '=', 'house.h_id')->where('pi_state','3')->get();
+		return view('index')->with('db',$db)->with('hot',$hot);
 	}
 	/*用户中心*/
 	public function user(){
