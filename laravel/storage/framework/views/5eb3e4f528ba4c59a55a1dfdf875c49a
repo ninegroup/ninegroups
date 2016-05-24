@@ -393,12 +393,6 @@
                <div class="type_bg clearfix">
                   <h6 class="type_tit2"></h6>
                </div>
-			   <div class="type_bg clearfix">
-                  <h6 class="type_tit2"></h6>
-               </div>
-			   <div class="type_bg clearfix">
-                  <h6 class="type_tit2"></h6>
-               </div>
              <input type="hidden" class="btn_pink4search" id="filter_confirm" value="确定" />
   </div>
 </div>    <!--/city top-->

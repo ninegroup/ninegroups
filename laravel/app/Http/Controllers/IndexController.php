@@ -1,13 +1,9 @@
-<?php namespace App\Http\Controllers;
-<<<<<<< HEAD
-use DB;
-use Request;
-=======
+<?php
+namespace App\Http\Controllers;
 
 use DB;
 use Request;
 
->>>>>>> e40261341ec074ea21524dba9dc4fad754a67aca
 class IndexController extends Controller {
 
 	/*
