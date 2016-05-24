@@ -239,7 +239,7 @@ function pressEve(e){
 </style>
 <input  type="hidden" name="ctx" id="ctx" value="" />
 <div class='header relave'>
-		    <a href="/"><div class='asote head_left'></div></a>
+		    <!-- <a href="/"><div class='asote head_left'></div></a> -->
 		<div class='head_cnt relave'> 
 			<span class='search'></span>		
 			<ul class="nav_R asote nav_right">
@@ -306,7 +306,7 @@ function pressEve(e){
 <input  type="hidden" name="ctx1" id="ctx1" value="http://staticnew.mayi.com" />
 <input  type="hidden" name="uid" id="uid" value="851686525" />
 <input  type="hidden" name="loginurl" id="loginurl" value="none" />
-<input type="hidden" name="head_userName" id="head_userName" value="Agoni #">
+<input type="hidden" name="head_userName" id="head_userName" value="<?php echo $_COOKIE['name']?>">
 <script type="text/javascript">
 $(function() {	
   	var userName=$("#head_userName").val();
@@ -448,37 +448,9 @@ $(function() {
 							<input maxlength="5" class="LargePriceInput" type="text" name="dayprice" id="dayprice" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  autocomplete="off"/>
 							元/天
 						</div>
-						<div class="dayPrice">
-							<span class="price-title">周末特殊价：</span>
-							<select class="LargePriceSelect" name="weekendtype" id="weekendtype">
-								<option value="2" >周五/周六</option>
-								<option value="3" >周六/周日</option>
-								<option value="1" >周五/周六/周日</option>
-							</select>
-							<input maxlength="5" class="LargePriceInput" type="text" name="weekendprice" id="weekendprice" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  style="background:#fff;" autocomplete="off"/>
-							元/天
-						</div>
 					</li>
-					<li>
-                    	<div class="dayPrice">
-                            <span class="price-title">入住满7天：</span>
-                            <input class="LargePriceInput" type="text" id="weekpriceRet" name="weekpriceRet" value="" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')" onafterpaste="this.value=this.value.replace(/[^\d.]/g,'')" autocomplete="off"/>折<input class="LargePriceInput" type="hidden" id="weekprice" name="weekprice" value="0" />
-                            <span class="suggestfont" style="display:none;">建议￥<span id="weekrentprice_maxsug">0</span>（9折）以下</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dayPrice">
-                            <span class="price-title">入住满30天：</span>
-                            <input class="LargePriceInput" type="text" id="monthpriceRet" name="monthpriceRet" value="" autocomplete="off"/>折<input class="LargePriceInput" type="hidden" id="monthprice" name="monthprice" value="0" />
-                            <span class="suggestfont" style="display:none;">建议￥<span id="monthrentprice_maxsug">0</span>（8折）以下</span>
-                        </div>
-                    </li>
-                     <li>
-                        <div class="dayPrice">
-                            <span style="margin-left:5px;">特殊价是否参与打折：</span> <input type='radio' value=1 name='specialdiscount' /> 是 <input type='radio' value=0 name='specialdiscount' checked/> 否
-                           <span  class='satisfy' style="margin-left:110px;padding: 2px 10px 1px;">周末特殊价和针对具体日期单独设置的价格均为特殊价。</span>
-                        </div>
-                    </li>
+					
+                    
 					<li>
 						<div class="dayPrice">
 							<span class="price-title">押金：</span>
@@ -486,87 +458,8 @@ $(function() {
                             <span class="suggestfont" style="position:inherit;margin-left:35px;font-size:14px;">押金由您线下收取，不填写表示不收押金</span>
 						</div>
 					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title"><b>*</b>能否加床：</span>
-							<select class="SmallPriceSelect" style="float:left;margin-left:0px;width:70px;" name="addbed" id="addbed">
-								<option value="0" >能</option>
-								<option value="1" selected>否</option>
-							</select>
-							<select class="SmallPriceSelect" style="float:left;margin-left:0px;width:70px;display:none;" name="addbedyesorno" id="addbedyesorno">
-								<option value="0" >不收费</option>
-								<option value="1" selected>收费</option>
-							</select>
-							<label id="addbed_label" style="display:none;">
-								<input style="float:left;" class="MiddlePriceInput" type="text" maxlength="4" id="addbed_price" name="addbed_price" value="" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')" onafterpaste="this.value=this.value.replace(/[^\d.]/g,'')" autocomplete="off"/>
-								<font style="float:left;margin-right: 12px;">元/人/天</font>
-							</label>
-							<br/>
-							<div class='hidden'></div>
-							<textarea class="LargePriceInput addPub_more" type="text" id="addbed_more" name="addbed_more"  placeholder="说明...（50字以内）" autocomplete="off" maxlength="50"/></textarea>
-							<span class="suggestfont notes_dayPrice" >额外人员需要加床的费用在这里设置。请根据实际情况选择</span>
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title"><b>*</b>能否做饭：</span>
-							<select class="SmallPriceSelect" style="float:left;margin-left:0px;width:70px;" name="cook" id="cook">
-									<option value="0" selected>能</option>
-									<option value="1">否</option>
-							</select>
-								<select class="SmallPriceSelect" style="float:left;margin-left:0px;width:70px;" name="cookyesorno" id="cookyesorno">
-									<option value="0" selected>不收费</option>
-									<option value="1">收费</option>
-								</select>
-							<label id="cook_label" style="display:none;">
-								<input style="float:left;" class="MiddlePriceInput" type="text" maxlength="4" id="cook_price" name="cook_price" value="" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')" onafterpaste="this.value=this.value.replace(/[^\d.]/g,'')" autocomplete="off"/>
-								<font style="float:left;margin-right: 12px;">元/天</font>
-							</label>
-							<label class='seasoned' id="dressing"><input type="checkbox" id = "cook_dressing" name="cook_dressing" value="有调料"/>有调料</label>
-							<br/>
-							<div class='hidden'></div>
-							<textarea class="LargePriceInput addPub_more" type="text" id="cook_more" name="cook_more"  placeholder="说明...（50字以内）" autocomplete="off" maxlength="50" /></textarea>
-							<span class="suggestfont notes_dayPrice">我们建议您不收取做饭的费用。如果费用不高，可以适当提高房费弥补。</span>
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title"><b>*</b>清洁费：</span>
-							<select class="SmallPriceSelect" style="float:left;margin-left:0px;width:70px;" name="upto" id="upto">
-								<option value="0" >收取</option>
-								<option value="1" selected>不收取</option>
-							</select>
-							<label id="upto_label" style="display:none;">
-								<input style="float:left;" class="MiddlePriceInput" type="text" maxlength="4" id="upto_price" name="upto_price" value="" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')" onafterpaste="this.value=this.value.replace(/[^\d.]/g,'')" autocomplete="off"/>
-								<font style="float:left;margin-right: 12px;">元</font>
-							</label>
-							<br/>
-							<div class='hidden'></div>
-							<textarea class="LargePriceInput addPub_more" type="text" id="upto_more" name="upto_more" placeholder="说明...（50字以内）" autocomplete="off" maxlength="50"/></textarea>
-								<span class='suggestfont notes_dayPrice' id="upto_span">
-									我们建议您不收取清洁费。如果费用不高，可以适当提高房费弥补。 实际情况下，由于房间特别脏乱差或 其他情况需要额外收费，请您进行说明
-								</span>
-							
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title">电费：</span>
-							<div class='hidden'></div>
-							<textarea class="LargePriceInput addPub_more" type="text" id="electric_more" name="electric_more" placeholder="说明...（50字以内）" autocomplete="off" maxlength="50"/></textarea>
-							<br/>
-							<span class='suggestfont notes_dayPrice'>示例：电费每天控制在20度以内免费使用，超过则按照0.5元/度收取</span>	
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title">其他费用：</span>
-							<div class='hidden'></div>
-							<textarea class="LargePriceInput addPub_more" type="text" id="othercharge_more" name="othercharge_more"  placeholder="说明...（50字以内）" autocomplete="off" maxlength="50"/></textarea>
-							<br/>
-							<span class='suggestfont notes_dayPrice'>如果有其他线下需要收取的费用，在这里进行说明。不填写表示不收取，建议您根据实际情况填写。</span>	
-						</div>
-					</li>
+					
+					
 					<li>
 						<div class="dayPrice">
                             <span class="price-title "><b>*</b>交易规则：</span>
@@ -623,213 +516,6 @@ $(function() {
 				    </ul>
 				</div>
 				<!-- 周租月租End -->
-			</div>
-			<div class="homesTitle mt30">
-				<div class="homesTitlebg">
-					入住须知
-				</div>
-			</div>
-			<div class="homes">
-				<ul class="price-set clearfix">
-					<li>
-						<div class="dayPrice">
-							<span class="price-title"><b>*</b>入住时间：</span>
-							<select class="LargePriceSelect" name="checkintimeStr">
-								<option value="00:00" 
-								>00:00</option>
-								<option value="01:00" 
-								>01:00</option>
-								<option value="02:00" 
-								>02:00</option>
-								<option value="03:00" 
-								>03:00</option>
-								<option value="04:00" 
-								>04:00</option>
-								<option value="05:00" 
-								>05:00</option>
-								<option value="06:00" 
-								>06:00</option>
-								<option value="07:00" 
-								>07:00</option>
-								<option value="08:00" 
-								>08:00</option>
-								<option value="09:00" 
-								>09:00</option>
-								<option value="10:00" 
-								>10:00</option>
-								<option value="11:00" 
-								>11:00</option>
-								<option value="12:00" 
-								>12:00</option>
-								<option value="13:00" 
-								>13:00</option>
-								<option value="14:00" 
-								>14:00</option>
-								<option value="15:00" 
-								>15:00</option>
-								<option value="16:00" 
-								>16:00</option>
-								<option value="17:00" 
-								>17:00</option>
-								<option value="18:00" 
-                                        selected="selected"
-								>18:00</option>
-								<option value="19:00" 
-								>19:00</option>
-								<option value="20:00" 
-								>20:00</option>
-								<option value="21:00" 
-								>21:00</option>
-								<option value="22:00" 
-								>22:00</option>
-								<option value="23:00" 
-								>23:00</option>
-							</select>
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title"><b>*</b>退房时间：</span>
-							<select class="LargePriceSelect" name="checkouttimeStr">
-								<option value="00:00"
-								>00:00</option>
-								<option value="01:00"
-								>01:00</option>
-								<option value="02:00"
-								>02:00</option>
-								<option value="03:00"
-								>03:00</option>
-								<option value="04:00"
-								>04:00</option>
-								<option value="05:00"
-								>05:00</option>
-								<option value="06:00"
-								>06:00</option>
-								<option value="07:00"
-								>07:00</option>
-								<option value="08:00"
-								>08:00</option>
-								<option value="09:00"
-								>09:00</option>
-								<option value="10:00"
-								>10:00</option>
-								<option value="11:00"
-								>11:00</option>
-								<option value="12:00"
-	                                    selected="selected"
-								>12:00</option>
-								<option value="13:00"
-								>13:00</option>
-								<option value="14:00"
-								>14:00</option>
-								<option value="15:00"
-								>15:00</option>
-								<option value="16:00"
-								>16:00</option>
-								<option value="17:00"
-								>17:00</option>
-								<option value="18:00"
-								>18:00</option>
-								<option value="19:00"
-								>19:00</option>
-								<option value="20:00"
-								>20:00</option>
-								<option value="21:00"
-								>21:00</option>
-								<option value="22:00"
-								>22:00</option>
-								<option value="23:00"
-								>23:00</option>
-							</select>
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title"><b>*</b>接待时间：</span>
-							<input type="hidden" name="shophours" id="shophours" value="" />
-							<select class="MiddlePriceSelect" id="shopTimeStart">
-								<option  value="00:00">00:00</option>
-								<option  value="01:00">01:00</option>
-								<option  value="02:00">02:00</option>
-								<option  value="03:00">03:00</option>
-								<option  value="04:00">04:00</option>
-								<option  value="05:00">05:00</option>
-								<option  value="06:00">06:00</option>
-								<option  value="07:00">07:00</option>
-								<option  value="08:00">08:00</option>
-								<option  value="09:00">09:00</option>
-								<option  value="10:00">10:00</option>
-								<option  value="11:00">11:00</option>
-								<option  value="12:00">12:00</option>
-								<option  value="13:00">13:00</option>
-								<option  value="14:00">14:00</option>
-								<option  value="15:00">15:00</option>
-								<option  value="16:00">16:00</option>
-								<option  value="17:00">17:00</option>
-								<option  value="18:00">18:00</option>
-								<option  value="19:00">19:00</option>
-								<option  value="20:00">20:00</option>
-								<option  value="21:00">21:00</option>
-								<option  value="22:00">22:00</option>
-								<option  value="23:00">23:00</option>
-							</select><span>至</span> 
-							<select class="MiddlePriceSelect" id="shopTimeEnd">
-								<option  value="00:00">00:00</option>
-								<option  value="01:00">01:00</option>
-								<option  value="02:00">02:00</option>
-								<option  value="03:00">03:00</option>
-								<option  value="04:00">04:00</option>
-								<option  value="05:00">05:00</option>
-								<option  value="06:00">06:00</option>
-								<option  value="07:00">07:00</option>
-								<option  value="08:00">08:00</option>
-								<option  value="09:00">09:00</option>
-								<option  value="10:00">10:00</option>
-								<option  value="11:00">11:00</option>
-								<option  value="12:00">12:00</option>
-								<option  value="13:00">13:00</option>
-								<option  value="14:00">14:00</option>
-								<option  value="15:00">15:00</option>
-								<option  value="16:00">16:00</option>
-								<option  value="17:00">17:00</option>
-								<option  value="18:00">18:00</option>
-								<option  value="19:00">19:00</option>
-								<option  value="20:00">20:00</option>
-								<option  value="21:00">21:00</option>
-								<option  value="22:00">22:00</option>
-								<option  value="23:00">23:00</option>
-							</select>
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title">最少天数：</span>
-							<input maxlength="3" class="MiddlePriceInput" type="text" name="mindays" value="1" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
-							天
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title">最多天数：</span>
-							<input maxlength="3" class="MiddlePriceInput" type="text" name="maxdays" id="maxdays" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
-							不填写默认为不限
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title">外宾接待：</span>
-							<label class="PriceLabel"><input class="PriceRadio" type="radio" name="foreigner" value="1" /> 接待</label>
-							<label class="PriceLabel"><input class="PriceRadio" type="radio" name="foreigner" value="0" checked/> 不接待</label>
-						</div>
-					</li>
-					<li>
-						<div class="dayPrice">
-							<span class="price-title">发票：</span>
-							<label class="PriceLabel"><input class="PriceRadio" type="radio" name="bill" value="1" /> 提供发票</label>
-							<label class="PriceLabel"><input class="PriceRadio" type="radio" name="bill" value="0" checked/> 不提供发票</label>
-						</div>
-					</li>
-				</ul>
 			</div>
 			<div class="submit-wrap">
 				<a class="save" href="javascript:void(0);" onclick="aaaa()">保存，下一步</a>

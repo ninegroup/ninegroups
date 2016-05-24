@@ -13,20 +13,24 @@ class BaseController extends \yii\web\Controller
 	public $enableCsrfValidation = false;
 	//跳转类型页面
 	public function actionJqueryui()
-    {
+    {	
+		$session=Yii::$app->session;
+		$name=$session->get('name');
 		$sql="select * from base";
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->queryAll();
 		$arr=$this->digui($data,0,0);
-		return $this->renderPartial('jquery-ui.html',array('arr'=>$arr));
+		return $this->renderPartial('jquery-ui.html',array('arr'=>$arr,'name'=>$name));
     }
 	//跳转类型列表
 	public function actionNestablelist(){
+		$session=Yii::$app->session;
+		$name=$session->get('name');
 		$sql="select * from base";
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->queryAll();
 		$arr=$this->digui($data,0,0);
-		return $this->renderPartial('nestable-list.html',array('arr'=>$arr));
+		return $this->renderPartial('nestable-list.html',array('arr'=>$arr,'name'=>$name));
 	}
 	//添加类型
 	public function actionBaseadd(){
