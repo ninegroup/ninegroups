@@ -604,11 +604,7 @@
 						<td><?php echo $v['r_h_name']?></td>
 						<td class="hidden-480"><?php echo $v['r_content']?></td>
 						<td>
-						<?php if($v['r_state']==2){
-							echo "审核通过";
-						}else{
-							echo "审核不通过";
-						}?>
+						<a href="index.php?r=message/checkbegin&id=<?php echo $v['r_id']?>">开始审核</a>
 						</td>
 					</tr>
 				<?php } ?>
