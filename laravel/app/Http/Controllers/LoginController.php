@@ -13,7 +13,8 @@ class LoginController extends Controller {
 		$u_pwd=Request::input('u_pwd');
 		$u_tel=Request::input('u_tel');
 		//echo $u_pwd;
-		$db=DB::insert("insert into user(u_name,u_pwd,u_tel) values('$u_name','$u_pwd','$u_tel')");
+		$u_time=date('Y-m-d H:i:s');
+		$db=DB::insert("insert into user(u_name,u_pwd,u_tel,u_time) values('$u_name','$u_pwd','$u_tel','$u_time')");
 		if($db)
 		{
 			echo "<script>alert('注册成功');location.href='/database/ninegroups/laravel/public/index'</script>";
