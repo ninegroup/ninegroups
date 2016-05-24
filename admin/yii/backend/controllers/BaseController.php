@@ -45,4 +45,27 @@ class BaseController extends \yii\web\Controller
         }
         return $arr;
     }
+	public function actionBasedel(){
+		$request = Yii::$app->request;
+		$id = $request->post('id');
+		$sql="select * from base where bf_id='$id'";
+		$command=Yii::$app->db->createCommand($sql);
+		$data=$command->queryAll();
+		if($data){
+			echo 1;
+		}else{
+			$sql="delete from base where b_id='$id'";
+			$command=Yii::$app->db->createCommand($sql);
+			$data=$command->query();
+			echo 2;
+		}
+	}
+	public function actionBasedelall(){
+		$request = Yii::$app->request;
+		$id = $request->post('id');
+		$sql="delete from base where b_id='$id' or bf_id='$id'";
+		$command=Yii::$app->db->createCommand($sql);
+		$data=$command->query();
+		echo 3;
+	}
 }

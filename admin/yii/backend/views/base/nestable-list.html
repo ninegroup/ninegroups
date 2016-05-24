@@ -708,7 +708,7 @@
 												<li class="dd-item" data-id="<?php echo $v['b_id']?>">
 													<div class="dd-handle"><?php echo $v['b_name']?>
 													<div class="pull-right action-buttons">
-																	<a class="red" href="#">
+																	<a class="red" href="javascript:void(0)" title="<?php echo $v['b_id']?>" onclick="del(this)">
 																		<i class="icon-trash bigger-130"></i>
 																	</a>
 																</div>
@@ -720,7 +720,7 @@
 															<div class="dd-handle">
 																<?php echo $vv['b_name'];?>
 																<div class="pull-right action-buttons">
-																	<a class="red" href="#">
+																	<a class="red" href="javascript:void(0)" title="<?php echo $vv['b_id']?>" onclick="del(this)">
 																		<i class="icon-trash bigger-130"></i>
 																	</a>
 																</div>
@@ -731,7 +731,7 @@
 																<li class="dd-item item-orange" data-id="<?php echo $vvv['b_id']?>">
 																	<div class="dd-handle"> <?php echo $vvv['b_name']?> 
 																	<div class="pull-right action-buttons">
-																	<a class="red" href="#">
+																	<a class="red" href="javascript:void(0)" title="<?php echo $vvv['b_id']?>" onclick="del(this)">
 																		<i class="icon-trash bigger-130"></i>
 																	</a>
 																	</div>
@@ -869,3 +869,33 @@
 	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
+<script type="text/javascript">
+function del(obj){
+	var id=obj.title;
+	$.ajax({
+		type: "POST",
+		url: "index.php?r=base/basedel",
+		data: "id="+id,
+		success: function(msg){
+			if(msg==2){
+				obj.parentNode.parentNode.parentNode.parentNode.removeChild(obj.parentNode.parentNode.parentNode);
+			}else{
+				if(confirm('此标签下有其他分类,确定全部删除吗?')){
+					$.ajax({
+					   type: "POST",
+					   url: "index.php?r=base/basedelall",
+					   data: "id="+id,
+					   success: function(msgg){
+						 if(msgg==3){
+							obj.parentNode.parentNode.parentNode.parentNode.removeChild(obj.parentNode.parentNode.parentNode);
+						 }else{
+							alert("删除失败,请检查后再次删除");
+						 }
+					   }
+					});
+				}
+			}
+		}
+	});
+}
+</script>
