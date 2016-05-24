@@ -6,7 +6,7 @@
         <li></li>
         <li>
             <span class="guide_T">关于我们</span>&nbsp;&nbsp;&nbsp;
-            <a href="#" target="_blank">关于小猪</a>
+            <a href="#" target="_blank">关于久久</a>
             <a href="#" target="_blank">联系我们</a>
         </li>
         <li>
