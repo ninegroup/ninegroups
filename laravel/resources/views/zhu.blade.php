@@ -34,13 +34,13 @@
 <![endif]-->
 
 <div class="head_wrapper">
-    <a href="http://www.xiaozhu.com" class="logo_v2">久久租</a><span class="slogan_v2 slogan_black"></span>
+    <span class="slogan_v2 slogan_black"></span>
 <!--    <span class="list_city" id="suggest_icon4Search">北京<i id="showCitySuggestion" class="icon_tri_down tri_down_f"></i><i id="closeCitySuggestion" class="icon_tri_down icon_tri_up"></i></span>-->
     <ul class="nav_R nav_commen">
                 <li><a rel="nofollow" title="首次预订即可抵用房租" class="show-register-box" href="http://www.xiaozhu.com/register?next=http%3A%2F%2Fbj.xiaozhu.com%2F">注册就送200元</a></li>
         <li>&middot;</li>
         <li>
-		<?php if($_COOKIE['name']){?>
+		<?php if(@$_COOKIE['name']){?>
 		欢迎{!! $name !!}登录
 		<?php }else{ ?>
 		<a rel="nofollow" href="#" class="logindialog">登录</a>

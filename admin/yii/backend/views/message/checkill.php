@@ -365,14 +365,14 @@
 								
 
 								<li>
-									<a href="jquery-ui.html">
+ 										<a href="index.php?r=manage/adds">
 										<i class="icon-double-angle-right"></i>
 										管理员添加
 									</a>
 								</li>
 
 								<li>
-									<a href="nestable-list.html">
+									<a href="index.php?r=manage/list">
 										<i class="icon-double-angle-right"></i>
 										管理员列表
 									</a>
@@ -393,14 +393,14 @@
 								
 
 								<li>
-									<a href="jquery-ui.html">
+									<a href="index.php?r=base/jqueryui">
 										<i class="icon-double-angle-right"></i>
 										类型添加
 									</a>
 								</li>
 
 								<li>
-									<a href="nestable-list.html">
+									<a href="index.php?r=base/nestablelist">
 										<i class="icon-double-angle-right"></i>
 										类型列表
 									</a>
@@ -604,11 +604,7 @@
 						<td><?php echo $v['r_h_name']?></td>
 						<td class="hidden-480"><?php echo $v['r_content']?></td>
 						<td>
-						<?php if($v['r_state']==2){
-							echo "审核通过";
-						}else{
-							echo "审核不通过";
-						}?>
+						<a href="index.php?r=message/checkbegin&id=<?php echo $v['r_id']?>">开始审核</a>
 						</td>
 					</tr>
 				<?php } ?>

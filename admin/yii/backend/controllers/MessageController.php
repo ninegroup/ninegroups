@@ -22,12 +22,31 @@ class MessageController extends \yii\web\Controller
 		return $this->renderPartial('checkill',array('name'=>$name,'content'=>$re));
 	}
 
+	public function actionCheckbegin(){
+		$request=Yii::$app->request;
+		$id=$request->get('id');
+		$re=Yii::$app->db->createCommand()->update('report',['r_state'=>1],"r_id=:id",[':id'=> $id])->execute();
+
+		Yii::$app->getSession()->setFlash('success', '开始审核...');
+		return $this->redirect(['message/checking']);	
+	}
+
 	public function actionChecking(){
 		$session=Yii::$app->session;
 		$name=$session->get('name');
 		$sql=Yii::$app->db->createCommand("select * from report where r_state=1");
 		$re=$sql->queryAll();
 		return $this->renderPartial('checking',array('name'=>$name,'content'=>$re));
+	}
+
+	public function actionCheck_ing(){
+		$request=Yii::$app->request;
+		$id=$request->get('id');
+		$state=$request->get('state');
+
+		$re=Yii::$app->db->createCommand()->update('report',['r_state'=>$state],"r_id=:id",[':id'=> $id])->execute();
+		Yii::$app->getSession()->setFlash('success', '开始审核...');
+		return $this->redirect(['message/list']);
 	}
 
 }
