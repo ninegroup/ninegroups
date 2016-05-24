@@ -197,27 +197,15 @@ h1 {
 	<div class="main content_top">
 		<!-- start span_of_3 -->
 		<div class="span_of_3">
+			@foreach($hot as $v)
 			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic1.jpg" alt=""/></a>
+				<a href="#"><img src="images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}"/></a>
 				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+					<h3><a href="#">{{ $v->h_title }}</a></h3>
+					<p>{{ $v->h_content }}</p>
 				</div>
 			</div>
-			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic2.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-				</div>
-			</div>
-			<div class="span1_of_3">
-				<a href="details.html"><img src="images/pic3.jpg" alt=""/></a>
-				<div class="span1_of_3_text">
-					<h3><a href="details.html">Lorem Ipsum is simply  text</a></h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-				</div>
-			</div>
+			@endforeach
 			<div class="clear"></div>
 		</div>			
 		<!-- end grids_of_3 -->
