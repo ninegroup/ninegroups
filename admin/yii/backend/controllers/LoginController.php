@@ -28,11 +28,16 @@ class LoginController extends \yii\web\Controller
 		$pwd = $request->post('pwd');
 		$remember= $request->post('remember');
 
-		$sql="select * from user_admin where u_name='$name'";
+		$sql="select * from user_admin where u_name='$name' ";
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->queryOne();
+<<<<<<< HEAD
+		
+			if($data){
+=======
 	/*是否记住密码*/
 		if($data){
+>>>>>>> 44d6c63d139dbbf3ec93f3f1d04c0ccef53f6d39
 				if($data['u_pwd']==$pwd){
 					//把当前登录人存入session
 					$session = Yii ::$app->session;
@@ -43,8 +48,13 @@ class LoginController extends \yii\web\Controller
 					if($remember){					
 						$session->set('pwd',"$pwd");
 					}
+					if($data['u_state']==1){
 					Yii::$app->getSession()->setFlash('success', '登陆成功');
 					return $this->redirect(['login/list']);
+				}else{
+				Yii::$app->getSession()->setFlash('error', '用户已锁定，请使用其他管理员账号登陆');
+				return $this->render('index');
+	}
 				}else
 				{
 					Yii::$app->getSession()->setFlash('error', '密码错误');
@@ -55,6 +65,8 @@ class LoginController extends \yii\web\Controller
 			Yii::$app->getSession()->setFlash('error', '用户名不存在');
 			return $this->render('index');
 		}
+	
+		
 	}
 	//退出
 	public function actionExit(){
@@ -193,6 +205,6 @@ class LoginController extends \yii\web\Controller
 		// var_dump($update);die;
 		if($update){
 			echo 1;
-		}
+		} 
 	}
 }
