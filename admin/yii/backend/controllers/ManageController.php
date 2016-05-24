@@ -46,6 +46,7 @@ class ManageController extends \yii\web\Controller
     	$res=$command->queryAll();
     	return  $this->renderPartial('tables.html',['res'=>$res]);
     }
+    /*锁定*/
     public function actionLock(){
 		$request = Yii::$app->request;
 		$id = $request->post('id');

@@ -55,6 +55,7 @@ class LoginController extends Controller {
 		setcookie('u_id','');
 		return redirect()->action('IndexController@index');
 	}
+	/*发布房源*/
 	public function housing()
 	{
 		if(empty($_COOKIE['name']))
