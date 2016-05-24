@@ -208,7 +208,7 @@ function pressEve(e){
 </style>
 <input  type="hidden" name="ctx" id="ctx" value="" />
 <div class='header relave'>
-		    <a href="/"><div class='asote head_left'></div></a>
+		   <!--  <a href="/"><div class='asote head_left'></div></a> -->
 		<div class='head_cnt relave'> 
 			<span class='search'></span>		
 			<ul class="nav_R asote nav_right">
@@ -275,7 +275,7 @@ function pressEve(e){
 <input  type="hidden" name="ctx1" id="ctx1" value="http://staticnew.mayi.com" />
 <input  type="hidden" name="uid" id="uid" value="851686525" />
 <input  type="hidden" name="loginurl" id="loginurl" value="none" />
-<input type="hidden" name="head_userName" id="head_userName" value="Agoni #">
+<input type="hidden" name="head_userName" id="head_userName" value="<?php echo $_COOKIE['name']?>">
 <script type="text/javascript">
 $(function() {	
   	var userName=$("#head_userName").val();
@@ -411,14 +411,6 @@ $(function() {
 	<!--增加房东上传头像功能结束-->	
 	<!--当前头像-->
 	<p class='tips'>小贴士：填写真实的头像和昵称可以增加房客信任感，对提高订单有很大的帮助</p>
-	<dl class='clearfloat bas_content'>
-		<dt class='fl phone_fl'><span class="fr">当前头像：</span><em class="notNull"></em></dt>
-		<dd class='fl relave'>
-				<img id="headimage" style="width:100px;height:100px;" src="http://i1.mayi.com/gjfs15/M06/C7/19/CgEHQFcxdRfgpEk7AABlcbtch,g688.jpg_110x110c.jpg" alt=""/>
-			<p style=" width:100px; text-align:center; "><a id="upheadimgdo" class="alertAvatar" rel="nofollow"href="javascript:void(0)">[修改头像]</a></p>
-			<input type="hidden" id="isHavePic" value="http://i1.mayi.com/gjfs15/M06/C7/19/CgEHQFcxdRfgpEk7AABlcbtch,g688.jpg_110x110c.jpg">
-		</dd>
-	</dl>
 	<!--增加房东上传头像功能结束-->	
 	<!--昵称-->
 	<dl class='clearfloat bas_content'>
