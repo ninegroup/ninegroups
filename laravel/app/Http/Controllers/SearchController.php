@@ -9,8 +9,8 @@ class SearchController extends Controller {
 		@$name=$_COOKIE['name'];
 		$city=Request::get('city');
 		$time=Request::get('time');
-		$db=DB::table('house')->join('picture', 'house.h_id', '=', 'picture.pi_h_id')->where('h_city','like','%'.$city.'%','and','h_state','1')->get();
+		$db=DB::table('house')->join('picture', 'house.h_id', '=', 'picture.pi_h_id')->where('h_city','like','%'.$city.'%')->where('h_state','1')->where('pi_state','2')->get();
 		//var_dump($db);die;
-		return view('zhu')->with('name', $name)->with('db',$db);
+		return view('zhu')->with('name', $name)->with('db',$db)->with('city',$city);
 	}
 }?>
