@@ -62,7 +62,7 @@ use yii\widgets\LinkPager;
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="icon-leaf"></i>
-							Ace Admin
+							久久租后台管理系统
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
@@ -559,8 +559,8 @@ use yii\widgets\LinkPager;
 																<span class="lbl"></span>
 															</label>
 														</th>
+														<th>用户id</th>
 														<th>用户名</th>
-														
 														<th class="hidden-480">电话</th>
 														<th>邮箱</th>
 														<th class="hidden-480">注册时间</th>
@@ -578,6 +578,7 @@ use yii\widgets\LinkPager;
 																<span class="lbl"></span>
 															</label>
 														</td>
+														<td><?php echo $v['u_id']?></td>
 														<td>
 															<a href="#"><?php echo $v['u_name']?></a>
 														</td>
