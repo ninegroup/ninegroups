@@ -111,6 +111,6 @@ class LoginController extends Controller {
 		$h_content=htmlentities($_POST['h_content']);
 		//echo $h_content;die;
 		$h_site=htmlentities($_POST['h_site']);
-		return redirect()->action('LoginController@publish3');
+		return redirect()->action('LoginController@');
 	}
 }
