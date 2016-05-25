@@ -8,6 +8,7 @@ use backend\models\House;
 use yii\web\Controller;
 class LoginController extends \yii\web\Controller
 {
+	//public $layout=false;
 	/*登陆*/
 	public function actionIndex()
     {
@@ -31,13 +32,15 @@ class LoginController extends \yii\web\Controller
 		$sql="select * from user_admin where u_name='$name' ";
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->queryOne();
-<<<<<<< HEAD
 		
-			if($data){
-=======
-	/*是否记住密码*/
+<<<<<<< HEAD
+		/*是否记住密码*/
 		if($data){
->>>>>>> 44d6c63d139dbbf3ec93f3f1d04c0ccef53f6d39
+=======
+			/*是否记住密码*/
+		if($data){
+
+>>>>>>> ff5bc50d449f68e6903d71da76c0c67babe30d9c
 				if($data['u_pwd']==$pwd){
 					//把当前登录人存入session
 					$session = Yii ::$app->session;
@@ -63,7 +66,7 @@ class LoginController extends \yii\web\Controller
 		}else
 		{		
 			Yii::$app->getSession()->setFlash('error', '用户名不存在');
-			return $this->render('index');
+			return $this->render('login.html');
 		}
 	
 		

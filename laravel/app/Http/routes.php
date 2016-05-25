@@ -43,6 +43,8 @@ Route::any('index','IndexController@index');
 Route::any('login','LoginController@login');
 //用户中心
 Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@user"]);
+//用户修改
+Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
 
 //退出
 Route::any('unset1','LoginController@unset1');
@@ -55,3 +57,7 @@ Route::any('/Login/publish5', [ 'as' => 'Login/publish5', 'uses' => "LoginContro
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');
 Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' => "SearchController@HomepageSearch"]);
+
+//发布房源login/addhouse1
+Route::any('addhouse1','LoginController@addhouse1');
+Route::any('addhouse2','LoginController@addhouse2');

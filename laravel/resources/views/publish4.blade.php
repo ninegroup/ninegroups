@@ -414,23 +414,7 @@ $(function() {
 	<!-- Content -->
 	<div class="main">
 <link href="http://staticnew.mayi.com/resourcesWeb/css/flow_chart.css" rel="stylesheet"  type="text/css">
-	<div class='one_workflow yes_person'>
-		<div class='workflow relave'>
-			<div class='progress progress_4'></div>
-			<b class='workflow1'>房源信息</b>
-			<b class='workflow2'>房源描述</b>
-			<b class='workflow3'>房源图片</b>
-			<b class='workflow4'>价格要求</b>
-			<b class='workflow5'>个人信息</b>
-			<b class='workflow6'>发布成功</b>
-			<span class='workflow1_1'><a href="/room/publish/basicinfo/850454908" class='a_after'>1</a></span>
-			<span class='workflow1_2'><a href="/room/publish/detailinfo/850454908" class='a_after'>2</a></span>
-			<span class='workflow1_3'><a href="/room/publish/imageinfo/850454908" class='a_after'>3</a></span>
-			<span class='workflow1_4'><a href="/room/publish/priceinfo/850454908" class='a_after'>4</a></span>
-			<span class='workflow1_5'><a href="javascript:;" >5</a></span>
-			<span class='workflow1_6'><a href="javascript:;" class='duigo'></a></span>
-		</div>
-	</div>
+	
 		<div class="homes-con">
 			<div class="homesTitle">
 				<div class="homesTitlebg">

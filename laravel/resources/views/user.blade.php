@@ -15,7 +15,8 @@
             </div>                                <ul class="tabs marginT15 width594">
                     <li class="no_tab no_pointer"><strong>账户信息</strong></li>
                 </ul>
-                <form  method="post" action="" name="userForm" id="userForm" target="postframe">
+          <form  method="post" action="{{URL::route('Index/userGai')}}" enctype='multipart/form-data'  name="userForm" id="userForm" target="postframe">
+          	<input type="hidden" name="_token" value="{{csrf_token()}}"/>
                 <div class="con_wraper width594 fl">
                     <!--
                     <p class="field_p">
@@ -25,15 +26,10 @@
                     -->
                     <p class="field_p">
                         <label>用户名：</label> 
-                        <input type="text" class="small_input" value="<?php echo $_COOKIE['name']?>" id="nickname" name="nickname" />
+                        <input type="text" class="small_input" readonly value="<?php echo $_COOKIE['name']?>" style="background-color:#EFEFEF;" id="nickname" name="nickname" />
                         <span id="tip_nickname" class="gray"></span>
                     </p>            
-                    <p class="field_p">
-                        <label>邮 箱：</label>
-                         
-                            <input type="text" class="mid_input" id="email" name="email" value="" />
-                            <span class="check" id="tip_email"></span>
-                                            </p>
+
                     <p class="field_p">
                         <label>手 机：</label>
                                                 <input type="text" class="small_input" readonly="readonly" style="background-color:#EFEFEF;" id="mobile" name="mobile" value="15210168509" maxlength=11 />&nbsp;&nbsp;<a href="#ongo" userid="1" class="checkphonenum blue" class="btn_normal marginL157">更改手机号</a><span id="tip_mobile"></span>
@@ -42,9 +38,25 @@
     <li class="no_tab no_pointer paddingL3"><strong>个人信息</strong></li>
 </ul>      
 <div class="field_p">
+    <?php 
+    if($db->u_header!=""){
+    ?>
+    <label>头像</label>
+    <img src="{{URL::asset('uploads')}}/<?php echo $db->u_header?>" width="150px" height="150px" alt=""><br><label>重新上传头像</label>
+    <input type="file" name="myfiles"><br><br>
+    <?php }else{ ?>
+    <label>上传头像</label>
+    <input type="file" name="myfiles"><br><br><br>
+    <?php } ?>
+    <?php 
+    if($db->realname!=""){
+    ?>
     <label>真实姓名：</label>
-    <input type="text" class="small_input" value="任鹏东" id="realname" name="realname" onblur="countUserInfoPercent($(this));"  />        <span id="fk_zhima_con" class="fk_zhima_con">
-        
+    <input type="text" class="small_input" value="<?php echo $db->realname?>" id="realname" name="realname" onblur="countUserInfoPercent($(this));"  />        <span id="fk_zhima_con" class="fk_zhima_con">
+    <?php }else{ ?>
+    <label>真实姓名：</label>
+    <input type="text" class="small_input" value="" id="realname" name="realname" onblur="countUserInfoPercent($(this));"  />
+<?php }?>
         <div class="zhima_con fk_zhima top30" style="display: none" id="fk_zhima_on">
             
         </div>
@@ -52,8 +64,15 @@
     </div>
 <p id="tip_realname" class="check space"></p>
 <p class="field_p">
+    <?php 
+    if($db->u_idcard!=""){
+    ?>
      <label>身份证号：</label>
-     <input type="text" class="mid_input valid" name="cardno" id="cardno" value="142631199503251719" maxlength="18"   />     <p id="tip_cardno" class="check space"></p>
+     <input type="text" class="mid_input valid" name="cardno" id="cardno" value="<?php echo $db->u_idcard?>" maxlength="18"   />     <p id="tip_cardno" class="check space"></p>
+    <?php }else{ ?>
+<label>身份证号：</label>
+     <input type="text" class="mid_input valid" name="cardno" id="cardno" value="" maxlength="18"   />     <p id="tip_cardno" class="check space"></p>
+    <?php }?>
 </p>
 <p class="field_p">
     <label>性 别：</label>
@@ -439,129 +458,18 @@
                 <option value ="36">台湾省</option>
                     </select>
     <span id="tip_province"></span>
-    <select name="city"  id="city" class="sel_normal gray_2" onchange="countUserInfoPercent($(this));">
-        <option value="">  请选择  </option>
-            </select>
-    <span id="tip_city"></span>
+
 </p>
-<p class="field_p">
-    <label>故乡：</label> 
-    <select class="sel_normal marginR10 gray_2" name="hometownprovince" id="hometownprovince">
-        <option value="">  请选择  </option>
-         
-                <option value ="1">北京市</option>
-                 
-                <option value ="2">上海市</option>
-                 
-                <option value ="3">天津市</option>
-                 
-                <option value ="4">重庆市</option>
-                 
-                <option value ="5">广东省</option>
-                 
-                <option value ="6">四川省</option>
-                 
-                <option value ="7">浙江省</option>
-                 
-                <option value ="8">贵州省</option>
-                 
-                <option value ="9">辽宁省</option>
-                 
-                <option value ="10">江苏省</option>
-                 
-                <option value ="11">福建省</option>
-                 
-                <option value ="12">河北省</option>
-                 
-                <option value ="13">河南省</option>
-                 
-                <option value ="14">吉林省</option>
-                 
-                <option value ="15">黑龙江省</option>
-                 
-                <option value ="16">山东省</option>
-                 
-                <option value ="17">安徽省</option>
-                 
-                <option value ="18">广西壮族自治区</option>
-                 
-                <option value ="19">海南省</option>
-                 
-                <option value ="20">内蒙古自治区</option>
-                 
-                <option value ="21">山西省</option>
-                 
-                <option value ="22">宁夏自治区</option>
-                 
-                <option value ="23">甘肃省</option>
-                 
-                <option value ="24">陕西省</option>
-                 
-                <option value ="25">青海省</option>
-                 
-                <option value ="26">湖北省</option>
-                 
-                <option value ="27">湖南省</option>
-                 
-                <option value ="28">江西省</option>
-                 
-                <option value ="29">云南省</option>
-                 
-                <option value ="30">新疆维吾尔自治区</option>
-                 
-                <option value ="31">西藏自治区</option>
-                 
-                <option value ="33">香港特别行政区</option>
-                 
-                <option value ="35">澳门特别行政区</option>
-                 
-                <option value ="36">台湾省</option>
-                    </select> 
-    <select name="hometowncity"  id="hometowncity" class="sel_normal gray_2" onchange="countUserInfoPercent($(this));">
-        <option value=""> 请选择  </option>
-            </select>
-</p>
-<p class="field_p">
-    <label>血型：</label>
-    <select class="sel_normal marginR10 gray_2" name="blood" id="blood" onchange="countUserInfoPercent($(this));">
-        <option value="">  请选择  </option>
-         
-                <option value ="a">A型</option>
-                 
-                <option value ="b">B型</option>
-                 
-                <option value ="ab">AB型</option>
-                 
-                <option value ="o">O型</option>
-                    </select>
-</p>
+
+
 <p class="field_p">
     <label>工作：</label>
     <input type="text" class="sel_normal_input marginR10 gray_2" value="请填写职业" name="profession" id="profession" onfocus="keyFocus('profession','请填写职业');" onblur="keyBlur('profession','请填写职业');countUserInfoPercent($(this));" />
     <input type="text" class="sel_normal_input gray_2" value="请填写职位名称" name="position" id="position" onfocus="keyFocus('position','请填写职位名称');" onblur="keyBlur('position','请填写职位名称');countUserInfoPercent($(this));" />
 </p>
-<p class="field_p">
-    <label>教育：</label>
-    <select class="sel_normal marginR24 gray_2" name="education" id="education" onchange="countUserInfoPercent($(this));">
-        <option value="">请选择学历</option>
-         
-                <option value ="doctor">博士</option>
-                 
-                <option value ="master">硕士</option>
-                 
-                <option value ="undergraduate">本科</option>
-                 
-                <option value ="college">大专</option>
-                 
-                <option value ="secondary">中专</option>
-                 
-                <option value ="senior">高中</option>
-                 
-                <option value ="junior">初中</option>
-                    </select>
-    <input type="text" class="sel_normal_input1 gray_2" value="请填写学校名称" name="schoolname" id="schoolname" onfocus="keyFocus('schoolname','请填写学校名称');" onblur="keyBlur('schoolname','请填写学校名称');countUserInfoPercent($(this));" />
-</p>                  <p class="field_p_1"><a class="btn_normal">保存设置</a> <span class="tips_right hidden">保存设置成功</span>
-<span class="tips_error hidden">操作失败</span></p> 
+  <p class="field_p_1">
+  	<input type="submit" class="btn_normal" value="保存设置">
+</p>
 
                     <div class="sns_wraper">
 <a href="http://www.gaojiahao.com/database/ninegroups/laravel/public/">返回主页</a>
@@ -581,26 +489,13 @@
         
         
     </div>
-</div>            </form>
+</div>           
+ </form>
             </div>
         </div>
         <!-- content dialog-->
         <div class="zhima_pop pop_330" style="display:none" id="alipayTrustAuthDialog">
-    <a href="#ongo" class="pop_close_v2" onclick="closeDialog('alipayTrustAuthDialog')"></a>
-    <div class="pop_head">提交身份信息</div>
-    <form name="alipayTrustAuthForm" id="alipayTrustAuthForm" method="post" action="http://www.xiaozhu.com/xzweb.php?op=AlipayTrustAuth">
-        <p class="ipt_field marginL40">
-            <input class="ipt_short" type="text" id="realname4alipay" name="realname4alipay" placeholder="真实姓名" autocomplete="off" value="" />
-        </p>
-                <span class="ipt_tips pink marginL40" id="realname4alipay-tip" style="display:none;"></span>
-        <p class="ipt_field marginL40">
-            <input class="ipt_short" type="text" id="certno4alipay" name="certno4alipay" placeholder="身份证号码" value="" autocomplete="off"/>
-            <input type="hidden" id="aliview" name="aliview" value="pc">
-            <input type="hidden" id="nexturl4alipay" name="nexturl4alipay" value="http://www.xiaozhu.com/xzweb.php?op=FangKe_UserInfo"/>
-        </p>
-        <span class="ipt_tips pink marginL40" id="certno4alipay-tip" style="display:none;"></span>
-        
-    </form>
+
 </div>
 </body>
 <script type="text/javascript" src="http://jci.xiaozhustatic3.com/e1605163/js/jquery/jquery.js"></script>
@@ -610,5 +505,5 @@
 <script type="text/javascript" src="http://www.xiaozhu.com/e1605163/js/webimv4/application/xzim4.js?source=xiaozhu&dm=xiaozhu.com" id="webimSource"></script>
 
 <script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/xzjs?k=FangDong_Header&httphost=www.xiaozhu.com"></script>
-        <script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/xzjs?k=FangKe_UserInfo&httphost=www.xiaozhu.com"></script>
+        <script type="text/javascript" src="../css/user2.css"></script>
 </html>

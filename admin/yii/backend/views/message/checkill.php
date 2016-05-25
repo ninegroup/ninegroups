@@ -1,3 +1,8 @@
+<?php
+use yii\helpers\Html;
+use yii\widgets\LinkPager;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -578,9 +583,9 @@
 							</label>
 						</th>
 						<th>举报人</th>
-						<th>举报房源</th>
-						<th>举报房东</th>
-						<th class="hidden-480">举报内容</th>
+						<th>被举报房源</th>
+						<th>被举报房东</th>
+						<th class="hidden-480">被举报内容</th>
 
 						<th>
 							<i class="icon-time bigger-110 hidden-480"></i>
@@ -590,7 +595,8 @@
 				</thead>
 
 				<tbody>
-				<?php foreach($content as $k=>$v){?>
+				<?php foreach ($countries as $v): ?>
+
 					<tr>
 						<td class="center">
 							<label>
@@ -609,10 +615,11 @@
 						<a href="index.php?r=message/checkbegin&id=<?php echo $v['r_id']?>">开始审核</a>
 						</td>
 					</tr>
-				<?php } ?>
+				<?php endforeach; ?>
 				</tbody>
 			</table>
 		</div><!-- /.table-responsive -->
+		<?= LinkPager::widget(['pagination' => $pagination]) ?>
 	</div><!-- /span -->
 </div><!-- /row -->
 
