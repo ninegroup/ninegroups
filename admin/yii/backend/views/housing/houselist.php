@@ -542,7 +542,7 @@ use yii\widgets\LinkPager;
 							</h1>
 						</div><!-- /.page-header -->
 						<input type="text" name="sou" id='sous' value="<?php $s=$sou?$sou:''; echo $s;?>">		
-						<button class="btn btn-xs btn-pink" onclick="sou()">搜索<?php $s=$sou?$sou:''; echo $s;?></button>
+						<button class="btn btn-xs btn-pink" onclick="sou()">搜索</button>
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
