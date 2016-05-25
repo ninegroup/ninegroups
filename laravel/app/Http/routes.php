@@ -43,6 +43,8 @@ Route::any('index','IndexController@index');
 Route::any('login','LoginController@login');
 //用户中心
 Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@user"]);
+//用户修改
+Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
 
 //退出
 Route::any('unset1','LoginController@unset1');

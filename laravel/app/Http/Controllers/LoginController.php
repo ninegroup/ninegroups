@@ -40,7 +40,7 @@ class LoginController extends Controller {
 				setcookie('name',$name1);
 				setcookie('u_id',$id);
 				//echo $_COOKIE['u_id'];die;
-				echo "<script>alert('登陆成功');location.href='/database/ninegroups/laravel/public/index'</script>";
+				echo "<script>alert('登陆成功');location.href='index'</script>";
 			}else{
 				echo "<script>alert('密码错误');location.href='/database/ninegroups/laravel/public/index'</script>";
 			}
