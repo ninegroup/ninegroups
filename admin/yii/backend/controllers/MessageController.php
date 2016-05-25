@@ -2,6 +2,10 @@
 
 namespace backend\controllers;
 use Yii;
+use yii\web\Controller;
+use yii\data\Pagination;
+use backend\models\Report;
+
 class MessageController extends \yii\web\Controller
 {
 	//审核已完成列表(包括通过的和没通过的)
@@ -9,9 +13,29 @@ class MessageController extends \yii\web\Controller
 	public function actionList(){
 		$session=Yii::$app->session;
 		$name=$session->get('name');
-		$sql=Yii::$app->db->createCommand("select * from report where r_state=2 or r_state=3");
-		$re=$sql->queryAll();
-		return $this->renderPartial('message_list',array('name'=>$name,'content'=>$re));
+		
+		//接受搜索的值
+		$request=Yii::$app->request;
+		$search=$request->get('search')?$request->get('search'):'';
+
+		$query = Report::find();
+
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->where("r_state=2 or r_state=3 and r_h_id like '%$search%'")->count(),
+        ]);
+
+        $countries = $query->where("r_state=2 or r_state=3 and r_h_id like '%$search%'")
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+	
+		return $this->renderPartial('message_list', [
+			'name'=>$name,
+            'countries' => $countries,
+            'pagination' => $pagination,
+			'search'=>$search,
+        ]);
 	}
 
 	//待审核列表
@@ -19,9 +43,25 @@ class MessageController extends \yii\web\Controller
 	public function actionCheckill(){
 		$session=Yii::$app->session;
 		$name=$session->get('name');
-		$sql=Yii::$app->db->createCommand("select * from report where r_state=0");
-		$re=$sql->queryAll();
-		return $this->renderPartial('checkill',array('name'=>$name,'content'=>$re));
+		
+		//分页
+		$query = Report::find();
+
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->where("r_state=0")->count(),
+        ]);
+
+        $countries = $query->where("r_state=0")
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+	
+		return $this->renderPartial('checkill', [
+			'name'=>$name,
+            'countries' => $countries,
+            'pagination' => $pagination,
+        ]);
 	}
 	
 
@@ -39,9 +79,25 @@ class MessageController extends \yii\web\Controller
 	public function actionChecking(){
 		$session=Yii::$app->session;
 		$name=$session->get('name');
-		$sql=Yii::$app->db->createCommand("select * from report where r_state=1");
-		$re=$sql->queryAll();
-		return $this->renderPartial('checking',array('name'=>$name,'content'=>$re));
+
+		//分页
+		$query = Report::find();
+
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->where("r_state=1")->count(),
+        ]);
+
+        $countries = $query->where("r_state=1")
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+	
+		return $this->renderPartial('checking', [
+			'name'=>$name,
+            'countries' => $countries,
+            'pagination' => $pagination,
+        ]);
 	}
 	
 	//将状态值改为相对应的审核结果

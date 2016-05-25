@@ -1,3 +1,8 @@
+<?php
+use yii\helpers\Html;
+use yii\widgets\LinkPager;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -538,14 +543,14 @@
 							<li class="active"></li>
 						</ul><!-- .breadcrumb -->
 
-						<div class="nav-search" id="nav-search">
+						<!-- <div class="nav-search" id="nav-search">
 							<form class="form-search">
 								<span class="input-icon">
 									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
 									<i class="icon-search nav-search-icon"></i>
 								</span>
 							</form>
-						</div><!-- #nav-search -->
+						</div>#nav-search -->
 					</div>
 
 					<div class="page-content">
@@ -559,10 +564,16 @@
 							</h1>
 						</div><!-- /.page-header -->
 
-<div class="row">
-<div class="col-xs-12">
-	<!-- PAGE CONTENT BEGINS -->
 
+<div id="nav-search">
+	<form class="form-search">
+		<span class="input-icon">
+			<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" value='<?php $s=$search?$search:''; echo $s;?>'/>
+			<i class="icon-search nav-search-icon"></i><button onclick='search();' style="width:80px;height:30px;">Search</button>
+		</span>
+	</form>
+</div><!-- #nav-search -->
+<div><br /></div>
 <div class="row">
 	<div class="col-xs-12">
 		<div class="table-responsive">
@@ -576,8 +587,8 @@
 							</label>
 						</th>
 						<th>举报人</th>
-						<th>举报房源</th>
-						<th>举报房东</th>
+						<th>被举报房源</th>
+						<th>被举报房东</th>
 						<th class="hidden-480">举报内容</th>
 
 						<th>
@@ -588,7 +599,8 @@
 				</thead>
 
 				<tbody>
-				<?php foreach($content as $k=>$v){?>
+				<?php foreach ($countries as $v): ?>
+
 					<tr>
 						<td class="center">
 							<label>
@@ -611,10 +623,12 @@
 						}?>
 						</td>
 					</tr>
-				<?php } ?>
+				<?php endforeach; ?>
+					
 				</tbody>
 			</table>
 		</div><!-- /.table-responsive -->
+		<?= LinkPager::widget(['pagination' => $pagination]) ?>
 	</div><!-- /span -->
 </div><!-- /row -->
 
@@ -756,6 +770,14 @@
 				}
 			})
 		</script>
+		//搜索
+		<script type="text/javascript">
+			function search(){
+				var search=document.getElementById('nav-search-input').value;
+				location.href="index.php?r=message/list&search="+search;
+			}
+		</script>
 	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
+
