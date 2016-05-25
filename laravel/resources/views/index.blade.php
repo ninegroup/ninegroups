@@ -196,7 +196,7 @@ h1 {
 <div class="wrap">
 	<div class="main content_top">
 		<!-- start span_of_3 -->
-		<div class="span_of_3">
+		<div class="span_of_3"> 
 			@foreach($hot as $v)
 			<div class="span1_of_3">
 				<a href="#"><img src="images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}"/></a>
