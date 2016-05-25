@@ -6659,3 +6659,830 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1464176004.0994
     'REQUEST_TIME' => 1464176004
 ]
+2016-05-25 21:00:11 [127.0.0.1][-][oufpn8686e727rr5imd25b4150][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/del".' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/del', Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-05-25 21:00:11 [127.0.0.1][-][oufpn8686e727rr5imd25b4150][info][application] $_GET = [
+    'r' => 'user/del'
+    'id' => ''
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '680'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=user/del&id='
+    'QUERY_STRING' => 'r=user/del&id='
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62405'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464181211.1255
+    'REQUEST_TIME' => 1464181211
+]
+2016-05-25 21:00:52 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(346): yii\db\Command->queryInternal('<span class="st...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\controllers\ManageController.php(69): yii\db\Command->query()
+#3 [internal function]: backend\controllers\ManageController->actionDel()
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+The SQL being executed was: delete from rikao where id in()' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'delete from rik...')
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(346): yii\db\Command->queryInternal('<span class="st...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\controllers\ManageController.php(69): yii\db\Command->query()
+#3 [internal function]: backend\controllers\ManageController->actionDel()
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+)
+
+2016-05-25 21:00:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/del'
+    'id' => ''
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '680'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/del&id='
+    'QUERY_STRING' => 'r=manage/del&id='
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62406'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464181252.0132
+    'REQUEST_TIME' => 1464181252
+]
+2016-05-25 21:01:40 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(346): yii\db\Command->queryInternal('<span class="st...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\controllers\ManageController.php(69): yii\db\Command->query()
+#3 [internal function]: backend\controllers\ManageController->actionDel()
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+The SQL being executed was: delete from user_admin where u_id in()' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'delete from use...')
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(346): yii\db\Command->queryInternal('<span class="st...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\controllers\ManageController.php(69): yii\db\Command->query()
+#3 [internal function]: backend\controllers\ManageController->actionDel()
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+)
+
+2016-05-25 21:01:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/del'
+    'id' => ''
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '680'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/del&id='
+    'QUERY_STRING' => 'r=manage/del&id='
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62419'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464181300.1712
+    'REQUEST_TIME' => 1464181300
+]
+2016-05-25 21:26:50 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php:837
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(837): PDOStatement->execute()
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all('<span class="ke...')
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\controllers\ManageController.php(61): yii\db\ActiveQuery->all()
+#5 [internal function]: backend\controllers\ManageController->actionList()
+#6 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'
+The SQL being executed was: SELECT * FROM `user_admin` ORDER BY `name` LIMIT 3' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\db\ActiveQuery.php(132): yii\db\Query->all('<span class="ke...')
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\controllers\ManageController.php(61): yii\db\ActiveQuery->all()
+#5 [internal function]: backend\controllers\ManageController->actionList()
+#6 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'name' in 'order clause'
+)
+
+2016-05-25 21:26:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2264'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63105'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464182809.8882
+    'REQUEST_TIME' => 1464182809
+]
+2016-05-25 21:28:15 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\views\manage\tables.php' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\WWW\\htdocs\\P...', Array, Object(backend\controllers\ManageController))
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('tables', Array, Object(backend\controllers\ManageController))
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\controllers\ManageController.php(65): yii\base\Controller->render('tables', Array)
+#3 [internal function]: backend\controllers\ManageController->actionList()
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('list', Array)
+#7 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('manage/list', Array)
+#8 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-05-25 21:28:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2264'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63127'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464182895.2756
+    'REQUEST_TIME' => 1464182895
+]
+2016-05-25 21:28:15 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#7 {main}
+2016-05-25 21:28:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2264'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63127'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464182895.2756
+    'REQUEST_TIME' => 1464182895
+]
+2016-05-25 21:28:53 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use yii\helpers\Html as Html because the name is already in use' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\views\manage\tables.html:640
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-05-25 21:28:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63132'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464182933.6104
+    'REQUEST_TIME' => 1464182933
+]
+2016-05-25 21:29:11 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use yii\widgets\LinkPager as LinkPager because the name is already in use' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\views\manage\tables.html:641
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-05-25 21:29:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63135'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464182951.1687
+    'REQUEST_TIME' => 1464182951
+]
+2016-05-25 21:29:44 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use yii\widgets\LinkPager as LinkPager because the name is already in use' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\views\manage\tables.php:641
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-05-25 21:29:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63137'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464182984.337
+    'REQUEST_TIME' => 1464182984
+]
+2016-05-25 21:31:49 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use yii\widgets\LinkPager as LinkPager because the name is already in use' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\views\manage\tables.php:640
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-05-25 21:31:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":-1,\"sidebar-fixed\":-1,\"main-container-fixed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63207'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A-1%2C%22sidebar-fixed%22%3A-1%2C%22main-container-fixed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464183108.916
+    'REQUEST_TIME' => 1464183108
+]
+2016-05-25 21:33:36 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\views\manage\tables.html' in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('F:\\WWW\\htdocs\\P...', Array, Object(backend\controllers\ManageController))
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\ManageController))
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\controllers\ManageController.php(47): yii\base\Controller->renderPartial('tables.html', Array)
+#3 [internal function]: backend\controllers\ManageController->actionList()
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('list', Array)
+#7 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('manage/list', Array)
+#8 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-05-25 21:33:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":-1,\"sidebar-fixed\":-1,\"main-container-fixed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63275'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A-1%2C%22sidebar-fixed%22%3A-1%2C%22main-container-fixed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464183216.8068
+    'REQUEST_TIME' => 1464183216
+]
+2016-05-25 21:33:37 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#7 {main}
+2016-05-25 21:33:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":-1,\"sidebar-fixed\":-1,\"main-container-fixed\":-1}'
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'oufpn8686e727rr5imd25b4150'
+    '_csrf' => 'e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63275'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A-1%2C%22sidebar-fixed%22%3A-1%2C%22main-container-fixed%22%3A-1%7D; CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=oufpn8686e727rr5imd25b4150; _csrf=e7433dc80f7ef8d174335c8c710925db6624628f386bada9370ed8bb68e53f38a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vua7kWxS_9MepxVVUBbRYTjlvj7vW7D-%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464183216.8068
+    'REQUEST_TIME' => 1464183216
+]
