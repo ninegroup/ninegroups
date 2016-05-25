@@ -17,7 +17,7 @@ class LoginController extends Controller {
 		$db=DB::insert("insert into user(u_name,u_pwd,u_tel,u_time) values('$u_name','$u_pwd','$u_tel','$u_time')");
 		if($db)
 		{
-			echo "<script>alert('注册成功');location.href='/database/ninegroups/laravel/public/index'</script>";
+			echo "<script>alert('注册成功');location.href='index'</script>";
 		}
 	}
 	//登陆
@@ -42,10 +42,10 @@ class LoginController extends Controller {
 				//echo $_COOKIE['u_id'];die;
 				echo "<script>alert('登陆成功');location.href='index'</script>";
 			}else{
-				echo "<script>alert('密码错误');location.href='/database/ninegroups/laravel/public/index'</script>";
+				echo "<script>alert('密码错误');location.href='index'</script>";
 			}
 		}else{
-			echo "<script>alert('用户不存在');location.href='/database/ninegroups/laravel/public/index'</script>";
+			echo "<script>alert('用户不存在');location.href='index'</script>";
 		}
 	}
 
@@ -61,7 +61,7 @@ class LoginController extends Controller {
 	{
 		if(empty($_COOKIE['name']))
 		{
-			echo "<script>alert('请先登录');location.href='/database/ninegroups/laravel/public/index'</script>";
+			echo "<script>alert('请先登录');location.href='index'</script>";
 		}else{
 			return view("publish");
 		}
