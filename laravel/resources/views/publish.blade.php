@@ -387,23 +387,7 @@ $(function() {
 <!-- Content -->
 <div class="main">
 <link href="http://staticnew.mayi.com/resourcesWeb/css/flow_chart.css" rel="stylesheet"  type="text/css">
-	<div class='one_workflow yes_person'>
-		<div class='workflow relave'>
-			<div class='progress '></div>
-			<b class='workflow1'>房源信息</b>
-			<b class='workflow2'>房源描述</b>
-			<b class='workflow3'>房源图片</b>
-			<b class='workflow4'>价格要求</b>
-			<b class='workflow5'>个人信息</b>
-			<b class='workflow6'>发布成功</b>
-			<span class='workflow1_1'><a href="javascript:;" class='a_after'>1</a></span>
-			<span class='workflow1_2'><a href="javascript:;" >2</a></span>
-			<span class='workflow1_3'><a href="javascript:;" >3</a></span>
-			<span class='workflow1_4'><a href="javascript:;" >4</a></span>
-			<span class='workflow1_5'><a href="javascript:;" >5</a></span>
-			<span class='workflow1_6'><a href="javascript:;" class='duigo'></a></span>
-		</div>
-	</div>
+	
 	<!--增加房东上传头像功能开始-->
 	<input type="hidden" id="isHavePic" value="isHavePic">
 	<!--增加房东上传头像功能结束-->	
@@ -414,16 +398,17 @@ $(function() {
 			房源信息
 			</div>
 		</div>
-		<form autocomplete="off" name="roomform" action="/room/publish/basicinfoSubmit"  method = "post">
+		<form autocomplete="off" name="roomform" action="{{URL('addhouse1')}}"  method = "post">
 		<input type="hidden" name="roomId" id="roomId" value=""/>
 		<input type="hidden" name="flag" id="flag" value=""/>
+		<input type="hidden" name="_token" value="{{csrf_token()}}"/>
 		<input type="hidden" name="ctx" id="ctx" value="" />
 		<input type="hidden" name="cookprice" id="cookprice" value="0" />
 		<div class="homes">
 			<dl class="homesInfo clearfix">
             	<label class="rentType">
-					<dt><span class="fr">出租标题：</span><em class="notNull"></em></dt>
-					<p><input type="text" maxlength="6" class="largeInput fl" name="h_title"/></p>
+					<dt><span class="fr">出租房位置：</span><em class="notNull"></em></dt>
+					<p><input type="text" maxlength="6" class="largeInput fl" name="h_city"/></p>
 				</label>
             </dl>
 
@@ -449,7 +434,7 @@ $(function() {
 			<dl class="homesInfo clearfix">
 				<dt><span class="fr">同类房源：</span><em class="notNull"></em></dt>
 				<dd>
-					<label><input maxlength="3" type="text" name="h_mating" id="stock" class="largeInput fl" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"></label>
+					<label><input maxlength="3" type="text" name="h_state" id="stock" class="largeInput fl" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"></label>
 					<span class="fl">&nbsp;套</span>
 					<span class="fl ml30">户型、装修、陈设、价格相同的房间（含此房源在内）</span>
 				</dd>
@@ -457,7 +442,7 @@ $(function() {
 		</div>
 		<input type="hidden" id="positionId4Edit" name="roomLocationId" value="" />
 		<div class="submit-wrap">
-			<a class="save" id="baseSave" href="javascript:void(0);" onclick="aaaa()">保存，下一步</a>
+			<input type="submit" value="保存,下一步" class="save" id="detailSave"/>
 		</div>
 	</form>
 	</div>
@@ -509,6 +494,7 @@ function sinaWeibo(){
 	window.open("http://widget.weibo.com/dialog/follow.php?fuid=2357071361");
 }
 </script>
+<div style="margin-top:150px;"></div>
 <div class="foot index-foot clearfloat">
 	<div class="w1190 pb20 clearfloat">
         	<div class="link_end">

@@ -73,14 +73,44 @@ class LoginController extends Controller {
 	}
 	public function publish3()
 	{
-		return view("publish3");
-	}
-	public function publish4()
-	{
 		return view("publish4");
 	}
+	
 	public function publish5()
 	{
 		return view("publish5");
+	}
+	public function addhouse1()
+	{
+		//echo 123;
+		$h_city=Request::input('h_city');
+		$h_message=htmlentities($_POST['h_message']);
+		//echo $h_message;die;
+		$h_price=Request::input('h_price');
+		$h_state=Request::input('h_state');
+		$u_id=$_COOKIE['u_id'];
+		//echo $u_id;die;
+		$db=DB::insert("insert into house(h_city,h_message,h_price,h_state,u_id) values('$h_city','$h_message','$h_price','$h_state','$u_id')");
+		 //echo $aa;die;
+		if($db)
+		{
+			//echo 123;
+			return redirect()->action('LoginController@publish2');
+		}else{
+			echo "添加失败";
+		}
+	}
+
+	public function addhouse2()
+	{
+		//echo 123;
+		//$id=mysql_insert_id();
+		//echo $id;die;
+		
+		$h_title=Request::input('h_title');
+		$h_content=htmlentities($_POST['h_content']);
+		//echo $h_content;die;
+		$h_site=htmlentities($_POST['h_site']);
+		return redirect()->action('LoginController@publish3');
 	}
 }
