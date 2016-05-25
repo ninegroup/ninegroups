@@ -13,22 +13,26 @@ use yii\data\Pagination;
  */
 class HousingController extends Controller
 {
+	public $enableCsrfValidation = false;
 	/*房源列表*/
 	public function actionList()
 	{
+		$request = Yii::$app->request;
+    		$sou = $request->get('sou')?$request->get('sou'):'';
 		$query = House::find();
 
         $pagination = new Pagination([
             'defaultPageSize' => 5,
-            'totalCount' => $query->where("h_state=1")->count(),
+            'totalCount' => $query->where("h_state=1 and h_title like '%$sou%'")->count(),
         ]);
 
         $countries = $query->where("h_state=1")
             ->offset($pagination->offset)
             ->limit($pagination->limit)
+            ->where("h_title like '%$sou%'")
             ->all();
         return $this->renderPartial('houselist',['countries' => $countries,
-            'pagination' => $pagination,]);
+            'pagination' => $pagination,'sou'=>$sou,]);
 	}
 	/*房源删除*/
 	public function actionDel()

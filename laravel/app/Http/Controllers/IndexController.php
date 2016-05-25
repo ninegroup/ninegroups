@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 <?php namespace App\Http\Controllers;
+=======
+<?php
+namespace App\Http\Controllers;
+>>>>>>> 0d766fb0bccacac72712eff2c5d2c9cc349160f5
 
 use DB;
 use Request;
@@ -31,11 +36,17 @@ class IndexController extends Controller {
 	/*显示主页面*/
 	public function index()
 	{
+<<<<<<< HEAD
 		$db=DB::table('picture')
 				->join('house', 'picture.pi_h_id', '=', 'house.h_id')
 				->where('pi_state','1')
 				->get();
 		return view('index')->with('db',$db);
+=======
+		$db=DB::table('picture')->join('house', 'picture.pi_h_id', '=', 'house.h_id')->where('pi_state','1')->get();
+		$hot=DB::table('picture')->join('house', 'picture.pi_h_id', '=', 'house.h_id')->where('pi_state','3')->get();
+		return view('index')->with('db',$db)->with('hot',$hot);
+>>>>>>> 0d766fb0bccacac72712eff2c5d2c9cc349160f5
 	}
 	/*用户中心*/
 	public function user(){
