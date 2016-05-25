@@ -16,20 +16,22 @@ class BaseController extends \yii\web\Controller
     {	
 		$session=Yii::$app->session;
 		$name=$session->get('name');
-		$sql="select * from base";
-		$command=Yii::$app->db->createCommand($sql);
-		$data=$command->queryAll();
-		$arr=$this->digui($data,0,0);
+		 $rows= (new \yii\db\Query())
+        ->select(['*'])
+        ->from('base')
+        ->all();
+		$arr=$this->digui($rows,0,0);
 		return $this->renderPartial('jquery-ui.html',array('arr'=>$arr,'name'=>$name));
     }
 	//跳转类型列表
 	public function actionNestablelist(){
 		$session=Yii::$app->session;
 		$name=$session->get('name');
-		$sql="select * from base";
-		$command=Yii::$app->db->createCommand($sql);
-		$data=$command->queryAll();
-		$arr=$this->digui($data,0,0);
+		$rows= (new \yii\db\Query())
+        ->select(['*'])
+        ->from('base')
+        ->all();
+		$arr=$this->digui($rows,0,0);
 		return $this->renderPartial('nestable-list.html',array('arr'=>$arr,'name'=>$name));
 	}
 	//添加类型
@@ -37,9 +39,11 @@ class BaseController extends \yii\web\Controller
 		$request = Yii::$app->request;
 		$bf_id = $request->post('bf_id');
 		$b_name = $request->post('b_name');
-		$sql="insert into base(b_name,bf_id)values('$b_name','$bf_id')";
-		$command=Yii::$app->db->createCommand($sql);
-		$data=$command->query();
+		$connection=Yii::$app->db;
+		$data=$connection->createCommand()->insert('base', [
+			'b_name' => "$b_name",
+			'bf_id' => $bf_id,
+		])->execute();
 		if($data){
 			return $this->redirect(['base/jqueryui']);
 		}else{
@@ -62,15 +66,16 @@ class BaseController extends \yii\web\Controller
 	public function actionBasedel(){
 		$request = Yii::$app->request;
 		$id = $request->post('id');
-		$sql="select * from base where bf_id='$id'";
-		$command=Yii::$app->db->createCommand($sql);
-		$data=$command->queryAll();
+		$data= (new \yii\db\Query())
+        ->select(['*'])
+        ->from('base')
+		->where("bf_id = '$id'")
+        ->all();
 		if($data){
 			echo 1;
 		}else{
-			$sql="delete from base where b_id='$id'";
-			$command=Yii::$app->db->createCommand($sql);
-			$data=$command->query();
+			$connection=Yii::$app->db;
+			$connection->createCommand()->delete('base', "b_id = '$id'")->execute();
 			echo 2;
 		}
 	}
@@ -78,9 +83,8 @@ class BaseController extends \yii\web\Controller
 	public function actionBasedelall(){
 		$request = Yii::$app->request;
 		$id = $request->post('id');
-		$sql="delete from base where b_id='$id' or bf_id='$id'";
-		$command=Yii::$app->db->createCommand($sql);
-		$data=$command->query();
+		$connection=Yii::$app->db;
+		$data=$connection->createCommand()->delete('base', "b_id = '$id' or bf_id='$id'")->execute();
 		echo 3;
 	}
 }
