@@ -9,7 +9,7 @@
   <h1></h1>
               <div class="right_con">
                                                                                 <div class="manage_breadcrumb">
-        <a href="http://www.xiaozhu.com/xzweb.php?op=FangKe_Index">用户中心</a>
+        <a href="#">用户中心</a>
                 <span> &gt;</span>我的设置
                     <span> &gt;</span><strong>个人资料</strong>
             </div>                                <ul class="tabs marginT15 width594">
