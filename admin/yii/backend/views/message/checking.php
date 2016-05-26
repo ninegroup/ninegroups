@@ -567,10 +567,15 @@ use yii\widgets\LinkPager;
 							</h1>
 						</div><!-- /.page-header -->
 
-<div class="row">
-<div class="col-xs-12">
-	<!-- PAGE CONTENT BEGINS -->
-
+<div id="nav-search">
+	<form class="form-search">
+		<span class="input-icon">
+			<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" value=''/>
+			<i class="icon-search nav-search-icon"></i><button onclick='search();' style="width:80px;height:30px;">Search</button>
+		</span>
+	</form>
+</div><!-- #nav-search -->
+<br />
 <div class="row">
 	<div class="col-xs-12">
 		<div class="table-responsive">
@@ -687,7 +692,7 @@ use yii\widgets\LinkPager;
 
 		<!--[if !IE]> -->
 
-		<script src="<?php Yii::$app->request->baseUrl?>../views/assets/js/jquery-2.0.3.min.js>"></script>
+		<script src="../views/assets/js/jquery-2.0.3.min.js"></script>
 		<!-- <![endif]-->
 
 		<!--[if IE]>

@@ -9,7 +9,7 @@
   <h1></h1>
               <div class="right_con">
                                                                                 <div class="manage_breadcrumb">
-        <a href="http://www.xiaozhu.com/xzweb.php?op=FangKe_Index">用户中心</a>
+        <a href="#">用户中心</a>
                 <span> &gt;</span>我的设置
                     <span> &gt;</span><strong>个人资料</strong>
             </div>                                <ul class="tabs marginT15 width594">
@@ -32,7 +32,7 @@
 
                     <p class="field_p">
                         <label>手 机：</label>
-                                                <input type="text" class="small_input" readonly="readonly" style="background-color:#EFEFEF;" id="mobile" name="mobile" value="15210168509" maxlength=11 />&nbsp;&nbsp;<a href="#ongo" userid="1" class="checkphonenum blue" class="btn_normal marginL157">更改手机号</a><span id="tip_mobile"></span>
+                                                <input type="text" class="small_input" readonly="readonly" style="background-color:#EFEFEF;" id="mobile" name="mobile" value="<?php echo $db->u_tel?>" maxlength=11 />&nbsp;&nbsp;<a href="#ongo" userid="1" class="checkphonenum blue" class="btn_normal marginL157">更改手机号</a><span id="tip_mobile"></span>
                                             </p>
                                         <ul class="tabs marginT15 width594">
     <li class="no_tab no_pointer paddingL3"><strong>个人信息</strong></li>
@@ -78,7 +78,6 @@
     <label>性 别：</label>
      
         <input type="radio"  name="sex" id="sex"  value="man" onclick="countUserInfoPercent($(this));"  required /> 男&nbsp;
-         
         <input type="radio"  name="sex" id="sex"  value="women" onclick="countUserInfoPercent($(this));"  required /> 女&nbsp;
           
     <span id="tip_sex"></span>
@@ -387,8 +386,8 @@
 <p class="field_p">
     <label>所在城市：</label>
     <select name="province" class="sel_normal marginR10 gray_2" id="province">
+
         <option value="">请选择</option>
-         
                 <option value ="1">北京市</option>
                  
                 <option value ="2">上海市</option>
@@ -462,11 +461,6 @@
 </p>
 
 
-<p class="field_p">
-    <label>工作：</label>
-    <input type="text" class="sel_normal_input marginR10 gray_2" value="请填写职业" name="profession" id="profession" onfocus="keyFocus('profession','请填写职业');" onblur="keyBlur('profession','请填写职业');countUserInfoPercent($(this));" />
-    <input type="text" class="sel_normal_input gray_2" value="请填写职位名称" name="position" id="position" onfocus="keyFocus('position','请填写职位名称');" onblur="keyBlur('position','请填写职位名称');countUserInfoPercent($(this));" />
-</p>
   <p class="field_p_1">
   	<input type="submit" class="btn_normal" value="保存设置">
 </p>
