@@ -70,9 +70,11 @@ class LoginController extends Controller {
 			return view("publish");
 		}
 	}
+	/*
+	*发布房源
+	*/
 	public function addhouse1()
 	{
-		//echo 123;
 		$h_city=Request::input('h_city');
 		$h_people=Request::input('h_people');
 		$h_message=htmlentities($_POST['h_message']);
@@ -86,7 +88,6 @@ class LoginController extends Controller {
 		$h_mating=htmlentities($_POST['h_mating']);
  
 		$u_id=$_COOKIE['u_id'];
-		//echo $u_id;die;
 		//$db=DB::insert("insert into house(h_city,h_message,h_price,h_state,u_id,h_people,h_title,h_content,h_site) values('$h_city','$h_message','$h_price','$h_state','$u_id','$h_people','$h_title','$h_content','$h_site')");
 		 //echo $aa;die;
 		// var_dump($db);die;
@@ -106,25 +107,12 @@ class LoginController extends Controller {
 		]);
 		if($db)
 		{
-			//echo 123;
-			return redirect()->action('LoginController@publish2');
+			$up=DB::table("user")->where('u_id',$u_id)->update([
+				'u_owner'=> '2',
+			]);
+			echo "<script>alert('发布成功，请等待审核');location.href='index'</script>";
 		}else{
 			echo "添加失败";
 		}
-	}
-	public function publish2()
-	{
-		echo "<script>alert('发布成功，请等待审核');location.href='index'</script>";
-	}
-	public function addhouse2()
-	{
-		//echo 123;
-		//$id=mysql_insert_id();
-		//echo $id;die;
-		
-		
-		//echo $h_content;die;
-		
-		return redirect()->action('LoginController@publish3');
 	}
 }

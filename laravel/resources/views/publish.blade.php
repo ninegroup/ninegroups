@@ -853,9 +853,3 @@ $(function(){
     $(document).area("s_province","s_city","s_county");//调用插件  
 });  
 </script> 
-<script type="text/javascript">
-	function aaaa()
-	{
-		location.href="{{ URL::route('Login/publish2') }}";
-	}
-</script>
