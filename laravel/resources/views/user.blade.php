@@ -78,7 +78,6 @@
     <label>性 别：</label>
      
         <input type="radio"  name="sex" id="sex"  value="man" onclick="countUserInfoPercent($(this));"  required /> 男&nbsp;
-         
         <input type="radio"  name="sex" id="sex"  value="women" onclick="countUserInfoPercent($(this));"  required /> 女&nbsp;
           
     <span id="tip_sex"></span>

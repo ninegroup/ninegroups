@@ -45,14 +45,13 @@ Route::any('login','LoginController@login');
 Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@user"]);
 //用户修改
 Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
+//房东界面
+Route::any('/Index/userOwner', [ 'as' => 'Index/userOwner', 'uses' => "IndexController@userOwner"]);
 
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
-Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
-Route::any('/Login/publish3', [ 'as' => 'Login/publish3', 'uses' => "LoginController@publish3"]);
-Route::any('/Login/publish4', [ 'as' => 'Login/publish4', 'uses' => "LoginController@publish4"]);
-Route::any('/Login/publish5', [ 'as' => 'Login/publish5', 'uses' => "LoginController@publish5"]);
+
 
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');

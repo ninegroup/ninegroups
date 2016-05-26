@@ -770,7 +770,7 @@ use yii\widgets\LinkPager;
 				}
 			})
 		</script>
-		//搜索
+		<!-- 搜索 -->
 		<script type="text/javascript">
 			function search(){
 				var search=document.getElementById('nav-search-input').value;

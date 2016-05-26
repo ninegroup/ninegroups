@@ -68,23 +68,27 @@ class IndexController extends Controller {
 		$u_province=Request::input('province');
 		//文件上传
 		$data = Input::all();
+		//获取文件名
 		$filename= $data['myfiles']->getClientOriginalName();
 		// var_dump($filename);die;
 		//检验一下上传的文件是否有效.
 		$path = $data['myfiles']-> move('uploads',$filename);
-		//$db=DB::insert("insert into user(realname,u_sex,id,u_idcard,u_header) values('$realname','$u_sex','$u_idcard','$filename')");
-		//DB::table("user")->update();
-		$re=DB::table('user')
+		//修改个人信息
+		$update=DB::table('user')
             ->where('u_name', $u_name)
-            ->update(['realname'=>$realname,
-            		'u_sex'=>$sex,
-            		'u_idcard'=>$u_idcard,
-            		'u_header'=>$filename,
-            		'u_birth'=>$u_birth,
-            		'u_province'=>$u_province
-            		]);
-        if($re){
+            ->update([
+            	'realname'=>$realname,
+            	'u_sex'=>$sex,
+            	'u_idcard'=>$u_idcard,
+            	'u_header'=>$filename,
+            	'u_birth'=>$u_birth,
+            	'u_province'=>$u_province
+            ]);
+        if($update){
         	echo "<script>alert('信息更新成功');location.href='user'</script>";
         }
+	}
+	public function userOwner(){
+		return view('owner');
 	}
 }
