@@ -591,6 +591,7 @@ use yii\widgets\LinkPager;
 														<th>出生日期</th>
 														<th class="hidden-480">注册时间</th>
 
+														<th>状态</th>
 														<th>操作</th>
 													</tr>
 												</thead>
@@ -623,6 +624,13 @@ use yii\widgets\LinkPager;
 															}
 														?>
 														</a></td>
+														<td id="del.<?php echo $v['u_id']?>">
+														<?php if($v['u_state']==1){?>
+															<button onclick="user_del(<?php echo $v['u_id']?>)" style="background-color:red;">删除</button>
+														<?php }else{?>
+															<button disabled style="background-color:gray;">删除</button>
+														<?php }?>
+														</td>
 													</tr>
 
 									<?php endforeach; ?>
@@ -820,7 +828,6 @@ use yii\widgets\LinkPager;
 				}
 			})
 		</script>
-	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
 <script>
@@ -834,10 +841,24 @@ function lock(obj){
 	success: function(msg){
 			if(state==1){
 				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+2+"'>解锁</a>";
+				var st="<button disabled style='background-color:gray;'>删除</button>";
 			}else if(state==2){
 				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+1+"'>锁定</a>";
+				var st="<button onclick='user_del("+id+")' style='background-color:red;'>删除</button>";
 			}
 			document.getElementById('lock.'+id).innerHTML=str;
+			document.getElementById('del.'+id).innerHTML=st;
+		}
+	});
+}
+
+function user_del(id){
+	$.ajax({
+		type: "POST",
+		url: "index.php?r=login/userdel",
+		data: "id="+id,
+		success: function(msg){
+			document.getElementById('del.'+id).parentNode.parentNode.removeChild(document.getElementById('del.'+id).parentNode);
 		}
 	});
 }
