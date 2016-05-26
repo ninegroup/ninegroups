@@ -582,7 +582,7 @@ use yii\widgets\LinkPager;
 														<td><?php echo $v['u_email']?></td>
 														<td><?php echo $v['u_time']?></td>	
 
-														<td id="lock.<?php echo $v['u_id']?>"><a href="javascript:void(0)" onclick="lock(this)" id="<?php echo $v['u_id']?>" title="<?php echo $v['u_state']?>">
+														<td id="lock.<?php echo $v['u_id']?>"><a href="javascript:void(0)" onclick="lock(this)" id="b_<?php echo $v['u_id']?>"  title="<?php echo $v['u_state']?>">
 														<?php if($v['u_state']==1){
 															echo "锁定";
 															}
@@ -794,7 +794,7 @@ use yii\widgets\LinkPager;
 
 		<!-- inline scripts related to this page -->
 
-		<script type="text/javascript"
+		<script type="text/javascript">
 			jQuery(function($) {
 				var oTable1 = $('#sample-table-2').dataTable( {
 				"aoColumns": [
@@ -806,7 +806,7 @@ use yii\widgets\LinkPager;
 				
 				$('table th input:checkbox').on('click' , function(){
 					var that = this;
-					$(this).closest('table').find('tr > td:first-child input:checkbox')
+					$(this).closest('table').find("tr > td:first-child input:checkbox")
 					.each(function(){
 						this.checked = that.checked;
 						$(this).closest('tr').toggleClass('selected');
@@ -835,17 +835,18 @@ use yii\widgets\LinkPager;
 </html>
 <script>
 function lock(obj){
-	var id=obj.id;
-	var state=document.getElementById(id).title;
+	var b_id=obj.id;
+	var state=document.getElementById(b_id).title;
+	var id=b_id.substr(2);
 	$.ajax({
 	type: "POST",
 	url: "index.php?r=login/lock",
 	data: "id="+id+"&state="+state,
 	success: function(msg){
 			if(state==1){
-				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+2+"'>解锁</a>";
+				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+b_id+"' title='"+2+"'>解锁</a>";
 			}else if(state==2){
-				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+1+"'>锁定</a>";
+				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+b_id+"' title='"+1+"'>锁定</a>";
 			}
 			document.getElementById('lock.'+id).innerHTML=str;
 		}
