@@ -88,9 +88,6 @@ class LoginController extends Controller {
 		$h_mating=htmlentities($_POST['h_mating']);
  
 		$u_id=$_COOKIE['u_id'];
-		//$db=DB::insert("insert into house(h_city,h_message,h_price,h_state,u_id,h_people,h_title,h_content,h_site) values('$h_city','$h_message','$h_price','$h_state','$u_id','$h_people','$h_title','$h_content','$h_site')");
-		 //echo $aa;die;
-		// var_dump($db);die;
 		$db=DB::table("house")->insert([
 			'h_city'=>$h_city,	
 			'h_message'=>$h_message,	
