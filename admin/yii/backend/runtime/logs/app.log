@@ -19672,3 +19672,1193 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1464221435.841
     'REQUEST_TIME' => 1464221435
 ]
+2016-05-26 08:30:06 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 08:30:06 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464216493'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1988'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52499'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464216493; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464222606.2955
+    'REQUEST_TIME' => 1464222606
+]
+2016-05-26 08:30:06 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 08:30:06 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464216493'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1988'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52499'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464216493; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464222606.3924
+    'REQUEST_TIME' => 1464222606
+]
+2016-05-26 09:12:59 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 09:12:58 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464216493'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54415'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464216493; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464225178.9819
+    'REQUEST_TIME' => 1464225178
+]
+2016-05-26 09:12:59 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 09:12:59 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464216493'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54415'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464216493; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1464225179.3845
+    'REQUEST_TIME' => 1464225179
+]
+2016-05-26 09:15:00 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 09:14:59 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54438'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124'
+    'HTTP_REFERER' => 'http://www.ljh.com/ninegroups/admin/yii/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464225299.9098
+    'REQUEST_TIME' => 1464225299
+]
+2016-05-26 09:15:00 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 09:15:00 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'snj7tc1jaqdc1dl8fadcsteld5'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=site%2Flogin'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54438'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=snj7tc1jaqdc1dl8fadcsteld5'
+    'HTTP_REFERER' => 'http://www.ljh.com/ninegroups/admin/yii/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464225300.2192
+    'REQUEST_TIME' => 1464225300
+]
+2016-05-26 09:15:08 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 09:15:08 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][info][application] $_GET = [
+    'r' => 'login'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464178124'
+    'PHPSESSID' => 'snj7tc1jaqdc1dl8fadcsteld5'
+    '_csrf' => 'eb06f46d6f7d89403880e8d065bf693ca98c5e2314499ab4717b25ae81384d94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ob-k8nUqFj3uVIQcftURHtnzE5M1VouQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login'
+    'QUERY_STRING' => 'r=login'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54443'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464178124; PHPSESSID=snj7tc1jaqdc1dl8fadcsteld5; _csrf=eb06f46d6f7d89403880e8d065bf693ca98c5e2314499ab4717b25ae81384d94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ob-k8nUqFj3uVIQcftURHtnzE5M1VouQ%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464225308.7872
+    'REQUEST_TIME' => 1464225308
+]
+2016-05-26 09:15:17 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 09:15:17 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][info][application] $_GET = [
+    'r' => 'login/info'
+]
+
+$_POST = [
+    'name' => 'admin'
+    'pwd' => '123'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464221367'
+    'PHPSESSID' => 'snj7tc1jaqdc1dl8fadcsteld5'
+    '_csrf' => 'eb06f46d6f7d89403880e8d065bf693ca98c5e2314499ab4717b25ae81384d94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ob-k8nUqFj3uVIQcftURHtnzE5M1VouQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/info'
+    'QUERY_STRING' => 'r=login/info'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54457'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'CONTENT_LENGTH' => '18'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464221367; PHPSESSID=snj7tc1jaqdc1dl8fadcsteld5; _csrf=eb06f46d6f7d89403880e8d065bf693ca98c5e2314499ab4717b25ae81384d94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ob-k8nUqFj3uVIQcftURHtnzE5M1VouQ%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/ninegroups/admin/yii/backend/web/index.php?r=login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464225317.4014
+    'REQUEST_TIME' => 1464225317
+]
+2016-05-26 09:15:17 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 09:15:17 [127.0.0.1][-][snj7tc1jaqdc1dl8fadcsteld5][info][application] $_GET = [
+    'r' => 'login/list'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=1309522040-1463615638-&ntime=1464221367'
+    'PHPSESSID' => 'snj7tc1jaqdc1dl8fadcsteld5'
+    '_csrf' => 'eb06f46d6f7d89403880e8d065bf693ca98c5e2314499ab4717b25ae81384d94a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ob-k8nUqFj3uVIQcftURHtnzE5M1VouQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login%2Flist'
+    'QUERY_STRING' => 'r=login%2Flist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54457'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.ljh.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D1309522040-1463615638-%26ntime%3D1464221367; PHPSESSID=snj7tc1jaqdc1dl8fadcsteld5; _csrf=eb06f46d6f7d89403880e8d065bf693ca98c5e2314499ab4717b25ae81384d94a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ob-k8nUqFj3uVIQcftURHtnzE5M1VouQ%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.ljh.com/ninegroups/admin/yii/backend/web/index.php?r=login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.ljh.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464225317.566
+    'REQUEST_TIME' => 1464225317
+]
+2016-05-26 10:23:16 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 10:23:15 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464216493'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9'
+    'laravel_session' => 'eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0='
+    '_ga' => 'GA1.2.238039273.1464226342'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58899'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464216493; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9; laravel_session=eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0%3D; _ga=GA1.2.238039273.1464226342'
+    'HTTP_REFERER' => 'http://www.nineyii.com/ninegroups/admin/yii/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464229395.9398
+    'REQUEST_TIME' => 1464229395
+]
+2016-05-26 10:23:16 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 10:23:16 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464216493'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9'
+    'laravel_session' => 'eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0='
+    '_ga' => 'GA1.2.238039273.1464226342'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=site%2Flogin'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58899'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464216493; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9; laravel_session=eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0%3D; _ga=GA1.2.238039273.1464226342'
+    'HTTP_REFERER' => 'http://www.nineyii.com/ninegroups/admin/yii/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464229396.0521
+    'REQUEST_TIME' => 1464229396
+]
+2016-05-26 10:23:22 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 10:23:22 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_GET = [
+    'r' => 'login'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464216493'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9'
+    'laravel_session' => 'eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0='
+    '_ga' => 'GA1.2.238039273.1464226342'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login'
+    'QUERY_STRING' => 'r=login'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58912'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464216493; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9; laravel_session=eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0%3D; _ga=GA1.2.238039273.1464226342'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464229402.6722
+    'REQUEST_TIME' => 1464229402
+]
+2016-05-26 10:23:30 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 10:23:30 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_GET = [
+    'r' => 'login/info'
+]
+
+$_POST = [
+    'name' => 'admin'
+    'pwd' => '123'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464226768'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9'
+    'laravel_session' => 'eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0='
+    '_ga' => 'GA1.2.238039273.1464226342'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/info'
+    'QUERY_STRING' => 'r=login/info'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58933'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'CONTENT_LENGTH' => '18'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464226768; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9; laravel_session=eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0%3D; _ga=GA1.2.238039273.1464226342'
+    'HTTP_REFERER' => 'http://www.nineyii.com/ninegroups/admin/yii/backend/web/index.php?r=login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464229410.0022
+    'REQUEST_TIME' => 1464229410
+]
+2016-05-26 10:23:30 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 10:23:30 [127.0.0.1][-][vvu5oltk1kqp842ifsn4pdere2][info][application] $_GET = [
+    'r' => 'login/list'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464226768'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9'
+    'laravel_session' => 'eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0='
+    '_ga' => 'GA1.2.238039273.1464226342'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login%2Flist'
+    'QUERY_STRING' => 'r=login%2Flist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58933'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464226768; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9; laravel_session=eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0%3D; _ga=GA1.2.238039273.1464226342'
+    'HTTP_REFERER' => 'http://www.nineyii.com/ninegroups/admin/yii/backend/web/index.php?r=login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464229410.1821
+    'REQUEST_TIME' => 1464229410
+]
+2016-05-26 10:30:18 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 10:30:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'manage/list'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464226768'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9'
+    'laravel_session' => 'eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0='
+    '_ga' => 'GA1.2.238039273.1464226342'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2016'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'QUERY_STRING' => 'r=manage/list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60215'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464226768; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9; laravel_session=eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0%3D; _ga=GA1.2.238039273.1464226342'
+    'HTTP_REFERER' => 'http://www.nineyii.com/ninegroups/admin/yii/backend/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464229818.1574
+    'REQUEST_TIME' => 1464229818
+]
+2016-05-26 10:30:21 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 10:30:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/lock'
+]
+
+$_POST = [
+    'id' => '5'
+    'state' => '1'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464226768'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9'
+    'laravel_session' => 'eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0='
+    '_ga' => 'GA1.2.238039273.1464226342'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2016'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/lock'
+    'QUERY_STRING' => 'r=login/lock'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60215'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464226768; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9; laravel_session=eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0%3D; _ga=GA1.2.238039273.1464226342'
+    'CONTENT_LENGTH' => '12'
+    'HTTP_REFERER' => 'http://www.nineyii.com/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464229821.5712
+    'REQUEST_TIME' => 1464229821
+]
+2016-05-26 10:30:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36874 bytes' 
+
+in F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'F:\\WWW\\htdocs\\P...', 86, Array)
+#1 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('F:\\WWW\\htdocs\\P...', Array)
+#3 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 F:\WWW\htdocs\PHP9\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-26 10:30:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/lock'
+]
+
+$_POST = [
+    'id' => '5'
+    'state' => '2'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=754380919-1464183525-&ntime=1464226768'
+    'PHPSESSID' => 'vvu5oltk1kqp842ifsn4pdere2'
+    '_csrf' => '7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TOVtDgR6j3DLx530_52YfO47Ov1-SJzE\";}'
+    'XSRF-TOKEN' => 'eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9'
+    'laravel_session' => 'eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0='
+    '_ga' => 'GA1.2.238039273.1464226342'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\ProgramData\\Lenovo\\ReadyApps;E:\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;E:\\tortoisegit\\bin;C:\\Users\\Star\\AppData\\Roaming\\Composer\\vendor\\bin\\php5.4n'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2016'
+    'SCRIPT_NAME' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_URI' => '/ninegroups/admin/yii/backend/web/index.php?r=login/lock'
+    'QUERY_STRING' => 'r=login/lock'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60270'
+    'SCRIPT_FILENAME' => 'F:/WWW/htdocs/PHP9/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW/htdocs/PHP9'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.nineyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D754380919-1464183525-%26ntime%3D1464226768; PHPSESSID=vvu5oltk1kqp842ifsn4pdere2; _csrf=7a910cb0ed448b6801aaed45d15eeaaa6c57f8feeb8efd95cf993d8a98d0104ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TOVtDgR6j3DLx530_52YfO47Ov1-SJzE%22%3B%7D; XSRF-TOKEN=eyJpdiI6ImpBMmp2YjdCdHBcL2pFZVhJMlozNEFRPT0iLCJ2YWx1ZSI6IjdPcGNscktOWmtmbVM3SGZHQ3ZoRitpcUQwSXVjclwvT1JZSHdoNlM3NmJDcjFuVFhNUUhGVGw2dlBaUkhCVTZ1VkxET1ViNDBHNXQyR3g5Y0dwUGdEZz09IiwibWFjIjoiNzk1OWE1ZmViYWUzZTJiZGI0YzNiN2Y4NDhkZWExNGQ2MWM4YjRmZWY0ZWJhODI3ZDgxNzFlOWI3ZjU1NWQ1MyJ9; laravel_session=eyJpdiI6IjNVWWl3Wm1Ca2FnSVFQM2Q4NTRzNVE9PSIsInZhbHVlIjoickxmU3RwQlZxNVRHYk5oU05heFNLT2dLelwvSlpqZ1UweXlpK1RvNmk3TzVyS0YzWXhMMGxvaW82ckw3Y2MwUm82bUkwSGxpQllpOTVmTlJ1TU1vYTlnPT0iLCJtYWMiOiI3NTYzYzgxZWM1NTYxYzhhYTA5MGZjMjIwY2NkYjhmOTlkNGJjZjRlN2Y0YTRmMzVjMjNhYTVlMGU4NWIyZjdjIn0%3D; _ga=GA1.2.238039273.1464226342'
+    'CONTENT_LENGTH' => '12'
+    'HTTP_REFERER' => 'http://www.nineyii.com/ninegroups/admin/yii/backend/web/index.php?r=manage/list'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_HOST' => 'www.nineyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/ninegroups/admin/yii/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464229827.3709
+    'REQUEST_TIME' => 1464229827
+]
