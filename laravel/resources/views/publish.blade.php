@@ -417,17 +417,17 @@ $(function() {
 				<dt><span class="fr">是否地下室：</span><em class="notNull"></em></dt>
 				<dd>
 					<select class="largeSelect" name="h_message" >
-                        <option value="否" >否</option>
+                        <option value="不是地下室" >否</option>
                         <option value="地下室" >地下室</option>
                         <option value="半地下室" >半地下室</option>
 					</select>
 				</dd>
 			</dl>
 			<dl class="homesInfo clearfix">
-				<dt><span class="fr">房屋面积：</span><em class="notNull" ></em></dt>
+				<dt><span class="fr">居住人数：</span><em class="notNull" ></em></dt>
 				<dd>
-					<label><input maxlength="6" class="largeInput fl" type="text" name="h_price" id="area" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/></label>
-					<span class="fl">平米</span>
+					<label><input maxlength="6" class="largeInput fl" type="text" name="h_people" id="area" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/></label>
+					<span class="fl">人</span>
 				</dd>
 			</dl>
 
@@ -439,6 +439,68 @@ $(function() {
 					<span class="fl ml30">户型、装修、陈设、价格相同的房间（含此房源在内）</span>
 				</dd>
 			</dl>
+			<dl class="homesDescribe clearfix">
+				<dt><span class="fr">特色标题：</span><em class="notNull"></em></dt>
+				<dd>
+					<label><input type="text" maxlength="22" minlength="5" class="larLargeInput clickhs fl hasPlaceholder" id="title" name="h_title" value="" placeholder="例如：近鼓楼大街地铁站温馨便捷的两居房"></label>
+                    <span class="lineh28">(5-22字，不能含有公寓、宾馆等词语)</span>
+				</dd>
+			</dl>
+			<dl class="homesDescribe clearfix">
+			<input  type="hidden" name="" id="detail" value="" />
+				<dt>
+					<span class="fr">房屋内部情况介绍：</span>
+					<em class="notNull"></em>
+					<span class="wordNumber">（50字以上）</span>
+				</dt>
+				<dd>
+					<label>
+						<textarea class="textArea hasPlaceholder" id="intro" name="h_content" placeholder="如户型、面积、装修、家具家电、网络情况等"></textarea>
+					</label>
+				</dd>
+			</dl>
+			<dl class="homesDescribe clearfix">
+				<dt>
+					<span class="fr">地理位置/地标建筑：</span>
+					<span class="wordNumber"></span>
+				</dt>
+				<dd>
+					<label>
+						<textarea class="textArea hasPlaceholder" maxlength="1000" id="landmark" name="h_site" placeholder="如具体地点、周围的标志性建筑等"></textarea>
+					</label>
+				</dd>
+			</dl>
+			<dl class="homesDescribe clearfix">
+				<dt>
+					<span class="fr">房源入住须知：</span>
+					<span class="wordNumber"></span>
+				</dt>
+				<dd>
+					<label>
+						<textarea class="textArea hasPlaceholder" maxlength="1000" id="landmark1" name="h_checkin" placeholder="请填写您的房间入住须知"></textarea>
+					</label>
+				</dd>
+			</dl>
+			<dl class="homesDescribe clearfix">
+				<dt>
+					<span class="fr">房屋配套设施</span>
+					<span class="wordNumber"></span>
+				</dt>
+				<dd>
+					<label>
+						<textarea class="textArea hasPlaceholder" maxlength="1000" id="landmark11" name="h_mating" placeholder="请填写您的房间配套设施"></textarea>
+					</label>
+				</dd>
+			</dl>
+			<ul class="price-set">
+					<li>
+						<div class="dayPrice">
+							<span class="price-title"><b>*</b>每日价格：</span>
+							<input maxlength="5" class="LargePriceInput" type="text" name="h_price" id="dayprice" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  autocomplete="off"/>
+							元/天
+						</div>
+					</li>                  
+				</ul>
 		</div>
 		<input type="hidden" id="positionId4Edit" name="roomLocationId" value="" />
 		<div class="submit-wrap">

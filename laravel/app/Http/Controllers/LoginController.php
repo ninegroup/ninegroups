@@ -4,6 +4,9 @@ use DB;
 use Request;
 
 header('content-type:text/html;charset=utf-8');
+/*
+*用于用户登录
+*/
 class LoginController extends Controller {
 	//注册页面
 	public function register()
@@ -23,6 +26,7 @@ class LoginController extends Controller {
 	//登陆
 	public function login()
 	{
+		//echo 123;die;
 		$u_name=Request::input('u_name');
 		//echo $u_name;die;
 		$u_pwd=Request::input('u_pwd');
@@ -66,32 +70,40 @@ class LoginController extends Controller {
 			return view("publish");
 		}
 	}
-
-	public function publish2()
-	{
-		return view("publish2");
-	}
-	public function publish3()
-	{
-		return view("publish4");
-	}
-	
-	public function publish5()
-	{
-		return view("publish5");
-	}
 	public function addhouse1()
 	{
 		//echo 123;
 		$h_city=Request::input('h_city');
+		$h_people=Request::input('h_people');
 		$h_message=htmlentities($_POST['h_message']);
 		//echo $h_message;die;
 		$h_price=Request::input('h_price');
 		$h_state=Request::input('h_state');
+		$h_title=Request::input('h_title');
+		$h_content=htmlentities($_POST['h_content']);
+		$h_site=htmlentities($_POST['h_site']);
+		$h_checkin=htmlentities($_POST['h_checkin']);
+		$h_mating=htmlentities($_POST['h_mating']);
+ 
 		$u_id=$_COOKIE['u_id'];
 		//echo $u_id;die;
-		$db=DB::insert("insert into house(h_city,h_message,h_price,h_state,u_id) values('$h_city','$h_message','$h_price','$h_state','$u_id')");
+		//$db=DB::insert("insert into house(h_city,h_message,h_price,h_state,u_id,h_people,h_title,h_content,h_site) values('$h_city','$h_message','$h_price','$h_state','$u_id','$h_people','$h_title','$h_content','$h_site')");
 		 //echo $aa;die;
+		// var_dump($db);die;
+		$db=DB::table("house")->insert([
+			'h_city'=>$h_city,	
+			'h_message'=>$h_message,	
+			'h_price'=>$h_price,	
+			'h_state'=>$h_state,	
+			'u_id'=>$u_id,	
+			'h_people'=>$h_people,	
+			'h_title'=>$h_title,	
+			'h_content'=>$h_content,	
+			'h_site'=>$h_site,	
+			'h_checkin'=>$h_checkin,	
+			'h_mating'=>$h_mating,	
+		
+		]);
 		if($db)
 		{
 			//echo 123;
@@ -100,17 +112,19 @@ class LoginController extends Controller {
 			echo "添加失败";
 		}
 	}
-
+	public function publish2()
+	{
+		echo "<script>alert('发布成功，请等待审核');location.href='index'</script>";
+	}
 	public function addhouse2()
 	{
 		//echo 123;
 		//$id=mysql_insert_id();
 		//echo $id;die;
 		
-		$h_title=Request::input('h_title');
-		$h_content=htmlentities($_POST['h_content']);
+		
 		//echo $h_content;die;
-		$h_site=htmlentities($_POST['h_site']);
+		
 		return redirect()->action('LoginController@publish3');
 	}
 }
