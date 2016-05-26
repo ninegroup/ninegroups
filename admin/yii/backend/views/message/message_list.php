@@ -695,7 +695,7 @@ use yii\widgets\LinkPager;
 
 		<!--[if !IE]> -->
 
-		<script src="<?php Yii::$app->request->baseUrl?>../views/assets/js/jquery-2.0.3.min.js>"></script>
+		<script src="../views/assets/js/jquery-2.0.3.min.js"></script>
 		<!-- <![endif]-->
 
 		<!--[if IE]>
