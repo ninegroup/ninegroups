@@ -48,7 +48,6 @@ use yii\widgets\LinkPager;
 		<script src="../views/assets/js/respond.min.js"></script>
 		<![endif]-->
 	</head>
-
 	<body>
 		<div class="navbar navbar-default" id="navbar">
 			<script type="text/javascript">
@@ -315,7 +314,6 @@ use yii\widgets\LinkPager;
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
-
 		<div class="main-container" id="main-container">
 			<script type="text/javascript">
 				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
@@ -571,7 +569,7 @@ use yii\widgets\LinkPager;
 													<tr>
 														<td class="center">
 															<label>
-																<input type="checkbox" class="ace" />
+																<input type="checkbox" name="ch[]" id="<?php echo $v['u_id']?>" class="ace" />
 																<span class="lbl"></span>
 															</label>
 														</td>
@@ -584,7 +582,7 @@ use yii\widgets\LinkPager;
 														<td><?php echo $v['u_email']?></td>
 														<td><?php echo $v['u_time']?></td>	
 
-														<td id="lock.<?php echo $v['u_id']?>"><a href="javascript:void(0)" onclick="lock(this)" id="<?php echo $v['u_id']?>" title="<?php echo $v['u_state']?>">
+														<td id="lock.<?php echo $v['u_id']?>"><a href="javascript:void(0)" onclick="lock(this)" id="b_<?php echo $v['u_id']?>"  title="<?php echo $v['u_state']?>">
 														<?php if($v['u_state']==1){
 															echo "锁定";
 															}
@@ -630,9 +628,19 @@ use yii\widgets\LinkPager;
 															</div>
 														</td>
 													</tr>
+<<<<<<< HEAD
 									<?php endforeach; ?>
 
 				
+=======
+
+									<?php endforeach; ?>
+								<td colspan='7'>选择：<input type="checkbox" name="quan" id="q" onclick="fun()">全选
+	<input type="checkbox" name="fan" id="q" onclick="fan()">反选
+	<input type="button" value="取消" onclick="exit()">
+	<input type="button" value="删除" onclick="del()">
+	</td>
+>>>>>>> f55da45652480839bf7ae780a952a5bbb9d674ab
 
 								<div id="modal-table" class="modal fade" tabindex="-1">
 									<div class="modal-dialog">
@@ -688,6 +696,8 @@ use yii\widgets\LinkPager;
 					</div><!-- /.page-content -->
 				</div><!-- /.main-content -->
 
+
+
 				<div class="ace-settings-container" id="ace-settings-container">
 					<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
 						<i class="icon-cog bigger-150"></i>
@@ -737,11 +747,14 @@ use yii\widgets\LinkPager;
 				</div><!-- /#ace-settings-container -->
 			</div><!-- /.main-container-inner -->
 
+
+
 			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
 				<i class="icon-double-angle-up icon-only bigger-110"></i>
 			</a>
 		</div><!-- /.main-container -->
 
+		
 		<!-- basic scripts -->
 
 		<!--[if !IE]> -->
@@ -799,7 +812,7 @@ use yii\widgets\LinkPager;
 				
 				$('table th input:checkbox').on('click' , function(){
 					var that = this;
-					$(this).closest('table').find('tr > td:first-child input:checkbox')
+					$(this).closest('table').find("tr > td:first-child input:checkbox")
 					.each(function(){
 						this.checked = that.checked;
 						$(this).closest('tr').toggleClass('selected');
@@ -828,20 +841,69 @@ use yii\widgets\LinkPager;
 </html>
 <script>
 function lock(obj){
-	var id=obj.id;
-	var state=document.getElementById(id).title;
+	var b_id=obj.id;
+	var state=document.getElementById(b_id).title;
+	var id=b_id.substr(2);
 	$.ajax({
 	type: "POST",
 	url: "index.php?r=login/lock",
 	data: "id="+id+"&state="+state,
 	success: function(msg){
 			if(state==1){
-				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+2+"'>解锁</a>";
+				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+b_id+"' title='"+2+"'>解锁</a>";
 			}else if(state==2){
-				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+1+"'>锁定</a>";
+				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+b_id+"' title='"+1+"'>锁定</a>";
 			}
 			document.getElementById('lock.'+id).innerHTML=str;
 		}
 	});
+}
+
+//全选
+function fun(){
+	var xuan=document.getElementsByName('ch[]');
+	var i=0;
+	if(document.getElementById('q').checked){
+		for(i=0;i<xuan.length;i++){
+			xuan[i].checked=true;
+		}
+	}else
+		{
+			for(i=0;i<ch.length;i++){
+			ch[i].checked=false;
+		}
+		}
+
+}
+//反选
+function fan(){
+	var xuan=document.getElementsByName('ch[]');
+	var i=0;
+		for(i=0;i<xuan.length;i++){
+			xuan[i].checked=!xuan[i].checked;
+		}
+	
+
+}
+//取消
+function exit(){
+		var xuan=document.getElementsByName('ch[]');
+		var i=0;
+		for(i=0;i<xuan.length;i++){
+			xuan[i].checked=false;
+		}
+}
+//批删
+function del(){
+	var xuan=document.getElementsByName('ch[]');
+	var arr='';
+	for(i=0;i<xuan.length;i++){
+		if(xuan[i].checked){
+			arr=arr+','+xuan[i].id;
+		}
+	}
+	arr=arr.substr(1);
+	//alert(arr);die;
+	location.href="index.php?r=manage/del&id="+arr;
 }
 </script>

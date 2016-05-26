@@ -78,5 +78,21 @@ class ManageController extends \yii\web\Controller
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->query();
 	}
+    /*批删*/
+        public function actionDel(){
+            $id=$_GET['id'];
+            //echo $id;die;
+            $sql="delete from user_admin where u_id in($id)";
+            $data=Yii::$app->db->createCommand($sql);
+            $res=$data->query();
+            if($res){
+                Yii::$app->getSession()->setFlash('success', '删除成功');
+                    return $this->redirect(array('manage/list'));
+            }else
+            {
+                Yii::$app->getSession()->setFlash('error', '删除失败');
+                    return $this->redirect(array('manage/list'));
+            }
+        }
     
 }

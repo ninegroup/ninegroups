@@ -64,17 +64,25 @@ class IndexController extends Controller {
 		$realname=Request::input('realname');
 		$sex=Request::input('sex');
 		$u_idcard=Request::input('cardno');
+		$u_birth=Request::input('birYear').'-'.Request::input('birMonth').'-'.Request::input('birDay');
+		$u_province=Request::input('province');
 		//文件上传
 		$data = Input::all();
 		$filename= $data['myfiles']->getClientOriginalName();
 		// var_dump($filename);die;
 		//检验一下上传的文件是否有效.
-		$path = $data['myfiles']-> move('D:\WWW\database\ninegroups\laravel\public\uploads',$filename);
+		$path = $data['myfiles']-> move('uploads',$filename);
 		//$db=DB::insert("insert into user(realname,u_sex,id,u_idcard,u_header) values('$realname','$u_sex','$u_idcard','$filename')");
 		//DB::table("user")->update();
 		$re=DB::table('user')
             ->where('u_name', $u_name)
-            ->update(['realname'=>$realname,'u_sex'=>$sex,'u_idcard'=>$u_idcard,'u_header'=>$filename]);
+            ->update(['realname'=>$realname,
+            		'u_sex'=>$sex,
+            		'u_idcard'=>$u_idcard,
+            		'u_header'=>$filename,
+            		'u_birth'=>$u_birth,
+            		'u_province'=>$u_province
+            		]);
         if($re){
         	echo "<script>alert('信息更新成功');location.href='user'</script>";
         }

@@ -32,9 +32,16 @@ class LoginController extends \yii\web\Controller
 		$sql="select * from user_admin where u_name='$name' ";
 		$command=Yii::$app->db->createCommand($sql);
 		$data=$command->queryOne();
+<<<<<<< HEAD
 
 		/*是否记住密码*/
 		if($data){
+=======
+		
+			/*是否记住密码*/
+		if($data){
+
+>>>>>>> f55da45652480839bf7ae780a952a5bbb9d674ab
 				if($data['u_pwd']==$pwd){
 					//把当前登录人存入session
 					$session = Yii ::$app->session;

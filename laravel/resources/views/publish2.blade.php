@@ -332,41 +332,26 @@ $(function() {
 <!-- Content -->
 <div class="main">
 <link href="http://staticnew.mayi.com/resourcesWeb/css/flow_chart.css" rel="stylesheet"  type="text/css">
-	<div class='one_workflow yes_person'>
-		<div class='workflow relave'>
-			<div class='progress progress_2'></div>
-			<b class='workflow1'>房源信息</b>
-			<b class='workflow2'>房源描述</b>
-			<b class='workflow3'>房源图片</b>
-			<b class='workflow4'>价格要求</b>
-			<b class='workflow5'>个人信息</b>
-			<b class='workflow6'>发布成功</b>
-			<span class='workflow1_1'><a href="/room/publish/basicinfo/850454908" class='a_after'>1</a></span>
-			<span class='workflow1_2'><a href="/room/publish/detailinfo/850454908" class='a_after'>2</a></span>
-			<span class='workflow1_3'><a href="javascript:;" >3</a></span>
-			<span class='workflow1_4'><a href="javascript:;" >4</a></span>
-			<span class='workflow1_5'><a href="javascript:;" >5</a></span>
-			<span class='workflow1_6'><a href="javascript:;" class='duigo'></a></span>
-		</div>
-	</div>
+
 	<div class="homes-con" style="margin-top:0px;">
 		<div class="homesTitle">
         	<div class="homesTitlebg">房源描述</div>
         </div>
-        <form autocomplete="off" name="detailform" action="/room/publish/detailInfoSubmit"  method = "post" onSubmit="return false;">
+        <form autocomplete="off" name="detailform" action="{{URL('addhouse2')}}"  method = "post">
         <input type="hidden" name="id" id="id" value="850454908" />
         <input type="hidden" name="flag" id="flag" value=""/>
+		<input type="hidden" name="_token" value="{{csrf_token()}}"/>
         <input type="text" style="display:none;"/>
 		<div class="homes">
 			<dl class="homesDescribe clearfix">
 				<dt><span class="fr">特色标题：</span><em class="notNull"></em></dt>
 				<dd>
-					<label><input type="text" maxlength="22" minlength="5" class="larLargeInput clickhs fl hasPlaceholder" id="title" name="title" value="" placeholder="例如：近鼓楼大街地铁站温馨便捷的两居房"></label>
+					<label><input type="text" maxlength="22" minlength="5" class="larLargeInput clickhs fl hasPlaceholder" id="title" name="h_title" value="" placeholder="例如：近鼓楼大街地铁站温馨便捷的两居房"></label>
                     <span class="lineh28">(5-22字，不能含有公寓、宾馆等词语)</span>
 				</dd>
 			</dl>
 			<dl class="homesDescribe clearfix">
-			<input  type="hidden" name="detail" id="detail" value="" />
+			<input  type="hidden" name="" id="detail" value="" />
 				<dt>
 					<span class="fr">房屋内部情况介绍：</span>
 					<em class="notNull"></em>
@@ -374,7 +359,7 @@ $(function() {
 				</dt>
 				<dd>
 					<label>
-						<textarea class="textArea hasPlaceholder" id="intro" name="intro" placeholder="如户型、面积、装修、家具家电、网络情况等"></textarea>
+						<textarea class="textArea hasPlaceholder" id="intro" name="h_content" placeholder="如户型、面积、装修、家具家电、网络情况等"></textarea>
 					</label>
 				</dd>
 			</dl>
@@ -385,13 +370,13 @@ $(function() {
 				</dt>
 				<dd>
 					<label>
-						<textarea class="textArea hasPlaceholder" maxlength="1000" id="landmark" name="landmark" placeholder="如具体地点、周围的标志性建筑等"></textarea>
+						<textarea class="textArea hasPlaceholder" maxlength="1000" id="landmark" name="h_site" placeholder="如具体地点、周围的标志性建筑等"></textarea>
 					</label>
 				</dd>
 			</dl>
 		</div>
 		<div class="submit-wrap">
-			<a class="save" id="detailSave" href="javascript:void(0);"  onclick="aaaa()">保存，下一步</a>
+			<input type="submit" value="保存,下一步"/>
 		</div>
 		</form>
 	</div>
