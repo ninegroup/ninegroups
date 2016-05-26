@@ -64,6 +64,8 @@ class IndexController extends Controller {
 		$realname=Request::input('realname');
 		$sex=Request::input('sex');
 		$u_idcard=Request::input('cardno');
+		$u_birth=Request::input('birYear').'-'.Request::input('birMonth').'-'.Request::input('birDay');
+		$u_province=Request::input('province');
 		//文件上传
 		$data = Input::all();
 		$filename= $data['myfiles']->getClientOriginalName();
@@ -74,7 +76,7 @@ class IndexController extends Controller {
 		//DB::table("user")->update();
 		$re=DB::table('user')
             ->where('u_name', $u_name)
-            ->update(['realname'=>$realname,'u_sex'=>$sex,'u_idcard'=>$u_idcard,'u_header'=>$filename]);
+            ->update(['realname'=>$realname,'u_sex'=>$sex,'u_idcard'=>$u_idcard,'u_header'=>$filename,'u_birth'=>$u_birth,'u_province'=>$u_province]);
         if($re){
         	echo "<script>alert('信息更新成功');location.href='user'</script>";
         }
