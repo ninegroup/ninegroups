@@ -566,6 +566,8 @@ use yii\widgets\LinkPager;
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
+						<input type="text" name="sou" id='sous' value="<?php $s=$sou?$sou:''; echo $s;?>">		
+						<button class="btn btn-xs btn-pink" onclick="sou()">搜索</button>
 						
 						<div class="row">
 							<div class="col-xs-12">
@@ -861,5 +863,10 @@ function user_del(id){
 			document.getElementById('del.'+id).parentNode.parentNode.removeChild(document.getElementById('del.'+id).parentNode);
 		}
 	});
+}
+
+function sou(){
+	var sou=document.getElementById('sous').value;
+	location.href="index.php?r=login/formowner&sou="+sou;
 }
 </script>
