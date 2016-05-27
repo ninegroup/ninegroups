@@ -1,15 +1,15 @@
 <meta charset="utf-8"/>
-<link rel="stylesheet" href="css/users.css" />
-<link rel="stylesheet" href="css/use.css" />
- <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="plugin/animate.min.css" />
+<link rel="stylesheet" href="../css/users.css" />
+<link rel="stylesheet" href="../css/use.css" />
+ <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/animate.min.css" />
 	<link rel="shortcut icon" href=" img/bitbug_favicon.ico" /> 
 <div class="main">
-	<style type="text/css">
-		 <link rel="stylesheet" href="css/css.css" />
-	</style>
+
+		 <link rel="stylesheet" href="../css/css.css" />
+
 		<ul class="breadcrumb clearfix">
 			       <li><a href="/tenant/851658049/orders">我是房东</a> <span class="divider">》</span></li>
 			<li>账户管理</li>
@@ -23,7 +23,7 @@
 			<!--<li><a   href="/user/tenant/commentmanager.html">点评管理<span class="dpgl" ></span></a></li>-->	
 			<li><a  href="{{url('blog')}}">房源管理<span class="zhgl_current"></span></a></li>
 		</ul>
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" href="../js/jquery.js"></script>
 <script type="text/javascript">
 	//初始化样式展示
 	$(document).ready(function(){
@@ -61,6 +61,7 @@
 				</ul>
 				<div class="accountMt clearfix">
 					<!-- 个人信息 -->
+					<form action="{{URL::route('Index/userGai')}}" enctype='multipart/form-data' method="post">
 					<input style="display: none;" name="issetpass" id="issetpass" value="false" type="hidden">
 					<input style="display: none;" name="isbandmobile" id="isbandmobile" value="true" type="hidden">
 					<input style="display: none;" name="usertype" id="usertype" value="tenant" type="hidden">
@@ -124,6 +125,7 @@
 								</li>
 								<li class="clearfix">
 									<span class="infoTitle">身份证号：</span>
+									<input class="personLargeInput" name="u_email" id="u_email" value="" type="text">
 									<a href="javascript:void(0);" onclick="">
 										<span class="ressaddlist">
 												
@@ -131,25 +133,16 @@
 									</a>
 									<!-- <span class="prompt">2-10个汉字，或2-20个英文字符</span> -->
 								</li>
-								<li class="clearfix">
-									<span class="infoTitle">详细住址：</span>
-							
-										<a id="updatemobile" class="checking" rel="nofollow" href="javascript:void(0)"></a>
-									<!-- <span class="prompt">2-10个汉字，或2-20个英文字符</span> -->
-								</li>
-								<li class="clearfix">
-									<span class="infoTitle">注册时间：</span> 
-					
-										<a id="updatemobile" class="checking" rel="nofollow" href="javascript:void(0)"></a>
-									<!-- <span class="prompt">2-10个汉字，或2-20个英文字符</span> -->
-								</li>
+								<!--<button>确定</button>-->
+								
 							</ul>
 						
-							<!--<div class="submit-wrap">
-								<a id="saveuser" class="save-btn" rel="nofollow" href="javascript:void(0)">保存</a>
-							</div>-->
+							<div class="submit-wrap" style="bgcolor:green">
+								<a id="saveuser" class="btn btn-theme navbar-btn btn-default sign-in" rel="nofollow" href="javascript:void(0)">保存</a>
+							</div>
 						</div>
 					</div>
+					</form>
 					<!-- 个人信息 END -->
 
 					<!-- 收款账户 -->

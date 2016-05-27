@@ -46,8 +46,8 @@ Route::any('/login','LoginController@login');
 Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@user"]);
 //用户修改
 Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
-//房东界面
-Route::any('/Index/userOwner', [ 'as' => 'Index/userOwner', 'uses' => "IndexController@userOwner"]);
+//个人中心
+Route::any('/Index/userList', [ 'as' => 'Index/userList', 'uses' => "IndexController@userList"]);
 
 //退出
 Route::any('unset1','LoginController@unset1');
