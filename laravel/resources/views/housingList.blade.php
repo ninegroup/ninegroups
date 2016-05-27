@@ -12,8 +12,8 @@
 	</style>
 
 		<ul class="breadcrumb clearfix">
-			       <li><a href="/tenant/851658049/orders">我是房东</a> <span class="divider">》</span></li>
-			<li>房源管理</li>
+			       
+			<li>》房源管理</li>
 		</ul>
 		
 		<div class="personalCenter clearfix">		
