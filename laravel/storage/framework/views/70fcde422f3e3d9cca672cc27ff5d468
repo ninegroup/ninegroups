@@ -36,7 +36,7 @@
         <li>&middot;</li>
         <li>
 		<?php if(@$_COOKIE['name']){?>
-		欢迎{!! $name !!}登录
+		欢迎<?php echo $name; ?>登录
 		<?php }else{ ?>
 		<a rel="nofollow" href="#" class="logindialog">登录</a>
 		<?php } ?></li>
@@ -319,7 +319,7 @@
         <div class="city_l">
                <div class="clearfix mb_14">
                   <div class="city_select city_bg">
-                     <input type="text" value="{!! $city !!}" id="searchcityd" placeholder="请选择或输入城市"> 
+                     <input type="text" value="<?php echo $city; ?>" id="searchcityd" placeholder="请选择或输入城市"> 
                      <span id="searchcityd_search" class="icon_searchandremove" style="display: none"><span class="ipt_icon icon_search_s"></span></span>
                      <div id="suggest" class="ac_results2 marginT1" style="display:none;"></div>
 <div class="sug  marginT1 sug4search">    
@@ -434,17 +434,17 @@
             <div id="page_list">
                
     <ul class="pic_list clearfix">
-	@foreach($db as $v)           
+	<?php foreach($db as $v): ?>           
              
           
                 <li lodgeunitid="lodgeunit_1779571235" latlng="40.052654,116.423421">
     <a target="_blank" href="http://bj.xiaozhu.com/fangzi/1779571235.html" class="resule_img_a">
-          <img class="lodgeunitpic" title="{{ $v->h_title }}" src="../images/uploads/{{ $v->pi_path }}" lazy_src="../images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}" style="height:300px;width:380px;" />
+          <img class="lodgeunitpic" title="<?php echo e($v->h_title); ?>" src="../images/uploads/<?php echo e($v->pi_path); ?>" lazy_src="../images/uploads/<?php echo e($v->pi_path); ?>" alt="<?php echo e($v->h_title); ?>" style="height:300px;width:380px;" />
     </a>
     
                 <div class="favorite  lodge_1779571235 wsc_ico"  alt="1779571235"  title="收藏"></div>
         <div class="result_btm_con lodgeunitname" detailurl="http://bj.xiaozhu.com/fangzi/1779571235.html" style="cursor:pointer">
-                <span class="result_price">&yen;<i>{{ $v->h_price }}</i>/晚</span>
+                <span class="result_price">&yen;<i><?php echo e($v->h_price); ?></i>/晚</span>
                                 <span class="room_status">
             <em class="icon_youhui"></em>
             <p class="show">优惠</p>
@@ -454,16 +454,16 @@
                                     <a class=="search_result_gridsum" href="http://www.xiaozhu.com/fangdong/1694126035/" target="_blank"><img class="landlordimage" width="42" height="42" lazy_src="http://image.xiaozhustatic2.com/23/5,0,96,1679,414,414,dde31210.jpg" /></a>
                                 </span>
         <div class="result_intro">
-            <a><span class="result_title hiddenTxt">{{ $v->h_title }}</span></a>
+            <a><span class="result_title hiddenTxt"><?php echo e($v->h_title); ?></span></a>
             <em class="hiddenTxt">
                                 单间出租
                  -                                 <span class="commenthref">11条点评</span>
                  -                                                 
-                                {{ $v->h_site }}                            </em>
+                                <?php echo e($v->h_site); ?>                            </em>
         </div>
     </div>
 </li>
-@endforeach
+<?php endforeach; ?>
  <div class="mapresult_no" id="noLodgeUnitsAtNYN" style="display:none">
         <em></em>
         <p>

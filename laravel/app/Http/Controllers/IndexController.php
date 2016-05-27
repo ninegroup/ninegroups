@@ -88,7 +88,8 @@ class IndexController extends Controller {
         	echo "<script>alert('信息更新成功');location.href='user'</script>";
         }
 	}
-	public function userOwner(){
-		return view('owner');
+	public function userList(){
+		
+		return view('users');
 	}
 }

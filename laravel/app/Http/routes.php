@@ -20,8 +20,9 @@ Route::get('/', 'IndexController@index');
 Route::get('about', 'AboutController@index');
 
 Route::get('blog', 'BlogController@index');
+Route::get('orderList', 'BlogController@orderList');
 
-Route::get('contact', 'ContactController@index');
+Route::get('userList', 'ContactController@index');
 
 Route::get('details', 'DetailsController@index');
 
@@ -45,21 +46,28 @@ Route::any('/login','LoginController@login');
 Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@user"]);
 //用户修改
 Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
-//房东界面
-Route::any('/Index/userOwner', [ 'as' => 'Index/userOwner', 'uses' => "IndexController@userOwner"]);
+//个人中心
+Route::any('/Index/userList', [ 'as' => 'Index/userList', 'uses' => "IndexController@userList"]);
 
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
-//<<<<<<< HEAD
 
 
-//=======
+
+
+
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
-//>>>>>>> edc50ef06795fbf4a748d92df62b964b847bb906
+
+
+
+Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
+
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');
 Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' => "SearchController@HomepageSearch"]);
+//房源具体信息页面
+Route::any('/Details/Index', [ 'as' => 'Details/Index', 'uses' => "DetailsController@Index"]);
 
 //发布房源login/addhouse1
 Route::any('addhouse1','LoginController@addhouse1');

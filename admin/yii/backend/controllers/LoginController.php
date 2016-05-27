@@ -84,15 +84,18 @@ class LoginController extends \yii\web\Controller
 	/*用户列表*/
 	public function actionTable()
     {
+    		$request = Yii::$app->request;
+    		$sou = $request->get('sou')?$request->get('sou'):'';
 		$query = User::find();
 
         $pagination = new Pagination([
             'defaultPageSize' => 5,
-            'totalCount' => $query->where("u_owner='1'")->count(),
+            'totalCount' => $query->where("u_owner='1' and u_name like '%$sou%'")->count(),
         ]);
 
         $countries = $query->where("u_owner='1'")->orderBy('u_time desc')
             ->offset($pagination->offset)
+              ->where("u_name like '%$sou%'")
             ->limit($pagination->limit)
             ->all();
 		//$sql="select * from user where u_owner=2";
@@ -127,15 +130,18 @@ class LoginController extends \yii\web\Controller
 	}
 	/*房主列表*/
 	public function actionFormowner(){
+		$request = Yii::$app->request;
+    		$sou = $request->get('sou')?$request->get('sou'):'';
 		$query = User::find();
 
         $pagination = new Pagination([
             'defaultPageSize' => 5,
-            'totalCount' => $query->where("u_owner='2'")->count(),
+            'totalCount' => $query->where("u_owner='2' and u_name like '%$sou%'")->count(),
         ]);
 
         $countries = $query->where("u_owner='2'")->orderBy('u_time desc')
             ->offset($pagination->offset)
+             ->where("u_name like '%$sou%'")
             ->limit($pagination->limit)
             ->all();
 		//$sql="select * from user where u_owner=2";
