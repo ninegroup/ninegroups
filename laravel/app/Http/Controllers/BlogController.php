@@ -26,7 +26,12 @@ class BlogController extends Controller {
 	 */
 	public function index()
 	{
-		return view('blog');
+		return view('housingList');
+	}
+
+	public function orderList()
+	{
+		return view('order');
 	}
 
 }

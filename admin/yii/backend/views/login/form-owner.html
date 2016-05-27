@@ -566,6 +566,8 @@ use yii\widgets\LinkPager;
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
+						<input type="text" name="sou" id='sous' value="<?php $s=$sou?$sou:''; echo $s;?>">		
+						<button class="btn btn-xs btn-pink" onclick="sou()">搜索</button>
 						
 						<div class="row">
 							<div class="col-xs-12">
@@ -584,11 +586,14 @@ use yii\widgets\LinkPager;
 															</label>
 														</th>
 														<th>用户名</th>
+														<th>真实姓名</th>
+
 														<th>性别</th>
 														<th class="hidden-480">电话</th>
-														
+														<th>出生日期</th>
 														<th class="hidden-480">注册时间</th>
 
+														<th>状态</th>
 														<th>操作</th>
 													</tr>
 												</thead>
@@ -605,8 +610,10 @@ use yii\widgets\LinkPager;
 														<td>
 															<a href="#"><?php echo $v['u_name']?></a>
 														</td>
+														<td><?php echo $v['realname']?></td>
 														<td><?php echo $v['u_sex']?></td>
 														<td><?php echo $v['u_tel']?></td>
+														<td><?php echo $v['u_birth']?></td>
 														<td><?php echo $v['u_time']?></td>	
 
 														<td id="lock.<?php echo $v['u_id']?>"><a href="javascript:void(0)" onclick="lock(this)" id="<?php echo $v['u_id']?>" title="<?php echo $v['u_state']?>">
@@ -619,23 +626,20 @@ use yii\widgets\LinkPager;
 															}
 														?>
 														</a></td>
+														<td id="del.<?php echo $v['u_id']?>">
+														<?php if($v['u_state']==1){?>
+															<button onclick="user_del(<?php echo $v['u_id']?>)" style="background-color:red;">删除</button>
+														<?php }else{?>
+															<button disabled style="background-color:gray;">删除</button>
+														<?php }?>
+														</td>
 													</tr>
 
 									<?php endforeach; ?>
 									<tr>
-										<td colspan='6'><font style='float:right'><?= LinkPager::widget(['pagination' => $pagination]) ?></font>
+										<td colspan='9'><font style='float:right'><?= LinkPager::widget(['pagination' => $pagination]) ?></font>
 										</td>
-									</tr>
-
-												
-														
-								<div class="hr hr-18 dotted hr-double"></div>
-
-								
-
-								<div class="hr hr-18 dotted hr-double"></div>
-
-				
+									</tr>		
 
 								<div id="modal-table" class="modal fade" tabindex="-1">
 									<div class="modal-dialog">
@@ -749,7 +753,7 @@ use yii\widgets\LinkPager;
 
 		<!--[if !IE]> -->
 
-		<script src="../views/assets/js//jquery-2.0.3.min.js>"></script>
+		<script src="../views/assets/js//jquery-2.0.3.min.js"></script>
 
 
 		<!-- <![endif]-->
@@ -826,7 +830,6 @@ use yii\widgets\LinkPager;
 				}
 			})
 		</script>
-	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
 <script>
@@ -840,11 +843,30 @@ function lock(obj){
 	success: function(msg){
 			if(state==1){
 				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+2+"'>解锁</a>";
+				var st="<button disabled style='background-color:gray;'>删除</button>";
 			}else if(state==2){
 				var str="<a href='javascript:void(0)' onclick='lock(this)' id='"+id+"' title='"+1+"'>锁定</a>";
+				var st="<button onclick='user_del("+id+")' style='background-color:red;'>删除</button>";
 			}
 			document.getElementById('lock.'+id).innerHTML=str;
+			document.getElementById('del.'+id).innerHTML=st;
 		}
 	});
+}
+
+function user_del(id){
+	$.ajax({
+		type: "POST",
+		url: "index.php?r=login/userdel",
+		data: "id="+id,
+		success: function(msg){
+			document.getElementById('del.'+id).parentNode.parentNode.removeChild(document.getElementById('del.'+id).parentNode);
+		}
+	});
+}
+
+function sou(){
+	var sou=document.getElementById('sous').value;
+	location.href="index.php?r=login/formowner&sou="+sou;
 }
 </script>

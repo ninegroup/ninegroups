@@ -6,11 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href='http://fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" href="../js/jquery.min.js"></script>
 <!-- start top_js_button -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" href="../js/move-top.js"></script>
+<script type="text/javascript" href="../js/easing.js"></script>
    <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -98,7 +98,7 @@
 			$(".text").focus();
 		});
 	</script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" href="../js/script.js"></script>
 	<div class="clear"></div>
 
 		<div class="clear"></div>

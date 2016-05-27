@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [2016-05-25 12:55:28] local.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'ninegroup'' in D:\WWW\ninegroups\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
 Stack trace:
 #0 D:\WWW\ninegroups\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=127....', 'root', 'root', Array)
@@ -98,3 +99,8 @@ Stack trace:
 #40 D:\WWW\ninegroups\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(84): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #41 D:\WWW\ninegroups\laravel\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #42 {main}  
+=======
+[2016-05-25 12:29:34] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Maximum execution time of 30 seconds exceeded' in E:\WWW\ninegroups\laravel\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php:8
+Stack trace:
+#0 {main}  
+>>>>>>> acc4e7a3c5d72bf8d6d48cfedeebd5647d77ec88
