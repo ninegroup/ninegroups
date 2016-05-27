@@ -69,6 +69,7 @@ class LoginController extends Controller {
 		{
 			echo "<script>alert('请先登录');location.href='index'</script>";
 		}else{
+			
 			return view("publish");
 		}
 	}

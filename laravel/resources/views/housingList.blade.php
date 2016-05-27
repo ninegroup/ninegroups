@@ -19,42 +19,11 @@
 		<div class="personalCenter clearfix">		
 		    <!-- Center-sidebar -->
 <ul class="center-sidebar">
-		<li><a href="{{url('userList')}}">个人信息<span class="ddgl"></span></a></li>
-		<li><a  href="{{url('orderList')}}">订单管理<span class="ddgl"></span></a></li>
+		<li><a href="{{URL::route('Index/userList')}}">个人信息<span class="ddgl"></span></a></li>
 		<!--<li><a   href="/user/tenant/commentmanager.html">点评管理<span class="dpgl" ></span></a></li>-->
 		<li><a class="slideactive" href="{{url('housingList')}}">房源管理<span class="zhgl_current"></span></a></li>
 </ul>
 
-<script type="text/javascript">
-	//初始化样式展示
-	$(document).ready(function(){
-		$.ajax({
-			url : "/user/getLastAuditDate.do",
-			type : 'POST',
-			async:true,
-			dataType:'json',
-			timeout: 3000,
-			success : function(data){
-				var lastAuditTime=data;
-				var cookietime = -1;
-				var arr = document.cookie.split("; ");
-				for(var i=0,len=arr.length;i<len;i++){
-					var item = arr[i].split("=");
-					if(item[0]=="MAYI_LA_TIME"){
-						cookietime=item[1];
-						break;
-					}
-				}
-				if(lastAuditTime == 0 || cookietime > lastAuditTime){
-					$(".fdshop").hide();
-					$(".fdshop").remove();
-				}else{
-					$(".fdshop").show();
-				}
-			}
-		});
-	});
-</script>
 	        <!-- Center-sidebar END -->			
 			<div class="centerCon">
 				<ul class="centerTab">
@@ -70,17 +39,32 @@
 						<table class="gathering">
 							<tr bgcolor="#ccc">
 								<td>房间id</td>
-								<td>房间类型</td>
-								<td>是否安全认证</td>
-								<td>是否上架</td>
+								<td>房屋标题</td>
+								<td>房屋描述</td>
 								<td>价格</td>
-								<td>户型</td>
-								<td>添加时间</td>
-								<td>描述</td>
+								<td>居住人数</td>
 								<td>房屋地址</td>
-								<td>操作</td>
+								<td>审核状态</td>
 							</tr>
-						
+							@foreach($db as $v)
+							<tr>
+								<td>{{$v->h_id}}</td>
+								<td>{{$v->h_title}}</td>
+								<td>{{$v->h_content}}</td>
+								<td>{{$v->h_price}}</td>
+								<td>{{$v->h_people}}人</td>
+								<td>{{$v->h_city}}</td>
+								<td>
+									@if($v->h_state==0)
+									审核中
+									@elseif($v->h_state==1)
+									审核不通过
+									@else
+									审核通过
+									@endif
+								</td>
+							</tr>
+							@endforeach
 						</table>
 							
 					</div>
