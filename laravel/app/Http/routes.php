@@ -20,8 +20,9 @@ Route::get('/', 'IndexController@index');
 Route::get('about', 'AboutController@index');
 
 Route::get('blog', 'BlogController@index');
+Route::get('orderList', 'BlogController@orderList');
 
-Route::get('contact', 'ContactController@index');
+Route::get('userList', 'ContactController@index');
 
 Route::get('details', 'DetailsController@index');
 
