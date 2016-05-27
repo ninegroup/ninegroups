@@ -8,8 +8,14 @@ use backend\models\Report;
 
 class MessageController extends \yii\web\Controller
 {
-	//审核已完成列表(包括通过的和没通过的)
+	/*
+	* 后台信息管理
+	* 修改时间 2016/5/26
+	*/
 
+
+	//审核已完成列表(包括通过的和没通过的)
+	public $enableCsrfValidation = false;
 	public function actionList(){
 		$session=Yii::$app->session;
 		$name=$session->get('name');
@@ -36,6 +42,19 @@ class MessageController extends \yii\web\Controller
             'pagination' => $pagination,
 			'search'=>$search,
         ]);
+	}
+
+	//删除审核不通过的信息列表
+	public function actionDel(){
+		$request=Yii::$app->request;
+		$id=$request->post('id');
+		$re=Yii::$app->db->createCommand()->delete('report',"r_id=:id",[':id'=>$id])->execute();
+		if($re){
+			echo 1;
+		}else{
+			echo 2;
+		}
+		
 	}
 
 	//待审核列表

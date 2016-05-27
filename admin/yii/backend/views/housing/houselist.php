@@ -541,8 +541,11 @@ use yii\widgets\LinkPager;
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
+						<div>
 						<input type="text" name="sou" id='sous' value="<?php $s=$sou?$sou:''; echo $s;?>">		
 						<button class="btn btn-xs btn-pink" onclick="sou()">搜索</button>
+						</div>
+						<br />
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
@@ -553,12 +556,12 @@ use yii\widgets\LinkPager;
 								<table id="sample-table-1" class="table table-striped table-bordered table-hover">
 										<thead>
 					                               								                          <tr>
-								<th class="center">
+								<!-- <th class="center">
 									<label><label>
 										<input type="checkbox" class="ace" />
 											<span class="lbl"></span>
 												</label></label>
-								</th>
+								</th> -->
 								<th class="center">房源标题</th>
 								<th class="center">房源价格</th>
 								<th class="center">房源介绍</th>
@@ -570,10 +573,10 @@ use yii\widgets\LinkPager;
 							</thead>
 							<?php foreach ($countries as $v): ?>
 							<tr>
-								<td class="center"><label><label>
+								<!-- <td class="center"><label><label>
 										<input type="checkbox" class="ace" />
 											<span class="lbl"></span>
-												</label></label></td>
+												</label></label></td> -->
 								<td class="center"><?php echo $v['h_title']?></td>
 								<td class="center"><?php echo $v['h_price']?></td>
 								<td class="center"><?php echo $v['h_content']?></td>

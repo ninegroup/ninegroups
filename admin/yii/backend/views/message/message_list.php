@@ -595,6 +595,7 @@ use yii\widgets\LinkPager;
 							<i class="icon-time bigger-110 hidden-480"></i>
 							审核状态
 						</th>
+						<th>操作</th>
 					</tr>
 				</thead>
 
@@ -621,6 +622,13 @@ use yii\widgets\LinkPager;
 						}else{
 							echo "审核不通过";
 						}?>
+						</td>
+						<td id="del.<?php echo $v['r_id']?>">
+						<?php if($v['r_state']==3){?>
+							<button onclick="message_del(<?php echo $v['r_id']?>)" style="background-color:red;">删除</button>
+						<?php }else{ ?>
+							<button disabled style="background-color:gray;">删除</button>
+						<?php }?>
 						</td>
 					</tr>
 				<?php endforeach; ?>
@@ -769,6 +777,8 @@ use yii\widgets\LinkPager;
 					return 'left';
 				}
 			})
+			
+			
 		</script>
 		<!-- 搜索 -->
 		<script type="text/javascript">
@@ -780,4 +790,20 @@ use yii\widgets\LinkPager;
 	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
+<script type="text/javascript">
+//删除审核不成功的列表
+function message_del(id){
+	$.ajax({
+		type: "POST",
+		url: "index.php?r=message/del",
+		data: "id="+id,
+		success: function(msg){
+			//alert(msg);
+			if(msg==1){
+				document.getElementById('del.'+id).parentNode.parentNode.removeChild(document.getElementById('del.'+id).parentNode);
+			}
+		}
+	});
+}
+</script>
 
