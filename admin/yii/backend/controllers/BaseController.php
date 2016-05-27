@@ -3,7 +3,7 @@ namespace backend\controllers;
 use Yii;
 use yii\web\Controller;
 /*
-	*
+	*类型
 	*2016/5/24
 	*玖组
 */

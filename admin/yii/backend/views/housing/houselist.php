@@ -574,7 +574,7 @@ use yii\widgets\LinkPager;
 										<input type="checkbox" class="ace" />
 											<span class="lbl"></span>
 												</label></label></td>
-								<td class="center"><?php echo $v['h_title']?></td>
+								<td class="center"><a href="#"><?php echo $v['h_title']?></a></td>
 								<td class="center"><?php echo $v['h_price']?></td>
 								<td class="center"><?php echo $v['h_content']?></td>
 								<td class="center"><?php echo $v['h_message']?></td>

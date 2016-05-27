@@ -307,11 +307,10 @@ function s_pwd()
 	}
 	function search(){
 		var city=document.getElementById("citySelect").value;
-		var time=document.getElementById("date_demo3").value;
 		if(city==""){
 			alert("城市不能为空!");
 		}else{
-			location.href="{{ URL::route('Search/HomepageSearch') }}?city="+city+"&time="+time;
+			location.href="{{ URL::route('Search/HomepageSearch') }}?city="+city;
 		}
 	}
 </script>

@@ -1,0 +1,116 @@
+body {
+    background: #e6edf1;
+}
+
+/*============================== SEM 鍒楄〃 =================================*/
+
+.sem-cont {
+    width: 1190px;
+    margin: 15px auto;
+}
+.m-house-list ul {
+    overflow: hidden;
+    margin: -30px 0 0 -40px;
+}
+.m-house-list li {
+    float: left;
+    width: 370px;
+    height: 338px;
+    margin: 30px 0 0 40px;
+    background-color: #fff;
+}
+.m-house-list li:hover {
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .15);
+}
+.m-house-list .pic-box {
+    display: block;
+    width: 370px;
+    height: 232px;
+    position:relative;
+}
+.m-house-list .pic-box .icon-proprietary {
+    width: 56px;
+    height: 18px;
+    background: url(../Images/i-list.png) no-repeat -244px 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.m-house-list .searchresult-info {
+    padding: 14px 15px;
+    overflow: hidden;
+}
+.m-house-list .hotel-info {
+    overflow: hidden;
+    text-align: right;
+}
+.m-house-list .hotel-info .hotel-name {
+    display: inline-block;
+    float: left;
+    margin-top: 2px;
+    font-size: 16px;
+    max-width: 72%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #333;
+    font-weight: 700;
+}
+.m-house-list .hotel-info .price-box {
+    margin-top: -8px;
+    color: #f30;
+}
+.m-house-list .hotel-info .price-box dfn {
+    font: normal 12px arial;
+    vertical-align: 4px;
+}
+.m-house-list .hotel-info .price-box .number-box {
+    font-size: 20px;
+    font-weight: 700;
+}
+.m-house-list .text-group {
+    float: left;
+    width: 250px;
+}
+.m-house-list .text-group p {
+    line-height: 2;
+    margin-left: -4px;
+    color: #999;
+}
+.m-house-list .text-group .searchresult-htladdress {
+    color: #666;
+}
+.m-house-list .text-group .searchresult-htladdress .icon-map {
+    line-height: 16px;
+    padding-left: 16px;
+    text-decoration: none;
+    background: url(../Images/icon-map.png) no-repeat;
+    vertical-align: -2px;
+}
+.m-house-list .text-group .text-box {
+    margin-left: 4px;
+}
+.m-house-list .info-sid {
+    margin-left: 262px;
+    text-align: right;
+}
+.m-house-list .info-sid .icon-quality-hotel {
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    background: url(../Images/i-list.png?v=20160405) no-repeat;
+    overflow: hidden;
+    vertical-align: -4px;
+    background-position: -140px 0;
+}
+
+/* page style*/
+
+.pages,
+.m-hot-room {
+    margin-bottom: 20px;
+}

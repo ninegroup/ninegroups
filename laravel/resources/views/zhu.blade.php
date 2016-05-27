@@ -9,8 +9,6 @@
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 <meta content="webkit" name="renderer" />
 <meta content="no-transform " http-equiv="Cache-Control" />
-<meta content="format=html5; url=http://m.xiaozhu.com/" http-equiv="mobile-agent" />
-
 <!-- [if ite IE 8]>
     <script src="../js/respond.js"></script>
     <![endif]-->
@@ -32,7 +30,7 @@
     <span class="slogan_v2 slogan_black"></span>
 <!--    <span class="list_city" id="suggest_icon4Search">北京<i id="showCitySuggestion" class="icon_tri_down tri_down_f"></i><i id="closeCitySuggestion" class="icon_tri_down icon_tri_up"></i></span>-->
     <ul class="nav_R nav_commen">
-                <li><a rel="nofollow" title="首次预订即可抵用房租" class="show-register-box" href="http://www.xiaozhu.com/register?next=http%3A%2F%2Fbj.xiaozhu.com%2F">注册就送200元</a></li>
+                <li><a rel="nofollow" title="首次预订即可抵用房租" class="show-register-box" href="#">注册就送200元</a></li>
         <li>&middot;</li>
         <li>
 		<?php if(@$_COOKIE['name']){?>
@@ -45,11 +43,11 @@
             <a href="#ongo" class="openTri_R">短租指南</a>
             <div class="head_pop width_58 top40">
                 <div class="pop_column">
-                    <span><a class="fl" href="http://www.xiaozhu.com/xzweb.php?op=Help_UserGuide&type=tenant">房客指南</a><a class="fr" href="http://www.xiaozhu.com/xzweb.php?op=Help_UserGuide&type=landlord">房东指南</a></span>
+                    <span><a class="fl" href="#">房客指南</a><a class="fr" href="#">房东指南</a></span>
                 </div>
             </div>
         </li>
-                <li><a rel="nofollow" href="http://www.xiaozhu.com/publish" class="btn_free show-register-box">免费发布房间</a></li>
+                <li><a rel="nofollow" href="#" class="btn_free show-register-box">免费发布房间</a></li>
             </ul>
 </div>
 <div class="w_698 login_register_box"  style="display:none" id="registerDialog">
@@ -59,7 +57,7 @@
             <ul class="r_tab1 clearfix">
                 <li class="fl cur">注册久久账号</li>
                 <li class="fr col_gray">
-                    <a href="http://www.xiaozhu.com/mailregister?next=http%3A%2F%2Fbj.xiaozhu.com%2F" class="r-no-mobile">无大陆手机号？</a>
+                    <a href="#" class="r-no-mobile">无大陆手机号？</a>
                 </li>
             </ul>
             <ul class="register_list">
@@ -105,12 +103,12 @@
             <h5>合作网站账户登录</h5>
 <ul class="r_wedsite col_gray">
     <li>
-        <a class="hz_qq" href="http://www.xiaozhu.com/xzweb.php?op=GetOpenSnsAuthUrl&snsType=qqzone&state=login&next=http%3A%2F%2Fbj.xiaozhu.com%2F">QQ账号登录</a>
+        <a class="hz_qq" href="#">QQ账号登录</a>
     </li>
     <li>
-        <a class="hz_weibo" href="http://www.xiaozhu.com/xzweb.php?op=GetOpenSnsAuthUrl&snsType=sinaweibo&state=login&next=http%3A%2F%2Fbj.xiaozhu.com%2F">微博账号登录</a>
+        <a class="hz_weibo" href="#">微博账号登录</a>
     </li>
-</ul>            <p class="">已有账号？<a href="http://www.xiaozhu.com/login?next=http%3A%2F%2Fbj.xiaozhu.com%2F" id="loginDialogBtn" class="col_pink logindialog">登录&gt;&gt;</a></p>
+</ul>            <p class="">已有账号？<a href="#">登录&gt;&gt;</a></p>
         </div>
     </div>
 </div>
@@ -322,26 +320,8 @@
                      <input type="text" value="{!! $city !!}" id="searchcityd" placeholder="请选择或输入城市"> 
                      <span id="searchcityd_search" class="icon_searchandremove" style="display: none"><span class="ipt_icon icon_search_s"></span></span>
                      <div id="suggest" class="ac_results2 marginT1" style="display:none;"></div>
-<div class="sug  marginT1 sug4search">    
-    <div class="sug-tit">
-    	<span id="hotcity" value="hotcity" class="sug-hover">热门</span>
-        <span id="a_d" value="a_b_c_d">ABCD</span>
-        <span id="e_j" value="e_f_g_h_j">EFGHJ</span>
-        <span id="k_n" value="k_l_m_n">KLMN</span>
-        <span id="p_w" class="width64" value="p_q_r_s_t_w">PQRSTW</span>
-        <span id="x_z" class="nobor width43" value="x_y_z">XYZ</span>
-    </div>
-    <div id="con_one_1" class="sug-city">
-    </div>   
-</div>                  </div>
-                  <div class="date_box city_bg">
-                                                  <input class="ipt_list1" type="text" readonly="" id="startenddate" name="startenddate"   value="选择入住离开日期" />
-                                                  <input type="hidden" name="startdate" id="startdate" value=""/>  
-                        <input type="hidden" name="enddate" id="enddate" value=""/>
-                        <div id="calendar-box" style="display:none" class="nomargin"> </div>
-                                                <span class="icon_searchandremove" style="display:none"><span class="ipt_icon icon_delete"></span></span>
-                                          
-                  </div>
+                 </div>
+                  <div class="date_box city_bg"> </div>
                
                </div>
         
@@ -376,23 +356,26 @@
                        <span id="search_keyword" class="icon_searchandremove"><span class="ipt_icon icon_search_s"></span></span>
                         <input type="hidden" name="keywordtype" id="keywordtype" value="landmark" />
                         <input type="hidden" name="keywordvalue" id="keywordvalue" value="" />
-                   </div>
-                
+                   </div>       
                 </div>
-
-        
         </div>
-        <div class="city_r">
-               <input type="hidden" id="no_price" value="http://bj.xiaozhu.com/search-duanzufang-0/" />
-               <div class="type_bg clearfix" id='space_list'>
-                   <div class="type_tit"></div>
-               </div>
+		@foreach($base as $v)
+		<?php if($v->bf_id==0){?>
+        <div>
                <div class="type_bg clearfix">
-                  <h6 class="type_tit2"></h6>
-               </div>
-               <div class="type_bg clearfix">
-                  <h6 class="type_tit2"></h6>
-               </div>
+                  <h6 class="type_tit2">{{ $v->b_name }}</h6>
+                  <div class="info_box">
+				  @foreach($base as $vv)
+				<?php if($v->b_id==$vv->bf_id){?>
+                <label >
+                    <input class="checkbox" type="checkbox"  value="yiju"  onclick="submit_by_attr();"/>{{ $vv->b_name }}
+                </label>
+				<?php } ?>
+				@endforeach
+                </div>
+        </div>
+		<?php } ?>
+		@endforeach
              <input type="hidden" class="btn_pink4search" id="filter_confirm" value="确定" />
   </div>
 </div>    <!--/city top-->
@@ -406,11 +389,19 @@
     <div class="clearfix">
         <!--map-->
         <div class="city_map">
-            <div class="list_map">
-    <div class="map-canvas">
-        <div id="XZMap" style="width:100%;height:100%;overflow:hidden;margin:0;"></div>
+    <div class="map-canvas" >
+	  <div id="allmap" style="width:100%;height:100%;overflow:hidden;margin:0;"></div>
     </div>
-</div>        </div>
+       </div>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=t6C2jNQAU2oZr7RGtgBn99wwuIYlOnzu"></script>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");    // 创建Map实例
+	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+	map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
         <!--/map-->
         <!--search list-->
         <div class="search_box">
@@ -438,7 +429,7 @@
              
           
                 <li lodgeunitid="lodgeunit_1779571235" latlng="40.052654,116.423421">
-    <a target="_blank" href="http://bj.xiaozhu.com/fangzi/1779571235.html" class="resule_img_a">
+    <a target="_blank" href="#" class="resule_img_a">
           <img class="lodgeunitpic" title="{{ $v->h_title }}" src="../images/uploads/{{ $v->pi_path }}" lazy_src="../images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}" style="height:300px;width:380px;" />
     </a>
     
@@ -549,9 +540,7 @@
 <input type="hidden" id="pagetype" value="Front_Search">
 <script type="text/javascript" src="/js/jquery/jquery.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/xzcss.css?css=jquery.mCustomScrollbar,nyroModal,uploadify" />
-<script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/xzjs?k=Footer&httphost=bj.xiaozhu.com"></script>
-<script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/js/jquery/lazyload.js"></script>
-<script type="text/javascript" src="http://www.xiaozhu.com/e1605163/js/webimv4/application/xzim4.js?source=xiaozhu&dm=xiaozhu.com" id="webimSource"></script>            <!--/link-->
+<!--/link-->
         </div>
         <!--search list-->
     </div>
@@ -612,13 +601,9 @@
     <div class="keywords_pop ldDiv" id="keyWordsDialog" style="display:none;">
 </div>    <div class="dropDiv" style='display:none'>
 </div></div>
-<script type="text/javascript" src="http://jci.xiaozhustatic1.com/e1605163/xzjs?k=Front_Search&httphost=bj.xiaozhu.com"></script>
-</body>
+
 <!-- Google Tag Manager -->
 
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W85X4L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W85X4L');
-</script>
 
 <!-- End Google Tag Manager --></html>
+
