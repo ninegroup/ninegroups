@@ -131,13 +131,9 @@ h1 {
 		      <li><a href="javascript:;" class="btn btn-primary btn-large theme-register">注册送红包</a></li>
 			  <li><a href="javascript:;" class="btn btn-primary btn-large theme-login">登陆</a></li>
 			  <?php }else{?>
-<<<<<<< HEAD
 				<li><h3><a href="{{URL::route('Index/user')}}">欢迎<?php echo $_COOKIE['name']?>登陆</a></h3></li>
 				<li><h3><a href="{{URL::route('Index/userOwner')}}">我是房东</a></h3></li>
-=======
-				<li><h3>欢迎<a href="{{URL::route('Index/user')}}"><?php echo $_COOKIE['name']?></a>登陆</h3></li>
 				<li><h3><a href="{{URL::route('Index/userList')}}">个人中心</a></h3></li>
->>>>>>> d49f1608d6ee627e36c276359c315e64875b6437
 				<li><a href="{{URL('unset1')}}">退出</a></li>
 			  <?php }?>	
 			  <li><input type="button" value="免费发布房源" class="btn btn-primary btn-large" onclick="housing()"/></li>
