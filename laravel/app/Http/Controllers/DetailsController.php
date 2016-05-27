@@ -1,5 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use DB;
+use Request;
+
 class DetailsController extends Controller {
 
 	/*
@@ -26,6 +29,7 @@ class DetailsController extends Controller {
 	 */
 	public function index()
 	{
+		echo $id=Request::get('id');die;
 		return view('details');
 	}
 

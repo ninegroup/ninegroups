@@ -3866,7 +3866,7 @@
         <ul>
 			<?php foreach($db as $v): ?>
                 <li>
-                    <a href="#" target="_blank" rel="nofollow" class="pic-box">
+                    <a href="<?php echo e(URL::route('Details/Index')); ?>?id=<?php echo e($v->h_id); ?>" rel="nofollow" class="pic-box">
                         <img data-origin="../images/uploads/<?php echo e($v->pi_path); ?>" alt="<?php echo e($v->h_title); ?>" width="370" height="232" />
                     </a>
                    

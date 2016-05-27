@@ -66,6 +66,8 @@ Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginContro
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');
 Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' => "SearchController@HomepageSearch"]);
+//房源具体信息页面
+Route::any('/Details/Index', [ 'as' => 'Details/Index', 'uses' => "DetailsController@Index"]);
 
 //发布房源login/addhouse1
 Route::any('addhouse1','LoginController@addhouse1');

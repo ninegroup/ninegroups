@@ -247,3 +247,6 @@ Stack trace:
 [2016-05-27 07:36:53] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '{'' in D:\WWW\ninegroups\laravel\storage\framework\views\8afd3b0db38ffcd2924763e0d5f04c6c:193
 Stack trace:
 #0 {main}  
+[2016-05-27 08:03:12] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Controllers\Request' not found' in D:\WWW\ninegroups\laravel\app\Http\Controllers\DetailsController.php:29
+Stack trace:
+#0 {main}  

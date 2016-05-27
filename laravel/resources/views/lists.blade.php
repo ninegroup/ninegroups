@@ -3866,7 +3866,7 @@
         <ul>
 			@foreach($db as $v)
                 <li>
-                    <a href="#" target="_blank" rel="nofollow" class="pic-box">
+                    <a href="{{ URL::route('Details/Index') }}?id={{ $v->h_id }}" rel="nofollow" class="pic-box">
                         <img data-origin="../images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}" width="370" height="232" />
                     </a>
                    
