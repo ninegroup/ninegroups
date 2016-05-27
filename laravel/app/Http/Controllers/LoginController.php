@@ -5,7 +5,9 @@ use Request;
 
 header('content-type:text/html;charset=utf-8');
 /*
-*用于用户登录
+*用于用户登录、注册以及发布房源
+*author:renpengdong
+*date:2016/5/24
 */
 class LoginController extends Controller {
 	//注册页面

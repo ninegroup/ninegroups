@@ -226,7 +226,7 @@ function pressEve(e){
 	                            <p><a href="javascript:menufrozen(851686525,'/user/tenant/accountmanager','user')" target="_self" id="myorder" rel="nofollow" class="slideactive">我的账户</a></p>
 	                            <p><a href="javascript:menufrozen(851686525,'/user/tenant/mycollection','user')" target="_self" id="mycollect" rel="nofollow">我的收藏</a></p>
 	                            <p><a href="javascript:menufrozen(851686525,'/user/tenant/msgmanager','user')" target="_self" id="mymsg" rel="nofollow">消息通知</a></p>
-	                            <p class="textCt"><a href="javascript:void(0)" id="loginoutbut" target="_self" class="stclick" clicktag="1_6">退出登录</a></p>
+	                            <p class="textCt"><a href="{{URL('unset1')}}" id="loginoutbut" target="_self" class="stclick" clicktag="1_6">退出登录</a></p>
 	                        </div>
 	                    </div>
 	                </div>
