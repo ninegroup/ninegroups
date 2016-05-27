@@ -60,12 +60,11 @@ class IndexController extends Controller {
 	}
 	/*完善信息*/
 	public function userGai(){
-		@$u_name=$_COOKIE['name'];
-		$realname=Request::input('realname');
-		$sex=Request::input('sex');
-		$u_idcard=Request::input('cardno');
-		$u_birth=Request::input('birYear').'-'.Request::input('birMonth').'-'.Request::input('birDay');
-		$u_province=Request::input('province');
+		$u_id=$_COOKIE['u_id'];
+		$u_name=Request::input('u_name');
+		$sex=Request::input('u_sex');
+		$u_idcard=Request::input('u_idcard');
+		$u_tel=Request::input('u_tel');
 		//文件上传
 		$data = Input::all();
 		//获取文件名
@@ -75,21 +74,21 @@ class IndexController extends Controller {
 		$path = $data['myfiles']-> move('uploads',$filename);
 		//修改个人信息
 		$update=DB::table('user')
-            ->where('u_name', $u_name)
+            ->where('u_id', $u_id)
             ->update([
-            	'realname'=>$realname,
+            	'u_name'=>$u_name,
             	'u_sex'=>$sex,
             	'u_idcard'=>$u_idcard,
             	'u_header'=>$filename,
-            	'u_birth'=>$u_birth,
-            	'u_province'=>$u_province
             ]);
         if($update){
-        	echo "<script>alert('信息更新成功');location.href='user'</script>";
+        	echo "<script>alert('信息更新成功');location.href='/Index/userList'</script>";
         }
 	}
 	public function userList(){
-		
-		return view('users');
+		$id=$_COOKIE['u_id'];
+		$db=DB::table('user')->where("u_id",$id)->first();
+		//var_dump($db);die;
+		return view('users')->with('db',$db);
 	}
 }
