@@ -11,8 +11,8 @@
 		 <link rel="stylesheet" href="../css/css.css" />
 
 		<ul class="breadcrumb clearfix">
-			       <li><a href="/tenant/851658049/orders">我是房东</a> <span class="divider">》</span></li>
-			<li>账户管理</li>
+			      
+			<li>》个人信息</li>
 		</ul>
 		
 		<div class="personalCenter clearfix">		
