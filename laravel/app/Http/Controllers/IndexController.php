@@ -42,9 +42,10 @@ class IndexController extends Controller {
 				->join('house', 'picture.pi_h_id', '=', 'house.h_id')
 				->where('pi_state','3')
 				->get();
+		$name=DB::table('user')->get();
 		return view('index')
 				->with('db',$db)
-				->with('hot',$hot);
+				->with('hot',$hot)->with('name',$name);
 
 	}
 	/*用户中心*/

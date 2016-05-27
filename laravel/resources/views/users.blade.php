@@ -18,8 +18,7 @@
 		<div class="personalCenter clearfix">		
 		    <!-- Center-sidebar -->
 		<ul class="center-sidebar">
-			<li><a class="slideactive" href="{{url('userList')}}">个人信息<span class="ddgl"></span></a></li>
-			<li><a href="{{url('orderList')}}">订单管理<span class="ddgl"></span></a></li>
+			<li><a class="slideactive" href="{{URL::route('Index/userList')}}">个人信息<span class="ddgl"></span></a></li>
 			<!--<li><a   href="/user/tenant/commentmanager.html">点评管理<span class="dpgl" ></span></a></li>-->	
 			<li><a  href="{{url('blog')}}">房源管理<span class="zhgl_current"></span></a></li>
 		</ul>
