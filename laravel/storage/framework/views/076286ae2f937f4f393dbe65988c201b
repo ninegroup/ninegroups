@@ -11,16 +11,17 @@
 		 <link rel="stylesheet" href="../css/css.css" />
 
 		<ul class="breadcrumb clearfix">
-			      
-			<li>》个人信息</li>
+			       <li><a href="/tenant/851658049/orders">我是房东</a> <span class="divider">》</span></li>
+			<li>账户管理</li>
 		</ul>
 		
 		<div class="personalCenter clearfix">		
 		    <!-- Center-sidebar -->
 		<ul class="center-sidebar">
-			<li><a class="slideactive" href="{{URL::route('Index/userList')}}">个人信息<span class="ddgl"></span></a></li>
+			<li><a class="slideactive" href="<?php echo e(url('userList')); ?>">个人信息<span class="ddgl"></span></a></li>
+			<li><a href="<?php echo e(url('orderList')); ?>">订单管理<span class="ddgl"></span></a></li>
 			<!--<li><a   href="/user/tenant/commentmanager.html">点评管理<span class="dpgl" ></span></a></li>-->	
-			<li><a  href="{{url('blog')}}">房源管理<span class="zhgl_current"></span></a></li>
+			<li><a  href="<?php echo e(url('blog')); ?>">房源管理<span class="zhgl_current"></span></a></li>
 		</ul>
 <script type="text/javascript" href="../js/jquery.js"></script>
 <script type="text/javascript">
@@ -33,8 +34,8 @@
 				</ul>
 				<div class="accountMt clearfix">
 					<!-- 个人信息 -->
-					<form action="{{URL::route('Index/userGai')}}" enctype='multipart/form-data' method="post">
-					 <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+					<form action="<?php echo e(URL::route('Index/userGai')); ?>" enctype='multipart/form-data' method="post">
+					 <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>"/>
 					<input style="display: none;" name="issetpass" id="issetpass" value="false" type="hidden">
 					<input style="display: none;" name="isbandmobile" id="isbandmobile" value="true" type="hidden">
 					<input style="display: none;" name="usertype" id="usertype" value="tenant" type="hidden">
@@ -42,11 +43,11 @@
 					<div class="MtList" style="display: block;">
 						<div class="avatar-box">
 							<div class="avatar">
-							@if(($db->u_header)=="")
+							<?php if(($db->u_header)==""): ?>
 									<img id="headimage" style="width:100px;height:100px;" src="http://i1.mayi.com/gjfs15/M06/C7/19/CgEHQFcxdRfgpEk7AABlcbtch,g688.jpg_110x110c.jpg" alt="">
-							@else
-									<img id="headimage" style="width:100px;height:100px;" src="{{URL::asset('uploads')}}/<?php echo $db->u_header?>" alt="">
-							@endif
+							<?php else: ?>
+									<img id="headimage" style="width:100px;height:100px;" src="<?php echo e(URL::asset('uploads')); ?>/<?php echo $db->u_header?>" alt="">
+							<?php endif; ?>
 							</div>
 							<p>
 							<a id="upheadimgdo" class="alertAvatar" rel="nofollow" href="javascript:void(0)" ><span onclick="photoupd();">[修改头像]</span>
@@ -65,7 +66,7 @@
 							
 								<li class="clearfix">
 									<span class="infoTitle">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span> 
-									<input class="personLargeInput" name="u_name"  id="nickname" value="{{$db->u_name}}" placeholder="请输入您的昵称" style="width:276px;" type="text">
+									<input class="personLargeInput" name="u_name"  id="nickname" value="<?php echo e($db->u_name); ?>" placeholder="请输入您的昵称" style="width:276px;" type="text">
 									
 								</li>
 								<li class="clearfix">
@@ -99,7 +100,7 @@
 								</li>
 								<li class="clearfix">
 									<span class="infoTitle">手机号码：</span> 
-									<input class="personLargeInput" name="u_tel" id="u_phone" value="{{$db->u_tel}}" style="color:#000;" type="text">
+									<input class="personLargeInput" name="u_tel" id="u_phone" value="<?php echo e($db->u_tel); ?>" style="color:#000;" type="text">
 										<a id="updatemobile" class="checking" rel="nofollow" href="javascript:void(0)"></a>
 									<!-- <span class="prompt">2-10个汉字，或2-20个英文字符</span> -->
 								</li>
@@ -108,7 +109,7 @@
 									if($db->u_idcard!=""){
 									?>
 									<span class="infoTitle">身份证号：</span>
-									<input class="personLargeInput" name="u_idcard" id="u_email" value="{{$db->u_idcard}}" type="text">
+									<input class="personLargeInput" name="u_idcard" id="u_email" value="<?php echo e($db->u_idcard); ?>" type="text">
 									<?php }else{?>
 									<span class="infoTitle">身份证号：</span>
 									<input class="personLargeInput" name="u_idcard" id="u_email" value="" type="text">

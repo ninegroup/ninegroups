@@ -1,4 +1,5 @@
 <?php namespace App\Http\Controllers;
+use DB;
 
 class BlogController extends Controller {
 
@@ -26,11 +27,16 @@ class BlogController extends Controller {
 	 */
 	public function index()
 	{
-		return view('housingList');
+		$id=$_COOKIE['u_id'];
+		//echo $id;die;
+		$db=DB::table('house')->where('u_id',$id)->get();
+		//var_dump($db);die;
+		return view('housingList')->with('db',$db);
 	}
 
 	public function orderList()
 	{
+
 		return view('order');
 	}
 
