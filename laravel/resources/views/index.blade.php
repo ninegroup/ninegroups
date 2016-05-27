@@ -132,7 +132,7 @@ h1 {
 			  <li><a href="javascript:;" class="btn btn-primary btn-large theme-login">登陆</a></li>
 			  <?php }else{?>
 				<li><h3><a href="{{URL::route('Index/user')}}">欢迎<?php echo $_COOKIE['name']?>登陆</a></h3></li>
-				<li><h3><a href="{{URL::route('Index/userOwner')}}">我是房东</a></h3></li>
+				
 				<li><h3><a href="{{URL::route('Index/userList')}}">个人中心</a></h3></li>
 				<li><a href="{{URL('unset1')}}">退出</a></li>
 			  <?php }?>	
@@ -228,12 +228,29 @@ h1 {
           <a href="javascript:;" title="关闭" class="close">×</a>
           <h3>登录 是一种态度</h3>
      </div>
-     <div class="theme-popbod dform">
+     <div >
+          
+        <center><input type="radio" name='xuan' onclick="huan()">账户登陆<input type="radio" name='xuan'>快速登陆</center>
+     </div>
+   
+     <div class="theme-popbod dform"  style="display:block;">
+
            <form class="theme-signin" name="loginform" action="{{URL('login')}}" method="post">
 		   <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                 <ol>
                      <li><strong>用户名：</strong><input class="ipt" type="text" name="u_name" size="20" /></li>
                      <li><strong>密码：</strong><input class="ipt" type="password" name="u_pwd"  size="20" /></li>
+                     <li><input class="btn btn-primary" type="submit" name="submit" value=" 登 录 " /></li>
+                </ol>
+           </form>
+     </div>
+     <div class="theme-popbod dform" style="display:none;">
+
+           <form class="theme-signin" name="loginform" action="{{URL('login')}}" method="post">
+		   <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+                <ol>
+                     <li><strong>123</strong><input class="ipt" type="text" name="u_name" size="20" /></li>
+                     <li><strong>123123</strong><input class="ipt" type="password" name="u_pwd"  size="20" /></li>
                      <li><input class="btn btn-primary" type="submit" name="submit" value=" 登 录 " /></li>
                 </ol>
            </form>
