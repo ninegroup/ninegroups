@@ -51,21 +51,17 @@ Route::any('/Index/userOwner', [ 'as' => 'Index/userOwner', 'uses' => "IndexCont
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
-<<<<<<< HEAD
+
 
 
 
 
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
-=======
-//<<<<<<< HEAD
 
 
-//=======
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
-//>>>>>>> edc50ef06795fbf4a748d92df62b964b847bb906
->>>>>>> a8551d4c94640c2133c9f20fb2d3ace6c74bc1c5
+
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');
 Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' => "SearchController@HomepageSearch"]);
