@@ -11,15 +11,14 @@
 		 <link rel="stylesheet" href="../css/css.css" />
 
 		<ul class="breadcrumb clearfix">
-			       <li><a href="/tenant/851658049/orders">我是房东</a> <span class="divider">》</span></li>
-			<li>账户管理</li>
+			      
+			<li>》个人信息</li>
 		</ul>
 		
 		<div class="personalCenter clearfix">		
 		    <!-- Center-sidebar -->
 		<ul class="center-sidebar">
-			<li><a class="slideactive" href="<?php echo e(url('userList')); ?>">个人信息<span class="ddgl"></span></a></li>
-			<li><a href="<?php echo e(url('orderList')); ?>">订单管理<span class="ddgl"></span></a></li>
+			<li><a class="slideactive" href="<?php echo e(URL::route('Index/userList')); ?>">个人信息<span class="ddgl"></span></a></li>
 			<!--<li><a   href="/user/tenant/commentmanager.html">点评管理<span class="dpgl" ></span></a></li>-->	
 			<li><a  href="<?php echo e(url('blog')); ?>">房源管理<span class="zhgl_current"></span></a></li>
 		</ul>

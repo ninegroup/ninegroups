@@ -5,6 +5,7 @@
   <title>用户中心</title> 
 </head>
 <body>
+
 <link rel="stylesheet" type="text/css" href="../css/user.css" />
   <h1></h1>
               <div class="right_con">
@@ -18,12 +19,6 @@
           <form  method="post" action="{{URL::route('Index/userGai')}}" enctype='multipart/form-data'  name="userForm" id="userForm" target="postframe">
           	<input type="hidden" name="_token" value="{{csrf_token()}}"/>
                 <div class="con_wraper width594 fl">
-                    <!--
-                    <p class="field_p">
-                        <label>用户名：</label>
-                        <span>xza_673118536yqgs4</span>
-                    </p>
-                    -->
                     <p class="field_p">
                         <label>用户名：</label> 
                         <input type="text" class="small_input" readonly value="<?php echo $_COOKIE['name']?>" style="background-color:#EFEFEF;" id="nickname" name="nickname" />
@@ -57,8 +52,7 @@
     <label>真实姓名：</label>
     <input type="text" class="small_input" value="" id="realname" name="realname" onblur="countUserInfoPercent($(this));"  />
 <?php }?>
-        <div class="zhima_con fk_zhima top30" style="display: none" id="fk_zhima_on">
-            
+        <div class="zhima_con fk_zhima top30" style="display: none" id="fk_zhima_on">      
         </div>
     </span>
     </div>
