@@ -31,8 +31,8 @@ class DetailsController extends Controller {
 	{
 		static $pic='';
 		$id=Request::get('id');
-		$arr=DB::table('house')->where('h_id',$id)->get();
-		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
+		$arr=DB::table('house')->where('h_id',$id)->first();
+		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
 		$data=array(
 			'arr'=>$arr,
 			'picture'=>$picture
