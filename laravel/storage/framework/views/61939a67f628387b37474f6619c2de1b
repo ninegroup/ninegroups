@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,9 +19,6 @@
     <title>久久租</title>
     <meta property="qc:admins" content="27330065376452116375" />
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
-
-
-    <!-- <link rel="bookmark" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" /> -->
 
     
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_common?v=67e5d64" />
@@ -48,7 +50,7 @@
          maxdate= new Date(2016,10,23),
          houseId,
          ServerDomain = "tujia.com",
-         TUJIA_CLIENTID = '8eb2f9bb-1c01-4f50-bfae-cf4c863420b2';
+         TUJIA_CLIENTID = 'af1a55b9-ac7e-4e94-ab67-1d3ceb6ce3d6';
 
     var portalUrl = "http://www.tujia.com";
     var favoriteUrl = "http://vip.tujia.com";
@@ -59,7 +61,7 @@
     var traceData = window.traceData || {};
     traceData.logService = 'http://api.tujia.com';
     traceData.prevId = '';
-    traceData.pageId = 'a4bf7d7e-e0fd-4e8b-87e5-13acd533864e';
+    traceData.pageId = '943ea911-8c73-4301-8fa0-df2750497437';
     traceData.url = 'http://www.tujia.com/beijing_gongyu/chaoyangqu_3581.htm';
     traceData.params = '';
 </script>
@@ -157,7 +159,7 @@
         maxdate= new Date(2016,10,23),
            houseId,
            ServerDomain = "tujia.com",
-           TUJIA_CLIENTID = 'c6674901-2fe8-4864-bef8-6bf5b7f271ac';
+           TUJIA_CLIENTID = '6e4245e1-438f-469e-a508-db6eba76a990';
 
     var portalUrl = "http://www.tujia.com";
     var imUrl = "http://im.tujia.com";
@@ -167,15 +169,21 @@
 
 </head>
 <body id=&#39;tujia&#39;>
+    <!--[if lt IE 8]>
+        <div class="ie-tips">
+    <span> 您使用的IE浏览器版本较低！</span>本站已不再支持较低版本的IE浏览器，已为您启用了精简版。为了更好的体验本站内容，建议您升级<a target="_blank" href="http://www.microsoft.com/zh-cn/download/ie.aspx?q=internet+explorer">Internet Explorer浏览器</a>或安装非IE内核浏览器。请下载 <a href="http://down.360safe.com/se/360se7.1.1.556.exe" class="link-btn" target="_blank">360浏览器</a>或<a href="http://dldir1.qq.com/invc/tt/QQBrowser_Setup_Wireless.exe" class="link-btn" target="_blank">QQ浏览器</a>。
+        </div>
+        <![endif]-->
+    <!--M-81-142-->
     <input id="hdIsFromPartner" name="hdIsFromPartner" type="hidden" value="0" />
 
 
-
-    
-
-
 <div class="hd-wrap-fluid ">
-    <div class="m-hd">
+    <!-- <div class="m-hd">
+        <div class="site-logo-cont">
+            <a href="http://www.tujia.com/" target="_blank" title="途家网首页" class="site-logo">途家网</a>
+            <span class="logo-text">旅途中的家</span>
+        </div>
         <div class="nav-list">
             <ul>
                 <li class="first"><a href="http://www.tujia.com/se0/" class="home-link " target="_blank">首页</a></li>
@@ -189,9 +197,9 @@
                 <li><a href="http://www.tujia.com/TuYuan/"  target="_blank">途远度假</a></li>
             </ul>
         </div>
-
+    
         <div class="sub-link" lazyloadurl="http://vip.tujia.com/WebParts/Portal/UserInfo?isShowCreateNewStore=False"></div>
-    </div>
+    </div> -->
 </div>
 
 
@@ -207,18 +215,12 @@
     
 
 <div id="dir" class="dir-cont">
-        <a href="http://www.tujia.com/se0/" title="途家网">途家网</a>
-    
-            <em>&gt;</em><a href="/beijing_gongyu/se0/" title="北京住宿">北京住宿</a>
-        <em>&gt;</em><a href="/beijing_gongyu/chaoyangqu_se0s182/" title="朝阳区住宿">朝阳区住宿</a><em>&gt;</em>
-
-北京途家长安驿精品大床房
 
 </div>
 
     
 <div class="share-cont">
-	<a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点赞']);" unitid="3581" href="javascript:void(0);">
+    <a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点赞']);" unitid="3581" href="javascript:void(0);">
         <i class="icon-chevron"></i>
         <span id="txtdianzan">我想住</span>
     </a>
@@ -230,6 +232,54 @@
 
 
 
+<script type="text/javascript">
+    var imgTotalCount=16;
+    //imgTotalCount=5;
+    var imgLoadedCount = 0;
+
+    function imgLoadSuccess() {
+        imgLoadedCount++;
+        if(imgLoadedCount==imgTotalCount&&imgTotalCount>0)
+        {
+
+            initOwlCarousel();
+        }
+    }
+
+    function imgLoadFail(self)
+    {
+
+        imgTotalCount--;
+        self = $(self);
+        self.parent().remove();
+        if (imgLoadedCount == imgTotalCount&&imgTotalCount>0) {
+            initOwlCarousel();
+        }
+    }
+
+    function initOwlCarousel() {
+        var carouselDetailPic = $jq('.owl-carousel').owlCarousel({
+            //nav:true,
+            margin:8,
+            loop: true,
+            autoWidth: true,
+            items: 4
+        });
+        $jq('#imgControl').show();
+
+        $jq('#hd-next').click(function () {
+            carouselDetailPic.trigger('next.owl.carousel');
+        })
+
+        $jq('#hd-prev').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            carouselDetailPic.trigger('prev.owl.carousel');
+        });
+    }
+
+
+</script>
 
 
 
@@ -307,26 +357,6 @@
     </div>
 </div>
 
-
-<!-- <div class="m-share-pop" style="display: none;" id="divWeixin">
-    <div class="hd-box">
-        <h2>分享到微信</h2>
-        <a href="javascript:;" title="关闭" class="close-btm" id="closeWeixin"></a>
-    </div>
-    <div class="cont-box">
-        <h2>
-            用微信“扫一扫”
-            <br />
-            将心动的房屋分享给自己的好友和朋友圈吧！
-        </h2>
-        <p class="code-box" id="wechatImg"></p>
-        <p class="text-info">
-            打开微信，点击底部的“发现”，使用 “扫一扫” 即可将网页分享<br />
-            给我的好友和朋友圈。
-        </p>
-    </div>
-</div> -->
-
 <script type="text/javascript">
     $("#shareWeixin").overlay({
         mask: {
@@ -395,6 +425,11 @@
             </div>
             <div class="hotel-sidebar">
                 <div class="book-info ">
+                    <div id="bestProduct" class="price-info">
+                        <div class="room-price">
+                            <span>加载中...</span>
+                        </div>
+                    </div>
                         <div class="comment-info">
                             <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
                             <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count">419</span>条点评</a>
@@ -431,7 +466,7 @@
     <div class="m-cont t-cont clearfix">
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
-            <!-- <div class="m-column-box new-column-box" id="saleproductsection">
+            <div class="m-column-box new-column-box" id="saleproductsection">
                     <div class="product-filter" id="productfilter">
                         <div class="date-change-box">
                             <div class="change-control-group">
@@ -445,7 +480,7 @@
                                     </label>
                                 </div>
                             </div>
-            
+
                             <div class="change-control-group">
                                 <span class="controls-span">退房</span>
                                 <div class="controls">
@@ -461,23 +496,23 @@
                                     <a class="has-empty-house" href="javascript:;" data-unitid="3581" data-detaillink="" onclick="_gaq.push(['_trackEvent', 'pcDetail', '哪天有房']);">哪天有房</a>
                                 </div>
                         </div>
-            
+
                             <div class="hint-text">
-            
-            
-            
+
+
+
                                     <a id="btnAjaxLogin" class="link-btn" href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'pcDetail', '登录']);">登录</a>
                                     可见
                                     <a href="http://vip.tujia.com/Memberhome/ReturnCash" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '高级优惠价']);" class="link-btn">高级会员优惠价</a>
                             </div>
-            
+
                     </div>
                     <div class="room-select-box" id="productcontent">
                         <div class="loading-wrap">
                             <i class="icon-loading"></i>
                         </div>
                     </div>
-            </div> -->
+            </div>
             <!-- Tabs  -->
             
 
@@ -661,10 +696,6 @@
 
                         </div>
                                             <div class="community-info j-autohide" style="display:none">
-                                <div class="label-group">
-                                                                            <span class="label-text">便利店</span>
-                                                                            <span class="label-text">停车位</span>
-                                                                                                                                            </div>
 
                                 <div class="text-box">
                                     地下停车超过半个小时以上，5元/小时，不分白天晚上。<br />
@@ -811,7 +842,6 @@
             </div>
         </div>
 
-        <div class="hint-text">周边五百米服务：超市</div>
 </div>
             </div>
             <!-- 房屋评论  -->
@@ -1528,6 +1558,8 @@
 
 <!-- footer Start -->
 
+
+
     
 <div class="m-seo-list">
     
@@ -1535,9 +1567,9 @@
     
 </div>
 
-<div style="display: none">getFriendLinkRuleTime执行时间: 0.133</div>
-<div style="display: none">getSeoFooterRulrTime执行时间: 0.0269</div>
-<div style="display: none">SeoFooter执行时间: 0.006</div>
+<div style="display: none">getFriendLinkRuleTime执行时间: 0.1132</div>
+<div style="display: none">getSeoFooterRulrTime执行时间: 0.0182</div>
+<div style="display: none">SeoFooter执行时间: 0.0047</div>
 
 
          
