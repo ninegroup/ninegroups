@@ -132,7 +132,27 @@ h1 {
 			  <li><a href="javascript:;" class="btn btn-primary btn-large theme-login">登陆</a></li>
 			  <?php }else{?>
 				<li><h3><a href="{{URL::route('Index/user')}}">欢迎<?php echo $_COOKIE['name']?>登陆</a></h3></li>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+				
+=======
+
+>>>>>>> f04d0290b72ec4cf33c43e2304f208a865daf2cd
+>>>>>>> 3a856a3db3a4cb11d16b21422aea7863112cc976
+>>>>>>> 05ff395d4203a972a25242954ffd8c6b6e887d53
+>>>>>>> d2d4a9c55a2e0c4d79854972cc7acbee257b3941
+>>>>>>> 1bb3c024a998fa0a046605c42f71dab4c58d75e4
+>>>>>>> 7c76f07317cddcaccb745217775e03a3fb76480b
 				<li><h3><a href="{{URL::route('Index/userList')}}">个人中心</a></h3></li>
 				<li><a href="{{URL('unset1')}}">退出</a></li>
 			  <?php }?>	
