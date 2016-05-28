@@ -85,11 +85,17 @@ class LoginController extends Controller {
 		$h_price=Request::input('h_price');
 		$h_state=Request::input('h_state');
 		$h_title=Request::input('h_title');
-		$h_content=htmlentities($_POST['h_content']);
-		$h_site=htmlentities($_POST['h_site']);
-		$h_checkin=htmlentities($_POST['h_checkin']);
-		$h_mating=htmlentities($_POST['h_mating']);
- 
+		$h_content=Request::input('h_content');
+		$h_site=Request::input('h_site');
+		$h_checkin=Request::input('h_checkin');		
+		$h_mating=Request::input('h_mating');
+		$h_mating1=serialize($h_mating);
+		$h_serve=Request::input('h_serve');
+		$h_serve1=serialize($h_serve);
+		$h_h=Request::input('h_h');
+		$h_type=Request::input('h_type');
+		//var_dump($h_mating);die;
+		
 		$u_id=$_COOKIE['u_id'];
 		$db=DB::table("house")->insert([
 			'h_city'=>$h_city,	
@@ -101,10 +107,13 @@ class LoginController extends Controller {
 			'h_title'=>$h_title,	
 			'h_content'=>$h_content,	
 			'h_site'=>$h_site,	
-			'h_checkin'=>$h_checkin,	
-			'h_mating'=>$h_mating,	
-		
+			'h_checkin'=>$h_checkin,
+			'h_h'=>$h_h,
+			'h_type'=>$h_type,
+			'h_mating'=>$h_mating1,
+			'h_serve'=>$h_serve1,
 		]);
+		
 		if($db)
 		{
 			$up=DB::table("user")->where('u_id',$u_id)->update([
