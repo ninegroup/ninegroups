@@ -29,8 +29,15 @@ class DetailsController extends Controller {
 	 */
 	public function index()
 	{
-		echo $id=Request::get('id');die;
-		return view('details');
+		static $pic='';
+		$id=Request::get('id');
+		$arr=DB::table('house')->where('h_id',$id)->get();
+		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
+		$data=array(
+			'arr'=>$arr,
+			'picture'=>$picture
+		);
+		return view('details',$data);
 	}
 
 }
