@@ -923,129 +923,52 @@
 <div class="m-listing-cont">
     <div class="hotel-info" id="hotelmanagementcompanycontent">
         <div class="photo-cont">
-            <a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"><img src="http://pic.tujia.com/upload/hotelmanagementcompanylogo/day_130502/201305021101557868.jpg" alt="" width="100" height="100" class="photo-img"></a>
+            <a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"><img src="../uploads/{{$res->u_header}}" alt="" width="100" height="100" class="photo-img"></a>
         </div>
             <h2 class="name-box">
-                <a href="/Hotel/Index/821/" target="_blank" class="listing-name" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);">北京途家斯维登服务公寓（地杰长安驿） </a><span class="personal-tag sweetome-tag" title="途家自营门店，高品质的体验">途家自营</span>
-                    <a href="http://bp.tujia.com/2016/SelectMerchants" target="_blank" class="icon-quality-hotel" rel="PreferredUnitTips"></a>
-            </h2>
+                <a href="/Hotel/Index/821/" target="_blank" class="listing-name" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"> {{$res->u_name}}</a><span class="personal-tag sweetome-tag" title="途家自营门店，高品质的体验">久久自营</span>
+                 
         <div class="shop-tag">
         </div>
 
         <div class="shop-rate">
             
-                <p class="link-btn-cont"><a href="javascript:;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '在线客服']); qimoChatClick(); return false;" class="chat-btn  custom-service">在线客服</a></p>
-                            <p class="contact-info">途家客服：<span class="tel-box">400-188-1234</span><span class="gray-text">(7x24小时)</span> </p>
+                <p class="link-btn-cont"><a href=" http://wpa.qq.com/msgrd?v=3&uin=502212374&Site=10086zs&Menu=yes" class="chat-btn  custom-service">在线 QQ</a></p>
+                                                   
+
+                            <p class="contact-info">联系房东:{{$res->u_tel}}<span class="tel-box"></span><span class="gray-text">(7x24小时)</span> </p>
         </div>
     </div>
 
 
-        <div class="sidebar-hd"><h2>房东的其它房屋<span class="gray-text">（5）</span></h2></div>
+        <div class="sidebar-hd"><h2>房东的其它房屋</h2></div>
         <div class="m-house-cont">
             <div class="houses-list">
                 <ul>
-                        <li>
-                            <a href="/beijing_gongyu/se0/chaoyangqu_5030.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251739263948_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                            <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_5030.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京途家长安驿精品双床房</a>
-
-                                <div class="house-info">
-                                    <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                    <span class="lab-text" title="1室1卫">1室1卫</span>|
-                                    <span class="lab-text" title="2张床">2张床</span>|
-                                    <span class="lab-text" title="宜住2人">宜住2人</span>
-                                </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">439</span>/晚</div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="/beijing_gongyu/se0/chaoyangqu_13739.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160127/thumb/201601272159013849_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                            <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_13739.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京途家长安驿豪华套房</a>
-
-                                <div class="house-info">
-                                    <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                    <span class="lab-text" title="1室1厅1卫">1室1厅1卫</span>|
-                                    <span class="lab-text" title="2张床">2张床</span>|
-                                    <span class="lab-text" title="宜住3人">宜住3人</span>
-                                </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">489</span>/晚</div>
-                            </div>
-                        </li>
+                 @foreach($com as $v)
                         <li>
                             <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
                             <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京途家长安驿精品双床套房</a>
+                                <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租{{$v->h_title}}</a>
 
                                 <div class="house-info">
-                                    <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                    <span class="lab-text" title="2室1卫">2室1卫</span>|
-                                    <span class="lab-text" title="2张床">2张床</span>|
-                                    <span class="lab-text" title="宜住4人">宜住4人</span>
+                                    <span class="lab-text" title="">{{$v->h_type}}</span>|
+                                    <span class="lab-text" title="">{{$v->h_mating}}</span>|
+                                    <span class="lab-text" title="">宜住{{$v->h_people}}人</span>|
+                                    <span class="lab-text" title="">{{$v->h_message}}</span>
                                 </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">699</span>/晚</div>
+                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">{{$v->h_price}}</span>/晚</div>
                             </div>
-                        </li>
-                </ul>
+                        </li> 
+                @endforeach
+               </ul>
                     <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>
 
             </div>
-            <!--管理公司其它房屋-->
-                <div class="m-column-box t-column-box">
-                        <div class="sidebar-hd"><h2>周边推荐房屋</h2></div>
-    <div class="m-house-cont">
-        <div class="houses-list">
-            <ul>
-                    <li>
-                        <a href="/beijing_gongyu/se0/chaoyangqu_10774.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/landlordunit/day_140120/thumb/201401200746159306_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                        <div class="house-cont">
-                            <a href="/beijing_gongyu/se0/chaoyangqu_10774.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">中景亿佳公寓舒适大床房</a>
-
-                            <div class="house-info">
-                                <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                <span class="lab-text" title="1室1卫">1室1卫</span>|
-                                <span class="lab-text" title="1张床">1张床</span>|
-                                <span class="lab-text" title="宜住2人">宜住2人</span>
-                            </div>
-                            <div class="picer-box"><dfn>¥</dfn><span class="value-box">425</span>/晚</div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="/beijing_gongyu/se0/chaoyangqu_10952.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/landlordunit/day_160205/thumb/201602051800362736_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                        <div class="house-cont">
-                            <a href="/beijing_gongyu/se0/chaoyangqu_10952.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">中景亿佳公寓舒适家庭房</a>
-
-                            <div class="house-info">
-                                <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                <span class="lab-text" title="1室1卫">1室1卫</span>|
-                                <span class="lab-text" title="2张床">2张床</span>|
-                                <span class="lab-text" title="宜住4人">宜住4人</span>
-                            </div>
-                            <div class="picer-box"><dfn>¥</dfn><span class="value-box">445</span>/晚</div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="/beijing_gongyu/se0/chaoyangqu_87706.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/landlordunit/day_160127/thumb/20160127113611261_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                        <div class="house-cont">
-                            <a href="/beijing_gongyu/se0/chaoyangqu_87706.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京长安驿短租公寓温馨小套</a>
-
-                            <div class="house-info">
-                                <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                <span class="lab-text" title="1室1厅1卫">1室1厅1卫</span>|
-                                <span class="lab-text" title="2张床">2张床</span>|
-                                <span class="lab-text" title="宜住4人">宜住4人</span>
-                            </div>
-                            <div class="picer-box"><dfn>¥</dfn><span class="value-box">488</span>/晚</div>
-                        </div>
-                    </li>
-            </ul>
-        </div>
-    </div>
-
-                </div>
+            
 
             <div class="m-column-box ">
                 <div class="m-ensure">
