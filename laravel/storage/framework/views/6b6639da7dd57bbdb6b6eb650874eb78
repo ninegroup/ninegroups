@@ -230,34 +230,9 @@ function pressEve(e){
 	                        </div>
 	                    </div>
 	                </div>
-               </li>          
-            	<li>
-	            	<div class="showinfo">
-	            		<a href="javascript:loginowner(851686525)" target="_self" class="stclick">我是房东</a>
-	                	<div class="head_pop">
-		                	<div class="pop_column plr10">
-		                        <p><a href="javascript:menufrozen(851686525,'/landlord/851686525/orders','landlord')">订单管理</a></p>
-		                        <p><a href="javascript:menufrozen(851686525,'/user/landlord/roommanager','landlord')">房源管理</a></p>
-		                        <p><a href="javascript:menufrozen(851686525,'/landlord/851686525/settlements','landlord')">结算管理</a></p>
-		                        <p><a href="javascript:menufrozen(851686525,'/user/landlord/msgmanager','landlord')">消息通知</a></p>
-		                        <p><a href="javascript:menufrozen(851686525,'/user/landlord/accountmanager','landlord')">账户管理</a></p>
-		                        <p><a href="/user/landlord/landlordhelper/">下载房东助手</a></p>
-		                    </div>
-	                	</div>
-	                </div>
-                </li>  
-            	<li>
-            	<div class="showinfo">
-                	<a href="/activity/app50" target="_blank">APP下单立送55元</a>
-                	<div class="b-app-img head_pop"><img src="http://staticnew.mayi.com/resourcesWeb/v201510/images/commom/mark_quick.jpg"></div>
-                </div>
-            </li>
-            	<li>
-                <a class="recruit" href="/landlord/recruit" target="_blank">房东招募</a>
-            </li>
-             <li>
-                <a rel="nofollow" href="javascript:publish(851686525)" class="room-btn f16 t-center" >免费发布房源</a>
-             </li>
+               </li>           
+
+
             </ul>
             <b style="width:1px;height:100%;background-color:#f00;display:block;"></b>
 		</div>
