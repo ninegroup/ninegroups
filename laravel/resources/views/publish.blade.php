@@ -467,7 +467,7 @@ $(function() {
 					<input type="checkbox" value="电吹风" name="h_mating[]">电吹风&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
 					<input type="checkbox" value="牙具" name="h_mating[]">牙具&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<input type="checkbox" value="毛巾" name="h_mating[]">毛巾&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="checkbox" value="洗发水/洗发露" name="h_mating[]">洗发水/洗发露&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="洗发水" name="h_mating[]">洗发水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<input type="checkbox" value="拖鞋" name="h_mating[]">拖鞋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<input type="checkbox" value="浴缸" name="h_mating[]">浴缸&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<input type="checkbox" value="宽带" name="h_mating[]">宽带&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

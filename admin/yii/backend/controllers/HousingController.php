@@ -38,13 +38,13 @@ class HousingController extends Controller
 	public function actionDel()
 	{
 		$id=$_GET['id'];
-		//echo $id;die;
+		// echo $id;die;
 		$db=Yii::$app->db->createCommand("delete from house where h_id='$id'")->execute();
 		if($db)
 		{
-			echo "<script>alert('删除成功');location.href='index.php?r=housing/list'</script>";
+			echo "<script>location.href='index.php?r=housing/list'</script>";
 		}else{
-			echo "<script>alert('删除失败');location.href='index.php?r=housing/list'</script>";
+			echo "<script>location.href='index.php?r=housing/list'</script>";
 		}
 	}
 }
