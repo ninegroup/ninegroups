@@ -15,12 +15,9 @@
     <meta property="qc:admins" content="27330065376452116375" />
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
 
-<<<<<<< HEAD
 
     <!-- <link rel="bookmark" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" /> -->
 
-=======
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
     
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_common?v=67e5d64" />
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/im.css?v=67e5d64" />
@@ -29,8 +26,6 @@
 
 <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_detail?v=67e5d64" />
  
-<<<<<<< HEAD
-
     <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/base/jquery.js?v=67e5d64"></script>
     <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_common_head?v=67e5d64"></script>
 
@@ -38,7 +33,6 @@
         //window["WEB_XHR_POLLING"] = true;
         var MESSAGE_RADIO="http://staticfile.tujia.com/PortalSite2/radio/message.wav", ORDERNOTICE_RADIO = "http://staticfile.tujia.com/PortalSite2/radio/ordernotice.wav";
     </script>
-=======
 <style>
 .flexslider {
 	margin: 0 auto;
@@ -140,20 +134,14 @@
         //window["WEB_XHR_POLLING"] = true;
         var MESSAGE_RADIO="http://staticfile.tujia.com/PortalSite2/radio/message.wav", ORDERNOTICE_RADIO = "http://staticfile.tujia.com/PortalSite2/radio/ordernotice.wav";
     </script> -->
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
 
-    
-
-
-<<<<<<< HEAD
 <script src="http://www.tujia.com/Common/CityInfo/"></script>
 
 <script type="text/javascript">
-=======
+
 <!--<script src="http://www.tujia.com/Common/CityInfo/"></script>
 
  <script type="text/javascript">
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
     var staticFileRoot = "http://staticfile.tujia.com",
          minDate = "2016-05-27",
          mindate =  new Date(2016,4,27),
@@ -161,11 +149,11 @@
          maxdate= new Date(2016,10,23),
          houseId,
          ServerDomain = "tujia.com",
-<<<<<<< HEAD
+
          TUJIA_CLIENTID = '8eb2f9bb-1c01-4f50-bfae-cf4c863420b2';
-=======
+
          TUJIA_CLIENTID = 'af1a55b9-ac7e-4e94-ab67-1d3ceb6ce3d6';
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
+
 
     var portalUrl = "http://www.tujia.com";
     var favoriteUrl = "http://vip.tujia.com";
@@ -176,7 +164,7 @@
     var traceData = window.traceData || {};
     traceData.logService = 'http://api.tujia.com';
     traceData.prevId = '';
-<<<<<<< HEAD
+
     traceData.pageId = 'a4bf7d7e-e0fd-4e8b-87e5-13acd533864e';
     traceData.url = 'http://www.tujia.com/beijing_gongyu/chaoyangqu_3581.htm';
     traceData.params = '';
@@ -184,24 +172,24 @@
 
      
 <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/jquery-1.11.3.min.js"></script>
-=======
+
     traceData.pageId = '943ea911-8c73-4301-8fa0-df2750497437';
     traceData.url = 'http://www.tujia.com/beijing_gongyu/chaoyangqu_3581.htm';
     traceData.params = '';
-</script> -->
+</script> 
 
      
 <!-- <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/jquery-1.11.3.min.js"></script>
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
+
 <script type="text/javascript">
     var $jq = jQuery.noConflict(true);
 </script>
 <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/owl.carousel.js"></script>
-<<<<<<< HEAD
+
 <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script>
-=======
+
 <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script> -->
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
+
 <script type="text/javascript">
 
     var Tj = Tj || {};
@@ -305,7 +293,7 @@
     <input id="hdIsFromPartner" name="hdIsFromPartner" type="hidden" value="0" />
 
 
-<<<<<<< HEAD
+
 
     
 
@@ -316,7 +304,7 @@
             <ul>
                 <li class="first"><a href="http://www.tujia.com/se0/" class="home-link " target="_blank">首页</a></li>
                 <li><a href="http://international.tujia.com/"  target="_blank">海外·港台</a></li>
-=======
+
 <div class="hd-wrap-fluid ">
     <div class="m-hd">
         <div class="site-logo-cont">
@@ -337,7 +325,6 @@
                 <li><a href="http://www.tujia.com/EntrustTreasure/"  target="_blank">买楼收租</a></li>
                 <li><a href="http://www.tujia.com/TuYuan/"  target="_blank">途远度假</a></li>
             </ul>
-<<<<<<< HEAD
         </div>
 
         <div class="sub-link" lazyloadurl="http://vip.tujia.com/WebParts/Portal/UserInfo?isShowCreateNewStore=False"></div>
@@ -673,19 +660,12 @@
             <i class="icon-highlights"></i>
             <h2>房屋亮点</h2>
         </div>
-=======
         </div> -->
     </div> 
 </div>
 
 
     
-
-
-
-
-
-
 
 <div class="m-cont row-cont">
     
@@ -979,7 +959,7 @@
             <i class="icon-highlights"></i>
             <h2>房屋亮点</h2>
         </div>
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
+
         <div class="content-box">
             <div class="highlight-info">
                                     <p><i>▪</i>位于朝阳区CBD，临近使馆区，更适合商务出差人士入住；</p>
@@ -987,7 +967,6 @@
                                     <p><i>▪</i>楼下有24小时便利店，庆丰包子等，餐饮方便；</p>
                                     <p><i>▪</i>房屋装修简约大方，开间宽敞舒适，设备齐全。</p>
             </div>
-<<<<<<< HEAD
         </div>
     </div>
 
@@ -1364,13 +1343,11 @@
             
                 <p class="link-btn-cont"><a href="javascript:;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '在线客服']); qimoChatClick(); return false;" class="chat-btn  custom-service">在线客服</a></p>
                             <p class="contact-info">途家客服：<span class="tel-box">400-188-1234</span><span class="gray-text">(7x24小时)</span> </p>
-=======
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
+
         </div>
     </div>
 
 
-<<<<<<< HEAD
         <div class="sidebar-hd"><h2>房东的其它房屋<span class="gray-text">（5）</span></h2></div>
         <div class="m-house-cont">
             <div class="houses-list">
@@ -1418,7 +1395,7 @@
                             </div>
                         </li>
                 </ul>
-=======
+
                 <!-- 设施服务  PS:设施与服务数据合并  -->
 
     <div class="column-info">
@@ -1812,14 +1789,14 @@
                         </li> 
                 @endforeach
                </ul>
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
+
                     <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>
 
             </div>
-<<<<<<< HEAD
+
             <!--管理公司其它房屋-->
                 <div class="m-column-box t-column-box">
                         <div class="sidebar-hd"><h2>周边推荐房屋</h2></div>
@@ -1873,9 +1850,6 @@
     </div>
 
                 </div>
-=======
-            
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
 
             <div class="m-column-box ">
                 <div class="m-ensure">
@@ -1942,7 +1916,7 @@
 </div>
 <!--在线客服&& 和房东聊天-结束-->
 <!--登录框－开始-->
-<<<<<<< HEAD
+
 <div style="height: 1px;" id="loginBtn"></div>
 <div class="m-login-wrap " id="userPop">
     <div class="login-head">
@@ -2382,8 +2356,6 @@
         return false;
     })
 </script>
-=======
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
 <!--登录框－结束-->
 
 
@@ -2391,11 +2363,6 @@
 
 <!-- footer Start -->
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
     
 <div class="m-seo-list">
     
@@ -2403,15 +2370,12 @@
     
 </div>
 
-<<<<<<< HEAD
 <div style="display: none">getFriendLinkRuleTime执行时间: 0.133</div>
 <div style="display: none">getSeoFooterRulrTime执行时间: 0.0269</div>
 <div style="display: none">SeoFooter执行时间: 0.006</div>
-=======
 <div style="display: none">getFriendLinkRuleTime执行时间: 0.1132</div>
 <div style="display: none">getSeoFooterRulrTime执行时间: 0.0182</div>
 <div style="display: none">SeoFooter执行时间: 0.0047</div>
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
 
 
          

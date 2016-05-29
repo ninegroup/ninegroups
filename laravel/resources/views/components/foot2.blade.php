@@ -70,6 +70,6 @@
             <div class="foot_btm">许可证号：<a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow">京ICP证140510号</a> &nbsp;&nbsp; 北京快跑信息科技有限公司
     </div>
     <div>
-        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020380" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="images/record_icon.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:black;">京公网安备 11010802020380号</p></a>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020380" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../images/record_icon.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:black;">京公网安备 11010802020380号</p></a>
     </div>
 </div>
