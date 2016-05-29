@@ -1,4 +1,3 @@
-
 <hr />
 <div class="foot_v2" style='padding-left:8%;padding-top:3%;font-size:14px;'>
         <ul class="foot_ul">

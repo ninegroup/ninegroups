@@ -15,9 +15,6 @@
     <meta property="qc:admins" content="27330065376452116375" />
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
 
-
-    <!-- <link rel="bookmark" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" /> -->
-
     
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_common?v=67e5d64" />
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/im.css?v=67e5d64" />
@@ -26,21 +23,114 @@
 
 <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_detail?v=67e5d64" />
  
+<style>
+.flexslider {
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	height: 420px;
+	overflow: hidden;
+	zoom: 1;
+}
 
-    <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/base/jquery.js?v=67e5d64"></script>
-    <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_common_head?v=67e5d64"></script>
+.flexslider .slides li {
+	width: 100%;
+	height: 100%;
+}
 
-    <script type="text/javascript">
+.flex-direction-nav a {
+	width: 70px;
+	height: 70px;
+	line-height: 99em;
+	overflow: hidden;
+	margin: -35px 0 0;
+	display: block;
+	background: url(../images/ad_ctr.png) no-repeat;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all .3s ease;
+	border-radius: 35px;
+}
+
+.flex-direction-nav .flex-next {
+	background-position: 0 -70px;
+	right: 0;
+}
+
+.flex-direction-nav .flex-prev {
+	left: 0;
+}
+
+.flexslider:hover .flex-next {
+	opacity: 0.8;
+	filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-prev {
+	opacity: 0.8;
+	filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+	opacity: 1;
+	filter: alpha(opacity=50);
+}
+
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+
+.flex-control-nav li {
+	margin: 0 2px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+.flex-control-paging li a {
+	background: url(../images/dot.png) no-repeat 0 -16px;
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	text-indent: -99em;
+	width: 16px;
+	cursor: pointer;
+}
+
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+	background-position: 0 0;
+}
+
+.flexslider .slides a img {
+	width: 100%;
+	height: 482px;
+	display: block;
+}
+</style>
+
+    <!-- <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/base/jquery.js?v=67e5d64"></script>
+    <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_common_head?v=67e5d64"></script> -->
+
+    <!-- <script type="text/javascript">
         //window["WEB_XHR_POLLING"] = true;
         var MESSAGE_RADIO="http://staticfile.tujia.com/PortalSite2/radio/message.wav", ORDERNOTICE_RADIO = "http://staticfile.tujia.com/PortalSite2/radio/ordernotice.wav";
-    </script>
+    </script> -->
 
     
 
 
-<script src="http://www.tujia.com/Common/CityInfo/"></script>
+<!--<script src="http://www.tujia.com/Common/CityInfo/"></script>
 
-<script type="text/javascript">
+ <script type="text/javascript">
     var staticFileRoot = "http://staticfile.tujia.com",
          minDate = "2016-05-27",
          mindate =  new Date(2016,4,27),
@@ -48,7 +138,7 @@
          maxdate= new Date(2016,10,23),
          houseId,
          ServerDomain = "tujia.com",
-         TUJIA_CLIENTID = '8eb2f9bb-1c01-4f50-bfae-cf4c863420b2';
+         TUJIA_CLIENTID = 'af1a55b9-ac7e-4e94-ab67-1d3ceb6ce3d6';
 
     var portalUrl = "http://www.tujia.com";
     var favoriteUrl = "http://vip.tujia.com";
@@ -59,18 +149,18 @@
     var traceData = window.traceData || {};
     traceData.logService = 'http://api.tujia.com';
     traceData.prevId = '';
-    traceData.pageId = 'a4bf7d7e-e0fd-4e8b-87e5-13acd533864e';
+    traceData.pageId = '943ea911-8c73-4301-8fa0-df2750497437';
     traceData.url = 'http://www.tujia.com/beijing_gongyu/chaoyangqu_3581.htm';
     traceData.params = '';
-</script>
+</script> -->
 
      
-<script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/jquery-1.11.3.min.js"></script>
+<!-- <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
     var $jq = jQuery.noConflict(true);
 </script>
 <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/owl.carousel.js"></script>
-<script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script>
+<script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script> -->
 <script type="text/javascript">
 
     var Tj = Tj || {};
@@ -157,7 +247,7 @@
         maxdate= new Date(2016,10,23),
            houseId,
            ServerDomain = "tujia.com",
-           TUJIA_CLIENTID = 'c6674901-2fe8-4864-bef8-6bf5b7f271ac';
+           TUJIA_CLIENTID = '6e4245e1-438f-469e-a508-db6eba76a990';
 
     var portalUrl = "http://www.tujia.com";
     var imUrl = "http://im.tujia.com";
@@ -170,16 +260,17 @@
     <input id="hdIsFromPartner" name="hdIsFromPartner" type="hidden" value="0" />
 
 
-
-    
-
-
 <div class="hd-wrap-fluid ">
     <div class="m-hd">
-        <div class="nav-list">
+        <div class="site-logo-cont">
+            <a href="/" title="久久租" class=""><img src="../images/jiujiu.jpg" alt="久久租" style="width:180px;height:55px;"/></a>
+			
+            <!-- <span class="logo-text">旅途中的家</span> -->
+        </div>
+        <!-- <div class="nav-list">
             <ul>
-                <li class="first"><a href="http://www.tujia.com/se0/" class="home-link " target="_blank">首页</a></li>
-                <li><a href="http://international.tujia.com/"  target="_blank">海外·港台</a></li>
+                <li class="first"><a href="/" class="home-link ">首页</a></li>
+                <li><a href=""  target="_blank">海外·港台</a></li>
                 <li><a href="http://www.tujia.com/changzu/se0/"  target="_blank">周租月租</a></li>
                 <li><a href="http://www.tujia.com/Experience/"  target="_blank">体验房</a></li>
                 <li><a href="http://www.tujia.com/photowall/" target="_blank" >特色房</a></li>
@@ -188,10 +279,8 @@
                 <li><a href="http://www.tujia.com/EntrustTreasure/"  target="_blank">买楼收租</a></li>
                 <li><a href="http://www.tujia.com/TuYuan/"  target="_blank">途远度假</a></li>
             </ul>
-        </div>
-
-        <div class="sub-link" lazyloadurl="http://vip.tujia.com/WebParts/Portal/UserInfo?isShowCreateNewStore=False"></div>
-    </div>
+        </div> -->
+    </div> 
 </div>
 
 
@@ -207,18 +296,18 @@
     
 
 <div id="dir" class="dir-cont">
-        <a href="http://www.tujia.com/se0/" title="途家网">途家网</a>
+<a href="#" title="久久租">久久租</a>
     
-            <em>&gt;</em><a href="/beijing_gongyu/se0/" title="北京住宿">北京住宿</a>
-        <em>&gt;</em><a href="/beijing_gongyu/chaoyangqu_se0s182/" title="朝阳区住宿">朝阳区住宿</a><em>&gt;</em>
+            <em>&gt;</em><a href="#" title="<?php echo e($arr->h_city); ?>"><?php echo e($arr->h_city); ?></a>
+        <em>&gt;</em><a href="#" title="<?php echo e($arr->h_site); ?>"><?php echo e($arr->h_site); ?></a><em>&gt;</em>
 
-北京途家长安驿精品大床房
+<?php echo e($arr->h_title); ?>
 
 </div>
 
     
 <div class="share-cont">
-	<a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点赞']);" unitid="3581" href="javascript:void(0);">
+    <a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点赞']);" unitid="3581" href="javascript:void(0);">
         <i class="icon-chevron"></i>
         <span id="txtdianzan">我想住</span>
     </a>
@@ -230,130 +319,98 @@
 
 
 
+<script type="text/javascript">
+    var imgTotalCount=16;
+    //imgTotalCount=5;
+    var imgLoadedCount = 0;
 
+    function imgLoadSuccess() {
+        imgLoadedCount++;
+        if(imgLoadedCount==imgTotalCount&&imgTotalCount>0)
+        {
+
+            initOwlCarousel();
+        }
+    }
+
+    function imgLoadFail(self)
+    {
+
+        imgTotalCount--;
+        self = $(self);
+        self.parent().remove();
+        if (imgLoadedCount == imgTotalCount&&imgTotalCount>0) {
+            initOwlCarousel();
+        }
+    }
+
+    function initOwlCarousel() {
+        var carouselDetailPic = $jq('.owl-carousel').owlCarousel({
+            //nav:true,
+            margin:8,
+            loop: true,
+            autoWidth: true,
+            items: 4
+        });
+        $jq('#imgControl').show();
+
+        $jq('#hd-next').click(function () {
+            carouselDetailPic.trigger('next.owl.carousel');
+        })
+
+        $jq('#hd-prev').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            carouselDetailPic.trigger('prev.owl.carousel');
+        });
+    }
+
+
+</script>
 
 
 <div class="m-cont m-con-fluid  new-cont-fluid">
-    <div class="thumb-cont">
+	<div class="thumb-cont">
         <div class="shadow-box"></div>
-        <div class="owl-carousel" style="width: 9999px">
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251714465094_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251714564014_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251715064189_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251715251681_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251715155061_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251717512270_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251718028765_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251718127985_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251719043350_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251719158890_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251719391955_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251720164081_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251719527669_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251720048574_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251720288923_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/20160125172042178_390_390.jpg" />
-                    </div>
-        </div>
-        <div id="imgControl" class="thumb-btn" style="display:none">
-            <a href="javascript:;" class="btn-prev" id="hd-prev">上一张</a>
-            <a href="javascript:;" class="btn-next" id="hd-next">下一张</a>
-        </div>
-    </div>
-    
-
-    
-    <div class="house-hint-info">
-        <div class="house-tag-box">
-
-                <span class="label-text">优势地段</span>
-                                <span class="label-text">休闲度假</span>
-                    <span class="label-text">商务差旅</span>
-                    <span class="label-text">近菜市场</span>
-
-        </div>
-        <span>此房型有20套，实际入住与此可能略有不同</span>
-    </div>
+			<div id="banner_tabs" class="flexslider">
+				<ul class="slides">
+				<?php foreach($picture as $v): ?>
+					<li>
+						<a title="" target="_blank" href="#">
+							<img alt="" src="../images/alpha.png" style="background: url(../images/uploads/<?php echo e($v->pi_path); ?>) no-repeat center;background-size:100% 480px;" >
+						</a>
+					</li>
+				<?php endforeach; ?>
+				</ul>
+				<ul class="flex-direction-nav">
+					<li><a class="flex-prev" href="javascript:;">上一页</a></li>
+					<li><a class="flex-next" href="javascript:;">下一页</a></li>
+				</ul>
+				
+			</div>
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/slider.js"></script>
+			<script type="text/javascript">
+			$(function() {
+				var bannerSlider = new Slider($('#banner_tabs'), {
+					time: 5000,
+					delay: 400,
+					event: 'hover',
+					auto: true,
+					mode: 'fade',
+					controller: $('#bannerCtrl'),
+					activeControllerCls: 'active'
+				});
+				$('#banner_tabs .flex-prev').click(function() {
+					bannerSlider.prev()
+				});
+				$('#banner_tabs .flex-next').click(function() {
+					bannerSlider.next()
+				});
+			})
+			</script>
+	</div>
 </div>
-
-
-<!-- <div class="m-share-pop" style="display: none;" id="divWeixin">
-    <div class="hd-box">
-        <h2>分享到微信</h2>
-        <a href="javascript:;" title="关闭" class="close-btm" id="closeWeixin"></a>
-    </div>
-    <div class="cont-box">
-        <h2>
-            用微信“扫一扫”
-            <br />
-            将心动的房屋分享给自己的好友和朋友圈吧！
-        </h2>
-        <p class="code-box" id="wechatImg"></p>
-        <p class="text-info">
-            打开微信，点击底部的“发现”，使用 “扫一扫” 即可将网页分享<br />
-            给我的好友和朋友圈。
-        </p>
-    </div>
-</div> -->
-
-<script type="text/javascript">
-    $("#shareWeixin").overlay({
-        mask: {
-            color: '#000',
-            loadSpeed: 200,
-            opacity: 0.6
-        },
-        // onBeforeLoad: function () {   },
-        close: "#closeWeixin",  //触发关闭的dom节点，可以是图片，链接或者按钮
-        closeOnClick: true, // 点击弹出层之外位置是否关闭弹出层
-        closeOnEsc: true,   // 按下ESC是否关闭弹出层
-        target: "#divWeixin",
-        top: "20%",
-        onBeforeLoad: function () {
-            if ($("#divWeixin").attr("loaded") == "1")
-                return;
-            $.getScript('http://staticfile.tujia.com/PortalSite2/Scripts/weixinQrCode.js', function () {
-                var href = window.location.href;
-                if (href.indexOf("?") > 0) href = href.substr(0, href.indexOf("?"));
-                if (href.indexOf("#") > 0) href = href.substr(0, href.indexOf("#"));
-                QRCode.wechatQr.makeCode(href);
-                $("#divWeixin").attr("loaded", "1");
-            });
-        }
-    });
-</script>
-
 
 
 <div class="m-cont m-con-fluid">
@@ -361,9 +418,9 @@
         <div class="hotel-cont">
             <div class="room-info">
                     <h1>
-                        北京途家长安驿精品大床房<span class="personal-tag sweetome-tag" title="途家自营门店，高品质的体验">途家自营</span>
+					<?php echo e($arr->h_title); ?><span class="personal-tag sweetome-tag" title="">个人房东</span>
                         
-                            <a href="http://bp.tujia.com/2016/SelectMerchants" target="_blank" class="icon-quality-hotel" rel="PreferredUnitTips"></a>
+                            <!-- <a href="http://bp.tujia.com/2016/SelectMerchants" target="_blank" class="icon-quality-hotel" rel="PreferredUnitTips"></a> -->
                     </h1>
                 <div class="district-info">
                     <i class="icon-area"></i>
@@ -395,6 +452,11 @@
             </div>
             <div class="hotel-sidebar">
                 <div class="book-info ">
+                    <!-- <div id="bestProduct" class="price-info">
+                        <div class="room-price">
+                            <span>加载中...</span>
+                        </div>
+                    </div> -->
                         <div class="comment-info">
                             <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
                             <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count">419</span>条点评</a>
@@ -431,7 +493,7 @@
     <div class="m-cont t-cont clearfix">
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
-            <!-- <div class="m-column-box new-column-box" id="saleproductsection">
+            <div class="m-column-box new-column-box" id="saleproductsection">
                     <div class="product-filter" id="productfilter">
                         <div class="date-change-box">
                             <div class="change-control-group">
@@ -445,7 +507,7 @@
                                     </label>
                                 </div>
                             </div>
-            
+
                             <div class="change-control-group">
                                 <span class="controls-span">退房</span>
                                 <div class="controls">
@@ -461,23 +523,12 @@
                                     <a class="has-empty-house" href="javascript:;" data-unitid="3581" data-detaillink="" onclick="_gaq.push(['_trackEvent', 'pcDetail', '哪天有房']);">哪天有房</a>
                                 </div>
                         </div>
-            
+
                             <div class="hint-text">
-            
-            
-            
-                                    <a id="btnAjaxLogin" class="link-btn" href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'pcDetail', '登录']);">登录</a>
-                                    可见
-                                    <a href="http://vip.tujia.com/Memberhome/ReturnCash" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '高级优惠价']);" class="link-btn">高级会员优惠价</a>
                             </div>
-            
+
                     </div>
-                    <div class="room-select-box" id="productcontent">
-                        <div class="loading-wrap">
-                            <i class="icon-loading"></i>
-                        </div>
-                    </div>
-            </div> -->
+            </div>
             <!-- Tabs  -->
             
 
@@ -661,10 +712,6 @@
 
                         </div>
                                             <div class="community-info j-autohide" style="display:none">
-                                <div class="label-group">
-                                                                            <span class="label-text">便利店</span>
-                                                                            <span class="label-text">停车位</span>
-                                                                                                                                            </div>
 
                                 <div class="text-box">
                                     地下停车超过半个小时以上，5元/小时，不分白天晚上。<br />
@@ -811,7 +858,6 @@
             </div>
         </div>
 
-        <div class="hint-text">周边五百米服务：超市</div>
 </div>
             </div>
             <!-- 房屋评论  -->
@@ -893,129 +939,52 @@
 <div class="m-listing-cont">
     <div class="hotel-info" id="hotelmanagementcompanycontent">
         <div class="photo-cont">
-            <a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"><img src="http://pic.tujia.com/upload/hotelmanagementcompanylogo/day_130502/201305021101557868.jpg" alt="" width="100" height="100" class="photo-img"></a>
+            <a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"><img src="../uploads/<?php echo e($res->u_header); ?>" alt="" width="100" height="100" class="photo-img"></a>
         </div>
             <h2 class="name-box">
-                <a href="/Hotel/Index/821/" target="_blank" class="listing-name" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);">北京途家斯维登服务公寓（地杰长安驿） </a><span class="personal-tag sweetome-tag" title="途家自营门店，高品质的体验">途家自营</span>
-                    <a href="http://bp.tujia.com/2016/SelectMerchants" target="_blank" class="icon-quality-hotel" rel="PreferredUnitTips"></a>
-            </h2>
+                <a href="/Hotel/Index/821/" target="_blank" class="listing-name" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"> <?php echo e($res->u_name); ?></a><span class="personal-tag sweetome-tag" title="途家自营门店，高品质的体验">久久自营</span>
+                 
         <div class="shop-tag">
         </div>
 
         <div class="shop-rate">
             
-                <p class="link-btn-cont"><a href="javascript:;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '在线客服']); qimoChatClick(); return false;" class="chat-btn  custom-service">在线客服</a></p>
-                            <p class="contact-info">途家客服：<span class="tel-box">400-188-1234</span><span class="gray-text">(7x24小时)</span> </p>
+                <p class="link-btn-cont"><a href=" http://wpa.qq.com/msgrd?v=3&uin=502212374&Site=10086zs&Menu=yes" class="chat-btn  custom-service">在线 QQ</a></p>
+                                                   
+
+                            <p class="contact-info">联系房东:<?php echo e($res->u_tel); ?><span class="tel-box"></span><span class="gray-text">(7x24小时)</span> </p>
         </div>
     </div>
 
 
-        <div class="sidebar-hd"><h2>房东的其它房屋<span class="gray-text">（5）</span></h2></div>
+        <div class="sidebar-hd"><h2>房东的其它房屋</h2></div>
         <div class="m-house-cont">
             <div class="houses-list">
                 <ul>
-                        <li>
-                            <a href="/beijing_gongyu/se0/chaoyangqu_5030.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251739263948_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                            <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_5030.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京途家长安驿精品双床房</a>
-
-                                <div class="house-info">
-                                    <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                    <span class="lab-text" title="1室1卫">1室1卫</span>|
-                                    <span class="lab-text" title="2张床">2张床</span>|
-                                    <span class="lab-text" title="宜住2人">宜住2人</span>
-                                </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">439</span>/晚</div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="/beijing_gongyu/se0/chaoyangqu_13739.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160127/thumb/201601272159013849_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                            <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_13739.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京途家长安驿豪华套房</a>
-
-                                <div class="house-info">
-                                    <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                    <span class="lab-text" title="1室1厅1卫">1室1厅1卫</span>|
-                                    <span class="lab-text" title="2张床">2张床</span>|
-                                    <span class="lab-text" title="宜住3人">宜住3人</span>
-                                </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">489</span>/晚</div>
-                            </div>
-                        </li>
+                 <?php foreach($com as $v): ?>
                         <li>
                             <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
                             <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京途家长安驿精品双床套房</a>
+                                <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租<?php echo e($v->h_title); ?></a>
 
                                 <div class="house-info">
-                                    <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                    <span class="lab-text" title="2室1卫">2室1卫</span>|
-                                    <span class="lab-text" title="2张床">2张床</span>|
-                                    <span class="lab-text" title="宜住4人">宜住4人</span>
+                                    <span class="lab-text" title=""><?php echo e($v->h_type); ?></span>|
+                                    <span class="lab-text" title=""><?php echo e($v->h_mating); ?></span>|
+                                    <span class="lab-text" title="">宜住<?php echo e($v->h_people); ?>人</span>|
+                                    <span class="lab-text" title=""><?php echo e($v->h_message); ?></span>
                                 </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">699</span>/晚</div>
+                                <div class="picer-box"><dfn>¥</dfn><span class="value-box"><?php echo e($v->h_price); ?></span>/晚</div>
                             </div>
-                        </li>
-                </ul>
+                        </li> 
+                <?php endforeach; ?>
+               </ul>
                     <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>
 
             </div>
-            <!--管理公司其它房屋-->
-                <div class="m-column-box t-column-box">
-                        <div class="sidebar-hd"><h2>周边推荐房屋</h2></div>
-    <div class="m-house-cont">
-        <div class="houses-list">
-            <ul>
-                    <li>
-                        <a href="/beijing_gongyu/se0/chaoyangqu_10774.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/landlordunit/day_140120/thumb/201401200746159306_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                        <div class="house-cont">
-                            <a href="/beijing_gongyu/se0/chaoyangqu_10774.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">中景亿佳公寓舒适大床房</a>
-
-                            <div class="house-info">
-                                <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                <span class="lab-text" title="1室1卫">1室1卫</span>|
-                                <span class="lab-text" title="1张床">1张床</span>|
-                                <span class="lab-text" title="宜住2人">宜住2人</span>
-                            </div>
-                            <div class="picer-box"><dfn>¥</dfn><span class="value-box">425</span>/晚</div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="/beijing_gongyu/se0/chaoyangqu_10952.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/landlordunit/day_160205/thumb/201602051800362736_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                        <div class="house-cont">
-                            <a href="/beijing_gongyu/se0/chaoyangqu_10952.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">中景亿佳公寓舒适家庭房</a>
-
-                            <div class="house-info">
-                                <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                <span class="lab-text" title="1室1卫">1室1卫</span>|
-                                <span class="lab-text" title="2张床">2张床</span>|
-                                <span class="lab-text" title="宜住4人">宜住4人</span>
-                            </div>
-                            <div class="picer-box"><dfn>¥</dfn><span class="value-box">445</span>/晚</div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="/beijing_gongyu/se0/chaoyangqu_87706.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/landlordunit/day_160127/thumb/20160127113611261_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                        <div class="house-cont">
-                            <a href="/beijing_gongyu/se0/chaoyangqu_87706.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京长安驿短租公寓温馨小套</a>
-
-                            <div class="house-info">
-                                <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                <span class="lab-text" title="1室1厅1卫">1室1厅1卫</span>|
-                                <span class="lab-text" title="2张床">2张床</span>|
-                                <span class="lab-text" title="宜住4人">宜住4人</span>
-                            </div>
-                            <div class="picer-box"><dfn>¥</dfn><span class="value-box">488</span>/晚</div>
-                        </div>
-                    </li>
-            </ul>
-        </div>
-    </div>
-
-                </div>
+            
 
             <div class="m-column-box ">
                 <div class="m-ensure">
@@ -1082,451 +1051,14 @@
 </div>
 <!--在线客服&& 和房东聊天-结束-->
 <!--登录框－开始-->
-<div style="height: 1px;" id="loginBtn"></div>
-<div class="m-login-wrap " id="userPop">
-    <div class="login-head">
-         
-            <h2>登录即享：积分余额抵订金，高级会员有优惠</h2>
-        <i class="close-btn  closeSubmit" title="关闭"></i>
-    </div>
-    <div class="login-tabs">
-            <a id="tabSmsLogin" href="javascript:;" class="phone-pwd">短信快捷登录/注册</a>
-                            <a id="tabPwdLogin" href="javascript:;" class="user-pwd">普通登录</a>
-    </div>
-    <div class="login-body">
-        <div id="tabPwdLoginContent" class="dn">
-                    <div class="column-box">
-                   <p>注册立送<span class="highlight-box">100</span> 元礼品卡，预订立即可用</p>        
-        </div>
-
-        <div class="control-group" style="margin-top:10px;">
-            <div class="controls">
-                <label for="account">
-                    <input type="text" class="ipt-text" name="username" id="account" value="" />
-                    <span class="text-watermark">用户名/手机号/邮箱</span>
-                </label>
-            </div>
-        </div>
-
-        <div class="control-group">
-
-            <div class="controls">
-                <label for="password">
-                    <input type="password" class="ipt-text" name="pwd" id="password" />
-                    <span class=" text-watermark">密码</span>
-                </label>
-            </div>
-            <div class="validationError dn" id="loginerrormsg"></div>
-        </div>
-
-        <div class="control-group  " id="validateArea">
-            <div class="controls">
-                <label for="verifycode">
-                    <input type="text" class="ipt-text verify-ipt" name="verifycode" id="verifycode" />
-                    <span class="text-watermark" style="width: 140px;">请输入计算结果</span>
-                    <img id="verifyImage" alt="看不清楚，换一张" class="verify-img" />
-                    <a id="verifyImageLink" href="javascript:void(0)" class="change-rand" style="display:none">看不清，换一张</a>
-                </label>
-            </div>
-            <div class="validationError dn" id="verifycodeErorr"></div>
-        </div>
-
-            <div class="control-group t-control-group">
-                <div class="controls">
-                    
-                    <label for="saveUserLongTime"><input type="checkbox" name="" class="check-btn " id="saveUserLongTime">保存登录状态2周</label>
-
-                    <a href="https://passport.tujia.com/PortalSite/FetchPassword/" class="forget-pwd" target="_blank">忘记密码？</a>
-
-                    <input type="hidden" name="userExpiresHours" id="userExpiresHours" value="" />
-                </div>
-            </div>
-
-        <div class="control-group btn-group">
-            <div class="controls">
-                <input type="button" value="登录" class="login-btn" id="loginSubmit" style="cursor:pointer;" />
-                <input type="button" value="登录中" class="login-btn" style="display:none;" id="loginSubmitIng" />
-                
-            </div>
-          
-        </div>
-
-             <div class="coagent-cont">
-                <div class="coagent-tit"><span>合作网站账号登录</span></div>
-                <div class="link-btn-cont">
-                     <a href="javascript:;" id="qqLogin" title="QQ账户登录" onclick="qqLogin();return false;"  class="qq-login-btn">QQ</a>
-                     <a href="javascript:;" id="sinaLogin" title="新浪微博账户登录" onclick="sinaLogin();return false;" class="sian-login-btn">新浪微博</a>
-                     <a href="javascript:;" id="" title="微信账户登录" onclick="wechatLogin();return false;" class="weixin-login-btn">微信</a>
-                </div>
-            </div>
-    <div class="link-group j-logon-directorder"><a href="" target="_blank">不登录，直接预订 >></a></div>
-
-
-<script type="text/javascript">
-    $('#loginSubmit').bind('click', function () {
-        if (!$("#account").val() || !$("#password").val()) {
-            $('#loginerrormsg').html("用户名或密码不能为空！").show();
-            return;
-        }
-
-        $("#loginSubmit").hide();
-        $("#loginSubmitIng").show();
-        $.ajax({
-            url: 'https://passport.tujia.com/PortalSite/AjaxLogin/',
-            data: {
-                'username': $('#account').val()
-                , 'pwd': $('#password').val()
-                , 'verifycode': $('#verifycode').val()
-                , 'userExpiresHours': $('#userExpiresHours').val()
-                , 'currentUrl': window.location.href
-            },
-            type: 'post',
-            dataType: 'jsonp',
-            success: function (res) {
-                if (res.IsSuccess) {
-                    if (res.RedirectUrl) {
-                        window.location.href = res.RedirectUrl;
-                        return;
-                    }
-
-                    if ($("#showButton").val() == "3" || $("#showButton").val() == "4") {
-                        if (window.location.href.indexOf("?") > -1) {
-                            window.location.href = window.location.href + "&show=" + $("#showButton").val();
-                        }
-                        else {
-                            window.location.href = window.location.href + "?show=" + $("#showButton").val();
-                        }
-                    }
-                    else {
-                        var redirectUrl = '';
-
-                        var href = redirectUrl == "" ? $("div.j-logon-directorder > a").attr("href") : redirectUrl;
-                        if (href) {
-                            window.location.href = href;
-                        }
-                        else {
-                            window.location.reload();
-                        }
-                    }
-
-                } else {
-                    $("#loginSubmit").show();
-                    $("#loginSubmitIng").hide();
-                    if (res.ErrorCount >= 5) {
-                        $('#validateArea').show();
-                    }
-                    if (res.ErrorCode == 1) {
-                        $('#loginerrormsg').html(res.Message).show();
-                        $('#verifycodeErorr').hide();
-                    } else {
-                        $('#validateArea').show();
-                        $('#loginerrormsg').hide();
-                        $('#verifycodeErorr').html(res.Message).show();
-                    }
-                    $('#verifyImageLink').click();
-                }
-            }
-        });
-    });
-
-    $('#account,#password,#verifycode').focus(function () {
-        $(this).next().hide();
-
-        $('#loginerrormsg').hide();
-        $('#verifycodeErorr').hide();
-    }).blur(function () {
-        if ($.trim($(this).val()) == "") {
-            $(this).next().show();
-        }
-    });
-
-    $("#saveUserLongTime").click(function () {
-        if (this.checked) {
-            $("#userExpiresHours").val(350);
-        } else {
-            $("#userExpiresHours").val("");
-        }
-    });
-
-    $("#verifyImage,#verifyImageLink").click(function () {
-        var verifyimagesrc = 'https://passport.tujia.com/PortalSite/VerifyImage/?r=' + Math.random();
-        $("#verifyImage").attr("src", verifyimagesrc);
-        return false;
-    });
-
-    function qqLogin() {
-        window.location = "https://passport.tujia.com/PortalSite/QQLogin?srcUrl=http%3a%2f%2fwww.tujia.com%2fbeijing_gongyu%2fchaoyangqu_3581.htm";
-    }
-
-    function sinaLogin() {
-        window.location = "https://passport.tujia.com/PortalSite/SinaLogin?srcUrl=http%3a%2f%2fwww.tujia.com%2fbeijing_gongyu%2fchaoyangqu_3581.htm";
-    }
-
-    function wechatLogin() {
-        window.location = "https://passport.tujia.com/PortalSite/WeChatLogin?srcUrl=http%3a%2f%2fwww.tujia.com%2fbeijing_gongyu%2fchaoyangqu_3581.htm";
-    }
-</script>
-
-        </div>
-        <div id="tabSmsLoginContent" class="dn">
-            
-        <div class="column-box">
-                <p>注册立送<span class="highlight-box">100</span> 元礼品卡，预订立即可用</p>
-
-        </div>
-        <div class="control-group" style="margin-top:10px;">
-            <div class="controls">
-                <label for="smobile">
-                    <input type="text" class="ipt-text" name="smobile" id="smobile" value=""/>
-                    <span class="text-watermark">手机号</span>
-                </label>
-            </div>
-        </div>
-
-<div class="control-group  " id="svalidatearea">
-    <div class="controls">
-        <label for="sverifycode">
-            <input type="text" class="ipt-text verify-ipt" name="sverifycode" id="sverifycode" />
-            <span class="text-watermark" style="width: 140px;">请输入计算结果</span>
-            <img id="sverifyImage" alt="看不清楚，换一张" class="verify-img" />
-            <a id="sverifyImageLink" href="javascript:void(0)" class="change-rand" style="display:none">看不清，换一张</a>
-        </label>
-    </div>
-</div>
-
-        <div class="control-group  pwd-group">
-    <div class="controls">
-        <label for="spassword">
-            <input type="text" class="ipt-text" name="code" id="spassword" />
-            <span class=" text-watermark">动态密码</span>
-        </label>
-
-        <input type="button" id="sbtnGetVerifyCode" value="获取手机验证码" class="verify-btn" />
-    </div>
-    <div class="validationError dn" id="sloginerrormsg"></div>
-</div>
-
-
-        
-
-        <div class="control-group btn-group">
-            <div class="controls">
-                <input type="button" value="登录/注册" class="login-btn" id="sloginSubmit" style="cursor:pointer;" />
-                <input type="button" value="登录/注册中" class="login-btn" style="display:none;" id="sloginSubmitIng" />
-
-            </div>
-            
-        </div>
-
-
-
-            <div class="coagent-cont">
-                <div class="coagent-tit"><span>合作网站账号登录</span></div>
-                <div class="link-btn-cont">
-                     <a href="javascript:;" id="qqLogin" title="QQ账户登录" onclick="qqLogin();return false;"  class="qq-login-btn">QQ</a>
-                     <a href="javascript:;" id="sinaLogin" title="新浪微博账户登录" onclick="sinaLogin();return false;" class="sian-login-btn">新浪微博</a>
-                     <a href="javascript:;" id="" title="微信账户登录" onclick="wechatLogin();return false;" class="weixin-login-btn">微信</a>
-                </div>
-            </div>
-                    <div class="link-group j-logon-directorder"><a href="" target="_blank">不登录，直接预订 >></a></div>
-
-
-<script type="text/javascript">
-
-    $('#sloginSubmit').click(function () {
-        if (!$("#smobile").val() || !$("#spassword").val()) {
-            $('#sloginerrormsg').html("电话或短信验证码不能为空！").show();
-            return;
-        }
-
-        $("#sloginSubmit").hide();
-        $("#sloginSubmitIng").show();
-
-        
-        $.ajax({
-            url: 'https://passport.tujia.com/PortalSite/SmsAjaxLogin/',
-            data: {
-                'smobile': $('#smobile').val(), 'spassword': $('#spassword').val(), 'currentUrl': window.location.href
-            },
-            type: 'post',
-            dataType: 'jsonp',
-            success: function (res) {
-                if (res.IsSuccess) {
-                    
-                    if (res.RedirectUrl) {
-                        window.location.href = res.RedirectUrl;
-                        return;
-                    }
-
-                    var redirectUrl = '';
-
-                    var href = redirectUrl == "" ? $("div.j-logon-directorder > a").attr("href") : redirectUrl;
-                    if (href) {
-                        window.location.href = href;
-                    }
-                    else {
-                        window.location.reload();
-                    }
-                } else {
-                    $("#sloginSubmit").show();
-                    $("#sloginSubmitIng").hide();
-                    $('#sloginerrormsg').html(res.Message).show();
-                }
-            }
-        });
-       
-    });
-
-    var countdownTimeWait = 60;
-    function CountdownTime() {
-
-        if (countdownTimeWait == 0) {
-            $('#sbtnGetVerifyCode').removeAttr("disabled").val('获取动态密码');
-            countdownTimeWait = 60;
-        } else {
-            $('#sbtnGetVerifyCode').attr("disabled", true).val('重新发送(' + countdownTimeWait + ')');
-            countdownTimeWait--;
-            setTimeout(function () {
-                CountdownTime();
-            }, 1000)
-        }
-    }
-
-    $('#sbtnGetVerifyCode').click(function () {
-        var $sverifycode = $("#sverifycode");
-
-        if (!$("#svalidatearea").hasClass("dn") && !$sverifycode.val()) {
-            $('#sloginerrormsg').html("验证码不能为空！").show();
-            return;
-        }
-
-        var $smobile = $("#smobile");
-
-        if (!$smobile.val()) {
-            $('#sloginerrormsg').html("手机号不能为空！").show();
-            return;
-        }
-
-        var re = /^1\d{10}$/;
-        if (!re.test($smobile.val())) {
-            $('#sloginerrormsg').html("手机号不正确！").show();
-            return;
-        }
-
-        $('#sloginerrormsg').html("正在发送验证码至你的手机，请稍等！").show();
-
-        $.ajax({
-            url: 'https://passport.tujia.com/PortalSite/SmsSendVerifyCode/',
-            data: {
-                'smobile': $smobile.val(), 'sverifycode': $sverifycode.val()
-            },
-            type: 'post',
-            dataType: 'jsonp',
-            success: function (res) {
-
-                $('#sloginerrormsg').html(res.Message).show();
-
-                if (!res.IsSuccess) {
-                    $('#sverifyImageLink').click();
-                }
-                else {
-                    CountdownTime();
-                }
-            }
-        });
-    });
-
-
-    
-
-        $('#smobile,#spassword,#sverifycode').focus(function () {
-            $(this).next().hide();
-
-            $('#sloginerrormsg').hide();
-        }).blur(function () {
-            if ($.trim($(this).val()) == "") {
-                $(this).next().show();
-            }
-        });        
-
-        $("#saveUserLongTime").click(function () {
-            if (this.checked) {
-                $("#userExpiresHours").val(350);
-            } else {
-                $("#userExpiresHours").val("");
-            }
-        });
-
-        $("#sverifyImage,#sverifyImageLink").click(function () {
-            var sverifyImagesrc = 'https://passport.tujia.com/PortalSite/VerifyImage/?r=' + Math.random();
-            $("#sverifyImage").attr("src", sverifyImagesrc);
-            return false;
-        });
-
-
-</script>
-
-        </div>
-    </div>
-</div>
-<script type="text/javascript">
-
-    $("#loginBtn").overlay({
-        top: "center",
-        mask: {
-            color: '#000',
-            loadSpeed: 100,
-            opacity: 0.5
-        },
-        target: "#userPop",
-        closeOnClick: false,
-        close: ".closeSubmit,div.link-group > a",
-        fixed: false,
-        onBeforeLoad: function () {
-            $(".login-tabs").children().first().click();
-        }
-
-    });
-
-    $("#tabPwdLogin").click(function () {
-        $("#tabPwdLogin").addClass("isActive");
-        $("#tabSmsLogin").removeClass("isActive");
-
-        $("#tabPwdLoginContent").show();
-        $("#tabSmsLoginContent").hide();
-        $("#verifyImageLink").click();
-
-        if ($("#account").val() !== "")
-            $("#account").focus();
-    });
-
-    $("#tabSmsLogin").click(function () {
-        $("#tabSmsLogin").addClass("isActive");
-        $("#tabPwdLogin").removeClass("isActive");
-
-        $("#tabPwdLoginContent").hide();
-        $("#tabSmsLoginContent").show();
-        $("#sverifyImageLink").click();
-
-        if ($("#smobile").val() !== "")
-            $("#smobile").focus();
-    });
-
-    $("#tabPwdLoginContent,#tabSmsLoginContent").on("keydown", "input:visible", function (event) {
-        if (event.keyCode != '13') {
-            return;
-        }
-
-        $(event.delegateTarget).find("input.login-btn:button:visible").click();
-        return false;
-    })
-</script>
 <!--登录框－结束-->
 
 
 
 
 <!-- footer Start -->
+
+
 
     
 <div class="m-seo-list">
@@ -1535,9 +1067,9 @@
     
 </div>
 
-<div style="display: none">getFriendLinkRuleTime执行时间: 0.133</div>
-<div style="display: none">getSeoFooterRulrTime执行时间: 0.0269</div>
-<div style="display: none">SeoFooter执行时间: 0.006</div>
+<div style="display: none">getFriendLinkRuleTime执行时间: 0.1132</div>
+<div style="display: none">getSeoFooterRulrTime执行时间: 0.0182</div>
+<div style="display: none">SeoFooter执行时间: 0.0047</div>
 
 
          
