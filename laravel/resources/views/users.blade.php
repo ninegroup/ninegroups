@@ -137,6 +137,9 @@
 			</div>
 		</div>
 	</div>
+	<div class="footer_bg">
+@include('components.foot2');
+</div>
 <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
 	<script>
 		
