@@ -16,8 +16,8 @@
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
 
     
-    <link rel="stylesheet" type="text/css" href="css/detail.css" />
-    <link rel="stylesheet" type="text/css" href="css/detail1.css" />
+    <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_common?v=67e5d64" />
+    <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/im.css?v=67e5d64" />
      
 
 
