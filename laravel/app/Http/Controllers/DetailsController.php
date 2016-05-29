@@ -29,7 +29,7 @@ class DetailsController extends Controller {
 	 */
 	public function index()
 	{
-		echo $id=Request::get('id');die;
+		$id=Request::get('id');
 		return view('details');
 	}
 

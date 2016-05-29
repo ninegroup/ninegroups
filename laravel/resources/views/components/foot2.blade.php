@@ -2,7 +2,7 @@
 <hr />
 <div class="foot_v2" style='padding-left:8%;padding-top:3%;font-size:14px;'>
         <ul class="foot_ul">
-        <li>短租指南&nbsp;&nbsp;&nbsp;&nbsp;<a class="guide" href="#" target="_blank">房客指南</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="guide icon_fk" href="#" target="_blank">房东指南</a></li>
+        <!-- <li>短租指南&nbsp;&nbsp;&nbsp;&nbsp;<a class="guide" href="#" target="_blank">房客指南</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="guide icon_fk" href="#" target="_blank">房东指南</a></li>
         <li></li>
         <li>
             <span class="guide_T">关于我们</span>&nbsp;&nbsp;&nbsp;
@@ -25,50 +25,50 @@
             <a href="#" target="_blank">免责声明</a>
             <a href="#" target="_blank">知识产权声明</a>
             <a href="#" target="_blank">点评发布规则</a>
-        </li>
+        </li> -->
         <li class="width_100 bigFont">
             <span class="guide_T">客服电话</span>&nbsp;&nbsp;&nbsp;
             400  018  3100
         </li>
         <li class="width_100 bigFont">
             <span class="guide_T">客服邮箱</span>&nbsp;&nbsp;&nbsp;
-            service@xiaozhu.com
+            service@jiujiu.com
         </li>
     </ul>
         <dl class="link_dl">
         <dt>城市导航</dt>
         <dd>
-            <a target="_blank" href="#">北京短租房</a>
-            <a target="_blank" href="#">上海短租房</a>
-            <a target="_blank" href="#">南京短租房</a>
-            <a target="_blank" href="#">成都短租房</a>
-            <a target="_blank" href="#">广州短租房</a>
-            <a target="_blank" href="#">重庆短租房</a>
-            <a target="_blank" href="#">武汉短租房</a>
-            <a target="_blank" href="#">大连短租房</a>
-            <a target="_blank" href="#">三亚短租房</a>
-            <a target="_blank" href="#">丽江短租房</a>
-            <a target="_blank" href="#">天津短租房</a>
-            <a target="_blank" href="#">香港短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=北京">北京短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=上海">上海短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=南京">南京短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=成都">成都短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=广州">广州短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=重庆">重庆短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=武汉">武汉短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=大连">大连短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=三亚">三亚短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=丽江">丽江短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=天津">天津短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=香港">香港短租房</a>
 		<br />
-            <a target="_blank" href="#">长沙短租房</a>
-            <a target="_blank" href="#">无锡短租房</a>
-            <a target="_blank" href="#">昆明短租房</a>
-            <a target="_blank" href="#">济南短租房</a>
-            <a target="_blank" href="#">厦门短租房</a>
-            <a target="_blank" href="#">青岛短租房</a>
-            <a target="_blank" href="#">郑州短租房</a>
-            <a target="_blank" href="#">西安短租房</a>
-            <a target="_blank" href="#">杭州短租房</a>
-            <a target="_blank" href="#">深圳短租房</a>
-            <a target="_blank" href="#">沈阳短租房</a> 
-            <a target="_blank" href="#">苏州短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=长沙">长沙短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=无锡">无锡短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=昆明">昆明短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=济南">济南短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=厦门">厦门短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=青岛">青岛短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=郑州">郑州短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=西安">西安短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=杭州">杭州短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=深圳">深圳短租房</a>
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=沈阳">沈阳短租房</a> 
+            <a href="{{ URL::route('Search/HomepageSearch') }}?city=苏州">苏州短租房</a>
         </dd>
     </dl>
     <dl class="link_dl">
          
     </dl>
-            <div class="foot_btm">许可证号：<a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow">京ICP证140510号</a> &nbsp;&nbsp; <a href="http://www.anquan.org/s/www.xiaozhu.com" |="" name="mt8SMvYyRDI92b06nuDs8dPFapllCJYidqhM1WlOoGRZ9DWpbo" rel="nofollow" target="_blank">安全联盟</a> &nbsp;&nbsp; 北京快跑信息科技有限公司
+            <div class="foot_btm">许可证号：<a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow">京ICP证140510号</a> &nbsp;&nbsp; 北京快跑信息科技有限公司
     </div>
     <div>
         <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020380" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="images/record_icon.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:black;">京公网安备 11010802020380号</p></a>
