@@ -298,10 +298,11 @@
 <div id="dir" class="dir-cont">
 <a href="#" title="久久租">久久租</a>
     
-            <em>&gt;</em><a href="#" title="{{$arr->h_city}}">{{$arr->h_city}}</a>
-        <em>&gt;</em><a href="#" title="{{$arr->h_site}}">{{$arr->h_site}}</a><em>&gt;</em>
+            <em>&gt;</em><a href="#" title="<?php echo e($arr->h_city); ?>"><?php echo e($arr->h_city); ?></a>
+        <em>&gt;</em><a href="#" title="<?php echo e($arr->h_site); ?>"><?php echo e($arr->h_site); ?></a><em>&gt;</em>
 
-{{$arr->h_title}}
+<?php echo e($arr->h_title); ?>
+
 </div>
 
     
@@ -373,13 +374,13 @@
         <div class="shadow-box"></div>
 			<div id="banner_tabs" class="flexslider">
 				<ul class="slides">
-				@foreach($picture as $v)
+				<?php foreach($picture as $v): ?>
 					<li>
 						<a title="" target="_blank" href="#">
-							<img alt="" src="../images/alpha.png" style="background: url(../images/uploads/{{$v->pi_path}}) no-repeat center;background-size:100% 480px;" >
+							<img alt="" src="../images/alpha.png" style="background: url(../images/uploads/<?php echo e($v->pi_path); ?>) no-repeat center;background-size:100% 480px;" >
 						</a>
 					</li>
-				@endforeach
+				<?php endforeach; ?>
 				</ul>
 				<ul class="flex-direction-nav">
 					<li><a class="flex-prev" href="javascript:;">上一页</a></li>
@@ -417,7 +418,7 @@
         <div class="hotel-cont">
             <div class="room-info">
                     <h1>
-					{{$arr->h_title}}<span class="personal-tag sweetome-tag" title="">个人房东</span>
+					<?php echo e($arr->h_title); ?><span class="personal-tag sweetome-tag" title="">个人房东</span>
                         
                             <!-- <a href="http://bp.tujia.com/2016/SelectMerchants" target="_blank" class="icon-quality-hotel" rel="PreferredUnitTips"></a> -->
                     </h1>
@@ -938,10 +939,10 @@
 <div class="m-listing-cont">
     <div class="hotel-info" id="hotelmanagementcompanycontent">
         <div class="photo-cont">
-            <a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"><img src="../uploads/{{$res->u_header}}" alt="" width="100" height="100" class="photo-img"></a>
+            <a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"><img src="../uploads/<?php echo e($res->u_header); ?>" alt="" width="100" height="100" class="photo-img"></a>
         </div>
             <h2 class="name-box">
-                <a href="/Hotel/Index/821/" target="_blank" class="listing-name" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"> {{$res->u_name}}</a><span class="personal-tag sweetome-tag" title="途家自营门店，高品质的体验">久久自营</span>
+                <a href="/Hotel/Index/821/" target="_blank" class="listing-name" onclick="_gaq.push(['_trackEvent', 'pcDetail', '管理公司']);"> <?php echo e($res->u_name); ?></a><span class="personal-tag sweetome-tag" title="途家自营门店，高品质的体验">久久自营</span>
                  
         <div class="shop-tag">
         </div>
@@ -951,7 +952,7 @@
                 <p class="link-btn-cont"><a href=" http://wpa.qq.com/msgrd?v=3&uin=502212374&Site=10086zs&Menu=yes" class="chat-btn  custom-service">在线 QQ</a></p>
                                                    
 
-                            <p class="contact-info">联系房东:{{$res->u_tel}}<span class="tel-box"></span><span class="gray-text">(7x24小时)</span> </p>
+                            <p class="contact-info">联系房东:<?php echo e($res->u_tel); ?><span class="tel-box"></span><span class="gray-text">(7x24小时)</span> </p>
         </div>
     </div>
 
@@ -960,23 +961,24 @@
         <div class="m-house-cont">
             <div class="houses-list">
                 <ul>
-                 @foreach($com as $v)
+                 <?php foreach($com as $v): ?>
                         <li>
                             <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
                             <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租{{$v->h_title}}</a>
+                                <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租<?php echo e($v->h_title); ?></a>
 
                                 <div class="house-info">
-                                    <span class="lab-text" title="">{{$v->h_type}}</span>|
-                                    <span class="lab-text" title="">{{$v->h_mating}}</span>|
-                                    <span class="lab-text" title="">宜住{{$v->h_people}}人</span>|
-                                    <span class="lab-text" title="">{{$v->h_message}}</span>
+                                    <span class="lab-text" title=""><?php echo e($v->h_type); ?></span>|
+                                    <span class="lab-text" title=""><?php echo e($v->h_mating); ?></span>|
+                                    <span class="lab-text" title="">宜住<?php echo e($v->h_people); ?>人</span>|
+                                    <span class="lab-text" title=""><?php echo e($v->h_message); ?></span>
                                 </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">{{$v->h_price}}</span>/晚</div>
+                                <div class="picer-box"><dfn>¥</dfn><span class="value-box"><?php echo e($v->h_price); ?></span>/晚</div>
                             </div>
                         </li> 
-                @endforeach
+                <?php endforeach; ?>
                </ul>
+                    <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>

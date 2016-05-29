@@ -151,7 +151,7 @@ h1 {
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
 		@foreach($db as $v)
-		<li><img src="images/uploads/{{ $v->pi_path }}" alt="1" title="" id="wows1_0" style="height:600px;width:100%;"></li>
+		<li><a href="{{ URL::route('Details/Index') }}?id={{$v->pi_h_id}}"><img src="images/uploads/{{ $v->pi_path }}" alt="1" title="" id="wows1_0" style="height:600px;width:100%;"></a></li>
 		@endforeach
 	</ul></div>
 <div class="ws_shadow"></div>
@@ -200,7 +200,7 @@ h1 {
 		<div class="span_of_3"> 
 			@foreach($hot as $v)
 			<div class="span1_of_3">
-				<a href="#"><img src="images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}"/></a>
+				<a href="{{ URL::route('Details/Index') }}?id={{$v->pi_h_id}}"><img src="images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}"/></a>
 				<div class="span1_of_3_text">
 					<h3><a href="#">{{ $v->h_title }}</a></h3>
 					<p>{{ $v->h_content }}</p>

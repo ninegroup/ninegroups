@@ -222,10 +222,7 @@ function pressEve(e){
 	                    <span class="name" id="head_nickname"></span></a>
 	                    <div class="head_pop">
 	                        <div class="pop_column">
-	                            <p><a href="javascript:menufrozen(851686525,'/tenant/851686525/orders','user')" target="_self" id="myorder" rel="nofollow">我的订单</a></p>
-	                            <p><a href="javascript:menufrozen(851686525,'/user/tenant/accountmanager','user')" target="_self" id="myorder" rel="nofollow" class="slideactive">我的账户</a></p>
-	                            <p><a href="javascript:menufrozen(851686525,'/user/tenant/mycollection','user')" target="_self" id="mycollect" rel="nofollow">我的收藏</a></p>
-	                            <p><a href="javascript:menufrozen(851686525,'/user/tenant/msgmanager','user')" target="_self" id="mymsg" rel="nofollow">消息通知</a></p>
+								<p class="textCt"><a href="<?php echo e(URL::route('Index/userList')); ?>">个人信息</a></p>
 	                            <p class="textCt"><a href="<?php echo e(URL('unset1')); ?>" id="loginoutbut" target="_self" class="stclick" clicktag="1_6">退出登录</a></p>
 	                        </div>
 	                    </div>
@@ -370,7 +367,7 @@ $(function() {
 	<div class="homes-con" style="margin-top:0px;">
 		<div class="homesTitle">
 			<div class="homesTitlebg">
-			房源信息
+			房源添加
 			</div>
 		</div>
 		<form autocomplete="off" name="roomform" action="<?php echo e(URL('addhouse1')); ?>"  method = "post">
@@ -380,38 +377,35 @@ $(function() {
 		<input type="hidden" name="ctx" id="ctx" value="" />
 		<input type="hidden" name="cookprice" id="cookprice" value="0" />
 		<div class="homes">
-			<dl class="homesInfo clearfix">
-            	<label class="rentType">
-					<dt><span class="fr">出租房位置：</span><em class="notNull"></em></dt>
-					<p><input type="text" maxlength="6" class="largeInput fl" name="h_city"/></p>
-				</label>
-            </dl>
 
-		
-			<dl class="homesInfo clearfix">
-				<dt><span class="fr">是否地下室：</span><em class="notNull"></em></dt>
+				<dl class="homesDescribe clearfix">
+				<dt><span class="fr">出租房位置：</span><em class="notNull"></em></dt>
 				<dd>
-					<select class="largeSelect" name="h_message" >
-                        <option value="不是地下室" >否</option>
+					<label><input type="text" maxlength="22" minlength="5" class="larLargeInput clickhs fl hasPlaceholder" name="h_city" value=""></label>
+				</dd>
+			</dl>
+			<dl class="homesDescribe clearfix">
+				<dt><span class="fr">是否地下室：</span><span class="wordNumber"></span></dt>
+				<dd>
+					<select name="h_message" id="" class="largeSelect">
+						<option value="不是地下室" >否</option>
                         <option value="地下室" >地下室</option>
                         <option value="半地下室" >半地下室</option>
 					</select>
 				</dd>
 			</dl>
-			<dl class="homesInfo clearfix">
-				<dt><span class="fr">居住人数：</span><em class="notNull" ></em></dt>
+			<dl class="homesDescribe clearfix">
+				<dt><span class="fr">居住人数：</span><em class="notNull"></em></dt>
 				<dd>
-					<label><input maxlength="6" class="largeInput fl" type="text" name="h_people" id="area" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/></label>
-					<span class="fl">人</span>
+					<label><input type="text" maxlength="22" minlength="5" class="larLargeInput clickhs fl hasPlaceholder" name="h_people" value=""></label>
+                    <span class="lineh28">人</span>
 				</dd>
 			</dl>
-
-			<dl class="homesInfo clearfix">
+			<dl class="homesDescribe clearfix">
 				<dt><span class="fr">同类房源：</span><em class="notNull"></em></dt>
 				<dd>
-					<label><input maxlength="3" type="text" name="h_state" id="stock" class="largeInput fl" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"></label>
-					<span class="fl">&nbsp;套</span>
-					<span class="fl ml30">户型、装修、陈设、价格相同的房间（含此房源在内）</span>
+					<label><input type="text" maxlength="22" minlength="5" class="larLargeInput clickhs fl hasPlaceholder" name="h_state" value=""></label>
+                    <span class="lineh28">户型、装修、陈设、价格相同的房间（含此房源在内）</span>
 				</dd>
 			</dl>
 			<dl class="homesDescribe clearfix">
@@ -462,20 +456,68 @@ $(function() {
 					<span class="wordNumber"></span>
 				</dt>
 				<dd>
-					<label>
-						<textarea class="textArea hasPlaceholder" maxlength="1000" id="landmark11" name="h_mating" placeholder="请填写您的房间配套设施"></textarea>
-					</label>
+					<input type="checkbox" value="暖气" name="h_mating[]">暖气&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="WIFI" name="h_mating[]">WIFI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="浴霸" name="h_mating[]">浴霸&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="热水" name="h_mating[]">热水&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="电视" name="h_mating[]">电视&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="空调" name="h_mating[]">空调&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="冰箱" name="h_mating[]">冰箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="电吹风" name="h_mating[]">电吹风&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+					<input type="checkbox" value="牙具" name="h_mating[]">牙具&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="毛巾" name="h_mating[]">毛巾&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="洗发水/洗发露" name="h_mating[]">洗发水/洗发露&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="拖鞋" name="h_mating[]">拖鞋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="浴缸" name="h_mating[]">浴缸&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="宽带" name="h_mating[]">宽带&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="门禁" name="h_mating[]">门禁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				</dd>
 			</dl>
-			<ul class="price-set">
-					<li>
-						<div class="dayPrice">
-							<span class="price-title"><b>*</b>每日价格：</span>
-							<input maxlength="5" class="LargePriceInput" type="text" name="h_price" id="dayprice" value="" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  autocomplete="off"/>
-							元/天
-						</div>
-					</li>                  
-				</ul>
+
+			<dl class="homesDescribe clearfix">
+				<dt>
+					<span class="fr">服务</span>
+					<span class="wordNumber"></span>
+				</dt>
+				<dd>
+					<input type="checkbox" value="免费停车" name="h_serve[]"/>免费停车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="接机" name="h_serve[]"/>接机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="checkbox" value="行李寄存" name="h_serve[]"/>行李寄存&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</dd>
+			</dl>
+			<dl class="homesDescribe clearfix">
+				<dt>
+					<span class="fr">房间类型</span>
+					<span class="wordNumber"></span>
+				</dt>
+				<dd>
+					<select name="h_type" id="" class="largeSelect">
+						<option value="酒店式公寓">酒店式公寓</option>
+						<option value="复式">复式</option>
+						<option value="别墅">别墅</option>
+					</select>	
+				</dd>
+			</dl>
+			<dl class="homesDescribe clearfix">
+				<dt>
+					<span class="fr">户型</span>
+					<span class="wordNumber"></span>
+				</dt>
+				<dd>
+					<select name="h_h" id="" class="largeSelect">
+						<option value="一居">一居</option>
+						<option value="二居">二居</option>
+						<option value="三居">三居</option>
+					</select>	
+				</dd>
+			</dl>
+			<dl class="homesDescribe clearfix">
+				<dt><span class="fr">每日价格：</span><em class="notNull"></em></dt>
+				<dd>
+					<label><input type="text" maxlength="22" minlength="5" class="larLargeInput clickhs fl hasPlaceholder" name="h_price" value="">元/天</label>
+				</dd>
+			</dl>
+			
 		</div>
 		<input type="hidden" id="positionId4Edit" name="roomLocationId" value="" />
 		<div class="submit-wrap">
