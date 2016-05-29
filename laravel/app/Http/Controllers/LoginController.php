@@ -123,8 +123,11 @@ class LoginController extends Controller {
 			'h_type'=>$h_type,
 			'h_mating'=>$h_mating1,
 			'h_serve'=>$h_serve1,
-			'h_photo'=>$str1,
+			
 		]);
+		$pic=DB::table("picture")->insert([
+			'pi_path'=>$str1,
+			]);
 		
 		if($db)
 		{
