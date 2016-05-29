@@ -28916,3 +28916,2493 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1464524183.1507
     'REQUEST_TIME' => 1464524183
 ]
+2016-05-29 20:20:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:544
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(544): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 544, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:20:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54376'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524444.4506
+    'REQUEST_TIME' => 1464524444
+]
+2016-05-29 20:20:44 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:20:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54376'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524444.4506
+    'REQUEST_TIME' => 1464524444
+]
+2016-05-29 20:21:49 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:21:49 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'message/checkill'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=message/checkill'
+    'QUERY_STRING' => 'r=message/checkill'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54380'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524509.5514
+    'REQUEST_TIME' => 1464524509
+]
+2016-05-29 20:21:51 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:21:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54389'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524511.5225
+    'REQUEST_TIME' => 1464524511
+]
+2016-05-29 20:21:51 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:21:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54389'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524511.5225
+    'REQUEST_TIME' => 1464524511
+]
+2016-05-29 20:21:51 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:21:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54380'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524511.7135
+    'REQUEST_TIME' => 1464524511
+]
+2016-05-29 20:21:51 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:21:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54380'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524511.7135
+    'REQUEST_TIME' => 1464524511
+]
+2016-05-29 20:22:57 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:22:57 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'message/checkill'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=message/checkill'
+    'QUERY_STRING' => 'r=message/checkill'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54401'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524577.7422
+    'REQUEST_TIME' => 1464524577
+]
+2016-05-29 20:25:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:25:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54425'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524708.0277
+    'REQUEST_TIME' => 1464524708
+]
+2016-05-29 20:25:08 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:25:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54425'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524708.0277
+    'REQUEST_TIME' => 1464524708
+]
+2016-05-29 20:25:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:25:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54424'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524708.1497
+    'REQUEST_TIME' => 1464524708
+]
+2016-05-29 20:25:08 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:25:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54424'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524708.1497
+    'REQUEST_TIME' => 1464524708
+]
+2016-05-29 20:25:11 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:25:11 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'message/checkill'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=message/checkill'
+    'QUERY_STRING' => 'r=message/checkill'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54428'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524711.0999
+    'REQUEST_TIME' => 1464524711
+]
+2016-05-29 20:25:12 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:25:12 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'message/checkill'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464518617'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=message/checkill'
+    'QUERY_STRING' => 'r=message/checkill'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54428'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464518617; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524712.691
+    'REQUEST_TIME' => 1464524712
+]
+2016-05-29 20:25:14 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:25:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54439'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524714.9061
+    'REQUEST_TIME' => 1464524714
+]
+2016-05-29 20:25:14 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:25:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54439'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524714.9061
+    'REQUEST_TIME' => 1464524714
+]
+2016-05-29 20:25:15 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:25:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54428'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524715.0111
+    'REQUEST_TIME' => 1464524715
+]
+2016-05-29 20:25:15 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:25:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54428'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524715.0111
+    'REQUEST_TIME' => 1464524715
+]
+2016-05-29 20:26:06 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:26:06 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'message/checkill'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=message/checkill'
+    'QUERY_STRING' => 'r=message/checkill'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54444'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524766.19
+    'REQUEST_TIME' => 1464524766
+]
+2016-05-29 20:26:09 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:26:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54449'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524769.4132
+    'REQUEST_TIME' => 1464524769
+]
+2016-05-29 20:26:09 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:26:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54449'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524769.4132
+    'REQUEST_TIME' => 1464524769
+]
+2016-05-29 20:26:09 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:26:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54444'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524769.5232
+    'REQUEST_TIME' => 1464524769
+]
+2016-05-29 20:26:09 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:26:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54444'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/checkill'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524769.5232
+    'REQUEST_TIME' => 1464524769
+]
+2016-05-29 20:26:51 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:26:51 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'message/checkill'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=message/checkill'
+    'QUERY_STRING' => 'r=message/checkill'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54455'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=message/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524811.2036
+    'REQUEST_TIME' => 1464524811
+]
+2016-05-29 20:27:01 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:27:01 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'login'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login'
+    'QUERY_STRING' => 'r=login'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54462'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524821.3242
+    'REQUEST_TIME' => 1464524821
+]
+2016-05-29 20:27:04 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:27:04 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'login/info'
+]
+
+$_POST = [
+    'name' => 'admin'
+    'pwd' => '123'
+    'remember' => '1'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+    'pwd' => '123'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/info'
+    'QUERY_STRING' => 'r=login/info'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54462'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'CONTENT_LENGTH' => '29'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524824.8324
+    'REQUEST_TIME' => 1464524824
+]
+2016-05-29 20:27:04 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:27:04 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'login/list'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+    'pwd' => '123'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login%2Flist'
+    'QUERY_STRING' => 'r=login%2Flist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54462'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524824.9164
+    'REQUEST_TIME' => 1464524824
+]
+2016-05-29 20:27:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:27:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54467'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524828.1896
+    'REQUEST_TIME' => 1464524828
+]
+2016-05-29 20:27:08 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:27:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54467'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524828.1896
+    'REQUEST_TIME' => 1464524828
+]
+2016-05-29 20:27:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: sou' in D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html:545
+Stack trace:
+#0 D:\WWW\database\ninegroups\admin\yii\backend\views\login\tables.html(545): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\database...', 545, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(325): require('D:\\WWW\\database...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\WWW\\database...', Array, Object(backend\controllers\LoginController))
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(402): yii\base\View->render('tables.html', Array, Object(backend\controllers\LoginController))
+#5 D:\WWW\database\ninegroups\admin\yii\backend\controllers\LoginController.php(111): yii\base\Controller->renderPartial('tables.html', Array)
+#6 [internal function]: backend\controllers\LoginController->actionTable()
+#7 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('table', Array)
+#10 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('login/table', Array)
+#11 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\database\ninegroups\admin\yii\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-05-29 20:27:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54462'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524828.3026
+    'REQUEST_TIME' => 1464524828
+]
+2016-05-29 20:27:08 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'PDOException' with message 'You cannot serialize or unserialize PDO instances' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 [internal function]: PDO->__sleep()
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#6 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\ErrorException))
+#7 {main}
+2016-05-29 20:27:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54462'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524828.3026
+    'REQUEST_TIME' => 1464524828
+]
+2016-05-29 20:28:02 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:28:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54483'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524882.4147
+    'REQUEST_TIME' => 1464524882
+]
+2016-05-29 20:28:09 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:28:09 [127.0.0.1][-][1pmqkl48kgmh9bo80b2as830d0][info][application] $_GET = [
+    'r' => 'login/list'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'name' => 'admin'
+    'success' => '登陆成功'
+    'pwd' => '123'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login%2Flist'
+    'QUERY_STRING' => 'r=login%2Flist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54491'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524889.3611
+    'REQUEST_TIME' => 1464524889
+]
+2016-05-29 20:28:11 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:28:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54500'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524891.6542
+    'REQUEST_TIME' => 1464524891
+]
+2016-05-29 20:28:11 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:28:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1776'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54491'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524891.7632
+    'REQUEST_TIME' => 1464524891
+]
+2016-05-29 20:28:49 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:28:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/table'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1876'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/table'
+    'QUERY_STRING' => 'r=login/table'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54503'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524929.5164
+    'REQUEST_TIME' => 1464524929
+]
+2016-05-29 20:28:53 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:28:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/formowner'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1876'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/formowner'
+    'QUERY_STRING' => 'r=login/formowner'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54510'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'HTTP_USER_AGENT' => 'Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login/table'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524933.7526
+    'REQUEST_TIME' => 1464524933
+]
+2016-05-29 20:28:54 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19313 bytes' 
+
+in D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\WWW\\database...', 86, Array)
+#1 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\\WWW\\database...', Array)
+#3 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\WWW\database\ninegroups\admin\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-05-29 20:28:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/formowner'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=2122697913-1464134944-&ntime=1464524471'
+    'PHPSESSID' => '1pmqkl48kgmh9bo80b2as830d0'
+    '_csrf' => '0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EWkvj28QDsFSWba_ruWNiKoywu5uZkCz\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\wamp\\mysql\\bin;D:\\Svn\\bin;D:\\phpStudy\\php53n;C:\\ProgramData\\ComposerSetup\\bin;D:\\Tgit\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1876'
+    'SCRIPT_NAME' => '/web/index.php'
+    'REQUEST_URI' => '/web/index.php?r=login/formowner'
+    'QUERY_STRING' => 'r=login/formowner'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54503'
+    'SCRIPT_FILENAME' => 'D:/WWW/database/ninegroups/admin/yii/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW/database/ninegroups/admin/yii/backend'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.gaojiahao1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D2122697913-1464134944-%26ntime%3D1464524471; PHPSESSID=1pmqkl48kgmh9bo80b2as830d0; _csrf=0fda9e36dba09391a2e3b3354b47eedc7612431cb9e0e058e088740660b20f3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EWkvj28QDsFSWba_ruWNiKoywu5uZkCz%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.gaojiahao1.com/web/index.php?r=login/table'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'www.gaojiahao1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1464524933.8896
+    'REQUEST_TIME' => 1464524933
+]
