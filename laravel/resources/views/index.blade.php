@@ -133,6 +133,8 @@ h1 {
 			  <?php }else{?>
 				<li><h3><a href="{{URL::route('Index/user')}}">欢迎<?php echo $_COOKIE['name']?>登陆</a></h3></li>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -167,6 +169,7 @@ h1 {
 >>>>>>> 91cf8176c491f9e578b6672735bb74897f39d119
 >>>>>>> a35efbda05d542e37cbb59844f7c3924036bd8af
 >>>>>>> 2da8fde04d9aa2ec3ca6ee6686bb6aaa6a9f3f11
+>>>>>>> 34b7ed812752d3baeb457c11d2701f46b577347a
 				<li><h3><a href="{{URL::route('Index/userList')}}">个人中心</a></h3></li>
 				<li><a href="{{URL('unset1')}}">退出</a></li>
 			  <?php }?>	
