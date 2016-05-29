@@ -54,8 +54,8 @@ Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => 
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
-
-
+//预定房间
+Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
 
 
 

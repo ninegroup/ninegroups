@@ -32,10 +32,22 @@ class DetailsController extends Controller {
 		static $pic='';
 		$id=Request::get('id');
 		$arr=DB::table('house')->where('h_id',$id)->first();
+<<<<<<< HEAD
+		$content=$arr->h_content;
+		$sheshi=$arr->h_mating;
+		$serve=$arr->h_serve;
+		$facility=explode(',',$sheshi);
+		$facility_num=count($facility);
+		$serve=explode(',',$serve);
+		$serve_num=count($serve);
+		$content=explode('◆',$content);
+		$content_num=count($content);
+=======
 
 		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
 		$arr=DB::table('house')->where('h_id',$id)->first();	
 
+>>>>>>> a151d45a2432510be694ac246b3708c94837cb82
 		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
 		$u_id=$arr->u_id;
 		//echo $u_id;die;
@@ -45,7 +57,13 @@ class DetailsController extends Controller {
 			'arr'=>$arr,
 			'picture'=>$picture,
 			'res'=>$res,
-			'com'=>$com
+			'com'=>$com,
+			'facility'=>$facility,
+			'serve'=>$serve,
+			'content'=>$content,
+			'facility_num'=>$facility_num,
+			'serve_num'=>$serve_num,
+			'content_num'=>$content_num,
 		);
 		//var_dump($com);die;
 		return view('details',$data);

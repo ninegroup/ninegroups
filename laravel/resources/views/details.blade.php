@@ -128,7 +128,7 @@
     
 
 
-<!--<script src="http://www.tujia.com/Common/CityInfo/"></script>
+<script src="http://www.tujia.com/Common/CityInfo/"></script>
 
  <script type="text/javascript">
     var staticFileRoot = "http://staticfile.tujia.com",
@@ -152,15 +152,15 @@
     traceData.pageId = '943ea911-8c73-4301-8fa0-df2750497437';
     traceData.url = 'http://www.tujia.com/beijing_gongyu/chaoyangqu_3581.htm';
     traceData.params = '';
-</script> -->
+</script>
 
      
-<!-- <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/jquery-1.11.3.min.js"></script>
 <script type="text/javascript">
     var $jq = jQuery.noConflict(true);
 </script>
 <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/owl.carousel.js"></script>
-<script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script> -->
+<script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script>
 <script type="text/javascript">
 
     var Tj = Tj || {};
@@ -424,29 +424,22 @@
                 <div class="district-info">
                     <i class="icon-area"></i>
 
-                            <span class="lab-text">朝阳区</span>
+                            <span class="lab-text">{{$arr->h_site}}</span><!-- 
                             <span class=" business-name">CBD</span>
-                            <span class="lab-text">长安驿酒店式公寓</span>
-
-                        [
-                            近永安里地铁站
-                        
-                            ]
-                        
-                    <a href="#unitmap" class="link-btn">查看地图</a>
+                            <span class="lab-text">长安驿酒店式公寓</span> -->
+                    <!-- <a href="#unitmap" class="link-btn">查看地图</a> -->
                 </div>
                 <div class="hotel-advan-tag">
                     <ul>
-                        <li class="icon-type" title="酒店式公寓">酒店式公寓</li>
-                        <li class="icon-square" title="建筑面积45平米">1室1卫</li>
-                            <li class="icon-cooking" title="可做饭">可做饭</li>
-                        <li class="icon-bed" title="1张床"><span class="lab-text"><u rel="bedCountDetail">1张床</u></span></li>
-                        <li class="icon-guests" title="推荐入住2人">宜住2人</li>
-
-                                <li class="icon-wiff" title="无线网络">无线网络</li>
+                        <li class="icon-type" title="{{$arr->h_type}}">{{$arr->h_type}}</li>
+                        <li class="icon-square" title="{{$arr->h_h}}">{{$arr->h_h}}</li>
+                            <!-- <li class="icon-cooking" title="可做饭">可做饭</li>
+                                                    <li class="icon-bed" title="1张床"><span class="lab-text"><u rel="bedCountDetail">1张床</u></span></li> -->
+                        <li class="icon-guests" title="推荐入住{{$arr->h_people}}人">宜住{{$arr->h_people}}人</li>
+                                <!-- <li class="icon-wiff" title="无线网络">无线网络</li> -->
                     </ul>
 
-                        <span id="bedCountDetail" class="m-tips-wrap" style="display:none;padding:5px;">2×1.5米 大床×1</span>
+                        <!-- <span id="bedCountDetail" class="m-tips-wrap" style="display:none;padding:5px;">2×1.5米 大床×1</span> -->
                 </div>
             </div>
             <div class="hotel-sidebar">
@@ -456,14 +449,27 @@
                             <span>加载中...</span>
                         </div>
                     </div> -->
+<<<<<<< HEAD
+                        <!-- <div class="comment-info">
+                            <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
+                            <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count"></span>条点评</a>
+                            <span rel="j-experience-info" class="exp-voucher j-bestproduct-experience">（发点评赢体验券<i class="icon-desc-text"></i>）</span>
+                        </div> -->
+                        <!-- <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
+=======
                         <div class="comment-info">
                             <br>
                         </div>
                         <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
+>>>>>>> a151d45a2432510be694ac246b3708c94837cb82
                             <div class="tips-content comments-total">
                                 
 
                             </div>
+<<<<<<< HEAD
+                        </div> -->
+                    
+=======
                         </div>
                     <div class="product-filter" id="productfilter">
                         <div class="date-change-box">
@@ -478,6 +484,7 @@
                             </div>
 
                     </div>
+>>>>>>> a151d45a2432510be694ac246b3708c94837cb82
                     <div id="travelsummary" class="travel-info" style="display:none"><a href="#experience"><i class="icon-travel"></i></a></div>
                 </div>
             </div>
@@ -490,7 +497,50 @@
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
             <div class="m-column-box new-column-box" id="saleproductsection">
+<<<<<<< HEAD
+                    <div class="product-filter" id="productfilter">
+                        <div class="date-change-box">
+                            <div class="change-control-group">
+                                <span class="controls-span">入住</span>
+                                <div class="controls">
+                                    <input type="hidden" id="UnitId" value="3581" />
+                                    <input type="hidden" id="ProductId" value="0" />
+                                    <input type="hidden" id="UnitDetailSubType" value="0" />
+                                    <label for="unitDetailStartDate">
+                                        <input type="text" name="" id="unitDetailStartDate" value="2016-05-27" class="date-ipt-text" /><i class="icon-date"></i>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="change-control-group">
+                                <span class="controls-span">退房</span>
+                                <div class="controls">
+                                    <label for="unitDetailEndDate">
+                                        <input type="text" name="" id="unitDetailEndDate" value="2016-05-28" class="date-ipt-text" /><i class="icon-date t-icon-date"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="change-control-group btn-group">
+                                <div class="controls"><a href="{{URL::route('Details/HouseReserve')}}?id={{$arr->h_id}}" id="changeBtn" class="change-btn" onclick="">预定</a></div>
+                            </div>
+                                <!-- <div class="room-status">
+                                    <a class="has-empty-house" href="javascript:;" data-unitid="3581" data-detaillink="" onclick="_gaq.push(['_trackEvent', 'pcDetail', '哪天有房']);">哪天有房</a>
+                                </div> -->
+                        </div>
+
+                            <!-- <div class="hint-text">
+                            
+                            
+                            
+                                    <a id="btnAjaxLogin" class="link-btn" href="javascript:void(0);" onclick="_gaq.push(['_trackEvent', 'pcDetail', '登录']);">登录</a>
+                                    可见
+                                    <a href="http://vip.tujia.com/Memberhome/ReturnCash" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '高级优惠价']);" class="link-btn">高级会员优惠价</a>
+                            </div> -->
+
+                    </div>
+=======
                     
+>>>>>>> a151d45a2432510be694ac246b3708c94837cb82
             </div>
             <!-- Tabs  -->
             
@@ -509,9 +559,17 @@
                     <li>
                         <a id="unitmaptab" href="#unitmap" onclick="_gaq.push(['_trackEvent', 'pcDetail', '位置地图']);">位置地图</a>
                     </li>
+<<<<<<< HEAD
+                        <!-- <li id="commentsareatab" class="j-tabs">
+                            <a href="#commentsArea" id="usercomments" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点评导航']);">
+                                入住点评<span id="usercomments-value" class="total-box">419</span>条
+                            </a>
+                        </li> -->
+=======
                         <li id="commentsareatab" class="j-tabs">
                             
                         </li>
+>>>>>>> a151d45a2432510be694ac246b3708c94837cb82
                     <li id="unitgoodexperiencetabcontainer" style="display:none" >
                         <a id="unitgoodexperience" href="#experience" onclick="_gaq.push(['_trackEvent', 'pcDetail', '达人体验']);">达人体验</a>
                     </li>
@@ -530,7 +588,7 @@
             <div class="m-column-box t-column-box" id="unitdetailinfo">
                 <!-- 房屋亮点  -->
                 
-    <div class="highlights-cont">
+    <!-- <div class="highlights-cont">
         <div class="side-box">
             <i class="icon-highlights"></i>
             <h2>房屋亮点</h2>
@@ -543,7 +601,7 @@
                                     <p><i>▪</i>房屋装修简约大方，开间宽敞舒适，设备齐全。</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
                 <!-- 设施服务  PS:设施与服务数据合并  -->
@@ -557,8 +615,10 @@
             <div id="facilitycontainer" class="m-key-list">
                     <h4>设施</h4>
                     <ul style="max-height:79px;">
-                            <li class="icon-wifi ">无线网络</li>
-                            <li class="icon-hotwater ">全天热水</li>
+					<?php for($i=0;$i<$facility_num;$i++){?>
+						<li><?php echo $facility[$i] ?></li>
+					<?php } ?>
+                            <!-- <li class="icon-hotwater ">全天热水</li>
                             <li class="icon-tv ">电视</li>
                             <li class="icon-airconditioner ">空调</li>
                             <li class="icon-icebox ">冰箱</li>
@@ -576,15 +636,18 @@
                             <li class="icon-heating icon-not">暖气</li>
                             <li class="icon-bathtowel icon-not">浴巾</li>
                             <li class="icon-independentbathroom icon-not">独立卫浴</li>
-                            <li class="icon-window icon-not">有窗户</li>
+                            <li class="icon-window icon-not">有窗户</li> -->
                     </ul>
 
                     <h4>服务</h4>
                     <ul style="max-height:35px;">
-                            <li class="">行李寄存</li>
+						<?php for($i=0;$i<$serve_num;$i++){?>
+							<li><?php echo $serve[$i] ?></li>
+						<?php } ?>
+                            <!-- <li class="">行李寄存</li>
                             <li class="">接机</li>
                             <li class="dis-text">免费停车</li>
-                            <li class="dis-text"></li>
+                            <li class="dis-text"></li> -->
                     </ul>
             </div>
 
@@ -617,17 +680,14 @@
         </div>
         <div id="unitintrocontentcontainer" class="content-box">
             <div class="desc-info " style="">
-                公寓紧邻长安街，靠近CBD商务区，走路10分钟到地铁站，多条公交、地铁直达热门景点。距日坛公园1公里，楼下有便利店、庆丰包子烤鸭店等，餐饮便利。下楼即到赛特购物中心，秀水街、国贸商城等大型购物广场走路20分钟即到。距北京站地铁1站地，方便入住。<br />房间装修简约大方，为开放式结构，空间宽敞舒适。大落地窗白天采光好，晚上可以站在窗前欣赏CBD的美丽夜景。家居布置舒适温馨，营造出家庭氛围；设施齐全，干净整洁，可洗衣做饭，带给您家一样的体验。<br />
+                <ul>
+				<?php for($i=0;$i<$content_num;$i++){?>
+					<li><span>◆&nbsp;</span>&nbsp;&nbsp;<?php echo $content[$i] ?></li><br />
+				<?php } ?>
+				</ul>
             </div>
-
-
-            
-                <div class="desc-info j-autohide" style="display:none">
-                    <br />公寓距离天安门广场3公里，乘车约15分钟；<br />公寓距离北京首都国际机场30公里，乘车约45分钟；<br />公寓距离北京火车站1公里，乘车约10分钟；<br />公寓距离永安里（地铁1号线）503米，向西步行大约6分钟；<br />公寓距离建国门（地铁1、2号线）&nbsp;794米，向东步行大约10分钟；<br />公寓途经公交车有：1路、9路、37路、43路、120路、126路、205路、666路、668路、673路、728路、729路、802路、810路。<br />商场：秀水街、赛特商场、贵友大厦、新世界百货、沃尔玛。<br />医院：朝阳区中医医院、新景安太妇产医院、朝阳区第二医院。<br />餐饮：凯莱大酒店西餐厅‎、麦当劳建国门餐厅、成远饭店‎、荷花泰菜双子座店、丰收日宁波海鲜大酒店等。<br />银行：中国农业银行建国门支行、中国民生银行建外支行、友利银行北京分行、中国光大银行东长安街支行等。
-                </div>
-    
-                <div id="unitintromore" class="toggle-btn"><a href="javascript:;" class="">查看更多<i class="i-acor"></i></a></div>
-                <div id="unitintroless" class="toggle-btn" style="display:none"><a href="javascript:;" class="active">收起<i class="i-acor"></i></a></div>
+			<div id="unitintromore" class="toggle-btn"><a href="javascript:;" class="">查看更多<i class="i-acor"></i></a></div>
+			<div id="unitintroless" class="toggle-btn" style="display:none"><a href="javascript:;" class="active">收起<i class="i-acor"></i></a></div>
         </div>
     </div>
     <script type="text/javascript">
@@ -654,14 +714,14 @@
 
 
 
-        <div class="column-info">
+        <!-- <div class="column-info">
             <div class="side-box">
                 <i class="icon-community"></i>
                 <h2>小区概况</h2>
             </div>
             <div class="content-box">
                 <div id="residentialquartercontainer" class="community-cont">
-
+        
                     
                         <div class="community-info  " style="">北京地杰长安驿酒店式公寓位于朝阳区建国门外，占据赛特优势地段，紧靠长安街，距赛特购物中心直线距离不到100米。周边有北京友谊商店、国际俱乐部、建国饭店、凯莱大酒店、北广传媒大厦等多个购物中心。五星级酒店、国际级俱乐部和高档的写字楼，商业、商务、生活配套极度成熟，紧靠第一使馆区，建有各类使馆41座，有非常浓厚的涉外氛围。<p><br/></p>公寓主力户型为45-109平米，高标准国际品质全精装。社区内20000平米独立商业，6000平米配套商业，多车位规划，是您旅游、办公、出差的理想选择。</div>
                                             <div class="community-info j-autohide" style="display:none">
@@ -670,21 +730,21 @@
                                 <span class="label-text">绿化率-0</span>
                                 <span class="label-text" style="width:auto">停车费-5元/小时</span>
                             </div>
-
+        
                         </div>
                                             <div class="community-info j-autohide" style="display:none">
-
+        
                                 <div class="text-box">
                                     地下停车超过半个小时以上，5元/小时，不分白天晚上。<br />
                                 </div>
                         </div>
                                             <div class="community-tag j-autohide" style="display:none">优势地段&nbsp;&nbsp;配套成熟&nbsp;&nbsp;涉外氛围&nbsp;&nbsp;出行方便</div>
-
+        
                         <div class="community-info  j-autohide" style="display:none">
                             <div class="text-box">24小时保安&nbsp;&nbsp;摄像监控</div>
                         </div>
                                                 <div class="community-info  j-autohide" style="display:none"><img src="http://pic.tujia.com/upload/residentialquarter/day_121217/201212171202528624.jpg" style="height:390px;width:632px"></div>
-
+        
                         <div class="community-pic j-autohide" style="display:none">
                             <ul>
                                     <li><a class="group1" data-img="http://pic.tujia.com/upload/residentialquarter/day_160125/thumb/201601251759086963_630_390.jpg"><img src="http://pic.tujia.com/upload/residentialquarter/day_160125/thumb/201601251759086963_70_43.jpg" alt="" width="70" height="43"></a></li>
@@ -695,12 +755,12 @@
                                     <li><a class="group1" data-img="http://pic.tujia.com/upload/residentialquarter/day_160125/thumb/201601251758425011_630_390.jpg"><img src="http://pic.tujia.com/upload/residentialquarter/day_160125/thumb/201601251758425011_70_43.jpg" alt="" width="70" height="43"></a></li>
                             </ul>
                         </div>
-
+        
                 </div>
                     <div id="residentialquartermore" class="toggle-btn"><a href="javascript:;" class="">查看更多<i class="i-acor"></i></a></div>
                     <div id="residentialquarterless" class="toggle-btn" style="display:none"><a href="javascript:;" class="active">收起<i class="i-acor"></i></a></div>
             </div>
-        </div>
+        </div> -->
         <script type="text/javascript">
             $("#residentialquartermore a").click(function () {
                 $("#residentialquartercontainer div.j-autohide").show();
@@ -723,9 +783,13 @@
 
 
 <div class="m-column-tit t-column-tit clearfix" id="unitIntro">
+<<<<<<< HEAD
     <h2>入住须知</h2><span class="gray-text">（房屋编号：<b>{{$arr->h_id}}</b>）</span>
+=======
+    <h2>入住须知</h2><!-- <span class="gray-text">（房屋编号：<b>3581</b>）</span> -->
+>>>>>>> 7bbc7d3b4624ee08afba16f4c147371ba0f94f9f
 </div>
-<div class="column-info">
+<!-- <div class="column-info">
         <div class="side-box">
             <i class="icon-hint"></i>
             <h2>入住提示</h2>
@@ -742,20 +806,20 @@
                             <li class="dis-text">银联标识信用卡</li>
                             <li class="dis-text">外卡信用卡</li>
                     </ul>
-
+        
             </div>
         </div>
-</div>                <!-- 入住提示  -->
+</div>  -->               <!-- 入住提示  -->
 
 
     <div class="column-info ">
         <div class="side-box">
             <i class="icon-service"></i>
-            <h2>服务费用</h2>
+            <h2>入住提示</h2>
         </div>
         <div class="content-box">
             <div class="m-hint-info">
-                    <ul class="desc-cont">
+                    <!-- <ul class="desc-cont">
                             <li class="">
                                 <h5>允许聚会</h5>
                             </li>
@@ -769,18 +833,11 @@
                             <li class="dis-text">
                                 <h5>允许加人</h5>
                             </li>
-                    </ul>
+                    </ul> -->
 
                     <ul class="expense-cont">
                             <li>
-                                <h5>其他入住须知</h5>
-                                <div class="text-box">
-北京途家斯维登服务公寓（地杰长安驿）精选中高端度假公寓、特色房屋，房间格局丰富，配套设施高档齐全，同时提供接机等一站式服务，为您带来温馨的居家体验和深度旅游的需要。
-1、房间一客一打扫，赠送饮料2瓶。
-2、所有房型中，部分房间电视为液晶，部分为台式。
-1、公寓可接纳港澳台同胞及外宾；
-2、公寓支持刷卡消费；
-3、公寓可提供发票。</div>
+                                <div class="text-box">{{$arr->h_checkin}}</div>
                             </li>
                     </ul>
             </div>
@@ -806,7 +863,7 @@
             </div>
 
         </div>
-        <div class="map-sidebar">
+        <!-- <div class="map-sidebar">
             <div class="peripheral-info">
                 <h3>周边信息</h3>
                 <ul class="tab-menu" id="map-tab-menus">
@@ -817,7 +874,7 @@
                 <div class="tab-info-item" id="map-tab-items">
                 </div>
             </div>
-        </div>
+        </div> -->
 
 </div>
             </div>
@@ -834,7 +891,11 @@
 </script>
 
 
+<<<<<<< HEAD
+    <!-- <div id="commentsArea" class="m-column-box">
+=======
    <!--  <div id="commentsArea" class="m-column-box">
+>>>>>>> a151d45a2432510be694ac246b3708c94837cb82
         <a name="comment" id="comment" href="#comment"></a>
         <div class="m-column-tit t-column-tit clearfix" id="commentsArea">
             <h2 id="commentsTitle">本房屋点评（<b>419</b>条）</h2>
@@ -1006,9 +1067,9 @@
 </div>
 <!--跳转弹层－结束-->
 <!--在线客服&& 和房东聊天－开始-->
-<div class="J-service-btn" id="J-service-btn">
+<!-- <div class="J-service-btn" id="J-service-btn">
     <a href="javascript:;" rel="nofollow" onclick="qimoChatClick(); return false;" class="service-chat-btn"><i class="icon-service"></i><span class="label-text">客服</span></a>
-</div>
+</div> -->
 <!--在线客服&& 和房东聊天-结束-->
 <!--登录框－开始-->
 <!--登录框－结束-->
