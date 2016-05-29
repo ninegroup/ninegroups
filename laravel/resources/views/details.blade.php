@@ -723,7 +723,7 @@
 
 
 <div class="m-column-tit t-column-tit clearfix" id="unitIntro">
-    <h2>入住须知</h2><span class="gray-text">（房屋编号：<b>3581</b>）</span>
+    <h2>入住须知</h2><span class="gray-text">（房屋编号：<b>{{$arr->h_id}}</b>）</span>
 </div>
 <div class="column-info">
         <div class="side-box">
