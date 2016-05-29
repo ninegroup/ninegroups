@@ -89,12 +89,15 @@ class LoginController extends Controller {
 		$h_site=Request::input('h_site');
 		$h_checkin=Request::input('h_checkin');		
 		$h_mating=Request::input('h_mating');
-		$h_mating1=serialize($h_mating);
+
+		$h_mating1=implode(',', $h_mating);
+		//var_dump($h_mating1);die;
 		$h_serve=Request::input('h_serve');
-		$h_serve1=serialize($h_serve);
+//var_dump($h_serve);die;
+		$h_serve1=implode(',', $h_serve);
 		$h_h=Request::input('h_h');
 		$h_type=Request::input('h_type');
-		//var_dump($h_mating);die;
+		//var_dump($h_serve1);die;
 		
 		$u_id=$_COOKIE['u_id'];
 		$db=DB::table("house")->insert([
