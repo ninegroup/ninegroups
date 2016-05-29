@@ -16,8 +16,8 @@
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
 
     
-    <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_common?v=67e5d64" />
-    <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/im.css?v=67e5d64" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail1.css" />
      
 
 
@@ -457,30 +457,27 @@
                         </div>
                     </div> -->
                         <div class="comment-info">
-                            <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
-                            <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count">419</span>条点评</a>
-                            <span rel="j-experience-info" class="exp-voucher j-bestproduct-experience">（发点评赢体验券<i class="icon-desc-text"></i>）</span>
+                            <br>
                         </div>
                         <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
                             <div class="tips-content comments-total">
-                                <h2>房屋综合评分</h2>
-                                <div class="results-wrap">
-                                    <div class="star-box star" data-rating="5"></div>
-                                    <div class="results-comments">
-                                        <span class="hotel-value">4.6</span>/5分
-                                    </div>
-                                </div>
-                                <div class="comments-items">
-                                    <ul>
-                                        <li><span class="comments-items-name">整洁卫生：</span><span class="number-box color-blue">4.6</span>分</li>
-                                        <li><span class="comments-items-name">交通位置：</span><span class="number-box color-blue">4.8</span>分</li>
-                                        <li class="border-none"><span class="comments-items-name">管理服务：</span><span class="number-box color-blue">4.6</span>分</li>
-                                        <li class="border-none"><span class="comments-items-name">设施装修：</span><span class="number-box color-blue">4.6 </span>分</li>
-                                    </ul>
-                                </div>
+                                
+
                             </div>
                         </div>
-                    
+                    <div class="product-filter" id="productfilter">
+                        <div class="date-change-box">
+
+                            <div class="change-control-group btn-group">
+                                
+                                <div class="controls"><a href="{{URL::route('Details/HouseReserve')}}?id={{$arr->h_id}}" id="changeBtn" class="change-btn" onclick="" >￥{{$arr->h_price}}&nbsp&nbsp&nbsp预定</a></div>
+                            </div>
+                        </div>
+
+                            <div class="hint-text">
+                            </div>
+
+                    </div>
                     <div id="travelsummary" class="travel-info" style="display:none"><a href="#experience"><i class="icon-travel"></i></a></div>
                 </div>
             </div>
@@ -493,40 +490,7 @@
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
             <div class="m-column-box new-column-box" id="saleproductsection">
-                    <div class="product-filter" id="productfilter">
-                        <div class="date-change-box">
-                            <div class="change-control-group">
-                                <span class="controls-span">入住</span>
-                                <div class="controls">
-                                    <input type="hidden" id="UnitId" value="3581" />
-                                    <input type="hidden" id="ProductId" value="0" />
-                                    <input type="hidden" id="UnitDetailSubType" value="0" />
-                                    <label for="unitDetailStartDate">
-                                        <input type="text" name="" id="unitDetailStartDate" value="2016-05-27" class="date-ipt-text" /><i class="icon-date"></i>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="change-control-group">
-                                <span class="controls-span">退房</span>
-                                <div class="controls">
-                                    <label for="unitDetailEndDate">
-                                        <input type="text" name="" id="unitDetailEndDate" value="2016-05-28" class="date-ipt-text" /><i class="icon-date t-icon-date"></i>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="change-control-group btn-group">
-                                <div class="controls"><a href="javascript:void(0);" id="changeBtn" class="change-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '产品搜索']);">确定</a></div>
-                            </div>
-                                <div class="room-status">
-                                    <a class="has-empty-house" href="javascript:;" data-unitid="3581" data-detaillink="" onclick="_gaq.push(['_trackEvent', 'pcDetail', '哪天有房']);">哪天有房</a>
-                                </div>
-                        </div>
-
-                            <div class="hint-text">
-                            </div>
-
-                    </div>
+                    
             </div>
             <!-- Tabs  -->
             
@@ -546,9 +510,7 @@
                         <a id="unitmaptab" href="#unitmap" onclick="_gaq.push(['_trackEvent', 'pcDetail', '位置地图']);">位置地图</a>
                     </li>
                         <li id="commentsareatab" class="j-tabs">
-                            <a href="#commentsArea" id="usercomments" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点评导航']);">
-                                入住点评<span id="usercomments-value" class="total-box">419</span>条
-                            </a>
+                            
                         </li>
                     <li id="unitgoodexperiencetabcontainer" style="display:none" >
                         <a id="unitgoodexperience" href="#experience" onclick="_gaq.push(['_trackEvent', 'pcDetail', '达人体验']);">达人体验</a>
@@ -872,7 +834,7 @@
 </script>
 
 
-    <div id="commentsArea" class="m-column-box">
+   <!--  <div id="commentsArea" class="m-column-box">
         <a name="comment" id="comment" href="#comment"></a>
         <div class="m-column-tit t-column-tit clearfix" id="commentsArea">
             <h2 id="commentsTitle">本房屋点评（<b>419</b>条）</h2>
@@ -901,7 +863,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 <div class="m-tips-wrap" id="j-experience-info" style="display: none;">
     <div class="tips-content experience-voucher">
