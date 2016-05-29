@@ -2,6 +2,7 @@
 
 use DB;
 use Request;
+use Input;
 
 header('content-type:text/html;charset=utf-8');
 /*
@@ -78,6 +79,16 @@ class LoginController extends Controller {
 	*/
 	public function addhouse1()
 	{
+		$data = Input::file('myfiles');
+           // print_r(count($data));die;
+            $str='';
+            for($i=0;$i<count($data);$i++){
+                $filename= $data[$i]->getClientOriginalName();
+                $path = $data[$i]-> move('uploads',$filename);
+                $str.='|'.$filename;
+            }
+            $str1 = substr($str,1);
+            // var_dump($str1);die;
 		$h_city=Request::input('h_city');
 		$h_people=Request::input('h_people');
 		$h_message=htmlentities($_POST['h_message']);
@@ -115,6 +126,7 @@ class LoginController extends Controller {
 			'h_type'=>$h_type,
 			'h_mating'=>$h_mating1,
 			'h_serve'=>$h_serve1,
+			'h_photo'=>$str1,
 		]);
 		
 		if($db)

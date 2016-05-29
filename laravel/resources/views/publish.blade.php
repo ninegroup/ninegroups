@@ -370,7 +370,8 @@ $(function() {
 			房源添加
 			</div>
 		</div>
-		<form autocomplete="off" name="roomform" action="{{URL('addhouse1')}}"  method = "post">
+		<form autocomplete="off" name="roomform" enctype='multipart/form-data' action="{{URL('addhouse1')}}"  method = "post">
+
 		<input type="hidden" name="roomId" id="roomId" value=""/>
 		<input type="hidden" name="flag" id="flag" value=""/>
 		<input type="hidden" name="_token" value="{{csrf_token()}}"/>
@@ -517,7 +518,12 @@ $(function() {
 					<label><input type="text" maxlength="22" minlength="5" class="larLargeInput clickhs fl hasPlaceholder" name="h_price" value="">元/天</label>
 				</dd>
 			</dl>
-			
+			<dl class="homesDescribe clearfix">
+				<dt><span class="fr">上传图片：</span><em class="notNull"></em></dt>
+				<dd>
+					<label><input type="file" multiple="multiple" name="myfiles[]"></label>
+				</dd>
+			</dl>
 		</div>
 		<input type="hidden" id="positionId4Edit" name="roomLocationId" value="" />
 		<div class="submit-wrap">

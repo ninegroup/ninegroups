@@ -102,14 +102,6 @@
         <div class="nav-list">
             <ul>
                 <li class="first"><a href="http://www.jiujiu.com/se0/" class="home-link " target="_blank">首页</a></li>
-                <li><a href="http://international.tujia.com/"  target="_blank">海外·港台</a></li>
-                <li><a href="http://www.tujia.com/changzu/se0/"  target="_blank">周租月租</a></li>
-                <li><a href="http://www.tujia.com/Experience/"  target="_blank">体验房</a></li>
-                <li><a href="http://www.tujia.com/photowall/" target="_blank" >特色房</a></li>
-                
-                <li><a href="http://travel.tujia.com" target="_blank">社区</a></li>
-                <li><a href="http://www.tujia.com/EntrustTreasure/"  target="_blank">买楼收租</a></li>
-                <li><a href="http://www.tujia.com/TuYuan/"  target="_blank">途远度假</a></li>
             </ul>
         </div>
 
@@ -148,7 +140,6 @@
         <a style="height: 200px; background: transparent url(../images/lists/adTop01.jpg) no-repeat scroll center top;"></a>
     </div>
     
-
 
     <!--- 面包屑  结束  -->
 
@@ -284,7 +275,7 @@
                         行政区<i class="icon-caret"></i>
                     </a>
                 </li>
-                <li class=" ">
+                <!-- <li class=" ">
                     <a href="javascript:void(0)" class="" rel="nofollow">
                         商圈<i class="icon-caret"></i>
                     </a>
@@ -328,7 +319,7 @@
                     <a href="javascript:void(0)" class="" rel="nofollow">
                         展会<i class="icon-caret"></i>
                     </a>
-                </li>
+                </li> -->
 
                     </ul>
                 </div>
@@ -3755,7 +3746,7 @@
 				<?php foreach($base as $vv): ?>
 				<?php if($v->b_id==$vv->bf_id){?>
                 <li>
-                    <a type="kw" data-type="h" data-val="1" data-identityid="0"
+                    <a type="kw" data-type="h" data-val="<?php echo e($vv->b_id); ?>" data-identityid="0"
                        title=""
                        href="javascript:void(0);" class=""><?php echo e($vv->b_name); ?></a>
                 </li>
@@ -3784,20 +3775,20 @@
 
                 <div id="sortArea" class="m-sort-area" data-sortval="">
                     <a href="javascript:void(0)" data-cat="1" onclick="_gaq.push(['_trackEvent', 'pcList', '推荐排序']);" data-type="o" data-val="1" name="TujiaRecommendedSort" class="" style="text-decoration:;cursor:">推荐排序</a>
-
-                    <a href="javascript:void(0)" data-cat="2" onclick="_gaq.push(['_trackEvent', 'pcList', '房价排序']);" data-type="o" data-val="3"
+					<?php if($order!='desc'){?>
+                    <a href="javascript:void(0)" data-cat="2" onclick="houseprice('asc')" data-type="o" data-val="3"
                        class="link-btn " style="" name="PriceSort" title="点击按价格从低到高排序"><i class="icon-down"></i>房价</a>
-
-                    <a href="javascript:void(0)" data-cat="2" onclick="_gaq.push(['_trackEvent', 'pcList', '房价排序']);" data-type="o" data-val="4"
-                       class="link-btn " style="display:none;" name="PriceSort" title="点击按价格从高到低排序"><i class="icon-up"></i>房价</a>
-
-                    <a href="javascript:void(0)" data-cat="3" onclick="_gaq.push(['_trackEvent', 'pcList', '点评分排序']);" data-type="o" data-val="18"
+					<?php }else{?>
+                    <a href="javascript:void(0)" data-cat="2" onclick="houseprice('desc')" data-type="o" data-val="4"
+                       class="link-btn " style="" name="PriceSort" title="点击按价格从高到低排序"><i class="icon-up"></i>房价</a>
+					<?php } ?>
+                    <!-- <a href="javascript:void(0)" data-cat="3" onclick="_gaq.push(['_trackEvent', 'pcList', '点评分排序']);" data-type="o" data-val="18"
                        name="commentscoresort" class="" title="点击按点评分从高到低排序">点评分</a>
-
                     
-
+                    
+                    
                     <a href="javascript:void(0)" data-cat="5" onclick="_gaq.push(['_trackEvent', 'pcList', '销量排序']);" data-type="o" data-val="21"
-                       name="CommentCountSort" class="" title="点击按销量从多到少排序">销量</a>
+                       name="CommentCountSort" class="" title="点击按销量从多到少排序">销量</a> -->
 
                     
 
@@ -3808,7 +3799,7 @@
                        name="distancesort" title="按距离从近到远排序" class="">距离</a>
                 </div>
             </div>
-            <div class="total-house-amount"><span>15000+</span>套房屋符合条件</div>
+            <div class="total-house-amount"><span><?php echo $count; ?></span>套房屋符合条件</div>
 
             <div class="f-clear"></div>
         </div>
@@ -3826,17 +3817,19 @@
         <a href="javascript:;" class="close-btn" id="recom_close" title="关闭"></a>
         <div class="carousel">
             <div class="house-group carousel_inner clearfix" id="recom-list-carousel">
+				<?php foreach($hot as $v): ?>
                     <div class="carousel_box house-group">
                         <div class="room-cont">
-                            <a href="http://go.tujia.com/1007/?code=CZLB-ZSK-bj&amp;id=63757" target="_blank" title="建国门服务公寓行政套房四人间" class="pic-box" rel="nofollow">
-                                <img src="http://pic.tujia.com/upload/landlordunit/day_151013/thumb/201510131111084961_120_90.jpg" alt="建国门服务公寓行政套房四人间" />
+                            <a href="<?php echo e(URL::route('Details/Index')); ?>?id=<?php echo e($v->pi_h_id); ?>" target="_blank" title="<?php echo e($v->h_title); ?>" class="pic-box" rel="nofollow">
+                                <img src="../images/uploads/<?php echo e($v->pi_path); ?>" alt="<?php echo e($v->h_title); ?>" />
                             </a>
                             <div class="info-box">
-                                <a href="http://go.tujia.com/1007/?code=CZLB-ZSK-bj&amp;id=63757" target="_blank" class="room-tit" title="建国门服务公寓行政套房四人间">建国门服务公寓行政套房四人间</a>
-                                <p class="picer-info"><span class="price-box"><dfn>¥</dfn><b class="number-box">568</b></span>/晚起 </p><p class="hint-text"></p>
+                                <a href="<?php echo e(URL::route('Details/Index')); ?>?id=<?php echo e($v->pi_h_id); ?>" target="_blank" class="room-tit" title="<?php echo e($v->h_title); ?>"><?php echo e($v->h_title); ?></a>
+                                <p class="picer-info"><span class="price-box"><dfn>¥</dfn><b class="number-box"><?php echo e($v->h_price); ?></b></span>/晚起 </p><p class="hint-text"></p>
                             </div>
                         </div>
                     </div>
+				<?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -3860,7 +3853,7 @@
 
 
 
-
+<div class="container">
 <div class="sem-cont">
     <div class="m-house-list">
         <ul>
@@ -3903,13 +3896,14 @@
         </ul>
     </div>
 </div>
+<?php echo $db->appends(['adress' => $adress ,'city' => $city , 'order' =>$order])->render(); ?>
 
-
+</div>
 
 <script>
     var IfFromBaidu = 'True';
 </script>
- 页码
+
     </div>
     <div style="display:none;">UnitSearchResult cost: 31.2004ms</div>
 
@@ -3954,9 +3948,7 @@
     <div class="m-footer-link-list">
         <a href="http://content.tujia.com/tujiajianjie.htm" target="_blank" class="forst" rel="nofollow">关于我们</a>|
         <a href="http://content.tujia.com/youkebangzhu.htm" target="_blank" rel="nofollow">我是房客</a>|
-        <a href="http://content.tujia.com/qiyewenhua.htm" target="_blank" rel="nofollow">加入久久</a>|
-        <a href="/SiteMap/UnitDestination/" target="_blank">网站地图</a>|
-        <a href="/sitemap.htm" target="_blank">城市地图</a>
+        <a href="http://content.tujia.com/qiyewenhua.htm" target="_blank" rel="nofollow">加入久久</a>
         
         
         
@@ -4074,9 +4066,16 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </body>
 </html>
 <script type="text/javascript">
+//查询
 function search(){
 	var city=document.getElementById('destInput').value;
 	var adress=document.getElementById('adress').value;
 	location.href="<?php echo e(URL::route('Search/HomepageSearch')); ?>?city="+city+"&adress="+adress;
+}
+//价格排序
+function houseprice(order){
+	var city=document.getElementById('destInput').value;
+	var adress=document.getElementById('adress').value;
+	location.href="<?php echo e(URL::route('Search/HomepageSearch')); ?>?order="+order+"&city="+city+"&adress="+adress;
 }
 </script>
