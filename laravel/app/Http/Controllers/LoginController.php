@@ -91,7 +91,7 @@ class LoginController extends Controller {
             // var_dump($str1);die;
 		$h_city=Request::input('h_city');
 		$h_people=Request::input('h_people');
-		$h_message=htmlentities($_POST['h_message']);
+		$h_message=Request::input('h_message');
 		//echo $h_message;die;
 		$h_price=Request::input('h_price');
 		$h_state=Request::input('h_state');
