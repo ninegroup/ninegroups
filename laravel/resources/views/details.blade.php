@@ -15,9 +15,12 @@
     <meta property="qc:admins" content="27330065376452116375" />
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
 
+<<<<<<< HEAD
 
     <!-- <link rel="bookmark" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" /> -->
 
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
     
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_common?v=67e5d64" />
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/im.css?v=67e5d64" />
@@ -26,6 +29,7 @@
 
 <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_detail?v=67e5d64" />
  
+<<<<<<< HEAD
     <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/base/jquery.js?v=67e5d64"></script>
     <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_common_head?v=67e5d64"></script>
 
@@ -33,6 +37,8 @@
         //window["WEB_XHR_POLLING"] = true;
         var MESSAGE_RADIO="http://staticfile.tujia.com/PortalSite2/radio/message.wav", ORDERNOTICE_RADIO = "http://staticfile.tujia.com/PortalSite2/radio/ordernotice.wav";
     </script>
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 <style>
 .flexslider {
 	margin: 0 auto;
@@ -134,11 +140,18 @@
         //window["WEB_XHR_POLLING"] = true;
         var MESSAGE_RADIO="http://staticfile.tujia.com/PortalSite2/radio/message.wav", ORDERNOTICE_RADIO = "http://staticfile.tujia.com/PortalSite2/radio/ordernotice.wav";
     </script> -->
+<<<<<<< HEAD
 
 <script src="http://www.tujia.com/Common/CityInfo/"></script>
 
 <script type="text/javascript">
 
+=======
+
+    
+
+
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 <!--<script src="http://www.tujia.com/Common/CityInfo/"></script>
 
  <script type="text/javascript">
@@ -149,11 +162,15 @@
          maxdate= new Date(2016,10,23),
          houseId,
          ServerDomain = "tujia.com",
+<<<<<<< HEAD
 
          TUJIA_CLIENTID = '8eb2f9bb-1c01-4f50-bfae-cf4c863420b2';
 
          TUJIA_CLIENTID = 'af1a55b9-ac7e-4e94-ab67-1d3ceb6ce3d6';
 
+=======
+         TUJIA_CLIENTID = 'af1a55b9-ac7e-4e94-ab67-1d3ceb6ce3d6';
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 
     var portalUrl = "http://www.tujia.com";
     var favoriteUrl = "http://vip.tujia.com";
@@ -164,6 +181,7 @@
     var traceData = window.traceData || {};
     traceData.logService = 'http://api.tujia.com';
     traceData.prevId = '';
+<<<<<<< HEAD
 
     traceData.pageId = 'a4bf7d7e-e0fd-4e8b-87e5-13acd533864e';
     traceData.url = 'http://www.tujia.com/beijing_gongyu/chaoyangqu_3581.htm';
@@ -173,6 +191,8 @@
      
 <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/jquery-1.11.3.min.js"></script>
 
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
     traceData.pageId = '943ea911-8c73-4301-8fa0-df2750497437';
     traceData.url = 'http://www.tujia.com/beijing_gongyu/chaoyangqu_3581.htm';
     traceData.params = '';
@@ -180,16 +200,23 @@
 
      
 <!-- <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/jquery-1.11.3.min.js"></script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 <script type="text/javascript">
     var $jq = jQuery.noConflict(true);
 </script>
 <script type="text/javascript" src="http://staticfile.tujia.com/Portalsite2/Scripts/Base/owl.carousel.js"></script>
+<<<<<<< HEAD
 
 <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script>
 
 <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script> -->
 
+=======
+<script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/js_detail_head_v2?v=67e5d64"></script> -->
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 <script type="text/javascript">
 
     var Tj = Tj || {};
@@ -276,11 +303,7 @@
         maxdate= new Date(2016,10,23),
            houseId,
            ServerDomain = "tujia.com",
-<<<<<<< HEAD
-           TUJIA_CLIENTID = 'c6674901-2fe8-4864-bef8-6bf5b7f271ac';
-=======
            TUJIA_CLIENTID = '6e4245e1-438f-469e-a508-db6eba76a990';
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
 
     var portalUrl = "http://www.tujia.com";
     var imUrl = "http://im.tujia.com";
@@ -293,6 +316,7 @@
     <input id="hdIsFromPartner" name="hdIsFromPartner" type="hidden" value="0" />
 
 
+<<<<<<< HEAD
 
 
     
@@ -305,6 +329,8 @@
                 <li class="first"><a href="http://www.tujia.com/se0/" class="home-link " target="_blank">首页</a></li>
                 <li><a href="http://international.tujia.com/"  target="_blank">海外·港台</a></li>
 
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 <div class="hd-wrap-fluid ">
     <div class="m-hd">
         <div class="site-logo-cont">
@@ -316,7 +342,6 @@
             <ul>
                 <li class="first"><a href="/" class="home-link ">首页</a></li>
                 <li><a href=""  target="_blank">海外·港台</a></li>
->>>>>>> 9c73d47749da5190e44c4ff3b31fad333f87bfaa
                 <li><a href="http://www.tujia.com/changzu/se0/"  target="_blank">周租月租</a></li>
                 <li><a href="http://www.tujia.com/Experience/"  target="_blank">体验房</a></li>
                 <li><a href="http://www.tujia.com/photowall/" target="_blank" >特色房</a></li>
@@ -325,10 +350,15 @@
                 <li><a href="http://www.tujia.com/EntrustTreasure/"  target="_blank">买楼收租</a></li>
                 <li><a href="http://www.tujia.com/TuYuan/"  target="_blank">途远度假</a></li>
             </ul>
+<<<<<<< HEAD
         </div>
 
         <div class="sub-link" lazyloadurl="http://vip.tujia.com/WebParts/Portal/UserInfo?isShowCreateNewStore=False"></div>
     </div>
+=======
+        </div> -->
+    </div> 
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 </div>
 
 
@@ -344,18 +374,17 @@
     
 
 <div id="dir" class="dir-cont">
-        <a href="http://www.tujia.com/se0/" title="途家网">途家网</a>
+<a href="#" title="久久租">久久租</a>
     
-            <em>&gt;</em><a href="/beijing_gongyu/se0/" title="北京住宿">北京住宿</a>
-        <em>&gt;</em><a href="/beijing_gongyu/chaoyangqu_se0s182/" title="朝阳区住宿">朝阳区住宿</a><em>&gt;</em>
+            <em>&gt;</em><a href="#" title="{{$arr->h_city}}">{{$arr->h_city}}</a>
+        <em>&gt;</em><a href="#" title="{{$arr->h_site}}">{{$arr->h_site}}</a><em>&gt;</em>
 
-北京途家长安驿精品大床房
-
+{{$arr->h_title}}
 </div>
 
     
 <div class="share-cont">
-	<a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点赞']);" unitid="3581" href="javascript:void(0);">
+    <a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点赞']);" unitid="3581" href="javascript:void(0);">
         <i class="icon-chevron"></i>
         <span id="txtdianzan">我想住</span>
     </a>
@@ -367,130 +396,98 @@
 
 
 
+<script type="text/javascript">
+    var imgTotalCount=16;
+    //imgTotalCount=5;
+    var imgLoadedCount = 0;
 
+    function imgLoadSuccess() {
+        imgLoadedCount++;
+        if(imgLoadedCount==imgTotalCount&&imgTotalCount>0)
+        {
+
+            initOwlCarousel();
+        }
+    }
+
+    function imgLoadFail(self)
+    {
+
+        imgTotalCount--;
+        self = $(self);
+        self.parent().remove();
+        if (imgLoadedCount == imgTotalCount&&imgTotalCount>0) {
+            initOwlCarousel();
+        }
+    }
+
+    function initOwlCarousel() {
+        var carouselDetailPic = $jq('.owl-carousel').owlCarousel({
+            //nav:true,
+            margin:8,
+            loop: true,
+            autoWidth: true,
+            items: 4
+        });
+        $jq('#imgControl').show();
+
+        $jq('#hd-next').click(function () {
+            carouselDetailPic.trigger('next.owl.carousel');
+        })
+
+        $jq('#hd-prev').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            carouselDetailPic.trigger('prev.owl.carousel');
+        });
+    }
+
+
+</script>
 
 
 <div class="m-cont m-con-fluid  new-cont-fluid">
-    <div class="thumb-cont">
+	<div class="thumb-cont">
         <div class="shadow-box"></div>
-        <div class="owl-carousel" style="width: 9999px">
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251714465094_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251714564014_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251715064189_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251715251681_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251715155061_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251717512270_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251718028765_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251718127985_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251719043350_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251719158890_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251719391955_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251720164081_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251719527669_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251720048574_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251720288923_390_390.jpg" />
-                    </div>
-                    <div class="item">
-                        <img onload="javascript:imgLoadSuccess();" onerror="javascript:imgLoadFail(this);" src="http://pic.tujia.com/upload/unit/day_160125/thumb/20160125172042178_390_390.jpg" />
-                    </div>
-        </div>
-        <div id="imgControl" class="thumb-btn" style="display:none">
-            <a href="javascript:;" class="btn-prev" id="hd-prev">上一张</a>
-            <a href="javascript:;" class="btn-next" id="hd-next">下一张</a>
-        </div>
-    </div>
-    
-
-    
-    <div class="house-hint-info">
-        <div class="house-tag-box">
-
-                <span class="label-text">优势地段</span>
-                                <span class="label-text">休闲度假</span>
-                    <span class="label-text">商务差旅</span>
-                    <span class="label-text">近菜市场</span>
-
-        </div>
-        <span>此房型有20套，实际入住与此可能略有不同</span>
-    </div>
+			<div id="banner_tabs" class="flexslider">
+				<ul class="slides">
+				@foreach($picture as $v)
+					<li>
+						<a title="" target="_blank" href="#">
+							<img alt="" src="../images/alpha.png" style="background: url(../images/uploads/{{$v->pi_path}}) no-repeat center;background-size:100% 480px;" >
+						</a>
+					</li>
+				@endforeach
+				</ul>
+				<ul class="flex-direction-nav">
+					<li><a class="flex-prev" href="javascript:;">上一页</a></li>
+					<li><a class="flex-next" href="javascript:;">下一页</a></li>
+				</ul>
+				
+			</div>
+			<script src="../js/jquery-1.10.2.min.js"></script>
+			<script src="../js/slider.js"></script>
+			<script type="text/javascript">
+			$(function() {
+				var bannerSlider = new Slider($('#banner_tabs'), {
+					time: 5000,
+					delay: 400,
+					event: 'hover',
+					auto: true,
+					mode: 'fade',
+					controller: $('#bannerCtrl'),
+					activeControllerCls: 'active'
+				});
+				$('#banner_tabs .flex-prev').click(function() {
+					bannerSlider.prev()
+				});
+				$('#banner_tabs .flex-next').click(function() {
+					bannerSlider.next()
+				});
+			})
+			</script>
+	</div>
 </div>
-
-
-<!-- <div class="m-share-pop" style="display: none;" id="divWeixin">
-    <div class="hd-box">
-        <h2>分享到微信</h2>
-        <a href="javascript:;" title="关闭" class="close-btm" id="closeWeixin"></a>
-    </div>
-    <div class="cont-box">
-        <h2>
-            用微信“扫一扫”
-            <br />
-            将心动的房屋分享给自己的好友和朋友圈吧！
-        </h2>
-        <p class="code-box" id="wechatImg"></p>
-        <p class="text-info">
-            打开微信，点击底部的“发现”，使用 “扫一扫” 即可将网页分享<br />
-            给我的好友和朋友圈。
-        </p>
-    </div>
-</div> -->
-
-<script type="text/javascript">
-    $("#shareWeixin").overlay({
-        mask: {
-            color: '#000',
-            loadSpeed: 200,
-            opacity: 0.6
-        },
-        // onBeforeLoad: function () {   },
-        close: "#closeWeixin",  //触发关闭的dom节点，可以是图片，链接或者按钮
-        closeOnClick: true, // 点击弹出层之外位置是否关闭弹出层
-        closeOnEsc: true,   // 按下ESC是否关闭弹出层
-        target: "#divWeixin",
-        top: "20%",
-        onBeforeLoad: function () {
-            if ($("#divWeixin").attr("loaded") == "1")
-                return;
-            $.getScript('http://staticfile.tujia.com/PortalSite2/Scripts/weixinQrCode.js', function () {
-                var href = window.location.href;
-                if (href.indexOf("?") > 0) href = href.substr(0, href.indexOf("?"));
-                if (href.indexOf("#") > 0) href = href.substr(0, href.indexOf("#"));
-                QRCode.wechatQr.makeCode(href);
-                $("#divWeixin").attr("loaded", "1");
-            });
-        }
-    });
-</script>
-
 
 
 <div class="m-cont m-con-fluid">
@@ -498,9 +495,9 @@
         <div class="hotel-cont">
             <div class="room-info">
                     <h1>
-                        北京途家长安驿精品大床房<span class="personal-tag sweetome-tag" title="途家自营门店，高品质的体验">途家自营</span>
+					{{$arr->h_title}}<span class="personal-tag sweetome-tag" title="">个人房东</span>
                         
-                            <a href="http://bp.tujia.com/2016/SelectMerchants" target="_blank" class="icon-quality-hotel" rel="PreferredUnitTips"></a>
+                            <!-- <a href="http://bp.tujia.com/2016/SelectMerchants" target="_blank" class="icon-quality-hotel" rel="PreferredUnitTips"></a> -->
                     </h1>
                 <div class="district-info">
                     <i class="icon-area"></i>
@@ -532,6 +529,11 @@
             </div>
             <div class="hotel-sidebar">
                 <div class="book-info ">
+                    <!-- <div id="bestProduct" class="price-info">
+                        <div class="room-price">
+                            <span>加载中...</span>
+                        </div>
+                    </div> -->
                         <div class="comment-info">
                             <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
                             <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count">419</span>条点评</a>
@@ -568,7 +570,7 @@
     <div class="m-cont t-cont clearfix">
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
-            <!-- <div class="m-column-box new-column-box" id="saleproductsection">
+            <div class="m-column-box new-column-box" id="saleproductsection">
                     <div class="product-filter" id="productfilter">
                         <div class="date-change-box">
                             <div class="change-control-group">
@@ -580,6 +582,7 @@
                                     <label for="unitDetailStartDate">
                                         <input type="text" name="" id="unitDetailStartDate" value="2016-05-27" class="date-ipt-text" /><i class="icon-date"></i>
                                     </label>
+<<<<<<< HEAD
                                 </div>
                             </div>
             
@@ -1362,39 +1365,90 @@
                                     <span class="lab-text" title="1室1卫">1室1卫</span>|
                                     <span class="lab-text" title="2张床">2张床</span>|
                                     <span class="lab-text" title="宜住2人">宜住2人</span>
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
                                 </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">439</span>/晚</div>
                             </div>
-                        </li>
-                        <li>
-                            <a href="/beijing_gongyu/se0/chaoyangqu_13739.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160127/thumb/201601272159013849_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                            <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_13739.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京途家长安驿豪华套房</a>
 
-                                <div class="house-info">
-                                    <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                    <span class="lab-text" title="1室1厅1卫">1室1厅1卫</span>|
-                                    <span class="lab-text" title="2张床">2张床</span>|
-                                    <span class="lab-text" title="宜住3人">宜住3人</span>
+                            <div class="change-control-group">
+                                <span class="controls-span">退房</span>
+                                <div class="controls">
+                                    <label for="unitDetailEndDate">
+                                        <input type="text" name="" id="unitDetailEndDate" value="2016-05-28" class="date-ipt-text" /><i class="icon-date t-icon-date"></i>
+                                    </label>
                                 </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">489</span>/晚</div>
                             </div>
-                        </li>
-                        <li>
-                            <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
-                            <div class="house-cont">
-                                <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">北京途家长安驿精品双床套房</a>
+                            <div class="change-control-group btn-group">
+                                <div class="controls"><a href="javascript:void(0);" id="changeBtn" class="change-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '产品搜索']);">确定</a></div>
+                            </div>
+                                <div class="room-status">
+                                    <a class="has-empty-house" href="javascript:;" data-unitid="3581" data-detaillink="" onclick="_gaq.push(['_trackEvent', 'pcDetail', '哪天有房']);">哪天有房</a>
+                                </div>
+                        </div>
 
-                                <div class="house-info">
-                                    <span class="lab-text" title="酒店式公寓">酒店式公寓</span>|
-                                    <span class="lab-text" title="2室1卫">2室1卫</span>|
-                                    <span class="lab-text" title="2张床">2张床</span>|
-                                    <span class="lab-text" title="宜住4人">宜住4人</span>
-                                </div>
-                                <div class="picer-box"><dfn>¥</dfn><span class="value-box">699</span>/晚</div>
+                            <div class="hint-text">
                             </div>
+
+                    </div>
+            </div>
+            <!-- Tabs  -->
+            
+
+    <div class="m-column-box ">
+        <div id="HouseTabs" class="house-tabs-box">
+            <div id="contentTab" class="house-tabs ">
+                <ul>
+
+                    <li id="unitdetailinfotab" class="current item-first">
+                        <a href="#unitdetailinfo">房屋详情</a>
+                    </li>
+                    <li>
+                        <a id="unitcheckinneedtoknowtab" href="#unitcheckinneedtoknow" onclick="_gaq.push(['_trackEvent', 'pcDetail', '入住须知']);">入住须知</a>
+                    </li>
+                    <li>
+                        <a id="unitmaptab" href="#unitmap" onclick="_gaq.push(['_trackEvent', 'pcDetail', '位置地图']);">位置地图</a>
+                    </li>
+                        <li id="commentsareatab" class="j-tabs">
+                            <a href="#commentsArea" id="usercomments" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点评导航']);">
+                                入住点评<span id="usercomments-value" class="total-box">419</span>条
+                            </a>
                         </li>
+                    <li id="unitgoodexperiencetabcontainer" style="display:none" >
+                        <a id="unitgoodexperience" href="#experience" onclick="_gaq.push(['_trackEvent', 'pcDetail', '达人体验']);">达人体验</a>
+                    </li>
+                    <li class="house-tabs-last">
+                        <a rel="nofollow" id="tabbookprice" href="#productfilter" style="padding: 0; vertical-align: -4px" onclick="_gaq.push(['_trackEvent', 'pcDetail', '置顶条查看房价']);"><span id="pricebox" class="price-box dn"></span></a>
+                        <a rel="nofollow" id="tabbookbtn" class="book-btn" href="#productfilter" onclick="_gaq.push(['_trackEvent', 'pcDetail', '置顶条查看房价']);">
+                            查看房价
+                        </a>
+                    </li>
                 </ul>
+<<<<<<< HEAD
+=======
+            </div>
+        </div>
+    </div>
+
+            <!-- 房屋详情  -->
+            <div class="m-column-box t-column-box" id="unitdetailinfo">
+                <!-- 房屋亮点  -->
+                
+    <div class="highlights-cont">
+        <div class="side-box">
+            <i class="icon-highlights"></i>
+            <h2>房屋亮点</h2>
+        </div>
+        <div class="content-box">
+            <div class="highlight-info">
+                                    <p><i>▪</i>位于朝阳区CBD，临近使馆区，更适合商务出差人士入住；</p>
+                                    <p><i>▪</i>紧邻长安街，地铁10分钟达天安门、北京站，公交直达热门景点；</p>
+                                    <p><i>▪</i>楼下有24小时便利店，庆丰包子等，餐饮方便；</p>
+                                    <p><i>▪</i>房屋装修简约大方，开间宽敞舒适，设备齐全。</p>
+            </div>
+        </div>
+    </div>
+
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 
                 <!-- 设施服务  PS:设施与服务数据合并  -->
 
@@ -1789,13 +1843,17 @@
                         </li> 
                 @endforeach
                </ul>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
                     <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>
 
             </div>
+<<<<<<< HEAD
 
             <!--管理公司其它房屋-->
                 <div class="m-column-box t-column-box">
@@ -1850,6 +1908,9 @@
     </div>
 
                 </div>
+=======
+            
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 
             <div class="m-column-box ">
                 <div class="m-ensure">
@@ -1916,6 +1977,7 @@
 </div>
 <!--在线客服&& 和房东聊天-结束-->
 <!--登录框－开始-->
+<<<<<<< HEAD
 
 <div style="height: 1px;" id="loginBtn"></div>
 <div class="m-login-wrap " id="userPop">
@@ -2356,6 +2418,8 @@
         return false;
     })
 </script>
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 <!--登录框－结束-->
 
 
@@ -2363,6 +2427,11 @@
 
 <!-- footer Start -->
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
     
 <div class="m-seo-list">
     
@@ -2370,9 +2439,12 @@
     
 </div>
 
+<<<<<<< HEAD
 <div style="display: none">getFriendLinkRuleTime执行时间: 0.133</div>
 <div style="display: none">getSeoFooterRulrTime执行时间: 0.0269</div>
 <div style="display: none">SeoFooter执行时间: 0.006</div>
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 <div style="display: none">getFriendLinkRuleTime执行时间: 0.1132</div>
 <div style="display: none">getSeoFooterRulrTime执行时间: 0.0182</div>
 <div style="display: none">SeoFooter执行时间: 0.0047</div>

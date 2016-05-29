@@ -28,7 +28,7 @@ class SearchController extends Controller {
 				->where('h_title','like','%'.$adress.'%')
 				->where('h_state','1')
 				->where('pi_state','2')
-				->paginate($perPage = 6, $columns = ['*'], $pageName = 'page');
+				->paginate($perPage = 3, $columns = ['*'], $pageName = 'page');
 		}
 		//查询热房
 		$hot=DB::table('picture')

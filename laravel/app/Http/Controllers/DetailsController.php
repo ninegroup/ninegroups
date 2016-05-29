@@ -31,8 +31,12 @@ class DetailsController extends Controller {
 	{
 		static $pic='';
 		$id=Request::get('id');
+<<<<<<< HEAD
 		$arr=DB::table('house')->where('h_id',$id)->first();	
 		// var_dump($arr);die;
+=======
+		$arr=DB::table('house')->where('h_id',$id)->first();
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
 		$u_id=$arr->u_id;
 		//echo $u_id;die;
@@ -46,7 +50,10 @@ class DetailsController extends Controller {
 		);
 		//var_dump($com);die;
 		return view('details',$data);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a9aa5c1aafb29550d44d30da4a404b81edfd4bb
 	}
 
 }

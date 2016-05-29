@@ -3853,8 +3853,9 @@
 
 
 
-<div class="container">
+
 <div class="sem-cont">
+<div class="container">
     <div class="m-house-list">
         <ul>
 			@foreach($db as $v)
@@ -3895,8 +3896,8 @@
 				@endforeach
         </ul>
     </div>
+	{!! $db->appends(['adress' => $adress ,'city' => $city , 'order' =>$order])->render() !!}
 </div>
-{!! $db->appends(['adress' => $adress ,'city' => $city , 'order' =>$order])->render() !!}
 </div>
 
 <script>
