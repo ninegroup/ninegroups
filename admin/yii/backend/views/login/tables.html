@@ -541,8 +541,8 @@ use yii\widgets\LinkPager;
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
+						<input type="text" name="sou" id='sous' value="<?php $s=$sou?$sou:''; echo $s;?>">
 
-						<input type="text" name="sou" id='sous' value="<?php $s=$sou?$sou:''; echo $s;?>">		
 						<button class="btn btn-xs btn-pink" onclick="sou()">搜索</button>
 						<div class="row">
 							<div class="col-xs-12">
@@ -642,12 +642,11 @@ use yii\widgets\LinkPager;
 													</tr>
 									<?php endforeach; ?>
 									<tr>
-<<<<<<< HEAD
-										<td colspan='7'><font style='float:right'>
-										<?= LinkPager::widget(['pagination' => $pagination]) ?></font>
-=======
+
+										
+
 										<td colspan='7'><font style='float:right'><?= LinkPager::widget(['pagination' => $pagination]) ?></font>
->>>>>>> d49f1608d6ee627e36c276359c315e64875b6437
+
 										</td>
 									</tr>
 				
