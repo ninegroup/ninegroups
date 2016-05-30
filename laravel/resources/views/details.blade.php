@@ -449,31 +449,30 @@
                             <span>加载中...</span>
                         </div>
                     </div> -->
-<<<<<<< HEAD
+
                         <!-- <div class="comment-info">
                             <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
                             <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count"></span>条点评</a>
                             <span rel="j-experience-info" class="exp-voucher j-bestproduct-experience">（发点评赢体验券<i class="icon-desc-text"></i>）</span>
                         </div> -->
                         <!-- <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
-=======
+
                         <div class="comment-info">
                             <br>
                         </div>
                         <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
+
                             <div class="tips-content comments-total">
                                 
 
                             </div>
-<<<<<<< HEAD
-                        </div> -->
-                    
-=======
-                        </div>
-                    <div class="product-filter" id="productfilter">
-                        <div class="date-change-box">
 
+                        </div> -->
+                        <br>
+                    <div class="product-filter" id="productfilter">
+
+                        <div class="date-change-box">
+                           
                             <div class="change-control-group btn-group">
                                 
                                 <div class="controls"><a href="{{URL::route('Details/HouseReserve')}}?id={{$arr->h_id}}" id="changeBtn" class="change-btn" onclick="" >￥{{$arr->h_price}}&nbsp&nbsp&nbsp预定</a></div>
@@ -484,7 +483,9 @@
                             </div>
 
                     </div>
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
+
+                        </div>
+                    
                     <div id="travelsummary" class="travel-info" style="display:none"><a href="#experience"><i class="icon-travel"></i></a></div>
                 </div>
             </div>
@@ -497,36 +498,9 @@
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
             <div class="m-column-box new-column-box" id="saleproductsection">
-<<<<<<< HEAD
-                    <div class="product-filter" id="productfilter">
-                        <div class="date-change-box">
-                            <div class="change-control-group">
-                                <span class="controls-span">入住</span>
-                                <div class="controls">
-                                    <input type="hidden" id="UnitId" value="3581" />
-                                    <input type="hidden" id="ProductId" value="0" />
-                                    <input type="hidden" id="UnitDetailSubType" value="0" />
-                                    <label for="unitDetailStartDate">
-                                        <input type="text" name="" id="unitDetailStartDate" value="2016-05-27" class="date-ipt-text" /><i class="icon-date"></i>
-                                    </label>
-                                </div>
-                            </div>
 
-                            <div class="change-control-group">
-                                <span class="controls-span">退房</span>
-                                <div class="controls">
-                                    <label for="unitDetailEndDate">
-                                        <input type="text" name="" id="unitDetailEndDate" value="2016-05-28" class="date-ipt-text" /><i class="icon-date t-icon-date"></i>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="change-control-group btn-group">
-                                <div class="controls"><a href="{{URL::route('Details/HouseReserve')}}?id={{$arr->h_id}}" id="changeBtn" class="change-btn" onclick="">预定</a></div>
-                            </div>
-                                <!-- <div class="room-status">
-                                    <a class="has-empty-house" href="javascript:;" data-unitid="3581" data-detaillink="" onclick="_gaq.push(['_trackEvent', 'pcDetail', '哪天有房']);">哪天有房</a>
-                                </div> -->
-                        </div>
+                    
+                       
 
                             <!-- <div class="hint-text">
                             
@@ -537,10 +511,8 @@
                                     <a href="http://vip.tujia.com/Memberhome/ReturnCash" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '高级优惠价']);" class="link-btn">高级会员优惠价</a>
                             </div> -->
 
-                    </div>
-=======
                     
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
+
             </div>
             <!-- Tabs  -->
             
@@ -559,26 +531,18 @@
                     <li>
                         <a id="unitmaptab" href="#unitmap" onclick="_gaq.push(['_trackEvent', 'pcDetail', '位置地图']);">位置地图</a>
                     </li>
-<<<<<<< HEAD
+
                         <!-- <li id="commentsareatab" class="j-tabs">
                             <a href="#commentsArea" id="usercomments" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点评导航']);">
                                 入住点评<span id="usercomments-value" class="total-box">419</span>条
                             </a>
                         </li> -->
-=======
+
                         <li id="commentsareatab" class="j-tabs">
                             
                         </li>
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
-                    <li id="unitgoodexperiencetabcontainer" style="display:none" >
-                        <a id="unitgoodexperience" href="#experience" onclick="_gaq.push(['_trackEvent', 'pcDetail', '达人体验']);">达人体验</a>
-                    </li>
-                    <li class="house-tabs-last">
-                        <a rel="nofollow" id="tabbookprice" href="#productfilter" style="padding: 0; vertical-align: -4px" onclick="_gaq.push(['_trackEvent', 'pcDetail', '置顶条查看房价']);"><span id="pricebox" class="price-box dn"></span></a>
-                        <a rel="nofollow" id="tabbookbtn" class="book-btn" href="#productfilter" onclick="_gaq.push(['_trackEvent', 'pcDetail', '置顶条查看房价']);">
-                            查看房价
-                        </a>
-                    </li>
+
+                   
                 </ul>
             </div>
         </div>
@@ -783,11 +747,9 @@
 
 
 <div class="m-column-tit t-column-tit clearfix" id="unitIntro">
-<<<<<<< HEAD
+
     <h2>入住须知</h2><span class="gray-text">（房屋编号：<b>{{$arr->h_id}}</b>）</span>
-=======
-    <h2>入住须知</h2><!-- <span class="gray-text">（房屋编号：<b>3581</b>）</span> -->
->>>>>>> 7bbc7d3b4624ee08afba16f4c147371ba0f94f9f
+
 </div>
 <!-- <div class="column-info">
         <div class="side-box">
@@ -891,7 +853,7 @@
 </script>
 
 
-<<<<<<< HEAD
+
     <!-- <div id="commentsArea" class="m-column-box">
 =======
    <!--  <div id="commentsArea" class="m-column-box">
