@@ -40,7 +40,7 @@ class DetailsController extends Controller {
 <<<<<<< HEAD
 =======
 
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
+>>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 		$content=$arr->h_content;
 		$sheshi=$arr->h_mating;
 		$serve=$arr->h_serve;
@@ -50,17 +50,9 @@ class DetailsController extends Controller {
 		$serve_num=count($serve);
 		$content=explode('◆',$content);
 		$content_num=count($content);
-<<<<<<< HEAD
 		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
 		$arr=DB::table('house')->where('h_id',$id)->first();
-=======
-
-
-		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
-		$arr=DB::table('house')->where('h_id',$id)->first();	
-
-
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
+<<<<<<< HEAD
 		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
 		$u_id=$arr->u_id;
 		//echo $u_id;die;
@@ -82,7 +74,19 @@ class DetailsController extends Controller {
 		return view('details',$data);
 
 	}
-<<<<<<< HEAD
+=======
+
+
+		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
+		$arr=DB::table('house')->where('h_id',$id)->first();	
+		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
+
+
+
+
+	}
+
+>>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 
 	public function Collect(){
 		$id = Request::get('id');
@@ -97,9 +101,13 @@ class DetailsController extends Controller {
 		}else{
 			$db=DB::insert("insert into collect(co_u_id,co_h_id) values('$name',$id)");
 		}
+
 	}
 
+<<<<<<< HEAD
 =======
+
+>>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 	//显示订单添加
 	public function HouseReserve(){
 		$name=$_COOKIE['name'];
@@ -168,5 +176,14 @@ class DetailsController extends Controller {
 			->first();
 		return view('reserve',['c_price'=>$arr['8'],'order'=>$order,'end_time'=>$end_time,'house'=>$house,'user'=>$user,'h_user'=>$h_user]);
 	}
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
+
+<<<<<<< HEAD
+	public function CollectList(){
+		$id=$_COOKIE['u_id'];
+		$arr=DB::table('collect')->join('house', 'house.u_id', '=', 'collect.co_u_id')->where("co_u_id",$id)->first();
+		//var_dump($db);die;
+		return view('person',$arr);
+	}
+=======
+>>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 }

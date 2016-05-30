@@ -48,6 +48,9 @@ Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@use
 Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
 //个人中心
 Route::any('/Index/userList', [ 'as' => 'Index/userList', 'uses' => "IndexController@userList"]);
+
+//收藏列表
+Route::any('/Details/CollectList', [ 'as' => 'Details/CollectList', 'uses' => "DetailsController@CollectList"]);
 //预定房间
 Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
 
@@ -57,7 +60,10 @@ Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginControll
 
 //预定房间
 Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 445c1c646db16b1546dba72e14326af67c268fdd
 //收藏房间
 //Route::any('/Details/Collect', [ 'as' => 'Details/Collect', 'uses' => "DetailsController@Collect"]);
 
@@ -66,11 +72,23 @@ Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginContro
 Route::any('Details/Collect', 'DetailsController@Collect');
 Route::any('demo', 'DetailsController@Collect');
 
+<<<<<<< HEAD
 
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
+=======
+<<<<<<< HEAD
+=======
+
+
+
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
+
+>>>>>>> 445c1c646db16b1546dba72e14326af67c268fdd
+Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
+
+>>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');
 Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' => "SearchController@HomepageSearch"]);
@@ -78,6 +96,10 @@ Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' =
 //房源具体信息页面
 Route::any('/Details/Index', [ 'as' => 'Details/Index', 'uses' => "DetailsController@Index"]);
 Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
+
 Route::any('/Details/CartAdd', [ 'as' => 'Details/CartAdd', 'uses' => "DetailsController@CartAdd"]);
+
 //发布房源login/addhouse1
 Route::any('addhouse1','LoginController@addhouse1');
+
+

@@ -465,10 +465,6 @@
                             <span>加载中...</span>
                         </div>
                     </div> -->
-<<<<<<< HEAD
-=======
-
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                         <!-- <div class="comment-info">
                             <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
                             <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count"></span>条点评</a>
@@ -492,11 +488,9 @@
 <<<<<<< HEAD
                         </div> -->
                         </div>
-=======
 
                         </div> -->
                         <br>
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                     <div class="product-filter" id="productfilter">
 
                         <div class="date-change-box">
@@ -511,12 +505,9 @@
                             </div>
 
                     </div>
-<<<<<<< HEAD
-=======
 
                         </div>
                     
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                     <div id="travelsummary" class="travel-info" style="display:none"><a href="#experience"><i class="icon-travel"></i></a></div>
                 </div>
             </div>
@@ -529,7 +520,6 @@
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
             <div class="m-column-box new-column-box" id="saleproductsection">
-<<<<<<< HEAD
                     <div class="product-filter" id="productfilter">
                         <div class="date-change-box">
                             <div class="change-control-group">
@@ -543,10 +533,6 @@
                                     </label>
                                 </div>
                             </div>
-=======
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
-
-<<<<<<< HEAD
                             <div class="change-control-group">
                                 <span class="controls-span">退房</span>
                                 <div class="controls">
@@ -559,10 +545,7 @@
                                 <div class="controls"><a href="{{URL::route('Details/HouseReserve')}}?id={{$arr->h_id}}" id="changeBtn" class="change-btn" onclick="">确定预定</a></div>
                             </div>
                         </div>
-=======
                     
-                       
->>>>>>> 3dd7020480ce6113ee802964ffdf8882e28259d3
 
                             <!-- <div class="hint-text">
                             
@@ -573,12 +556,8 @@
                                     <a href="http://vip.tujia.com/Memberhome/ReturnCash" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '高级优惠价']);" class="link-btn">高级会员优惠价</a>
                             </div> -->
 
-<<<<<<< HEAD
-                    </div>
-=======
-                    
+                    </div>                    
 
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
             </div>
             <!-- Tabs  -->
             
@@ -597,16 +576,11 @@
                     <li>
                         <a id="unitmaptab" href="#unitmap" onclick="_gaq.push(['_trackEvent', 'pcDetail', '位置地图']);">位置地图</a>
                     </li>
-<<<<<<< HEAD
-=======
-
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                         <!-- <li id="commentsareatab" class="j-tabs">
                             <a href="#commentsArea" id="usercomments" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点评导航']);">
                                 入住点评<span id="usercomments-value" class="total-box">419</span>条
                             </a>
                         </li> -->
-<<<<<<< HEAD
                         <li id="commentsareatab" class="j-tabs">
                             
                         </li>
@@ -619,14 +593,10 @@
                             查看房价
                         </a>
                     </li>
-=======
 
                         <li id="commentsareatab" class="j-tabs">
                             
                         </li>
-
-                   
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                 </ul>
             </div>
         </div>
@@ -909,18 +879,6 @@
             </div>
 
         </div>
-        <!-- <div class="map-sidebar">
-            <div class="peripheral-info">
-                <h3>周边信息</h3>
-                <ul class="tab-menu" id="map-tab-menus">
-                    <li class="current" q="餐饮"><a href="javascript:void(0)" onclick="_gaq.push(['_trackEvent', 'pcDetail', '地图','餐饮美食']);">餐饮美食</a></li>
-                    <li q="景区"><a href="javascript:void(0)" onclick="_gaq.push(['_trackEvent', 'pcDetail', '地图','景区景点']);">景区景点</a></li>
-                    <li q="娱乐" class="last"><a href="javascript:void(0)" onclick="_gaq.push(['_trackEvent', 'pcDetail', '地图','娱乐场所']);">娱乐场所</a></li>
-                </ul>
-                <div class="tab-info-item" id="map-tab-items">
-                </div>
-            </div>
-        </div> -->
 
 </div>
             </div>
@@ -935,8 +893,6 @@
     Tj.Detail.IsDistinctForUnit = 1;
 
 </script>
-<<<<<<< HEAD
-=======
 
 
 
@@ -1033,7 +989,11 @@
                 <ul>
                  @foreach($com as $v)
                         <li>
+<<<<<<< HEAD
+                            <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="../images/uploads/{{$com['0']->pi_path}}" alt="" width="278" height="165"></a>
+=======
                             <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="" alt="" width="278" height="165"></a>
+>>>>>>> ceee110f9b49a230d5f3a819abc27171d99716d3
                             <div class="house-cont">
                                 <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租{{$v->h_title}}</a>
 
@@ -1048,6 +1008,7 @@
                         </li> 
                 @endforeach
                </ul>
+                    <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>
@@ -1059,7 +1020,7 @@
                 <div class="m-ensure">
                     <i class="icon-ensure"></i>
                     <div class="text-cont">
-                        <h4>1000万<a href="http://www.tujia.com/Promotion/Tujiabaozhangjihua.htm" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '安心租100%保障']);">安心租100%保障</a></h4>
+                        <h4>1000万<a href="http://www.tujia.com/Promotion/Tujiabaozhangjihua.htm" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '安心租100%保障']);">安心租100%保障</h4>
                         <p>房屋描述失真、到店无房、房东加价全部退订金并补偿</p>
                     </div>
                 </div>
