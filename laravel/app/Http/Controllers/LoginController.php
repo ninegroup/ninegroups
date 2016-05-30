@@ -70,7 +70,10 @@ class LoginController extends Controller {
 		{
 			echo"<script>alert('请先登录');history.go(-1);</script>"; 
 
+<<<<<<< HEAD
+=======
 			//return redirect()->action('IndexController@index');
+>>>>>>> 445c1c646db16b1546dba72e14326af67c268fdd
 		}else{
 			
 			return view("publish");
