@@ -132,7 +132,7 @@
                                                 <div class="controls">
                                                     <input id="Name_Old" name="Name_Old" type="hidden" value="" />
                                                     <input class="ipt-lg" maxlength="15" name="realname" type="text" value="{{$db->realname}}"/>
-                                                    <i class="u-warn-ico sesame-ico"></i>&nbsp;&nbsp;&nbsp;
+                                                  
                                                     <span class="field-validation-valid" data-valmsg-for="Name"  name='sname' id='sname' style="color:red"></span>
                                                 </div>
                                             </div>
@@ -160,7 +160,7 @@
                                                 <span class="controls-span">手机号码：</span>
                                                 <div class="controls">
                                                     <input class="ipt-lg" maxlength="15" name="u_tel" type="text" value="{{$db->u_tel}}"/>
-                                                    <i class="u-warn-ico sesame-ico"></i>&nbsp;&nbsp;&nbsp;
+                                                 
                                                     <span class="field-validation-valid" data-valmsg-for="Name"  name='sname' id='' style="color:red"></span>
                                                 </div>
                                             </div>                          
