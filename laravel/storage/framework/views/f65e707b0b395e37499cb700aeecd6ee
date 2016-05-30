@@ -46,7 +46,17 @@
         }
     </script>
 
-    
+    <style>
+        .containers{
+         width:90%;
+        }
+        .containers ul li{
+
+            float: left;
+            width: 20px;
+            background: #3B83CB;
+        }
+    </style>
     <!-- <script type="text/javascript">
         //window["WEB_XHR_POLLING"] = true;
         var MESSAGE_RADIO = "http://staticfile.tujia.com/PortalSite2/radio/message.wav", ORDERNOTICE_RADIO = "http://staticfile.tujia.com/PortalSite2/radio/ordernotice.wav";
@@ -101,7 +111,7 @@
         
         <div class="nav-list">
             <ul>
-                <li class="first"><a href="http://www.jiujiu.com/se0/" class="home-link " target="_blank">首页</a></li>
+                <li class="first"><a href="http://www.jiujiu.com/" class="home-link ">首页</a></li>
             </ul>
         </div>
 
@@ -3855,7 +3865,7 @@
 
 
 <div class="sem-cont">
-<div class="container">
+
     <div class="m-house-list">
         <ul>
 			<?php foreach($db as $v): ?>
@@ -3896,7 +3906,9 @@
 				<?php endforeach; ?>
         </ul>
     </div>
+    <div class="container"  style="margin-left:45%">
 	<?php echo $db->appends(['adress' => $adress ,'city' => $city , 'order' =>$order])->render(); ?>
+
 
 </div>
 </div>
@@ -4019,50 +4031,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     <script type="text/javascript" src="http://staticfile.tujia.com/portalsite2/scripts/base/jquery-ui-1.10.1.custom.js"></script>
 
     
-    <script type="text/javascript">
-        //统计脚本加载失败
-        (function() {
-            if (!window["listJsExecuteSuccessMark"]) {
-                var ajaxRequest = getAjaxRequest();
-                ajaxRequest.open("POST", "/ScriptFailLoad.ashx", true);
-                ajaxRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                ajaxRequest.setRequestHeader("Connection", "close");
-                var data = {"name" : "js_list_foot", "pageUrl":location.href};
-                var arr = [];
-                for (var i in data) {
-                    arr.push(i + "=" + data[i]);
-                }
-                ajaxRequest.send(arr.join("&"));
-            }
-
-            function getAjaxRequest (callback) {
-                var ajaxRequest;
-                try {
-                    ajaxRequest = new XMLHttpRequest();
-                } catch (e) {
-                    try {
-                        ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
-                    } catch (e) {
-                        try {
-                            ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
-                        } catch (e) {
-                            return null;
-                        }
-                    }
-                }
-                ajaxRequest.onreadystatechange = function () {
-                    if (ajaxRequest.readyState == 4 && callback) {
-                        // Prob want to do some error or response checking, but for 
-                        // this example just pass the responseText to our callback function
-                        callback(ajaxRequest.responseText);
-                    }
-                };
-
-                return ajaxRequest;
-            }
-        })();
-
-    </script>
+   
 
 </body>
 </html>
@@ -4079,4 +4048,8 @@ function houseprice(order){
 	var adress=document.getElementById('adress').value;
 	location.href="<?php echo e(URL::route('Search/HomepageSearch')); ?>?order="+order+"&city="+city+"&adress="+adress;
 }
+$(function(){
+            //分页样式
+            $(".containers li").attr('class','btn btn-primary');
+})
 </script>

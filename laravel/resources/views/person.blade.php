@@ -139,11 +139,7 @@
                                                 <div class="controls">
                                                     <input id="Name_Old" name="Name_Old" type="hidden" value="" />
                                                     <input class="ipt-lg" maxlength="15" name="realname" type="text" value="{{$db->realname}}"/>
-<<<<<<< HEAD
                                                     &nbsp;&nbsp;&nbsp;
-=======
-                                                  
->>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
                                                     <span class="field-validation-valid" data-valmsg-for="Name"  name='sname' id='sname' style="color:red"></span>
                                                 </div>
                                             </div>
@@ -171,11 +167,8 @@
                                                 <span class="controls-span">手机号码：</span>
                                                 <div class="controls">
                                                     <input class="ipt-lg" maxlength="15" name="u_tel" type="text" value="{{$db->u_tel}}"/>
-<<<<<<< HEAD
                                                     &nbsp;&nbsp;&nbsp;
-=======
                                                  
->>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
                                                     <span class="field-validation-valid" data-valmsg-for="Name"  name='sname' id='' style="color:red"></span>
                                                 </div>
                                             </div>                          

@@ -37,10 +37,6 @@ class DetailsController extends Controller {
 		static $pic='';
 		$id=Request::get('id');
 		$arr=DB::table('house')->where('h_id',$id)->first();
-<<<<<<< HEAD
-=======
-
->>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 		$content=$arr->h_content;
 		$sheshi=$arr->h_mating;
 		$serve=$arr->h_serve;
@@ -52,7 +48,6 @@ class DetailsController extends Controller {
 		$content_num=count($content);
 		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
 		$arr=DB::table('house')->where('h_id',$id)->first();
-<<<<<<< HEAD
 		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
 		$u_id=$arr->u_id;
 		//echo $u_id;die;
@@ -74,19 +69,7 @@ class DetailsController extends Controller {
 		return view('details',$data);
 
 	}
-=======
 
-
-		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
-		$arr=DB::table('house')->where('h_id',$id)->first();	
-		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
-
-
-
-
-	}
-
->>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 
 	public function Collect(){
 		$id = Request::get('id');
@@ -104,10 +87,7 @@ class DetailsController extends Controller {
 
 	}
 
-<<<<<<< HEAD
-=======
 
->>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 	//显示订单添加
 	public function HouseReserve(){
 		$name=$_COOKIE['name'];
@@ -177,13 +157,10 @@ class DetailsController extends Controller {
 		return view('reserve',['c_price'=>$arr['8'],'order'=>$order,'end_time'=>$end_time,'house'=>$house,'user'=>$user,'h_user'=>$h_user]);
 	}
 
-<<<<<<< HEAD
 	public function CollectList(){
 		$id=$_COOKIE['u_id'];
 		$arr=DB::table('collect')->join('house', 'house.u_id', '=', 'collect.co_u_id')->where("co_u_id",$id)->first();
 		//var_dump($db);die;
 		return view('person',$arr);
 	}
-=======
->>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 }

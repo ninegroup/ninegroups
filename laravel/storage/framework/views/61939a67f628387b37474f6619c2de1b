@@ -880,18 +880,6 @@
             </div>
 
         </div>
-        <!-- <div class="map-sidebar">
-            <div class="peripheral-info">
-                <h3>周边信息</h3>
-                <ul class="tab-menu" id="map-tab-menus">
-                    <li class="current" q="餐饮"><a href="javascript:void(0)" onclick="_gaq.push(['_trackEvent', 'pcDetail', '地图','餐饮美食']);">餐饮美食</a></li>
-                    <li q="景区"><a href="javascript:void(0)" onclick="_gaq.push(['_trackEvent', 'pcDetail', '地图','景区景点']);">景区景点</a></li>
-                    <li q="娱乐" class="last"><a href="javascript:void(0)" onclick="_gaq.push(['_trackEvent', 'pcDetail', '地图','娱乐场所']);">娱乐场所</a></li>
-                </ul>
-                <div class="tab-info-item" id="map-tab-items">
-                </div>
-            </div>
-        </div> -->
 
 </div>
             </div>
@@ -1003,6 +991,7 @@
                  <?php foreach($com as $v): ?>
                         <li>
                             <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="" alt="" width="278" height="165"></a>
+                            <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="" alt="" width="278" height="165"></a>
                             <div class="house-cont">
                                 <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租<?php echo e($v->h_title); ?></a>
 
@@ -1017,6 +1006,7 @@
                         </li> 
                 <?php endforeach; ?>
                </ul>
+                    <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>
@@ -1028,7 +1018,7 @@
                 <div class="m-ensure">
                     <i class="icon-ensure"></i>
                     <div class="text-cont">
-                        <h4>1000万<a href="http://www.tujia.com/Promotion/Tujiabaozhangjihua.htm" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '安心租100%保障']);">安心租100%保障</a></h4>
+                        <h4>1000万<a href="http://www.tujia.com/Promotion/Tujiabaozhangjihua.htm" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '安心租100%保障']);">安心租100%保障</h4>
                         <p>房屋描述失真、到店无房、房东加价全部退订金并补偿</p>
                     </div>
                 </div>

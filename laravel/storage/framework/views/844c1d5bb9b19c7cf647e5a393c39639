@@ -168,6 +168,7 @@
                                                 <div class="controls">
                                                     <input class="ipt-lg" maxlength="15" name="u_tel" type="text" value="<?php echo e($db->u_tel); ?>"/>
                                                     &nbsp;&nbsp;&nbsp;
+                                                 
                                                     <span class="field-validation-valid" data-valmsg-for="Name"  name='sname' id='' style="color:red"></span>
                                                 </div>
                                             </div>                          
