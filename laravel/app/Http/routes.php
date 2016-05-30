@@ -68,6 +68,17 @@ Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginContro
 Route::any('Details/Collect', 'DetailsController@Collect');
 Route::any('demo', 'DetailsController@Collect');
 
+<<<<<<< HEAD
+=======
+
+
+
+Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
+
+
+Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
+
+>>>>>>> cb4337c40efc9227e94ae667ade7366b38cf05d4
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');
 Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' => "SearchController@HomepageSearch"]);
@@ -75,6 +86,10 @@ Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' =
 //房源具体信息页面
 Route::any('/Details/Index', [ 'as' => 'Details/Index', 'uses' => "DetailsController@Index"]);
 Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
+
 Route::any('/Details/CartAdd', [ 'as' => 'Details/CartAdd', 'uses' => "DetailsController@CartAdd"]);
+
 //发布房源login/addhouse1
 Route::any('addhouse1','LoginController@addhouse1');
+
+

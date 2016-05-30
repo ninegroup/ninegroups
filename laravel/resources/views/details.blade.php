@@ -989,7 +989,11 @@
                 <ul>
                  @foreach($com as $v)
                         <li>
+<<<<<<< HEAD
+                            <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="../images/uploads/{{$com['0']->pi_path}}" alt="" width="278" height="165"></a>
+=======
                             <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="" alt="" width="278" height="165"></a>
+>>>>>>> ceee110f9b49a230d5f3a819abc27171d99716d3
                             <div class="house-cont">
                                 <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租{{$v->h_title}}</a>
 
@@ -1004,6 +1008,7 @@
                         </li> 
                 @endforeach
                </ul>
+                    <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>
@@ -1015,7 +1020,7 @@
                 <div class="m-ensure">
                     <i class="icon-ensure"></i>
                     <div class="text-cont">
-                        <h4>1000万<a href="http://www.tujia.com/Promotion/Tujiabaozhangjihua.htm" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '安心租100%保障']);">安心租100%保障</a></h4>
+                        <h4>1000万<a href="http://www.tujia.com/Promotion/Tujiabaozhangjihua.htm" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '安心租100%保障']);">安心租100%保障</h4>
                         <p>房屋描述失真、到店无房、房东加价全部退订金并补偿</p>
                     </div>
                 </div>
