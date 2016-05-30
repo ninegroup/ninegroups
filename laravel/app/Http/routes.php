@@ -54,14 +54,12 @@ Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => 
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
-<<<<<<< HEAD
-=======
+
 //预定房间
 Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
 
 
 
->>>>>>> 3dd7020480ce6113ee802964ffdf8882e28259d3
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
