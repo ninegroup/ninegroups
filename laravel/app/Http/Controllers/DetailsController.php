@@ -37,7 +37,10 @@ class DetailsController extends Controller {
 		static $pic='';
 		$id=Request::get('id');
 		$arr=DB::table('house')->where('h_id',$id)->first();
+<<<<<<< HEAD
+=======
 
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
 		$content=$arr->h_content;
 		$sheshi=$arr->h_mating;
 		$serve=$arr->h_serve;
@@ -47,12 +50,17 @@ class DetailsController extends Controller {
 		$serve_num=count($serve);
 		$content=explode('◆',$content);
 		$content_num=count($content);
+<<<<<<< HEAD
+		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
+		$arr=DB::table('house')->where('h_id',$id)->first();
+=======
 
 
 		$picture=DB::table('picture')->where('pi_h_id',$id)->where('pi_state',2)->get();
 		$arr=DB::table('house')->where('h_id',$id)->first();	
 
 
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
 		$picture=DB::table('picture')->where('pi_h_id',$id)->get();
 		$u_id=$arr->u_id;
 		//echo $u_id;die;
@@ -74,6 +82,24 @@ class DetailsController extends Controller {
 		return view('details',$data);
 
 	}
+<<<<<<< HEAD
+
+	public function Collect(){
+		$id = Request::get('id');
+		$name=$_COOKIE['name'];
+		$db=DB::table('collect')->where('co_u_id',$name)->first();
+		if($db){
+			if($db->co_h_id==$id){
+				return 0;
+			}else{
+				$db=DB::insert("insert into collect(co_u_id,co_h_id) values('$name','$id')");
+			}
+		}else{
+			$db=DB::insert("insert into collect(co_u_id,co_h_id) values('$name',$id)");
+		}
+	}
+
+=======
 	//显示订单添加
 	public function HouseReserve(){
 		$name=$_COOKIE['name'];
@@ -142,4 +168,5 @@ class DetailsController extends Controller {
 			->first();
 		return view('reserve',['c_price'=>$arr['8'],'order'=>$order,'end_time'=>$end_time,'house'=>$house,'user'=>$user,'h_user'=>$h_user]);
 	}
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
 }
