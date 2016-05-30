@@ -5,16 +5,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
-    订单支付 -
-    途家网
+    订单支付
 </title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--meta http-equiv="X-UA-Compatible" content="IE=8,IE=9" /-->
     <meta property="qc:admins" content="27330065376452116375" />
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
-    <link rel="shortcut icon" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" />
-    <link rel="bookmark" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" />
     
     
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_orderpaynew?v=67e5d64" />
@@ -46,24 +43,11 @@
     
          
 
-<div class="m-fluid-cont">
-    <div class="hd-link">
-        <div class="m-hd-link" lazyloadurl="/WebParts/Portal/UserInfo?isShowCreateNewStore=False"></div>
-    </div>
-</div>
 
-        <script type="text/javascript">
-            var traceData = window.traceData || {};
-            traceData.logService = 'http://api.tujia.com';
-                    traceData.prevId = '';
-            traceData.pageId = '21d7974e-9827-4f93-adbc-6e011b43f2b8';
-            traceData.url = '/Order/PayQueue';
-            traceData.params = 'ordernumber=MN9963407&isNewOrder=True';
-        </script>
     
     
     
-    <a style="display: none" href="javascript:void(0)" id="loginBtn">登录途家，快速填写信息</a>
+ 
     
     
 
@@ -77,8 +61,7 @@
 <div class="m-fluid-cont t-fluid-cont">
     <div class="m-hd-cont">
         <div class="logo-cont">
-            <a href="http://www.tujia.com/" target="_blank" title="途家网首页" class="site-logo">途家网</a>
-            <span class="logo-text">旅途中的家,全球公寓民宿预订平台</span>
+            <img src="../images/jiujiu.jpg" alt="久久租" style="height:70px;width:250px;" />
         </div>
         <div class="step-cont">
             <div class="m-step-no3">
@@ -111,17 +94,18 @@
                     
                     <h2>感谢预订，请尽快支付订金。</h2>
                     
-                    <p>请在<span class="hlt-text ">18:23</span>前完成支付，避免订单超时失效。</p>
+                    <p>请在<span class="hlt-text ">{!! $end_time !!}</span>前完成支付，避免订单超时失效。</p>
                 </div>
             </div>
             <div class="listing-info progress-box">
                 <div class="state-box ">
                     <div class="user-box">
                         <span class="photo-box">
-                            
-                            <img src="http://staticfile.tujia.com/BookingSite/images/user-default.png" alt=" " class="photo-img" width="66" height="66" />
-                            
-                            
+                            <?php if($user->u_header){?>
+                            <img src="../uploads/{{$user->u_header}}" alt=" " class="photo-img" width="66" height="66" />
+                            <?php }else{?>
+							<img src="http://staticfile.tujia.com/BookingSite/images/user-default.png" alt=" " class="photo-img" width="66" height="66" />
+                            <?php } ?>
                         </span>
                         <p class="text-box">
                             <b class="name-box">房客</b>
@@ -143,7 +127,7 @@
                     <div class="listing-box">
                         <span class="photo-box">
                             
-                            <img src="http://staticfile.tujia.com/upload/hotelmanagementcompanylogo/day_130502/201305021101557868.jpg" alt=" " class="photo-img" width="66" height="66" />
+                            <img src="../uploads/{{$h_user->u_header}}" alt=" " class="photo-img" width="66" height="66" />
                             
                             
                         </span>
@@ -151,7 +135,7 @@
                             <b class="name-box">房东</b>
                             <br />
                             
-                            <a href="javascript:;" onclick="qimoChatClick(); return false;" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcOrderPay', '在线客服']);">在线客服</a>
+                            <!-- <a href="javascript:;" onclick="qimoChatClick(); return false;" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcOrderPay', '在线客服']);">在线客服</a> -->
                             
                         </p>
                     </div>
@@ -162,12 +146,12 @@
             <div class="orede-info-cont ">
                 <ul>
                     <li class="first-box">
-                        <div class="info-item ">订单编号：<span class="order-number ">MN9963407</span>北京途家长安驿精品大床房（宜住2人，1张床）</div>
-                        <div class="info-item ">
+                        <div class="info-item ">订单编号：<span class="order-number ">{!! $order !!}</span>{{ $house->h_title }}（宜住{{ $house->h_people }}人）</div>
+                        <!-- <div class="info-item ">
                             <span class="date-box">2016-05-29<b class="week-box">星期日</b></span><span class="label-text">至</span>
                             <span class="date box">2016-05-30<b class="week-box">星期一</b></span>
                             <span class="booking-info">入住1晚<b class="room-number">1间房</b></span>
-                        </div>
+                        </div> -->
                     </li>
 
                 </ul>
@@ -182,11 +166,11 @@
                 <ul>
                     <li>
                         <h2>订单总价</h2>
-                        <span class="total-price"><dfn>¥</dfn><b class="price-value">419</b></span></li>
+                        <span class="total-price"><dfn>¥</dfn><b class="price-value">{!! $c_price !!}</b></span></li>
                     
-                    <li>
+                    <!-- <li>
                         <h2>到店支付</h2>
-                        <span class="total-price"><dfn>¥</dfn><b class="price-value">0.00</b></span></li>
+                        <span class="total-price"><dfn>¥</dfn><b class="price-value">0.00</b></span></li> -->
                 </ul>
             </div>
 
@@ -198,49 +182,49 @@
                         
                         <span class="total-price highlight-text">
                             <dfn>¥</dfn>
-                            <b class="price-value">419.00</b>
+                            <b class="price-value">{!! $c_price !!}</b>
                             
                         </span>
                     </li>
                 </ul>
             </div>
             
-            <div class="pay-group">
+            <!-- <div class="pay-group">
                 <h2>抵扣</h2>
                 <div class="m-form-cont">
                     
-    <div class="control-group">
-        
-        <label for="" class="control-label">
+                <div class="control-group">
+                    
+                    <label for="" class="control-label">
             <input type="checkbox" name="" checked="checked" id="chkUseIntegration">使用积分</label>
-        
-        <div class="controls" id="divIntegration">
+                    
+                    <div class="controls" id="divIntegration">
             使用
                <input type="text" id="iptIntegration" refname="积分" class="ipt-text" value="200" maxref="200" />积分
                <span class="hint-text gray-text">（可用200积分<i class="icon-hint" id="showFloatIntegration" rel="integration-tip" score="200" amount="2.00" canusescore="200" canuseamount="2.00" percentage="10"></i> ）  </span>
                <span class="price-box">-<dfn>¥</dfn><b class="price-value" id="integrationSpend">2.00</b></span>
-        </div>
-        
-    </div>
-
+                    </div>
+                    
+                </div>
+            
                     <div class="pay-group">
                         
-<div class="control-group">
-    <label for="" class="control-label">
-        <input type="checkbox" name="" id="chkUseGiftCard" checked='checked' >使用礼品卡</label>
-    <div class="controls" id="divUseGiftCardInfo">
-
-        
-        <div class="car-info" id="divHadUseTicketCard">
+            <div class="control-group">
+                <label for="" class="control-label">
+                    <input type="checkbox" name="" id="chkUseGiftCard" checked='checked' >使用礼品卡</label>
+                <div class="controls" id="divUseGiftCardInfo">
+            
+                    
+                    <div class="car-info" id="divHadUseTicketCard">
             
             <label for="" id="pGiftCard_21009736">
                 <input type="checkbox" name="" id="giftCard_21009736" ref="TCC4DE45UR44444A" refpwd="7G2HB682" checked='checked'  currentcash="30.00" canusecash="30.00" maxcash="30.00" usetype="2">30元礼品卡：TCC4DE45UR44444A （ <span>卡内余额:30.00</span> 本次可使用<span id="giftCard_use_21009736">30.00</span>）</label>
             <span class="price-box">-<dfn>¥</dfn><b class="price-value" id="giftCardSpend_21009736">30.00</b></span>
             <span id="spnOrderOnce_21009736" class="m-msg-cont" style="display:none;" >该种礼品卡每个订单限用1张</span>
             
-        </div>
-        
-        <div class="from-line"  id="spnUseGiftCard" >
+                    </div>
+                    
+                    <div class="from-line"  id="spnUseGiftCard" >
                 <span class="card-box">
                 卡号
                                     <input type="text" class="ipt-sm" maxlength="4">-
@@ -256,41 +240,41 @@
                 <a href="http://vip.tujia.com/UserInfo/BindCustomerTickets" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcOrderPay', '绑定礼品卡']);" >绑定礼品卡</a>
                 <a href="http://vip.tujia.com/UserInfo/CustomerTickets" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcOrderPay', '我的全部礼品卡']);" >我的全部礼品卡</a>
             </div>
-        
-        <p class="t-box dn validation-error" id="tickCardError"></p>
-    </div>
-</div>
-<div id="tdGiftCardBinding" class="dn">
-    <input type="hidden" id="isBindGiftcard" value="false" />
-    <p>
-        卡号：<span class="card-numbe" id="spnGiftCardBindingNumber"></span>余额：<span id="spnGiftCardBindingLastAccount"></span>元<br />
-    </p>
-    <p>
-        短信验证码：
-         <input type="text" name="" id="mobileValidCode" class="verification" /><a href="javascript:void(0)" onclick="sendVercode()" id="sendVerification" class="btn" style="display: none;">重新发送</a><a href="javascript:void(0)" id="returnSendVerification" class="btn">重新发送（60）</a>
-        <span class="tips-box" id="spnGiftCardBindingSendMessage"></span>
-        <br />
-        <a href="javascript:void(0)" class="link-btn" style="margin: 10px 0 0 0" id="mobileVerify" tip-data="点击底部的“立即支付”按钮后，礼品卡才正式使用">验证</a><span class="t-box dn validation-error" id="tickCardError1"></span>
-    </p>
-</div>
-
-
+                    
+                    <p class="t-box dn validation-error" id="tickCardError"></p>
+                </div>
+            </div>
+            <div id="tdGiftCardBinding" class="dn">
+                <input type="hidden" id="isBindGiftcard" value="false" />
+                <p>
+                    卡号：<span class="card-numbe" id="spnGiftCardBindingNumber"></span>余额：<span id="spnGiftCardBindingLastAccount"></span>元<br />
+                </p>
+                <p>
+                    短信验证码：
+                     <input type="text" name="" id="mobileValidCode" class="verification" /><a href="javascript:void(0)" onclick="sendVercode()" id="sendVerification" class="btn" style="display: none;">重新发送</a><a href="javascript:void(0)" id="returnSendVerification" class="btn">重新发送（60）</a>
+                    <span class="tips-box" id="spnGiftCardBindingSendMessage"></span>
+                    <br />
+                    <a href="javascript:void(0)" class="link-btn" style="margin: 10px 0 0 0" id="mobileVerify" tip-data="点击底部的“立即支付”按钮后，礼品卡才正式使用">验证</a><span class="t-box dn validation-error" id="tickCardError1"></span>
+                </p>
+            </div>
+            
+            
                         
                     </div>
                     
-
-<div class="control-group">
-    <label for="" class="control-label">
-        <input type="checkbox" name="" id="chkUsePrePayCard" checked="checked">途游卡</label>
-    <div class="controls" id="spnUsePrepayCard">
-
-        <div class="car-info" id="divHadUsePrepayCard">
             
-        </div>
-
-        
-
-        <div class="from-line">
+            <div class="control-group">
+                <label for="" class="control-label">
+                    <input type="checkbox" name="" id="chkUsePrePayCard" checked="checked">途游卡</label>
+                <div class="controls" id="spnUsePrepayCard">
+            
+                    <div class="car-info" id="divHadUsePrepayCard">
+            
+                    </div>
+            
+                    
+            
+                    <div class="from-line">
             卡号
                                 <input type="text" class="ipt-sm" maxlength="4">-
                                 <input type="text" class="ipt-sm" maxlength="4">-
@@ -302,24 +286,24 @@
             
             <span class="hint-text gray-text">(途游卡抵扣的相关金额无法开发票)</span>
             
-        </div>
-        <div class="link-cont" id="divUsePrepayCardLink">
+                    </div>
+                    <div class="link-cont" id="divUsePrepayCardLink">
             <a href="http://vip.tujia.com/UserInfo/BindPrepayCard" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcOrderPay', '绑定途游卡']);">绑定途游卡</a>
             <a href="http://vip.tujia.com/UserInfo/PrepayCard" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcOrderPay', '我的全部途游卡']);">我的全部途游卡</a>
-        </div>
-    </div>
-    <p class="t-box dn validation-error" id="prepayCardError"></p>
-</div>
-
+                    </div>
+                </div>
+                <p class="t-box dn validation-error" id="prepayCardError"></p>
+            </div>
+             
 
                 </div>
             </div>
-
+-->
             <div class="pay-total real-pay">
                 <h2>实付款</h2>
 
-                <div class="total-info" id="tdNeedTopay" cash="419.00">
-                    <span class="total-price"><dfn>¥</dfn><b class="price-value">419.00</b></span>
+                <div class="total-info" id="tdNeedTopay" cash="{!! $c_price !!}">
+                    <span class="total-price"><dfn>¥</dfn><b class="price-value">{!! $c_price !!}</b></span>
                 </div>
             </div>
             
@@ -501,7 +485,7 @@
         <li class="first-box">
             <i class="icon-ensure"></i>
             <div class="text-cont">
-                <h4>1000万<a href="http://www.tujia.com/Promotion/Tujiabaozhangjihua" target="_blank" class="link-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '安心租100%保障']);">安心租100%保障</a></h4>
+                <h4>1000万安心租100%保障</h4>
                 <p>房屋描述失真、到店无房、房东加价全部退订金并补偿</p>
             </div>
         </li>
@@ -589,33 +573,6 @@
     
 <!-- footer Start -->
 
-
-<div class="m-dld-wrap">
-    <div class="dld-bd">
-            <div class="game-info" style="width: 480px;">
-                <span style="display: block; width: 452px;height: 172px;margin: -22px 0 0 0;background: url(http://staticfile.tujia.com/PortalSite2/Images/girl.png) no-repeat top;"></span>
-            </div>
-
-        <div class="dld-ct">
-            <div class="dld-ct-item">
-                <h2>扫描二维码下载</h2>
-                <i class="i-code-app"></i>
-            </div>
-            <div class="dld-ct-item">
-                <h2>直接下载</h2>
-                <a onclick="window.open('http://click.hm.baidu.com/app.gif?ap=35037&amp;ch=13768&amp;au=https%3A%2F%2Fitunes.apple.com%2Fapp%2Fid582934943%3Fmt%3D8');return false;" href="javascript:void(0);" class="link-btn" target="_blank">iPhone</a>
-                <a onclick="window.open('http://download.tujia.com/android/tujia4035-tujiaportal.apk'); return false;" href="javascript:void(0);" class="link-btn" target="_blank">Android</a>
-            </div>
-        </div>
-
-        <div class="weixin-ct">
-            <h2> 实时热门推荐，请关注途家微信</h2>
-            <i class="i-code-weixin"></i>
-        </div>
-
-        <a href="javascript:void(0)" class="close-btn" title="关闭">关闭</a>
-    </div>
-</div>
 
 
 

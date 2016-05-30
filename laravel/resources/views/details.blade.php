@@ -16,8 +16,8 @@
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
 
     
-    <link rel="stylesheet" type="text/css" href="css/detail.css" />
-    <link rel="stylesheet" type="text/css" href="css/detail1.css" />
+    <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_common?v=67e5d64" />
+    <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/im.css?v=67e5d64" />
      
 
 
@@ -465,23 +465,42 @@
                             <span>加载中...</span>
                         </div>
                     </div> -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                         <!-- <div class="comment-info">
                             <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
                             <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count"></span>条点评</a>
                             <span rel="j-experience-info" class="exp-voucher j-bestproduct-experience">（发点评赢体验券<i class="icon-desc-text"></i>）</span>
                         </div> -->
                         <!-- <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
+<<<<<<< HEAD
+=======
+
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                         <div class="comment-info">
                             <br>
                         </div>
                         <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
+<<<<<<< HEAD
+=======
+
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                             <div class="tips-content comments-total">
                             </div>
+<<<<<<< HEAD
                         </div> -->
                         </div>
-                    <div class="product-filter" id="productfilter">
-                        <div class="date-change-box">
+=======
 
+                        </div> -->
+                        <br>
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
+                    <div class="product-filter" id="productfilter">
+
+                        <div class="date-change-box">
+                           
                             <div class="change-control-group btn-group">
                                 
                                 <div class="controls"><a href="{{URL::route('Details/HouseReserve')}}?id={{$arr->h_id}}" id="changeBtn" class="change-btn" onclick="" >￥{{$arr->h_price}}&nbsp&nbsp&nbsp预定</a></div>
@@ -492,6 +511,12 @@
                             </div>
 
                     </div>
+<<<<<<< HEAD
+=======
+
+                        </div>
+                    
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                     <div id="travelsummary" class="travel-info" style="display:none"><a href="#experience"><i class="icon-travel"></i></a></div>
                 </div>
             </div>
@@ -504,6 +529,7 @@
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
             <div class="m-column-box new-column-box" id="saleproductsection">
+<<<<<<< HEAD
                     <div class="product-filter" id="productfilter">
                         <div class="date-change-box">
                             <div class="change-control-group">
@@ -517,7 +543,10 @@
                                     </label>
                                 </div>
                             </div>
+=======
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
 
+<<<<<<< HEAD
                             <div class="change-control-group">
                                 <span class="controls-span">退房</span>
                                 <div class="controls">
@@ -527,12 +556,13 @@
                                 </div>
                             </div>
                             <div class="change-control-group btn-group">
-                                <div class="controls"><a href="{{URL::route('Details/HouseReserve')}}?id={{$arr->h_id}}" id="changeBtn" class="change-btn" onclick="">预定</a></div>
+                                <div class="controls"><a href="{{URL::route('Details/HouseReserve')}}?id={{$arr->h_id}}" id="changeBtn" class="change-btn" onclick="">确定预定</a></div>
                             </div>
-                                <!-- <div class="room-status">
-                                    <a class="has-empty-house" href="javascript:;" data-unitid="3581" data-detaillink="" onclick="_gaq.push(['_trackEvent', 'pcDetail', '哪天有房']);">哪天有房</a>
-                                </div> -->
                         </div>
+=======
+                    
+                       
+>>>>>>> 3dd7020480ce6113ee802964ffdf8882e28259d3
 
                             <!-- <div class="hint-text">
                             
@@ -543,7 +573,12 @@
                                     <a href="http://vip.tujia.com/Memberhome/ReturnCash" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '高级优惠价']);" class="link-btn">高级会员优惠价</a>
                             </div> -->
 
+<<<<<<< HEAD
                     </div>
+=======
+                    
+
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
             </div>
             <!-- Tabs  -->
             
@@ -562,11 +597,16 @@
                     <li>
                         <a id="unitmaptab" href="#unitmap" onclick="_gaq.push(['_trackEvent', 'pcDetail', '位置地图']);">位置地图</a>
                     </li>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                         <!-- <li id="commentsareatab" class="j-tabs">
                             <a href="#commentsArea" id="usercomments" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点评导航']);">
                                 入住点评<span id="usercomments-value" class="total-box">419</span>条
                             </a>
                         </li> -->
+<<<<<<< HEAD
                         <li id="commentsareatab" class="j-tabs">
                             
                         </li>
@@ -579,6 +619,14 @@
                             查看房价
                         </a>
                     </li>
+=======
+
+                        <li id="commentsareatab" class="j-tabs">
+                            
+                        </li>
+
+                   
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
                 </ul>
             </div>
         </div>
@@ -783,7 +831,9 @@
 
 
 <div class="m-column-tit t-column-tit clearfix" id="unitIntro">
-    <h2>入住须知</h2><!-- <span class="gray-text">（房屋编号：<b>3581</b>）</span> -->
+
+    <h2>入住须知</h2><span class="gray-text">（房屋编号：<b>{{$arr->h_id}}</b>）</span>
+
 </div>
 <!-- <div class="column-info">
         <div class="side-box">
@@ -885,6 +935,14 @@
     Tj.Detail.IsDistinctForUnit = 1;
 
 </script>
+<<<<<<< HEAD
+=======
+
+
+
+    <!-- <div id="commentsArea" class="m-column-box">
+=======
+>>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
    <!--  <div id="commentsArea" class="m-column-box">
         <a name="comment" id="comment" href="#comment"></a>
         <div class="m-column-tit t-column-tit clearfix" id="commentsArea">
