@@ -812,3 +812,9 @@ Stack trace:
 #15 D:\WWW\ninegroups\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(84): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #16 D:\WWW\ninegroups\laravel\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #17 {main}  
+[2016-05-30 01:32:00] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '<<' (T_SL)' in D:\WWW\ninegroups\laravel\app\Http\routes.php:57
+Stack trace:
+#0 {main}  
+[2016-05-30 01:32:03] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '<<' (T_SL)' in D:\WWW\ninegroups\laravel\app\Http\routes.php:57
+Stack trace:
+#0 {main}  

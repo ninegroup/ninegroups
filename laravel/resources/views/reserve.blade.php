@@ -12,8 +12,6 @@
     <!--meta http-equiv="X-UA-Compatible" content="IE=8,IE=9" /-->
     <meta property="qc:admins" content="27330065376452116375" />
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
-    <link rel="shortcut icon" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" />
-    <link rel="bookmark" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" />
     
     
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_orderpaynew?v=67e5d64" />
