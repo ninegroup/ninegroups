@@ -6,8 +6,6 @@
     <title>
     填写订单信息
 </title>
-    <link rel="shortcut icon" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" />
-    <link rel="bookmark" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" />
     
     
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_global?v=67e5d64" />
