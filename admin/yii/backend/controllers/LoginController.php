@@ -95,7 +95,7 @@ class LoginController extends \yii\web\Controller
 
         $countries = $query->where("u_owner='1'")->orderBy('u_time desc')
             ->offset($pagination->offset)
-            ->where("u_name like '%$sou%'")
+              ->where("u_name like '%$sou%'")
             ->limit($pagination->limit)
             ->all();
 		//$sql="select * from user where u_owner=2";
@@ -108,7 +108,7 @@ class LoginController extends \yii\web\Controller
 		//$data=$command->queryAll();
 		//var_dump($data);die;	
         return $this->renderPartial('tables.html',['countries' => $countries,
-            'pagination' => $pagination,]);
+            'pagination' => $pagination,'sou'=>$sou]);
     }
 
 	public function actionAdds(){
@@ -151,6 +151,7 @@ class LoginController extends \yii\web\Controller
         return $this->renderPartial('form-owner.html',[
 			'countries' => $countries,
             'pagination' => $pagination,
+            'sou' => $sou,
 			]);
 	}
 	

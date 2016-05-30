@@ -48,12 +48,14 @@ Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@use
 Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
 //个人中心
 Route::any('/Index/userList', [ 'as' => 'Index/userList', 'uses' => "IndexController@userList"]);
+//预定房间
+Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
 
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
-
-
+//预定房间
+Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
 
 
 
