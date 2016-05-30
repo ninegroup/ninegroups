@@ -27,6 +27,7 @@ Route::get('userList', 'ContactController@index');
 Route::get('details', 'DetailsController@index');
 
 Route::get('service', 'ServiceController@index');
+Route::get('personal', 'IndexController@personal');
 
 
 Route::controllers([
@@ -39,7 +40,6 @@ Route::controllers([
 //注册
 Route::any('/register','LoginController@register');
 Route::any('/index','IndexController@index');
-//Route::any('/Index/index', [ 'as' => 'Index/index', 'uses' => "IndexController@index"]);
 //登陆
 Route::any('/login','LoginController@login');
 //用户中心
