@@ -48,6 +48,9 @@ Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@use
 Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
 //个人中心
 Route::any('/Index/userList', [ 'as' => 'Index/userList', 'uses' => "IndexController@userList"]);
+
+//收藏列表
+Route::any('/Details/CollectList', [ 'as' => 'Details/CollectList', 'uses' => "DetailsController@CollectList"]);
 //预定房间
 Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
 
@@ -57,8 +60,6 @@ Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginControll
 
 //预定房间
 Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
-
-<<<<<<< HEAD
 //收藏房间
 //Route::any('/Details/Collect', [ 'as' => 'Details/Collect', 'uses' => "DetailsController@Collect"]);
 
@@ -66,17 +67,6 @@ Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginContro
 
 Route::any('Details/Collect', 'DetailsController@Collect');
 Route::any('demo', 'DetailsController@Collect');
-
-=======
-<<<<<<< HEAD
-
-
-Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
-
-=======
->>>>>>> 08478279ba07cbc72a3b17d5b799a13330ca48f5
->>>>>>> b32cc651fa75baf6854001ee8dec746d4a32b71d
-Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');
