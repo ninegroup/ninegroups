@@ -52,22 +52,17 @@ Route::any('/Index/userList', [ 'as' => 'Index/userList', 'uses' => "IndexContro
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
-
-
-
-
-
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
-
-
 
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
 //查询城市信息
 //Route::any('search','SearchController@HomepageSearch');
 Route::any('/Search/HomepageSearch', [ 'as' => 'Search/HomepageSearch', 'uses' => "SearchController@HomepageSearch"]);
+
 //房源具体信息页面
 Route::any('/Details/Index', [ 'as' => 'Details/Index', 'uses' => "DetailsController@Index"]);
-
+Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
+Route::any('/Details/CartAdd', [ 'as' => 'Details/CartAdd', 'uses' => "DetailsController@CartAdd"]);
 //发布房源login/addhouse1
 Route::any('addhouse1','LoginController@addhouse1');

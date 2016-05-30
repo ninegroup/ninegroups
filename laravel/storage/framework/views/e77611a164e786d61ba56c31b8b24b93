@@ -92,7 +92,7 @@
         <div class="control-group">
             <label for="" class="control-lab">房费：</label>
             <div class="controls">
-                 <span class="total-picer" id="spnBookingInfoUnitAmount" rel="rateDetailLayer" onmouseover="_gaq.push(['_trackEvent', 'pcOrderInfo', '房费提示']);"><dfn>¥</dfn><b class="picer-value">{{$house->h_price}}</b></span>
+                 <span class="total-picer" id="spnBookingInfoUnitAmount" rel="rateDetailLayer" onmouseover="_gaq.push(['_trackEvent', 'pcOrderInfo', '房费提示']);"><dfn>¥</dfn><b class="picer-value"><?php echo e($house->h_price); ?></b></span>
                 <!--房费明细-->
                 <div class="m-tips-wrap" id="rateDetailLayer" style="display: none">
                 </div>
@@ -146,7 +146,7 @@
             什么是预付首晚？<br />
             酒店房间紧张或者您的最晚到店时间过晚，酒店会要求冻结您的一定资金以保证您会按时入住，预付首晚是指需要冻结房费进行担保。<br />
             如何担保<br />
-            通过信用卡预授权或者支付宝担保的方式冻结您的担保金额，您正常入住后久久会立即操作解冻，担保金额预计在5-7天内到账。
+            通过信用卡预授权或者支付宝担保的方式冻结您的担保金额，您正常入住后途家会立即操作解冻，担保金额预计在5-7天内到账。
         </div>
     </div>
 </div>
@@ -167,14 +167,14 @@
     <div class="control-group">
         <label for="" class="control-lab"><b>*</b>姓名： </label>
         <div class="controls">
-            <input class="ipt-lg" data-val="true" data-val-required="请填写真实的入住联系人姓名" id="Name" maxlength="20" name="OrderLinkmanList[0].Name" placeholder="" type="text" value="{{$user->u_name}}" />
+            <input class="ipt-lg" data-val="true" data-val-required="请填写真实的入住联系人姓名" id="Name" maxlength="20" name="OrderLinkmanList[0].Name" placeholder="" type="text" value="<?php echo e($user->u_name); ?>" />
             <div data-valmsg-for="OrderLinkmanList[0].Name" data-valmsg-replace="true"></div>
         </div>
     </div>
     <div class="control-group">
         <label for="" class="control-lab"><b>*</b>手机：</label>
         <div class="controls">
-            <input class="ipt-lg" data-val="true" data-val-regex="请填写有效手机号码,我们将通过此号码与您取得联系" data-val-regex-pattern="^[1-9]\d{10}$" data-val-required="请填写有效手机号码,我们将通过此号码与您取得联系" id="Mobile" maxlength="11" name="OrderLinkmanList[0].Mobile" type="text" value="{{$user->u_tel}}" />
+            <input class="ipt-lg" data-val="true" data-val-regex="请填写有效手机号码,我们将通过此号码与您取得联系" data-val-regex-pattern="^[1-9]\d{10}$" data-val-required="请填写有效手机号码,我们将通过此号码与您取得联系" id="Mobile" maxlength="11" name="OrderLinkmanList[0].Mobile" type="text" value="<?php echo e($user->u_tel); ?>" />
             <div data-valmsg-for="OrderLinkmanList[0].Mobile" data-valmsg-replace="true"></div>
         </div>
     </div>
@@ -253,7 +253,7 @@
         <div class="tips-content text-description">
             <h2>住宿意外险说明</h2>
             <div class="tips-info">
-                久久租与众安保险公司合作推出"住宿旅客意外伤害保险"，保障您在住宿期间的人身安全。<br />
+                途家网与众安保险公司合作推出"住宿旅客意外伤害保险"，保障您在住宿期间的人身安全。<br />
                 保险生效时间为入住前2小时，保障时长为您在线预订的入住天数。您可以随时在房客后台查看保险状态。如果您有其他保险相关问题，请拨打众安保险全国统一服务热线<br>
                 400-999-9595。
                 <a href="http://content.tujia.com/Clause/PassengerCasualty.htm" style="display: block; text-align: right; color: #5d91cd;" target="_blank">查看详情</a>
@@ -465,7 +465,7 @@
                 <div class="agree-box">
                     <input type="checkbox" name="mustagree" id="mustagree" checked="checked" />
                     <label for="">
-                        我已阅读并同意《<a href="http://content.tujia.com/Clause/Index.htm" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcOrderInfo', '隐私条款']);">久久租服务条款</a> 》和上述退订规则</label>
+                        我已阅读并同意《<a href="http://content.tujia.com/Clause/Index.htm" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcOrderInfo', '隐私条款']);">途家网服务条款</a> 》和上述退订规则</label>
                     <p id="dontagree" class="field-validation-error" style="display: none; color: #f60">请同意隐私和条款</p>
                 </div>
                 <div class="btn-cont">
@@ -482,14 +482,14 @@
     <div class="order-cont">
         <div class="picture-box">
             <a href="http://www.tujia.com/unitdetail/index/3581?scenicspotpinyin=chaoyangqu&amp;destinationpinyin=beijing" target="_blank" rel="nofollow">
-                <img src="../images/uploads/{{$house->pi_path}}" width="300" height="200" title="{{$house->h_title}}" alt="{{$house->h_title}}" /></a>
+                <img src="../images/uploads/<?php echo e($house->pi_path); ?>" width="300" height="200" title="<?php echo e($house->h_title); ?>" alt="<?php echo e($house->h_title); ?>" /></a>
             
         </div>
         <div class="side-hd">
-            <h2><a href="http://www.tujia.com/unitdetail/index/3581?scenicspotpinyin=chaoyangqu&amp;destinationpinyin=beijing" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcOrderInfo', '预订房屋点击']);">{{$house->h_title}}</a></h2>
+            <h2><a href="http://www.tujia.com/unitdetail/index/3581?scenicspotpinyin=chaoyangqu&amp;destinationpinyin=beijing" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcOrderInfo', '预订房屋点击']);"><?php echo e($house->h_title); ?></a></h2>
         </div>
         <div class="info-box">
-            <span class="label-text">宜住{{$house->h_people}}人</span>
+            <span class="label-text">宜住<?php echo e($house->h_people); ?>人</span>
         </div>
 
 
@@ -499,7 +499,7 @@
 
                 <div class="m-order-list price-list">
                     <ul>
-                            <li><span class="label-text">订单总价</span><span class="price-info total-price"><dfn>¥</dfn>{{$house->h_price}}</span></li>
+                            <li><span class="label-text">订单总价</span><span class="price-info total-price"><dfn>¥</dfn><?php echo e($house->h_price); ?></span></li>
                        
 
                     </ul>
@@ -507,13 +507,13 @@
 
                 <div class="m-order-list payment-info">
                     <ul>
-                            <li class="total-payment"><span class="label-text">在线支付</span><span class="price-info total-price"><dfn>¥</dfn>{{$house->h_price}}</span></li>
+                            <li class="total-payment"><span class="label-text">在线支付</span><span class="price-info total-price"><dfn>¥</dfn><?php echo e($house->h_price); ?></span></li>
                                             </ul>
                 </div>
             </div>
                 <div class="m-order-list promotion-info">
                     <ul>
-                        <li><span class="label-text">发点评赢体验券<i class="j-detail-freepickupreturntastevoucher icon-hint" rel="freepickupreturntastevoucher-tip"></i></span><span class="number-box">{{$house->h_price}}</span></li>
+                        <li><span class="label-text">发点评赢体验券<i class="j-detail-freepickupreturntastevoucher icon-hint" rel="freepickupreturntastevoucher-tip"></i></span><span class="number-box"><?php echo e($house->h_price); ?></span></li>
 
                                 <!--<li><span class="label-text">下单送积分</span><span class="number-box">419</span></li>
                            -->
@@ -537,13 +537,13 @@
         <div class="tips-content text-description">
             <h2>返现说明</h2>
             <div class="tips-info">
-                该订单<span class="consumptionTypeTitle">返现</span><span class="spanReturnCashBack">0</span>元现金，入住完成并核实后的2-7个工作日内，可至您的久久账户提现！
+                该订单<span class="consumptionTypeTitle">返现</span><span class="spanReturnCashBack">0</span>元现金，入住完成并核实后的2-7个工作日内，可至您的途家账户提现！
 
             </div>
             <div style="margin-top:10px;height:10px;border-top:1px dashed  #b3b3b3;overflow:hidden;"></div>
             <h2>提现说明</h2>
             <div class="tips-info">
-                在“我的久久”的“账户余额”中可以查看到返现金额并进行提现，支持支付宝和银行卡两种方式，您设置好正确的账号信息后，就可以做提现申请。久久在收到提现申请后进行审核，审核通过后3-7个工作日将现金打入到您的提现账号里。
+                在“我的途家”的“账户余额”中可以查看到返现金额并进行提现，支持支付宝和银行卡两种方式，您设置好正确的账号信息后，就可以做提现申请。途家在收到提现申请后进行审核，审核通过后3-7个工作日将现金打入到您的提现账号里。
 
             </div>
         </div>
@@ -552,7 +552,7 @@
     <div class="m-tips-wrap" id="freepickupreturntastevoucher-tip" style="display: none">
         <div class="tips-content text-description">
             <div class="tips-info">
-                下单入住后，发表含至少100字符、3张相关照片的精华点评，在系统审核通过后，便可获得久久赠送的体验券。800元（含）以下的订单按金额1：1的比例赠送体验券，800元以上的订单赠送800元体验券。
+                下单入住后，发表含至少100字符、3张相关照片的精华点评，在系统审核通过后，便可获得途家赠送的体验券。800元（含）以下的订单按金额1：1的比例赠送体验券，800元以上的订单赠送800元体验券。
             </div>
         </div>
     </div>
@@ -630,7 +630,7 @@
             <div id="div_Error"class="bd-cont">
                 <div class="verify-cont">
                     <div class="control-group ">
-                        <span class="controls-span" id="span_Message" style="text-align:center">您已被拉入黑名单，无法下单，请联系久久客服</span>
+                        <span class="controls-span" id="span_Message" style="text-align:center">您已被拉入黑名单，无法下单，请联系途家客服</span>
                     </div>
                  </div>
             </div>
@@ -729,7 +729,7 @@
 <div class="m-footer-link-list" style="text-align: center;">
     <a href="http://content.tujia.com/Home/Index.htm" target="_blank" class="forst" rel="nofollow">关于我们</a>|
         <a href="http://content.tujia.com/BusinessIntro/HolidayApartment.htm" target="_blank" rel="nofollow">业务介绍</a>|
-        <a href="http://content.tujia.com/Jobs/Social.htm" target="_blank" rel="nofollow">加入久久</a>|
+        <a href="http://content.tujia.com/Jobs/Social.htm" target="_blank" rel="nofollow">加入途家</a>|
         <a href="http://content.tujia.com/Help/Index.htm" target="_blank" rel="nofollow">帮助中心</a>|
         <a href="/SiteMap/UnitDestination" target="_blank">网站地图</a>|
         <a href="/SiteMap/Default" target="_blank">城市地图</a>
@@ -1043,7 +1043,7 @@
 </html>
 <script type="text/javascript">
 function tijiao(){
-	var h_id='{{$house->h_id}}';
+	var h_id='<?php echo e($house->h_id); ?>';
 	var c_num=document.getElementById('PeopleCount1').value;
 	var user=document.getElementById('Name').value;
 	var tel=document.getElementById('Mobile').value;
@@ -1051,8 +1051,9 @@ function tijiao(){
 	var c_name=document.getElementById('insuredName_0').value;
 	var c_cart=document.getElementById('insuredCertiNo_0').value;
 	var c_sex=document.getElementById('insuredSex_0').value;
-	var c_price='{{$house->h_price}}';
+	var c_price='<?php echo e($house->h_price); ?>';
+	alert(c_name);
 	var xiang=h_id+','+c_num+','+user+','+tel+','+email+','+c_name+','+c_cart+','+c_sex+','+c_price;
-	location.href="{{ URL::route('Details/CartAdd') }}?xiang="+xiang;
+	location.href="<?php echo e(URL::route('Details/CartAdd')); ?>?xiang="+xiang;
 }
 </script>

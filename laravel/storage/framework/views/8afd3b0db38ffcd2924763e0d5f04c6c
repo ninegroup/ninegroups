@@ -3824,7 +3824,7 @@
                                 <img src="../images/uploads/<?php echo e($v->pi_path); ?>" alt="<?php echo e($v->h_title); ?>" />
                             </a>
                             <div class="info-box">
-                                <a href="<?php echo e(URL::route('Details/Index')); ?>?id=<?php echo e($v->pi_h_id); ?>" target="_blank" class="room-tit" title="<?php echo e($v->h_title); ?>"><?php echo e($v->h_title); ?></a>
+                                <a href="<?php echo e(URL::route('Details/Index')); ?>?id=<?php echo e($v->pi_h_id); ?>"  class="room-tit" title="<?php echo e($v->h_title); ?>"><?php echo e($v->h_title); ?></a>
                                 <p class="picer-info"><span class="price-box"><dfn>¥</dfn><b class="number-box"><?php echo e($v->h_price); ?></b></span>/晚起 </p><p class="hint-text"></p>
                             </div>
                         </div>

@@ -517,11 +517,8 @@
                                 </div>
                             </div>
                             <div class="change-control-group btn-group">
-                                <div class="controls"><a href="javascript:void(0);" id="changeBtn" class="change-btn" onclick="_gaq.push(['_trackEvent', 'pcDetail', '产品搜索']);">确定</a></div>
+                                <div class="controls"><a href="<?php echo e(URL::route('Details/HouseReserve')); ?>?id=<?php echo e($arr->h_id); ?>" id="changeBtn" class="change-btn" onclick="">确定预定</a></div>
                             </div>
-                                <div class="room-status">
-                                    <a class="has-empty-house" href="javascript:;" data-unitid="3581" data-detaillink="" onclick="_gaq.push(['_trackEvent', 'pcDetail', '哪天有房']);">哪天有房</a>
-                                </div>
                         </div>
 
                             <div class="hint-text">

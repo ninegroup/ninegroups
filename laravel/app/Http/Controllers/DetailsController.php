@@ -2,7 +2,11 @@
 
 use DB;
 use Request;
-
+/*
+	*显示详情
+	*订单的显示与添加
+	*玖组
+*/
 class DetailsController extends Controller {
 
 	/*
@@ -27,6 +31,7 @@ class DetailsController extends Controller {
 	 *
 	 * @return Response
 	 */
+	 //显示详情
 	public function index()
 	{
 		static $pic='';
@@ -46,5 +51,72 @@ class DetailsController extends Controller {
 		//var_dump($com);die;
 		return view('details',$data);
 	}
-
+	//显示订单添加
+	public function HouseReserve(){
+		$name=$_COOKIE['name'];
+		$id=Request::get('id');
+		$house=DB::table('house')
+			->join('picture', 'house.h_id', '=', 'picture.pi_h_id')
+			->where('h_id',$id)
+			->where('pi_state',2)
+			->first();
+		$user=DB::table('user')
+			->where('u_name',$name)
+			->first();
+		return view('indent',['house'=>$house,'user'=>$user]);
+	}
+	//订单添加
+	public function CartAdd(){
+		$name=$_COOKIE['name'];
+		$xiang=Request::get('xiang');
+		$arr=explode(',',$xiang);
+		$order='jiujiu'.date("YmdHis");
+		$c_time=date("Y-m-d H:i:s",time());
+		$e_time=date("Hi");
+		$h=substr($e_time,0,2);
+		$i=substr($e_time,2);
+		if($i>60){
+			$h=$h+1;
+			$i=$i-60;	
+		}
+		$end_time=$h.':'.$i;
+		/*$db=DB::table("cart")->insert([
+			'user'=>$arr['user'],	
+			'h_id'=>$arr['h_id'],	
+			'c_num'=>$arr['c_num'],	
+			'c_tel'=>$arr['tel'],
+			'c_sex'=>$arr['c_sex'],
+			'c_cart'=>$arr['c_cart'],
+			'c_name'=>$arr['c_name'],
+			'c_email'=>$arr['email'],
+			'c_price'=>$arr['c_price'],
+			'c_order_num'=>$order
+		]);*/
+		$db=DB::table("cart")->insert([
+			'user'=>$name,
+			'c_name'=>$arr['2'],	
+			'h_id'=>$arr['0'],	
+			'c_num'=>$arr['1'],	
+			'c_tel'=>$arr['3'],
+			'c_sex'=>$arr['7'],
+			'c_cart'=>$arr['6'],
+			'c_name'=>$arr['5'],
+			'c_email'=>$arr['4'],
+			'c_price'=>$arr['8'],
+			'c_order_num'=>$order,
+			'c_time'=>$c_time,
+		]);
+		$h_id=$arr['0'];
+		$house=DB::table('house')
+			->join('picture',"house.h_id",'=','picture.pi_h_id')
+			->where('h_id',$h_id)
+			->first();
+		$user=DB::table('user')
+			->where('u_name',$name)
+			->first();
+		$h_user=DB::table('user')
+			->where('u_id',$house->u_id)
+			->first();
+		return view('reserve',['c_price'=>$arr['8'],'order'=>$order,'end_time'=>$end_time,'house'=>$house,'user'=>$user,'h_user'=>$h_user]);
+	}
 }
