@@ -27,6 +27,7 @@ Route::get('userList', 'ContactController@index');
 Route::get('details', 'DetailsController@index');
 
 Route::get('service', 'ServiceController@index');
+Route::get('personal', 'IndexController@personal');
 
 
 Route::controllers([
@@ -39,7 +40,6 @@ Route::controllers([
 //注册
 Route::any('/register','LoginController@register');
 Route::any('/index','IndexController@index');
-//Route::any('/Index/index', [ 'as' => 'Index/index', 'uses' => "IndexController@index"]);
 //登陆
 Route::any('/login','LoginController@login');
 //用户中心
@@ -48,10 +48,20 @@ Route::any('/Index/user', [ 'as' => 'Index/user', 'uses' => "IndexController@use
 Route::any('/Index/userGai', [ 'as' => 'Index/userGai', 'uses' => "IndexController@userGai"]);
 //个人中心
 Route::any('/Index/userList', [ 'as' => 'Index/userList', 'uses' => "IndexController@userList"]);
+//预定房间
+Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
 
 //退出
 Route::any('unset1','LoginController@unset1');
 Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginController@housing"]);
+<<<<<<< HEAD
+=======
+//预定房间
+Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
+
+
+
+>>>>>>> 3dd7020480ce6113ee802964ffdf8882e28259d3
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);

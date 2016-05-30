@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use DB;
 use Request;
 use Input;
+use Redirect;
 
 class IndexController extends Controller {
 
@@ -62,7 +63,7 @@ class IndexController extends Controller {
 	/*完善信息*/
 	public function userGai(){
 		$u_id=$_COOKIE['u_id'];
-		$u_name=Request::input('u_name');
+		$realname=Request::input('realname');
 		$sex=Request::input('u_sex');
 		$u_idcard=Request::input('u_idcard');
 		$u_tel=Request::input('u_tel');
@@ -77,19 +78,25 @@ class IndexController extends Controller {
 		$update=DB::table('user')
             ->where('u_id', $u_id)
             ->update([
-            	'u_name'=>$u_name,
+            	'realname'=>$realname,
             	'u_sex'=>$sex,
+            	'u_tel'=>$u_tel,
             	'u_idcard'=>$u_idcard,
             	'u_header'=>$filename,
             ]);
         if($update){
-        	echo "<script>alert('信息更新成功');location.href='/Index/userList'</script>";
+        	return Redirect::action('IndexController@personal');
         }
 	}
 	public function userList(){
 		$id=$_COOKIE['u_id'];
 		$db=DB::table('user')->where("u_id",$id)->first();
 		//var_dump($db);die;
-		return view('users')->with('db',$db);
+		return view('person')->with('db',$db);
+	}
+
+	public function personal()
+	{
+		return view('personal');
 	}
 }

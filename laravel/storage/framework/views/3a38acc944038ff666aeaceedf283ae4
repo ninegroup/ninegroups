@@ -136,7 +136,7 @@ h1 {
 				<li><a href="<?php echo e(URL('unset1')); ?>">退出</a></li>
 			  <?php }?>	
 			  <li><input type="button" value="免费发布房源" class="btn btn-primary btn-large" onclick="housing()"/></li>
-
+				
 			</ul>
 		</div>
 		<div class="clear"></div>
