@@ -12,6 +12,8 @@
     <!--meta http-equiv="X-UA-Compatible" content="IE=8,IE=9" /-->
     <meta property="qc:admins" content="27330065376452116375" />
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
+    <link rel="shortcut icon" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="http://staticfile.tujia.com/PortalSite/Images/favicon.ico" type="image/x-icon" />
     
     
     <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_orderpaynew?v=67e5d64" />
@@ -94,7 +96,7 @@
                     
                     <h2>感谢预订，请尽快支付订金。</h2>
                     
-                    <p>请在<span class="hlt-text ">{!! $end_time !!}</span>前完成支付，避免订单超时失效。</p>
+                    <p>请在<span class="hlt-text "><?php echo $end_time; ?></span>前完成支付，避免订单超时失效。</p>
                 </div>
             </div>
             <div class="listing-info progress-box">
@@ -102,7 +104,7 @@
                     <div class="user-box">
                         <span class="photo-box">
                             <?php if($user->u_header){?>
-                            <img src="../uploads/{{$user->u_header}}" alt=" " class="photo-img" width="66" height="66" />
+                            <img src="../uploads/<?php echo e($user->u_header); ?>" alt=" " class="photo-img" width="66" height="66" />
                             <?php }else{?>
 							<img src="http://staticfile.tujia.com/BookingSite/images/user-default.png" alt=" " class="photo-img" width="66" height="66" />
                             <?php } ?>
@@ -127,7 +129,7 @@
                     <div class="listing-box">
                         <span class="photo-box">
                             
-                            <img src="../uploads/{{$h_user->u_header}}" alt=" " class="photo-img" width="66" height="66" />
+                            <img src="../uploads/<?php echo e($h_user->u_header); ?>" alt=" " class="photo-img" width="66" height="66" />
                             
                             
                         </span>
@@ -146,7 +148,7 @@
             <div class="orede-info-cont ">
                 <ul>
                     <li class="first-box">
-                        <div class="info-item ">订单编号：<span class="order-number ">{!! $order !!}</span>{{ $house->h_title }}（宜住{{ $house->h_people }}人）</div>
+                        <div class="info-item ">订单编号：<span class="order-number "><?php echo $order; ?></span><?php echo e($house->h_title); ?>（宜住<?php echo e($house->h_people); ?>人）</div>
                         <!-- <div class="info-item ">
                             <span class="date-box">2016-05-29<b class="week-box">星期日</b></span><span class="label-text">至</span>
                             <span class="date box">2016-05-30<b class="week-box">星期一</b></span>
@@ -166,7 +168,7 @@
                 <ul>
                     <li>
                         <h2>订单总价</h2>
-                        <span class="total-price"><dfn>¥</dfn><b class="price-value">{!! $c_price !!}</b></span></li>
+                        <span class="total-price"><dfn>¥</dfn><b class="price-value"><?php echo $c_price; ?></b></span></li>
                     
                     <!-- <li>
                         <h2>到店支付</h2>
@@ -182,7 +184,7 @@
                         
                         <span class="total-price highlight-text">
                             <dfn>¥</dfn>
-                            <b class="price-value">{!! $c_price !!}</b>
+                            <b class="price-value"><?php echo $c_price; ?></b>
                             
                         </span>
                     </li>
@@ -302,8 +304,8 @@
             <div class="pay-total real-pay">
                 <h2>实付款</h2>
 
-                <div class="total-info" id="tdNeedTopay" cash="{!! $c_price !!}">
-                    <span class="total-price"><dfn>¥</dfn><b class="price-value">{!! $c_price !!}</b></span>
+                <div class="total-info" id="tdNeedTopay" cash="<?php echo $c_price; ?>">
+                    <span class="total-price"><dfn>¥</dfn><b class="price-value"><?php echo $c_price; ?></b></span>
                 </div>
             </div>
             

@@ -16,8 +16,8 @@
     <meta property="wb:webmaster" content="791d1c6849c2b026" />
 
     
-    <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/css_common?v=67e5d64" />
-    <link rel="stylesheet" type="text/css" href="http://staticfile.tujia.com/portalsite2/styles/im.css?v=67e5d64" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail1.css" />
      
 
 
@@ -307,11 +307,10 @@
 
     
 <div class="share-cont">
-    <a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点赞']);" unitid="3581" href="javascript:void(0);">
+    <a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="collect(<?php echo e($arr->h_id); ?>);" href="javascript:void(0);">
         <i class="icon-chevron"></i>
         <span id="txtdianzan">我想住</span>
     </a>
-
 </div>
 
 
@@ -364,7 +363,24 @@
             carouselDetailPic.trigger('prev.owl.carousel');
         });
     }
-
+	
+	//收藏房源
+	function collect(id){
+		//alert(id);
+		$.ajax({
+			type:'get',
+			data:'id='+id,
+			url:"<?php echo e(URL('demo')); ?>",
+			success:function(msg){
+				if(msg==0){
+					alert('已收藏过');
+				}else{
+					alert("收藏成功");
+				}
+			}
+		})
+		
+	}
 
 </script>
 
@@ -456,25 +472,27 @@
                             <span rel="j-experience-info" class="exp-voucher j-bestproduct-experience">（发点评赢体验券<i class="icon-desc-text"></i>）</span>
                         </div> -->
                         <!-- <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
+                        <div class="comment-info">
+                            <br>
+                        </div>
+                        <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
                             <div class="tips-content comments-total">
-                                <h2>房屋综合评分</h2>
-                                <div class="results-wrap">
-                                    <div class="star-box star" data-rating="5"></div>
-                                    <div class="results-comments">
-                                        <span class="hotel-value">4.6</span>/5分
-                                    </div>
-                                </div>
-                                <div class="comments-items">
-                                    <ul>
-                                        <li><span class="comments-items-name">整洁卫生：</span><span class="number-box color-blue">4.6</span>分</li>
-                                        <li><span class="comments-items-name">交通位置：</span><span class="number-box color-blue">4.8</span>分</li>
-                                        <li class="border-none"><span class="comments-items-name">管理服务：</span><span class="number-box color-blue">4.6</span>分</li>
-                                        <li class="border-none"><span class="comments-items-name">设施装修：</span><span class="number-box color-blue">4.6 </span>分</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div> -->
-                    
+                        </div>
+                    <div class="product-filter" id="productfilter">
+                        <div class="date-change-box">
+
+                            <div class="change-control-group btn-group">
+                                
+                                <div class="controls"><a href="<?php echo e(URL::route('Details/HouseReserve')); ?>?id=<?php echo e($arr->h_id); ?>" id="changeBtn" class="change-btn" onclick="" >￥<?php echo e($arr->h_price); ?>&nbsp&nbsp&nbsp预定</a></div>
+                            </div>
+                        </div>
+
+                            <div class="hint-text">
+                            </div>
+
+                    </div>
                     <div id="travelsummary" class="travel-info" style="display:none"><a href="#experience"><i class="icon-travel"></i></a></div>
                 </div>
             </div>
@@ -550,6 +568,9 @@
                                 入住点评<span id="usercomments-value" class="total-box">419</span>条
                             </a>
                         </li> -->
+                        <li id="commentsareatab" class="j-tabs">
+                            
+                        </li>
                     <li id="unitgoodexperiencetabcontainer" style="display:none" >
                         <a id="unitgoodexperience" href="#experience" onclick="_gaq.push(['_trackEvent', 'pcDetail', '达人体验']);">达人体验</a>
                     </li>
@@ -865,9 +886,7 @@
     Tj.Detail.IsDistinctForUnit = 1;
 
 </script>
-
-
-    <!-- <div id="commentsArea" class="m-column-box">
+   <!--  <div id="commentsArea" class="m-column-box">
         <a name="comment" id="comment" href="#comment"></a>
         <div class="m-column-tit t-column-tit clearfix" id="commentsArea">
             <h2 id="commentsTitle">本房屋点评（<b>419</b>条）</h2>
@@ -957,7 +976,7 @@
                 <ul>
                  <?php foreach($com as $v): ?>
                         <li>
-                            <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
+                            <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="" alt="" width="278" height="165"></a>
                             <div class="house-cont">
                                 <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租<?php echo e($v->h_title); ?></a>
 
@@ -972,7 +991,6 @@
                         </li> 
                 <?php endforeach; ?>
                </ul>
-                    <div class="link-btn-cont"><a href="/Hotel/Index/821/" target="_blank" onclick="_gaq.push(['_trackEvent', 'pcDetail', '查看更多']);">查看更多&gt;&gt;</a></div>
             </div>
         </div>
 </div>

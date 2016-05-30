@@ -3834,7 +3834,7 @@
                                 <img src="../images/uploads/{{ $v->pi_path }}" alt="{{ $v->h_title }}" />
                             </a>
                             <div class="info-box">
-                                <a href="{{ URL::route('Details/Index') }}?id={{$v->pi_h_id}}" target="_blank" class="room-tit" title="{{ $v->h_title }}">{{ $v->h_title }}</a>
+                                <a href="{{ URL::route('Details/Index') }}?id={{$v->pi_h_id}}"  class="room-tit" title="{{ $v->h_title }}">{{ $v->h_title }}</a>
                                 <p class="picer-info"><span class="price-box"><dfn>¥</dfn><b class="number-box">{{ $v->h_price }}</b></span>/晚起 </p><p class="hint-text"></p>
                             </div>
                         </div>

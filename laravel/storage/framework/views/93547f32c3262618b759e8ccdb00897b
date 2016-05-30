@@ -137,6 +137,9 @@
 			</div>
 		</div>
 	</div>
+	<div class="footer_bg">
+<?php echo $__env->make('components.foot2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+</div>
 <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
 	<script>
 		
