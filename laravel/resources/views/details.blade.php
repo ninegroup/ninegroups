@@ -306,11 +306,10 @@
 
     
 <div class="share-cont">
-    <a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点赞']);" unitid="3581" href="javascript:void(0);">
+    <a class="addFavorite a-btn last-btn " id="favorite" data-page="unitdetail" onclick="collect({{$arr->h_id}});" href="javascript:void(0);">
         <i class="icon-chevron"></i>
         <span id="txtdianzan">我想住</span>
     </a>
-
 </div>
 
 
@@ -363,7 +362,24 @@
             carouselDetailPic.trigger('prev.owl.carousel');
         });
     }
-
+	
+	//收藏房源
+	function collect(id){
+		//alert(id);
+		$.ajax({
+			type:'get',
+			data:'id='+id,
+			url:"{{URL('demo')}}",
+			success:function(msg){
+				if(msg==0){
+					alert('已收藏过');
+				}else{
+					alert("收藏成功");
+				}
+			}
+		})
+		
+	}
 
 </script>
 
@@ -449,27 +465,19 @@
                             <span>加载中...</span>
                         </div>
                     </div> -->
-<<<<<<< HEAD
                         <!-- <div class="comment-info">
                             <span id="unitscore" rel="unitCommentSummaryTooltip" class="rating-box"><b class="hotel-value">4.6</b>/5分</span>
                             <a id="commentsAreaLink" rel="nofollow" class="comments-area" style="cursor: pointer;" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房屋点评']);"><span class="comments-count"></span>条点评</a>
                             <span rel="j-experience-info" class="exp-voucher j-bestproduct-experience">（发点评赢体验券<i class="icon-desc-text"></i>）</span>
                         </div> -->
                         <!-- <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
-=======
                         <div class="comment-info">
                             <br>
                         </div>
                         <div class="m-tips-wrap dn" id="unitCommentSummaryTooltip">
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
                             <div class="tips-content comments-total">
-                                
-
                             </div>
-<<<<<<< HEAD
                         </div> -->
-                    
-=======
                         </div>
                     <div class="product-filter" id="productfilter">
                         <div class="date-change-box">
@@ -484,7 +492,6 @@
                             </div>
 
                     </div>
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
                     <div id="travelsummary" class="travel-info" style="display:none"><a href="#experience"><i class="icon-travel"></i></a></div>
                 </div>
             </div>
@@ -497,7 +504,6 @@
         <div id="unitmaincontainer" class="main-cont ">
             <!-- 产品  -->
             <div class="m-column-box new-column-box" id="saleproductsection">
-<<<<<<< HEAD
                     <div class="product-filter" id="productfilter">
                         <div class="date-change-box">
                             <div class="change-control-group">
@@ -538,9 +544,6 @@
                             </div> -->
 
                     </div>
-=======
-                    
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
             </div>
             <!-- Tabs  -->
             
@@ -559,17 +562,14 @@
                     <li>
                         <a id="unitmaptab" href="#unitmap" onclick="_gaq.push(['_trackEvent', 'pcDetail', '位置地图']);">位置地图</a>
                     </li>
-<<<<<<< HEAD
                         <!-- <li id="commentsareatab" class="j-tabs">
                             <a href="#commentsArea" id="usercomments" onclick="_gaq.push(['_trackEvent', 'pcDetail', '点评导航']);">
                                 入住点评<span id="usercomments-value" class="total-box">419</span>条
                             </a>
                         </li> -->
-=======
                         <li id="commentsareatab" class="j-tabs">
                             
                         </li>
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
                     <li id="unitgoodexperiencetabcontainer" style="display:none" >
                         <a id="unitgoodexperience" href="#experience" onclick="_gaq.push(['_trackEvent', 'pcDetail', '达人体验']);">达人体验</a>
                     </li>
@@ -885,13 +885,7 @@
     Tj.Detail.IsDistinctForUnit = 1;
 
 </script>
-
-
-<<<<<<< HEAD
-    <!-- <div id="commentsArea" class="m-column-box">
-=======
    <!--  <div id="commentsArea" class="m-column-box">
->>>>>>> a151d45a2432510be694ac246b3708c94837cb82
         <a name="comment" id="comment" href="#comment"></a>
         <div class="m-column-tit t-column-tit clearfix" id="commentsArea">
             <h2 id="commentsTitle">本房屋点评（<b>419</b>条）</h2>
@@ -981,7 +975,7 @@
                 <ul>
                  @foreach($com as $v)
                         <li>
-                            <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="" width="278" height="165"></a>
+                            <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="pic-cont" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);"><img class="Detaillazy" data-original="http://pic.tujia.com/upload/unit/day_160125/thumb/201601251724099372_300_200.jpg" src="" alt="" width="278" height="165"></a>
                             <div class="house-cont">
                                 <a href="/beijing_gongyu/se0/chaoyangqu_3583.htm" target="_blank" class="tit" onclick="_gaq.push(['_trackEvent', 'pcDetail', '房东其他房屋']);">久久租{{$v->h_title}}</a>
 

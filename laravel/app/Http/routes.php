@@ -57,11 +57,13 @@ Route::any('/Login/housing', [ 'as' => 'Login/housing', 'uses' => "LoginControll
 //预定房间
 Route::any('/Details/HouseReserve', [ 'as' => 'Details/HouseReserve', 'uses' => "DetailsController@HouseReserve"]);
 
-
+//收藏房间
+//Route::any('/Details/Collect', [ 'as' => 'Details/Collect', 'uses' => "DetailsController@Collect"]);
 
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
-
+Route::any('Details/Collect', 'DetailsController@Collect');
+Route::any('demo', 'DetailsController@Collect');
 
 Route::any('/Login/publish2', [ 'as' => 'Login/publish2', 'uses' => "LoginController@publish2"]);
 
