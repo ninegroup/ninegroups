@@ -69,10 +69,8 @@ class LoginController extends Controller {
 		if(empty($_COOKIE['name']))
 		{
 			echo"<script>alert('请先登录');history.go(-1);</script>"; 
-<<<<<<< HEAD
-=======
+
 			//return redirect()->action('IndexController@index');
->>>>>>> adff34cff8a7ae593298116d482939be192cd128
 		}else{
 			
 			return view("publish");
