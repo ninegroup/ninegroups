@@ -136,7 +136,7 @@ h1 {
 				<li><a href="<?php echo e(URL('unset1')); ?>">退出</a></li>
 			  <?php }?>	
 			  <li><input type="button" value="免费发布房源" class="btn btn-primary btn-large" onclick="housing()"/></li>
-
+				
 			</ul>
 		</div>
 		<div class="clear"></div>
@@ -151,7 +151,7 @@ h1 {
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
 		<?php foreach($db as $v): ?>
-		<li><img src="images/uploads/<?php echo e($v->pi_path); ?>" alt="1" title="" id="wows1_0" style="height:600px;width:100%;"></li>
+		<li><a href="<?php echo e(URL::route('Details/Index')); ?>?id=<?php echo e($v->pi_h_id); ?>"><img src="images/uploads/<?php echo e($v->pi_path); ?>" alt="1" title="" id="wows1_0" style="height:600px;width:100%;"></a></li>
 		<?php endforeach; ?>
 	</ul></div>
 <div class="ws_shadow"></div>
@@ -200,7 +200,7 @@ h1 {
 		<div class="span_of_3"> 
 			<?php foreach($hot as $v): ?>
 			<div class="span1_of_3">
-				<a href="#"><img src="images/uploads/<?php echo e($v->pi_path); ?>" alt="<?php echo e($v->h_title); ?>"/></a>
+				<a href="<?php echo e(URL::route('Details/Index')); ?>?id=<?php echo e($v->pi_h_id); ?>"><img src="images/uploads/<?php echo e($v->pi_path); ?>" alt="<?php echo e($v->h_title); ?>"/></a>
 				<div class="span1_of_3_text">
 					<h3><a href="#"><?php echo e($v->h_title); ?></a></h3>
 					<p><?php echo e($v->h_content); ?></p>

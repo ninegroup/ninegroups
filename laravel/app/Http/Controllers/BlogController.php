@@ -31,7 +31,7 @@ class BlogController extends Controller {
 		//echo $id;die;
 		$db=DB::table('house')->where('u_id',$id)->get();
 		//var_dump($db);die;
-		return view('housingList')->with('db',$db);
+		return view('housing')->with('db',$db);
 	}
 
 	public function orderList()

@@ -11,48 +11,20 @@
 		 <link rel="stylesheet" href="../css/css.css" />
 
 		<ul class="breadcrumb clearfix">
-			       <li><a href="/tenant/851658049/orders">我是房东</a> <span class="divider">》</span></li>
-			<li>账户管理</li>
+			      
+			<li>》个人信息</li>
 		</ul>
 		
 		<div class="personalCenter clearfix">		
 		    <!-- Center-sidebar -->
 		<ul class="center-sidebar">
-			<li><a class="slideactive" href="<?php echo e(url('userList')); ?>">个人信息<span class="ddgl"></span></a></li>
-			<li><a href="<?php echo e(url('orderList')); ?>">订单管理<span class="ddgl"></span></a></li>
+			<li><a class="slideactive" href="<?php echo e(URL::route('Index/userList')); ?>">个人信息<span class="ddgl"></span></a></li>
 			<!--<li><a   href="/user/tenant/commentmanager.html">点评管理<span class="dpgl" ></span></a></li>-->	
 			<li><a  href="<?php echo e(url('blog')); ?>">房源管理<span class="zhgl_current"></span></a></li>
 		</ul>
 <script type="text/javascript" href="../js/jquery.js"></script>
 <script type="text/javascript">
-	//初始化样式展示
-	$(document).ready(function(){
-		$.ajax({
-			url : "/user/getLastAuditDate.do",
-			type : 'POST',
-			async:true,
-			dataType:'json',
-			timeout: 3000,
-			success : function(data){
-				var lastAuditTime=data;
-				var cookietime = -1;
-				var arr = document.cookie.split("; ");
-				for(var i=0,len=arr.length;i<len;i++){
-					var item = arr[i].split("=");
-					if(item[0]=="MAYI_LA_TIME"){
-						cookietime=item[1];
-						break;
-					}
-				}
-				if(lastAuditTime == 0 || cookietime > lastAuditTime){
-					$(".fdshop").hide();
-					$(".fdshop").remove();
-				}else{
-					$(".fdshop").show();
-				}
-			}
-		});
-	});
+	
 </script>
 	        <!-- Center-sidebar END -->			
 			<div class="centerCon">
@@ -62,33 +34,43 @@
 				<div class="accountMt clearfix">
 					<!-- 个人信息 -->
 					<form action="<?php echo e(URL::route('Index/userGai')); ?>" enctype='multipart/form-data' method="post">
+					 <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>"/>
 					<input style="display: none;" name="issetpass" id="issetpass" value="false" type="hidden">
 					<input style="display: none;" name="isbandmobile" id="isbandmobile" value="true" type="hidden">
 					<input style="display: none;" name="usertype" id="usertype" value="tenant" type="hidden">
 					<input style="display: none;" name="bjlandlord" id="bjlandlord" value="0" type="hidden">
 					<div class="MtList" style="display: block;">
-		
 						<div class="avatar-box">
-						
 							<div class="avatar">
-									<!--<img id="headimage" style="width:100px;height:100px;" src="http://i1.mayi.com/gjfs15/M06/C7/19/CgEHQFcxdRfgpEk7AABlcbtch,g688.jpg_110x110c.jpg" alt="">-->
-									<img id="headimage" style="width:100px;height:100px;" src="" alt="">
+							<?php if(($db->u_header)==""): ?>
+									<img id="headimage" style="width:100px;height:100px;" src="http://i1.mayi.com/gjfs15/M06/C7/19/CgEHQFcxdRfgpEk7AABlcbtch,g688.jpg_110x110c.jpg" alt="">
+							<?php else: ?>
+									<img id="headimage" style="width:100px;height:100px;" src="<?php echo e(URL::asset('uploads')); ?>/<?php echo $db->u_header?>" alt="">
+							<?php endif; ?>
 							</div>
-							<p><a id="upheadimgdo" class="alertAvatar" rel="nofollow" href="javascript:void(0)">[修改头像]</a></p>
+							<p>
+							<a id="upheadimgdo" class="alertAvatar" rel="nofollow" href="javascript:void(0)" ><span onclick="photoupd();">[修改头像]</span>
+							</a>
+							</p>
+							
+								<div id="photoupd" style="display:none">
+									<input type="file" name="myfiles"/>
+								</div>
 							
 						</div>
+
 						<div class="tabCon">
 						
 							<ul class="userInfo">
 							
 								<li class="clearfix">
 									<span class="infoTitle">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span> 
-									<input class="personLargeInput" name="nickname" placeholder="4-20个字符（汉字、字母、数字、下划线）" id="nickname" value="" style="width:276px;" type="text">
+									<input class="personLargeInput" name="u_name"  id="nickname" value="<?php echo e($db->u_name); ?>" placeholder="请输入您的昵称" style="width:276px;" type="text">
 									
 								</li>
 								<li class="clearfix">
 									<span class="infoTitle">真实姓名：</span> 
-									<input class="personLargeInput" name="realname" id="username" placeholder="" value="" style="width:276px;" type="text">
+									<input class="personLargeInput" name="realname" id="username" readonly value="<?php echo $_COOKIE['name']?>" style="width:276px;" type="text">
 									<span class="namenotice">请务必使用真实姓名，否则影响我们向您的账户支付</span>
                                     	<div class="zhima_des" id="zmsq_des" style="display: none;">
 	                                    	<p class="zm_top zhima_green">芝麻信用是依法成立的独立信用评估及管理机构。授权后得到分数越高，代表信用越好。</p>
@@ -103,42 +85,44 @@
 							
 							<ul class="userInfo">
 								<li class="clearfix">
-									<span class="infoTitle">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span> 
-											
-								</li>
-								<li class="clearfix">
-									<span class="infoTitle">身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;份：</span> 
-		
-									
-								</li>
-								<li class="clearfix">
-									<span class="infoTitle">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span> 
-									<input class="personLargeInput" name="u_email" id="u_email" value="" type="text">
-										<a id="validemail" class="checking" rel="nofollow" href="javascript:void(0)"></a>
-									<!-- <span class="prompt">2-10个汉字，或2-20个英文字符</span> -->
+									<span class="infoTitle">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span>
+									<?php if($db->u_sex==''){?>
+										<input type="radio"  name="u_sex"   value="男" /> 男&nbsp;
+										<input type="radio"  name="u_sex"   value="女" /> 女&nbsp;
+									<?php }else if($db->u_sex=='男'){?>
+										<input type="radio"  name="u_sex"   value="男" checked/> 男&nbsp;
+										<input type="radio"  name="u_sex"   value="女" /> 女&nbsp;
+									<?php }else{?>
+										<input type="radio"  name="u_sex"   value="男" /> 男&nbsp;
+										<input type="radio"  name="u_sex"   value="女" checked/> 女&nbsp;
+										<?php }?>
 								</li>
 								<li class="clearfix">
 									<span class="infoTitle">手机号码：</span> 
-									<input class="personLargeInput" name="u_phone" id="u_phone" value="" style="color:#000;" type="text">
+									<input class="personLargeInput" name="u_tel" id="u_phone" value="<?php echo e($db->u_tel); ?>" style="color:#000;" type="text">
 										<a id="updatemobile" class="checking" rel="nofollow" href="javascript:void(0)"></a>
 									<!-- <span class="prompt">2-10个汉字，或2-20个英文字符</span> -->
 								</li>
 								<li class="clearfix">
+								 <?php 
+									if($db->u_idcard!=""){
+									?>
 									<span class="infoTitle">身份证号：</span>
-									<input class="personLargeInput" name="u_email" id="u_email" value="" type="text">
-									<a href="javascript:void(0);" onclick="">
-										<span class="ressaddlist">
-												
-										</span>
-									</a>
+									<input class="personLargeInput" name="u_idcard" id="u_email" value="<?php echo e($db->u_idcard); ?>" type="text">
+									<?php }else{?>
+									<span class="infoTitle">身份证号：</span>
+									<input class="personLargeInput" name="u_idcard" id="u_email" value="" type="text">
+									<?php }?>
 									<!-- <span class="prompt">2-10个汉字，或2-20个英文字符</span> -->
 								</li>
 								<!--<button>确定</button>-->
 								
 							</ul>
-						
+
 							<div class="submit-wrap" style="bgcolor:green">
-								<a id="saveuser" class="btn btn-theme navbar-btn btn-default sign-in" rel="nofollow" href="javascript:void(0)">保存</a>
+							<!-- 	<a id="saveuser" class="btn btn-theme navbar-btn btn-default sign-in" rel="nofollow" href="javascript:void(0)">保存</a> -->
+							
+								<input type="submit" value="保存" id="saveuser" class="btn btn-theme navbar-btn btn-default sign-in" rel="nofollow"/>
 							</div>
 						</div>
 					</div>
@@ -153,83 +137,12 @@
 			</div>
 		</div>
 	</div>
-
+	<div class="footer_bg">
+<?php echo $__env->make('components.foot2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+</div>
+<script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
 	<script>
-		function xiu(obj){
-			alert("1213")
-		}
-		//昵称修改
-		$("#nickname").blur(function(){
-			var nickname=$("#nickname").val();
-			$.ajax({
-			   type: "POST",
-			   url: "<?php echo e(url('nicknameUpdate')); ?>",
-			   data: "nickname="+nickname,
-			   success: function(msg){
-					 if(msg==1){
-						alert("修改成功");
-					 }
-				  }
-			});
-		});
-		//用户名修改
-		$("#username").blur(function(){
-			alert(11)
-			var username=$("#username").val();
-			$.ajax({
-			   type: "POST",
-			   url: "<?php echo e(url('usernameUpdate')); ?>",
-			   data: "username="+username,
-			   success: function(msg){   
-				 if(msg==1){
-					alert("修改成功");
-				 }
-			   }
-			});
-		});
-		//邮箱修改
-		$("#u_email").blur(function(){
-			var email=$("#u_email").val();
-			var reg=/^\w+@\w+\.(com|net|cn)$/;
-			if(!reg.test(email)){
-				alert("请注意邮箱格式");
-			}else{
-				$.ajax({
-				   type: "POST",
-				   url: "<?php echo e(url('emailUpdate')); ?>",
-				   data: "email="+email,
-				   success: function(msg){   
-						 if(msg==1){
-							alert("修改成功");
-						 }
-					 }
-				});
-			}
-			
-		});
-
-
-		//手机号修改
-		$("#u_phone").blur(function(){
-			var phone=$("#u_phone").val();
-			var reg=/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}/;
-			if(!reg.test(phone)){
-				alert("请注意手机号格式");
-			}else{
-				$.ajax({
-				   type: "POST",
-				   url: "<?php echo e(url('phoneUpdate')); ?>",
-				   data: "phone="+phone,
-				   success: function(msg){   
-						 if(msg==1){
-							alert("修改成功");
-							$("#phones").html("<span>"+phone+"</span>");
-						 }
-					 }
-				});
-			}
-			
-		});
+		
 		function photoupd(){
 			$("#upheadimgdo").attr({style:"display:none"});
 			$("#photoupd").attr({style:""});

@@ -20,7 +20,14 @@ class SearchController extends Controller {
 		$order=Request::get('order')?Request::get('order'):'';
 		//判断是否需要排序
 		if($order){
-			$db=DB::table('house')->join('picture', 'house.h_id', '=', 'picture.pi_h_id')->where('h_city','like','%'.$city.'%')->where('h_title','like','%'.$adress.'%')->where('h_state','1')->where('pi_state','2')->orderby('h_price',"$order")->paginate(3);
+			$db=DB::table('house')
+				->join('picture', 'house.h_id', '=', 'picture.pi_h_id')
+				->where('h_city','like','%'.$city.'%')
+				->where('h_title','like','%'.$adress.'%')
+				->where('h_state','1')
+				->where('pi_state','2')
+				->orderby('h_price',"$order")
+				->paginate($perPage = 3, $columns = ['*'], $pageName = 'page');
 		}else{
 			$db=DB::table('house')
 				->join('picture', 'house.h_id', '=', 'picture.pi_h_id')
